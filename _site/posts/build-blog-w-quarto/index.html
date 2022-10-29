@@ -195,18 +195,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#creating-a-blog-with-quarto" id="toc-creating-a-blog-with-quarto" class="nav-link active" data-scroll-target="#creating-a-blog-with-quarto">Creating a blog with quarto</a>
+  <li><a href="#research-bazaar-queensland-2022" id="toc-research-bazaar-queensland-2022" class="nav-link active" data-scroll-target="#research-bazaar-queensland-2022">Research Bazaar Queensland 2022</a></li>
+  <li><a href="#creating-a-blog-with-quarto" id="toc-creating-a-blog-with-quarto" class="nav-link" data-scroll-target="#creating-a-blog-with-quarto">Creating a blog with quarto</a>
   <ul class="collapse">
-  <li><a href="#what-is-quarto" id="toc-what-is-quarto" class="nav-link" data-scroll-target="#what-is-quarto">What is quarto?</a></li>
+  <li><a href="#part-1-what-is-quarto" id="toc-part-1-what-is-quarto" class="nav-link" data-scroll-target="#part-1-what-is-quarto">Part 1: What is quarto?</a></li>
+  <li><a href="#make-a-quarto-blog-in-rstudio" id="toc-make-a-quarto-blog-in-rstudio" class="nav-link" data-scroll-target="#make-a-quarto-blog-in-rstudio">Make a quarto blog in RStudio</a></li>
+  <li><a href="#publishing" id="toc-publishing" class="nav-link" data-scroll-target="#publishing">Publishing</a></li>
   </ul></li>
-  <li><a href="#creating-a-post-on-the-uqgac-website" id="toc-creating-a-post-on-the-uqgac-website" class="nav-link" data-scroll-target="#creating-a-post-on-the-uqgac-website">Creating a post on the UQGAC website</a></li>
-  <li><a href="#blogdown-basics" id="toc-blogdown-basics" class="nav-link" data-scroll-target="#blogdown-basics">blogdown basics</a></li>
-  <li><a href="#git---what-is-it" id="toc-git---what-is-it" class="nav-link" data-scroll-target="#git---what-is-it">Git - what is it?</a>
+  <li><a href="#part-2-git---what-is-it" id="toc-part-2-git---what-is-it" class="nav-link" data-scroll-target="#part-2-git---what-is-it">Part 2: Git - what is it?</a>
   <ul class="collapse">
   <li><a href="#git-terminology" id="toc-git-terminology" class="nav-link" data-scroll-target="#git-terminology">Git Terminology</a></li>
-  </ul></li>
-  <li><a href="#how-to-create-a-post-in-blogdown" id="toc-how-to-create-a-post-in-blogdown" class="nav-link" data-scroll-target="#how-to-create-a-post-in-blogdown">How to create a post in blogdown</a>
-  <ul class="collapse">
+  <li><a href="#publishing-our-blog-on-netlify" id="toc-publishing-our-blog-on-netlify" class="nav-link" data-scroll-target="#publishing-our-blog-on-netlify">Publishing our blog on Netlify</a></li>
+  <li><a href="#how-to-create-a-post-in-an-existing-blog" id="toc-how-to-create-a-post-in-an-existing-blog" class="nav-link" data-scroll-target="#how-to-create-a-post-in-an-existing-blog">How to create a post in an existing blog</a></li>
   <li><a href="#fork-the-repo" id="toc-fork-the-repo" class="nav-link" data-scroll-target="#fork-the-repo">1. Fork the repo</a></li>
   <li><a href="#clone-the-repo-in-a-new-rstudio-project" id="toc-clone-the-repo-in-a-new-rstudio-project" class="nav-link" data-scroll-target="#clone-the-repo-in-a-new-rstudio-project">2. Clone the repo in a new RStudio project</a></li>
   <li><a href="#create-a-new-post" id="toc-create-a-new-post" class="nav-link" data-scroll-target="#create-a-new-post">3. Create a new post</a></li>
@@ -230,77 +230,60 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<p>We will be covering some basics of multiple programming skills (Git/GitHub, R, html, etc…) with the aim of empowering people to contribute to quarto websites such as this one - <strong>Brisbane Geospatial Community of Practice</strong>. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.</p>
-<p><strong>Geospatial Analysis Community of Practice</strong></p>
-<p>Unveil the new <strong>name</strong>! Background of the Community of Practice with founder, Mitchel Rudge.</p>
+<p>We will be covering some basics of multiple programming skills (Git/GitHub, R, html, etc…) with the aim of empowering people to contribute to quarto websites such as this one - the <strong>Brisbane Geospatial Community of Practice</strong>. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.</p>
+<p>Unveil the new <strong>name</strong> and <strong>website</strong>! Background of the Community of Practice with founder, Mitchel Rudge.</p>
 <p>See the <a href="../../about">About</a> page for more info.</p>
-<section id="creating-a-blog-with-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="creating-a-blog-with-quarto">Creating a blog with quarto</h2>
-<section id="what-is-quarto" class="level3">
-<h3 class="anchored" data-anchor-id="what-is-quarto">What is quarto?</h3>
-<p>Quarto is a “multi-language, next-generation version of R markdown from RStudio.” It is designed to be programming language (compatible with R, python, Julia, and more…?) and tool agnostic (RStudio, VSCode, jyputer, Observable). In this tutorial we are focusing on <strong>R</strong> and <strong>RStudio</strong>.</p>
-<p><img src="https://quarto.org/docs/get-started/hello/images/rstudio-source-visual.png" class="img-fluid"></p>
-<p><a href="https://quarto.org/docs/faq/rmarkdown.html">FAQ</a> for Rmarkdown users.</p>
-</section>
-</section>
-<section id="creating-a-post-on-the-uqgac-website" class="level2">
-<h2 class="anchored" data-anchor-id="creating-a-post-on-the-uqgac-website">Creating a post on the UQGAC website</h2>
-<p><strong>Catherine Kim, PhD</strong><br>
-Postdoctoral Associate, School of Biological Sciences<br>
-Technology Trainer, UQ Library<br>
-Twitter: <span class="citation" data-cites="fishiintheC">@fishiintheC</span></p>
+<section id="research-bazaar-queensland-2022" class="level2">
+<h2 class="anchored" data-anchor-id="research-bazaar-queensland-2022">Research Bazaar Queensland 2022</h2>
+<p>This session was run as a workshop for ResBaz Queensland 2022. ResBaz is a global festival promoting digital literacy at the centre of modern research.</p>
 <p>What we will cover:</p>
 <ol type="1">
-<li>blogdown basics</li>
+<li>quarto basics</li>
 <li>Git and GitHub basics</li>
-<li>How to create a post on the UQGSAC blogdown website</li>
-<li>R Markdown basics</li>
+<li>How to create a post on a quarto website</li>
+<li>Markdown basics</li>
 </ol>
-<p>I have pieced this together using many other resources on the above which are mentioned throughout. Thank you to Mitch and Stéphane for their help with this tutorial and workshop!</p>
+<p>I have pieced this together using many other resources on the above which are mentioned throughout. Thank you to Mitch and Christina for their help with this tutorial and workshop!</p>
 <p>What you will need:</p>
 <ol type="1">
 <li>Installations - R, RStudio, Git</li>
 <li>A GitHub account (free) with your login and personal access token (PAT) details handy</li>
 </ol>
 </section>
-<section id="blogdown-basics" class="level2">
-<h2 class="anchored" data-anchor-id="blogdown-basics">blogdown basics</h2>
-<p><code>blogdown</code> is an R package that allows the creation of websites using R Markdown and Hugo, a static site generator. <code>blogdown</code> websites in R have been all the rage the last few years and you have probably seen many ‘Hugo-Academic theme’ personal websites - all built in R!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://bookdown.org/yihui/blogdown/images/logo.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">blogdown hex sticker Credit: Creating Website with R Markdown</figcaption><p></p>
-</figure>
-</div>
-<ul>
-<li>There is a <a href="https://bookdown.org/yihui/blogdown/yihui-xie.html">short online book</a> on blogdown written by the developer, Yihui and others.</li>
-<li>A recent <a href="https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/">article by Allison Hill</a> on starting your own blogdown website from scratch.</li>
-<li>See <a href="../../post/creating-a-geospatial-blog-with-blogdown/">Mitch and Stéphane’s tutorial</a> for UQGSAC on creating a blogdown website.</li>
-</ul>
-<p><strong>This session focuses on how to go about <em>contributing</em> a post to an existing website.</strong></p>
-<p>The UQGSAC website is built using the anatole theme. There are many themes to choose from and if you know html/CSS you can even build your own theme.</p>
-<p>So, how do we go about contributing to a blogdown website?</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://media.giphy.com/media/u2pmTWUi0MXjyrMaVj/giphy.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Programmer GIF Credit: Capgemini India on GIPHY</figcaption><p></p>
-</figure>
-</div>
-<p>A good place to start is making sure you have installed the <code>blogdown</code> package:</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"blogdown"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><a href="https://bookdown.org/yihui/blogdown/global-options.html">Article</a> about setting global options in <code>blogdown</code> if you need to set the Hugo version in your <code>.Rprofile</code> (<code>blogdown::config_Rprofile()</code>).</p>
-<p>To allow multiple people to contribute to the same website, the website is hosted on <strong>GitHub</strong> and <strong>Netlify</strong>.</p>
-<p>As the website is already set-up, we will be dealing with Git + GitHub and R + RStudio + R Markdown.</p>
+<section id="creating-a-blog-with-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="creating-a-blog-with-quarto">Creating a blog with quarto</h2>
+<section id="part-1-what-is-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="part-1-what-is-quarto">Part 1: What is quarto?</h3>
+<p>Quarto is a “multi-language, next-generation version of R markdown from RStudio.” It is designed to be programming language (compatible with R, python, Julia, and more…?) and tool agnostic (RStudio, VSCode, jyputer, Observable). In this tutorial, we are focusing on <strong>R</strong> and <strong>RStudio</strong>.</p>
+<p>The basic model of Quarto publishing is taking a source document and rendering it to a variety of outputs like html, pdfs, and Word. The backend process is illustrated below. For those, interested in the details I would recommend the <a href="https://www.youtube.com/watch?v=yvi5uXQMvu4">Welcome to Quarto! 2 hr workshop</a> on Youtube led by Tom Mock at RStudio.</p>
+<p><img src="https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png" class="img-fluid"></p>
+<p><img src="https://quarto.org/docs/get-started/hello/images/rstudio-source-visual.png" class="img-fluid"></p>
+<p><a href="https://quarto.org/docs/faq/rmarkdown.html">FAQ</a> for Rmarkdown users.</p>
 </section>
-<section id="git---what-is-it" class="level2">
-<h2 class="anchored" data-anchor-id="git---what-is-it">Git - what is it?</h2>
+<section id="make-a-quarto-blog-in-rstudio" class="level3">
+<h3 class="anchored" data-anchor-id="make-a-quarto-blog-in-rstudio">Make a quarto blog in RStudio</h3>
+<p>Congrats - you’ve made a blog!</p>
+<p>But how do I share it with the world??</p>
+</section>
+<section id="publishing" class="level3">
+<h3 class="anchored" data-anchor-id="publishing">Publishing</h3>
+<p>There are several options for publishing your quarto blog outlined <a href="https://quarto.org/docs/publishing/">here</a>. Such as <a href="https://quarto.org/docs/publishing/quarto-pub.html">Quarto Pub</a> and Netlify.</p>
+<p>Quarto Pub is a free publishing service for quarto content. It requires having a login and an access token. This is a relatively straight forward way to get your blog online. There are some limitations to the size and everything published on Quarto Pub is <strong>publicly visible</strong>. The link above outlines the steps to publish with Quart Pub.</p>
+<p>For this workshop, we will focus on Netlify and git + GitHub.</p>
+<p>In your Netlify account, click on the teal ‘Add new site’ button.</p>
+<p>Import an existing project from a GitHub repository. You will probably need to configure your Netlify on GitHub. Can either configure all repositories or pick a specific repository.</p>
+<p>In the Site settings in the ‘Publish directory’ section at the bottom put the <code>_site/</code> folder where your website is rendered.</p>
+<p>It will take a few mintues to deploy your website. Netlify automatically generates a random url like “lighthearted-travesseiro-492jfg3” which can be changed in the ‘Domain settings’.</p>
+<p>Enter:</p>
+</section>
+</section>
+<section id="part-2-git---what-is-it" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-git---what-is-it">Part 2: Git - what is it?</h2>
 <p>A <strong>version control software</strong> (think track changes) useful for collaborating on and sharing code.</p>
 <p>Git is the <em>software itself</em> that records changes to a set of files locally. There are several hosting platforms that are like online repositories (think Dropbox, Google Drive, etc.) that work with Git: Bitbucket, GitLab, and GitHub to name a few.</p>
 <p>These platforms not only allow for version control but also to collaborate, organize, and back up projects.</p>
 <p>In this case, we will be using <strong>GitHub</strong> to access the website files, make some changes (i.e., add a post), and then incorporate those changes back to the website repository on GitHub which will automatically update the website itself. 🙌</p>
-<p>We will focus on contributing a post to an existing website repository on GitHub, but there are lots of fabulous and free resources online that go more into depth on Git:</p>
+<p>First, we will contribute a post to an existing website repository on GitHub, but there are lots of fabulous and free resources online that go more into depth on Git:</p>
 <ul>
 <li>If you need to be convinced to use Git for version control see this <a href="https://peerj.com/preprints/3159v2/">article</a> and <a href="https://happygitwithr.com/index.html">Happy Git and GitHub for the useR</a> to git started both by Git/R guru Jenny Bryan.</li>
 <li>See Caitie Kuempel’s R Ladies Brisbane <a href="https://github.com/cdkuempel/getting_started_github">presentation</a> on getting started with GitHub in RStudio.</li>
@@ -314,13 +297,16 @@ Twitter: <span class="citation" data-cites="fishiintheC">@fishiintheC</span></p>
 <p><strong>Push</strong> - sending your committed changes to a remote repository on GitHub. Local changes updated on the GitHub website where other people can access.</p>
 <p><strong>Pull</strong> - incorporating and merging changes. An edit on the remote repository on GitHub can be pulled to a local repository.</p>
 <p><strong>Diff</strong> - difference, or changes made that are visible as insertions/deletions for a commit.</p>
-<p><strong>Main/Master</strong> - the default branch you are on. Master has recently updated to main, but they are the same thing. You are more likely to come across master on older resources. <a href="https://happygitwithr.com/git-branches.html">Jenny Bryan</a> strongly urges you to create a new <strong>branch</strong> to work off of which requires using command line. For the purpose of contributing to a blogdown website, I will forgo covering this as it is unlikely more than one person will be contributing at the same time.</p>
+<p><strong>Main</strong> - the default branch you are on. Master has recently updated to main, but they are the same thing. You are more likely to come across master on older resources. <a href="https://happygitwithr.com/git-branches.html">Jenny Bryan</a> strongly urges you to create a new <strong>branch</strong> to work off of which requires using command line. For the purpose of contributing to a quarto website, I will forgo covering this as it is unlikely more than one person will be contributing at the same time.</p>
 <p><strong>Origin</strong> - the remote repo online from which you have cloned your local copy from.</p>
 </section>
+<section id="publishing-our-blog-on-netlify" class="level3">
+<h3 class="anchored" data-anchor-id="publishing-our-blog-on-netlify">Publishing our blog on Netlify</h3>
 </section>
-<section id="how-to-create-a-post-in-blogdown" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-create-a-post-in-blogdown">How to create a post in blogdown</h2>
+<section id="how-to-create-a-post-in-an-existing-blog" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-create-a-post-in-an-existing-blog">How to create a post in an existing blog</h3>
 <p>Starting with Git and GitHub:</p>
+</section>
 <section id="fork-the-repo" class="level3">
 <h3 class="anchored" data-anchor-id="fork-the-repo">1. Fork the repo</h3>
 <ul>
@@ -540,7 +526,7 @@ Like this.</p>
 <h5 class="anchored" data-anchor-id="including-code">Including code</h5>
 <p>You can embed an R code chunk like this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>     speed           dist       
  Min.   : 4.0   Min.   :  2.00  
@@ -583,7 +569,7 @@ E = mc^2
 <p>Let’s set <code>echo = FALSE</code> for our plot chunk above. We are only interested in seeing the plot, not the code that produces the plot.</p>
 <p>You can add a code chunk at the beginning of the .Rmd file and set global options that will apply to the whole document.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">echo =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">echo =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>See more at:</p>
 <ul>
