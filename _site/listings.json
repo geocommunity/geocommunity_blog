@@ -1,0 +1,12 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/post-with-code/index.html",
+      "/posts/welcome/index.html",
+      "/posts/build-blog-w-quarto/index.html",
+      "/posts/how-to-contribute-post/index.html",
+      "/posts/geospatial-blog-w-blogdown/index.html"
+    ]
+  }
+]

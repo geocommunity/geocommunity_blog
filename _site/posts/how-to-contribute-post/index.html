@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Catherine Kim">
+<meta name="dcterms.date" content="2021-11-23">
+
+<title>Brisbane Geospatial Community of Practice - How to contribute a post</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  </head><body class="floating nav-fixed">true
+
+<link rel="stylesheet" href="../../styles.css">
+
+
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Brisbane Geospatial Community of Practice</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">About</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">How to contribute a post</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">website</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Catherine Kim </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 23, 2021</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#geospatial-analysis-community-of-practice---the-university-of-queensland-uqgac" id="toc-geospatial-analysis-community-of-practice---the-university-of-queensland-uqgac" class="nav-link active" data-scroll-target="#geospatial-analysis-community-of-practice---the-university-of-queensland-uqgac">Geospatial Analysis Community of Practice - The University of Queensland (UQGAC)</a></li>
+  <li><a href="#creating-a-post-on-the-uqgac-website" id="toc-creating-a-post-on-the-uqgac-website" class="nav-link" data-scroll-target="#creating-a-post-on-the-uqgac-website">Creating a post on the UQGAC website</a></li>
+  <li><a href="#blogdown-basics" id="toc-blogdown-basics" class="nav-link" data-scroll-target="#blogdown-basics">blogdown basics</a></li>
+  <li><a href="#git---what-is-it" id="toc-git---what-is-it" class="nav-link" data-scroll-target="#git---what-is-it">Git - what is it?</a>
+  <ul class="collapse">
+  <li><a href="#git-terminology" id="toc-git-terminology" class="nav-link" data-scroll-target="#git-terminology">Git Terminology</a></li>
+  </ul></li>
+  <li><a href="#how-to-create-a-post-in-blogdown" id="toc-how-to-create-a-post-in-blogdown" class="nav-link" data-scroll-target="#how-to-create-a-post-in-blogdown">How to create a post in blogdown</a>
+  <ul class="collapse">
+  <li><a href="#fork-the-repo" id="toc-fork-the-repo" class="nav-link" data-scroll-target="#fork-the-repo">1. Fork the repo</a></li>
+  <li><a href="#clone-the-repo-in-a-new-rstudio-project" id="toc-clone-the-repo-in-a-new-rstudio-project" class="nav-link" data-scroll-target="#clone-the-repo-in-a-new-rstudio-project">2. Clone the repo in a new RStudio project</a></li>
+  <li><a href="#create-a-new-post" id="toc-create-a-new-post" class="nav-link" data-scroll-target="#create-a-new-post">3. Create a new post</a></li>
+  <li><a href="#commit-the-changes-i.e.-the-new-post" id="toc-commit-the-changes-i.e.-the-new-post" class="nav-link" data-scroll-target="#commit-the-changes-i.e.-the-new-post">4. <strong>Commit</strong> the changes i.e., the new post</a></li>
+  <li><a href="#push-the-changes-to-github" id="toc-push-the-changes-to-github" class="nav-link" data-scroll-target="#push-the-changes-to-github">5. <strong>Push</strong> the changes to GitHub</a></li>
+  <li><a href="#serve-the-site" id="toc-serve-the-site" class="nav-link" data-scroll-target="#serve-the-site">6. Serve the site</a></li>
+  <li><a href="#create-your-content" id="toc-create-your-content" class="nav-link" data-scroll-target="#create-your-content">7. Create your content</a></li>
+  <li><a href="#pull-request" id="toc-pull-request" class="nav-link" data-scroll-target="#pull-request">7. Pull Request</a></li>
+  </ul></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting…</a></li>
+  <li><a href="#resources-mentioned" id="toc-resources-mentioned" class="nav-link" data-scroll-target="#resources-mentioned">Resources mentioned:</a></li>
+  </ul>
+</nav>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>We will be covering some basics of multiple programming skills (Git/GitHub, R, html, etc…) with the aim of empowering people to contribute to blogdown websites such as the <strong>University of Queensland Geospatial Analysis Community of practice (UQGAC)</strong> blog. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.</p>
+<section id="geospatial-analysis-community-of-practice---the-university-of-queensland-uqgac" class="level2">
+<h2 class="anchored" data-anchor-id="geospatial-analysis-community-of-practice---the-university-of-queensland-uqgac">Geospatial Analysis Community of Practice - The University of Queensland (UQGAC)</h2>
+<p>Unveil the new <strong>website</strong>!</p>
+<p>Point of contact - Mitchel Rudge: mitchel.rudge@uq.edu.au</p>
+<p>See the <a href="../../about">About</a> page for more info.</p>
+</section>
+<section id="creating-a-post-on-the-uqgac-website" class="level2">
+<h2 class="anchored" data-anchor-id="creating-a-post-on-the-uqgac-website">Creating a post on the UQGAC website</h2>
+<p><strong>Catherine Kim, PhD</strong><br>
+Postdoctoral Associate, School of Biological Sciences<br>
+Technology Trainer, UQ Library<br>
+Twitter: <span class="citation" data-cites="fishiintheC">@fishiintheC</span></p>
+<p>What we will cover:</p>
+<ol type="1">
+<li>blogdown basics</li>
+<li>Git and GitHub basics</li>
+<li>How to create a post on the UQGSAC blogdown website</li>
+<li>R Markdown basics</li>
+</ol>
+<p>I have pieced this together using many other resources on the above which are mentioned throughout. Thank you to Mitch and Stéphane for their help with this tutorial and workshop!</p>
+<p>What you will need:</p>
+<ol type="1">
+<li>Installations - R, RStudio, Git</li>
+<li>A GitHub account (free) with your login and personal access token (PAT) details handy</li>
+</ol>
+</section>
+<section id="blogdown-basics" class="level2">
+<h2 class="anchored" data-anchor-id="blogdown-basics">blogdown basics</h2>
+<p><code>blogdown</code> is an R package that allows the creation of websites using R Markdown and Hugo, a static site generator. <code>blogdown</code> websites in R have been all the rage the last few years and you have probably seen many ‘Hugo-Academic theme’ personal websites - all built in R!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://bookdown.org/yihui/blogdown/images/logo.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">blogdown hex sticker Credit: Creating Website with R Markdown</figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li>There is a <a href="https://bookdown.org/yihui/blogdown/yihui-xie.html">short online book</a> on blogdown written by the developer, Yihui and others.</li>
+<li>A recent <a href="https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/">article by Allison Hill</a> on starting your own blogdown website from scratch.</li>
+<li>See <a href="../../post/creating-a-geospatial-blog-with-blogdown/">Mitch and Stéphane’s tutorial</a> for UQGSAC on creating a blogdown website.</li>
+</ul>
+<p><strong>This session focuses on how to go about <em>contributing</em> a post to an existing website.</strong></p>
+<p>The UQGSAC website is built using the anatole theme. There are many themes to choose from and if you know html/CSS you can even build your own theme.</p>
+<p>So, how do we go about contributing to a blogdown website?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://media.giphy.com/media/u2pmTWUi0MXjyrMaVj/giphy.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Programmer GIF Credit: Capgemini India on GIPHY</figcaption><p></p>
+</figure>
+</div>
+<p>A good place to start is making sure you have installed the <code>blogdown</code> package:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"blogdown"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><a href="https://bookdown.org/yihui/blogdown/global-options.html">Article</a> about setting global options in <code>blogdown</code> if you need to set the Hugo version in your <code>.Rprofile</code> (<code>blogdown::config_Rprofile()</code>).</p>
+<p>To allow multiple people to contribute to the same website, the website is hosted on <strong>GitHub</strong> and <strong>Netlify</strong>.</p>
+<p>As the website is already set-up, we will be dealing with Git + GitHub and R + RStudio + R Markdown.</p>
+</section>
+<section id="git---what-is-it" class="level2">
+<h2 class="anchored" data-anchor-id="git---what-is-it">Git - what is it?</h2>
+<p>A <strong>version control software</strong> (think track changes) useful for collaborating on and sharing code.</p>
+<p>Git is the <em>software itself</em> that records changes to a set of files locally. There are several hosting platforms that are like online repositories (think Dropbox, Google Drive, etc.) that work with Git: Bitbucket, GitLab, and GitHub to name a few.</p>
+<p>These platforms not only allow for version control but also to collaborate, organize, and back up projects.</p>
+<p>In this case, we will be using <strong>GitHub</strong> to access the website files, make some changes (i.e., add a post), and then incorporate those changes back to the website repository on GitHub which will automatically update the website itself. 🙌</p>
+<p>We will focus on contributing a post to an existing website repository on GitHub, but there are lots of fabulous and free resources online that go more into depth on Git:</p>
+<ul>
+<li>If you need to be convinced to use Git for version control see this <a href="https://peerj.com/preprints/3159v2/">article</a> and <a href="https://happygitwithr.com/index.html">Happy Git and GitHub for the useR</a> to git started both by Git/R guru Jenny Bryan.</li>
+<li>See Caitie Kuempel’s R Ladies Brisbane <a href="https://github.com/cdkuempel/getting_started_github">presentation</a> on getting started with GitHub in RStudio.</li>
+</ul>
+<section id="git-terminology" class="level3">
+<h3 class="anchored" data-anchor-id="git-terminology">Git Terminology</h3>
+<p><strong>Repository/repo</strong> - where a project is stored in GitHub. Think of it like a folder holding all the relevant documents that you can version control, view history, and add collaborators. The repository or repo holds all the relevant files for the website - most of which we will not touch.</p>
+<p><strong>Fork</strong> - A copy of another user’s repo on your account. This allows you to freely change a project without affecting the original upstream repo. You can keep your fork synced with changes in the original repo. - this is <em>fetching upstream</em>.</p>
+<p><strong>Clone</strong> - a copy of a repository that lives on your computer instead of a website server like GitHub. Is still connected to the remote repo online and you can push/pull edits.</p>
+<p><strong>Commit</strong> - is one or more changes to a file or set of files that you are asking GitHub to keep track of.</p>
+<p><strong>Push</strong> - sending your committed changes to a remote repository on GitHub. Local changes updated on the GitHub website where other people can access.</p>
+<p><strong>Pull</strong> - incorporating and merging changes. An edit on the remote repository on GitHub can be pulled to a local repository.</p>
+<p><strong>Diff</strong> - difference, or changes made that are visible as insertions/deletions for a commit.</p>
+<p><strong>Main/Master</strong> - the default branch you are on. Master has recently updated to main, but they are the same thing. You are more likely to come across master on older resources. <a href="https://happygitwithr.com/git-branches.html">Jenny Bryan</a> strongly urges you to create a new <strong>branch</strong> to work off of which requires using command line. For the purpose of contributing to a blogdown website, I will forgo covering this as it is unlikely more than one person will be contributing at the same time.</p>
+<p><strong>Origin</strong> - the remote repo online from which you have cloned your local copy from.</p>
+</section>
+</section>
+<section id="how-to-create-a-post-in-blogdown" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-create-a-post-in-blogdown">How to create a post in blogdown</h2>
+<p>Starting with Git and GitHub:</p>
+<section id="fork-the-repo" class="level3">
+<h3 class="anchored" data-anchor-id="fork-the-repo">1. Fork the repo</h3>
+<ul>
+<li>Sign in with your GitHub account</li>
+<li>Go to the <a href="https://github.com/geocommunity/website">geocommunity/website repo</a></li>
+<li>Press the <strong>‘Fork’</strong> button at the top right. <img src="images/Github-fork.png" class="img-fluid" alt="Screenshot of the ‘fork’ button on GitHub."></li>
+<li>A <em>forked</em> copy of the repo should now be visible in your GitHub account. <code>YOU/blog_website</code> is the <strong>origin</strong> for your local copy of the repo in RStudio and <code>geocommunity/blog_website</code> is the <strong>upstream</strong> repo.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Github-forkedrepo.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Screenshot of a forked repo on GitHub.</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="clone-the-repo-in-a-new-rstudio-project" class="level3">
+<h3 class="anchored" data-anchor-id="clone-the-repo-in-a-new-rstudio-project">2. Clone the repo in a new RStudio project</h3>
+<ul>
+<li>You will need your GitHub credentials handy.</li>
+<li>You can also set up RStudio so you do not need to input your GitHub credentials every time.</li>
+</ul>
+<p>From your forked repo, click on the green ‘Code’ button and copy the link in the pop-up window.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Github-clone.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Screenshot of finding the url to clone.</figcaption><p></p>
+</figure>
+</div>
+<p>Next, in RStudio, go to <code>File &gt; New Project</code>. In the pop-up window, click the last option ‘Version Control’ and then ‘Git’. In the following window, paste the url you copied from your forked GitHub repo in the first box which will automatically input the name of the project.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/R-newproj-git-clone-ALL.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Pop-up windows of cloning a GitHub repo in RStudio</figcaption><p></p>
+</figure>
+</div>
+<p>Conceptually, what we have done is:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/HGwR_fork-and-clone.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Conceptual diagram of forking and cloning in GitHub Credit: Happy Git for the useR</figcaption><p></p>
+</figure>
+</div>
+<p>Now that we have <em>cloned</em> the repository, let’s explore the file structure a little in the ‘Files’ tab in RStudio. It is NOT a very intuitively set-up even for intermediate users of R. For the purposes of creating a new post to add to the blog, we are mostly concerned with the <code>content/english/</code> directory that contains the <code>post/</code> sub-directory.</p>
+<p>The rest of the files are the ‘backend’ of the site using html, CSS, js, etc. to build the website. Have a look if you are curious but make changes at the risk of being ‘that person’ to break the site! But don’t worry, since we are using Git version control all changes are tracked and reversible.</p>
+<p>Now that we are somewhat familiar with the project structure, let’s create a new post.</p>
+</section>
+<section id="create-a-new-post" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-new-post">3. Create a new post</h3>
+<p>In our new RStudio project housing our <em>forked</em> and <em>cloned</em> GitHub repo of the website:</p>
+<p>Use <code>blogdown::new_post("New post name", ext = ".Rmd")</code> in the console to create a new post with a .Rmd extension. Alternatively, you can go to the <code>Addins</code> button under the menu and choose ‘New Post’ under the BLOGDOWN section and fill in the information in the pop-up window.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/R-newpost.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">A new blogdown post in RStudio.</figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li>This will create a new page/post bundle folder or sub-directory within <code>post/</code> with the date and the name given in <code>new_post()</code> function. e.g., <code>post/2021-11-18-New-post-name</code>.</li>
+<li>An index.Rmd file has been opened and only contains a YAML header (enclosed by <code>---</code>). More on that later. Do not change the name of the .Rmd file.</li>
+<li>Each post gets its own bundle which is where your static post-specific files like images or data (.csv files etc.) used in your post should go.</li>
+<li>Note that the “New post name” will not only be the incorporated into the sub-directory name, but also the url to the post. Read: choose wisely and concise &gt; long descriptive name.</li>
+<li>This “New post name” will automatically be filled as the ‘Title:’ in the .Rmd YAML heading. If you want a longer, descriptive title - change it in the YAML heading.</li>
+<li>It is recommend you use either <code>blogdown::new_post()</code> or the Addin to create a new post instead of manually creating a new file (File &gt; New File &gt; R Markdown script)</li>
+</ul>
+<p>Here, we will stick with the .Rmd extension, but know there are a few file types:</p>
+<p><strong>.md - markdown</strong>, cannot run code chunks<br>
+<strong>.Rmd - R markdown</strong> -&gt; rendered to .html using Pandoc<br>
+<strong>.Rmarkdown - also R markdown</strong> -&gt; compiled to .markdown documents</p>
+<p>If you want more of this detailed stuff see: <a href="https://bookdown.org/yihui/blogdown/output-format.html" class="uri">https://bookdown.org/yihui/blogdown/output-format.html</a>.</p>
+</section>
+<section id="commit-the-changes-i.e.-the-new-post" class="level3">
+<h3 class="anchored" data-anchor-id="commit-the-changes-i.e.-the-new-post">4. <strong>Commit</strong> the changes i.e., the new post</h3>
+<p>Let’s commit our new post. You can add something like a line of text, or not.</p>
+<ul>
+<li>If you cloned the repo properly there should be a <code>Git</code> tab in the upper right hand window in RStudio where the <code>Environment</code> is. In the Git repo, there should be some files listed (i.e., <code>post/2021-11-23-New-post-name</code>) with different colored boxed under the ‘Status’ column - hover with the cursor to see what they mean.</li>
+<li>Check the ‘Staged’ box for the files you want to include in this commit.</li>
+<li>Click the <code>Commit</code> button and a window will pop-up. In the bottom section, you will see the changes made to the file as additions (green) and deletions (red) - this is known as the <strong>diff</strong> in GitHub speak. For a new file, the whole thing will be green because it is all new.</li>
+<li>In the ‘Commit message’ box, add a concise but descriptive message of the changes like ‘Added a new post bundle.’ Once you are happy with everything (file staged, commit messages, etc.) click the ‘Commit’ button.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/R-firstcommit.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Screenshot of a forked repo on GitHub.</figcaption><p></p>
+</figure>
+</div>
+<p>Some stuff will happen and as long as you do not see any obvious errors then it has probably all gone well and you’ve made your first commit!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://i1.wp.com/justmaths.co.uk/wp-content/uploads/2016/10/celebration-gif.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Celebrate! Credit: http://www.reactiongifs.com/cheering-minions/</figcaption><p></p>
+</figure>
+</div>
+<p>Knowing when and how often to commit is a bit of an art that comes with experience. In general, you want to commit changes that are related to a single problem and a good commit message. There is also a <code>History</code> button on the top left corner that will list all the commits with messages you have made and you can view the diff by clicking on a commit. All commits have a unique code which you can use to return to a previous commit etc.</p>
+<p><strong>Important notes:</strong></p>
+<ul>
+<li>Once you have served the site (see Step 6) it will create additional files within your post bundle directory. Be sure to commit <strong>all files</strong> in the post bundle created when knitting (/index.html, /index_files, etc.) not just the <code>index.Rmd</code> file as they will be necessary to build the site from GitHub. - You can stage them all together as one commit.</li>
+<li>You will not be able to see diffs in the commit window until they have been <strong>saved</strong>.</li>
+</ul>
+<p>See more on committing and <a href="https://r-pkgs.org/git.html#commit-best-practices">best practices</a> from the R packages book.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://imgs.xkcd.com/comics/git_commit.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">How committing goes… Credit: xkcd comics</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="push-the-changes-to-github" class="level3">
+<h3 class="anchored" data-anchor-id="push-the-changes-to-github">5. <strong>Push</strong> the changes to GitHub</h3>
+<p>The changes and commits we have made are local, but we need to get them onto the GitHub repo and then the website. This is where we need to <strong>push</strong>.</p>
+<p>In the <code>Git</code> window, you will see a blue down arrow for <strong>pull</strong>ing and a green up arrow for <strong>push</strong>ing. You will also see a message along the lines of <code>Your branch is ahead of 'origin/main' by X commits</code> under those buttons.</p>
+<p>For the purposes of contributing a post to a blogdown website, we will not worry about pulls and <em>fetching upstream</em>. This basically means keeping your <code>origin/master</code> repo synced with the original upstream repo that you forked.</p>
+<p>If you stick to creating a new post bundle and <strong>only modifying files within the post bundles</strong> it should be okay without fetching upstream. BUT know that if you are using GitHub to work collaboratively, staying current with the original repo is important and in general it is a good practice to always <strong>pull before</strong> you <strong>push</strong>. Recommend <a href="https://happygitwithr.com/fork-and-clone.html">Happy Git and GitHub for the useR</a> as a trusty guide.</p>
+<p>If you want to try <strong>fetching upstream</strong> it is easiest to do via GitHub. Followed by a <strong>pull</strong> in RStudio.</p>
+<ul>
+<li>Log into your GitHub account online, and navigate to your <code>YOU/blog_website</code> repo.</li>
+<li>Under the green <code>Code</code> button, there should be a <code>Fetch upstream</code> button that will sync your forked repo with the original upstream repo.</li>
+<li>There is information about the status of your branch compared to the original upstream repo e.g., ‘up to date’ or ‘X commits ahead/behind’ to give you an idea if you need to fetch or not.</li>
+<li>Now in RStudio, you should be good to <strong>pull</strong>.</li>
+<li>Revisiting this diagram, the <em>fetch upstream</em> is updating your forked repo from the original yellow repo and then the pull is updating your local repo from your forked repo.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/HGwR_fetch-pull.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Diagram of fetching upstream and pulling Credit: modified from Happy Git for the useR</figcaption><p></p>
+</figure>
+</div>
+<p>Now we will <em>push</em> our commits from or local repo to our remote <code>origin/master</code> repo on GitHub.</p>
+<p>If this is your first time using Git with RStudio, you will have to set-up a <strong>personal access token</strong> or <strong>PAT</strong> in GitHub. For detailed directions, go to the <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">GitHub page</a>.</p>
+<ul>
+<li>Go to your GitHub account online and click on your profile photo in the upper-right and go to <code>Settings</code>.</li>
+<li>In the left sidebar, click on <code>Developer settings</code> then <code>Personal Access Tokens</code>.</li>
+<li>Click the <code>Generate a new token</code> button and give a descriptive name and expiration.</li>
+<li>Select scopes or privacy settings (defaults are generally fine) and the generate the token.</li>
+<li>Copy your PAT and put it in the <code>password</code> field for any pop-ups asking for your GitHub credentials when you <em>push</em>.</li>
+</ul>
+<p>If you see <code>HEAD -&gt; main</code> then all good.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/R-push.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Screenshot of push window in RStudio.</figcaption><p></p>
+</figure>
+</div>
+<p>Now if you go back to your GitHub account and forked repo online, you should see the changes you made locally are now in the remote online repo and your commit message.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/R-push-github.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Screenshot of pushed changes on forked GitHub repo.</figcaption><p></p>
+</figure>
+</div>
+<p>In general, you should <strong>commit</strong> often and then <strong>push</strong>.</p>
+</section>
+<section id="serve-the-site" class="level3">
+<h3 class="anchored" data-anchor-id="serve-the-site">6. Serve the site</h3>
+<p>In the console, run <code>blogdown::serve_site()</code>. Alternatively, can click on RStudio ‘Addins’ and select ‘Serve Site’. Be patient, but what happens?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/R-servesite.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Screenshot of served site in RStudio.</figcaption><p></p>
+</figure>
+</div>
+<p>Some important information on what is going on from <a href="https://bookdown.org/yihui/blogdown/a-quick-example.html#serve-site">blogdown: Creating Websites with R Markdown</a>:</p>
+<blockquote class="blockquote">
+<p>Serving the site did the following: 1. Started a local Hugo server to help you preview your website, and 2. Knitted a sample <code>.Rmd</code> post to an <code>.html</code> page. You can see this from the progress message that printed to your console: <code>Rendering content/english/post/2021-11-23-creating-a-post/index.Rmd... Done</code></p>
+</blockquote>
+<p>You can also view the locally served website in a browser by clicking on the “Show in new window” button at the top left of the RStudio Viewer pane to the right of the broom.</p>
+<p>Serving the site is using something called <strong>LiveReload</strong>:</p>
+<blockquote class="blockquote">
+<p>Let’s introduce an important and helpful technology that you just used: LiveReload. Serving your site uses LiveReload, which means your website will be automatically rebuilt and reloaded in your web browser when you modify any source file of your website and save it. Basically, once you launch the website in a web browser, you do not need to rebuild it explicitly anymore. All you need to do is edit the source files, such as R Markdown documents, and save them. There is no need to click any buttons or run any commands. LiveReload is implemented via blogdown::serve_site() and Hugo, and you will only need to use it once per work session.</p>
+</blockquote>
+<p>Remember, <em>every time</em> you <strong>save</strong> your .Rmd file will activate the <em>LiveReload</em>. To stop serving the site locally run <code>blogdown::stop_server()</code> in the console.</p>
+</section>
+<section id="create-your-content" class="level3">
+<h3 class="anchored" data-anchor-id="create-your-content">7. Create your content</h3>
+<p>Once the website is set-up, forked, and cloned… you can get on with creating a new post with minimal coding. The main thing you will need to use is:</p>
+<section id="r-markdown" class="level4">
+<h4 class="anchored" data-anchor-id="r-markdown">R Markdown</h4>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML documents that we can incorporate into the website. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. For a website post, knitting is not as important because we can serve our site locally which automatically knits anything new and view the changes as we just learned 👆.</p>
+<p>Now let’s add some information about R Markdown:</p>
+<section id="yaml-header" class="level5">
+<h5 class="anchored" data-anchor-id="yaml-header">YAML header</h5>
+<p>The YAML, or Yet Another Markdown Language, header at the top of the .Rmd is set between <code>---</code> tags. Here is where information like the Title, Date, Author of the document go and will appear in the post.</p>
+<p>Have a look at previous posts and add any relevant tags or categories as you like.</p>
+<p>The default .Rmd has some redundant settings (tags vs Tags) so if you use them stick with the lower case settings.</p>
+</section>
+<section id="formatting" class="level5">
+<h5 class="anchored" data-anchor-id="formatting">Formatting</h5>
+<p>Can <strong>bold</strong> and <em>italicize</em> text.</p>
+<p><strong>Headings:</strong></p>
+<p>Can specify headings using # marks. The number of has symbols corresponds to the level of the header (2 hashs = level 2 header)</p>
+<p>This will also create a structure outline of your document you can navigate either by using the ‘Formatting’ button at the bottom of the .Rmd or the right most button in the top right of the .Rmd.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/R-formatoutline.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Screenshot of buttons to view document outline</figcaption><p></p>
+</figure>
+</div>
+<p><strong>Make lists:</strong></p>
+<ul>
+<li>one</li>
+<li>two</li>
+<li>three
+<ul>
+<li>full indent for sub-bullet</li>
+</ul></li>
+</ul>
+<p><strong>Ordered lists:</strong></p>
+<ol type="1">
+<li>lists</li>
+<li>need spaces</li>
+<li>before and after</li>
+</ol>
+<p>For a return to start a new line, leave <strong>two spaces</strong> at the end of the line.<br>
+Like this.</p>
+</section>
+<section id="including-code" class="level5">
+<h5 class="anchored" data-anchor-id="including-code">Including code</h5>
+<p>You can embed an R code chunk like this:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     speed           dist       
+ Min.   : 4.0   Min.   :  2.00  
+ 1st Qu.:12.0   1st Qu.: 26.00  
+ Median :15.0   Median : 36.00  
+ Mean   :15.4   Mean   : 42.98  
+ 3rd Qu.:19.0   3rd Qu.: 56.00  
+ Max.   :25.0   Max.   :120.00  </code></pre>
+</div>
+</div>
+<p>There is also inline code: The mean of speed in the cars data set is 15.4.</p>
+</section>
+<section id="include-mathematical-notation" class="level5">
+<h5 class="anchored" data-anchor-id="include-mathematical-notation">Include mathematical notation</h5>
+<p>Mathematical notation can be enabled using third party JavaScript libraries like KaTeX. See resource of <a href="https://katex.org/docs/supported.html">supported TeX functions</a>. For these to render correctly you <strong>must add <code>math: true</code> to the YAML header at the top of the .Rmd</strong>.</p>
+<p>To enter equations like a code chunk or block math, use two <code>$</code> on separate lines surrounding your equations.</p>
+<p>Put two <code>\</code> after a line for a full return.</p>
+<p><span class="math display">\[
+y = mx + \beta\\
+E = mc^2
+\]</span></p>
+<p><span class="math display">\[ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } \]</span></p>
+<p>You can also use inline math notation by sandwiching it between <code>$</code> <strong>without spaces</strong>. Like so <span class="math inline">\(\mu = 0.2566\)</span>.</p>
+<p>Another inline way: (= = 1.6180339887…)</p>
+</section>
+<section id="including-plots" class="level5">
+<h5 class="anchored" data-anchor-id="including-plots">Including Plots</h5>
+<p>You can also embed plots, for example:</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/pressure-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="chunk-options" class="level5">
+<h5 class="anchored" data-anchor-id="chunk-options">Chunk options</h5>
+<p>Chunks are the gray areas in the .Rmd file where you can add code that will be run. These are defined by three back ticks (not a single quote, the key to the left of the 1). You can insert R code chunks but also in other languages! See the green ‘Insert’ code chunk button to see different options. An R code chunk will have the an <code>{r  }</code> after the opening back ticks.</p>
+<p>The keyboard short cut to add an R code chunk is <code>Ctrl</code> + <code>Alt</code> + <code>I</code></p>
+<p>You can also set options in the {} of a chunk like hide the code chunk (echo = FALSE), suppress warnings (warnings = FALSE), and cache the chunk (cache = TRUE) if you have something that takes a while to run.</p>
+<p>Let’s set <code>echo = FALSE</code> for our plot chunk above. We are only interested in seeing the plot, not the code that produces the plot.</p>
+<p>You can add a code chunk at the beginning of the .Rmd file and set global options that will apply to the whole document.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">echo =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>See more at:</p>
+<ul>
+<li>RStudio - https://rmarkdown.rstudio.com/lesson-3.html</li>
+<li>R Markdown Cookbook - https://bookdown.org/yihui/rmarkdown-cookbook/</li>
+</ul>
+<p>It is also a good idea to name your chunks as chunks are included in the document outline. Chunks <strong>cannot</strong> have the same name - you will get an error.</p>
+</section>
+<section id="insert-objects" class="level5">
+<h5 class="anchored" data-anchor-id="insert-objects">Insert objects</h5>
+<p>You can add pictures, weblinks, and GIFs in R Markdown. They all follow the similar hyperlink formats.</p>
+<p>For a hyperlink to a website you put the word you want to hyperlink in square brackets <code>[]</code> followed immediately (no spaces or characters) by round parentheses <code>()</code>. E.g. <code>[GitHub](www.github.com)</code></p>
+<p>To insert an image or gif from a website you add a <code>!</code> before the square brackets like so: <code>![description](https://media.giphy.com/media/sJWNLTclcvVmw/giphy.gif)</code>. The description in the <code>[]</code> will appear as a caption and the link must end in the appropriate file extension (.gif, .jpg, .png, etc) to work.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://media.giphy.com/media/sJWNLTclcvVmw/giphy.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Funny Yawn Credit: https://www.reddit.com/r/gifs/comments/54q75s/goodnight_tongue/</figcaption><p></p>
+</figure>
+</div>
+<p>You can also insert pictures using the RStudio ‘Addins’ &gt; ‘Insert Image’ and uploading an image saved on your computer with a few other options like alt text. This will result in the same hyperlink code as inserting an image, but with a <em>relative path</em> instead of the url.</p>
+<p><strong>Example use Addin to insert image</strong></p>
+<p>You can also save files (like images, html presentations) in your post bundle to link using <em>relative paths</em> on your own.</p>
+</section>
+</section>
+</section>
+<section id="pull-request" class="level3">
+<h3 class="anchored" data-anchor-id="pull-request">7. Pull Request</h3>
+<p>Okay, so as you were creating the content of your post you should have been <strong>committing</strong> regularly and then <strong>pushing</strong>, right?</p>
+<p>Let’s say we are finished with our beautiful post and read to incorporate it into the original upstream repo <code>geocommunity/blog_website</code> that we forked from. Remember, when we <strong>push</strong> we are pushing the commits we made locally on our computer to our <code>YOU/blog_website</code> repo that we <strong>forked</strong> from the original repo.</p>
+<p>Because we are not owner/developers of the upstream <code>geocommunity/blog_website</code> repo we need to submit a <strong>pull request</strong> to submit our new blog post for approval into the upstream repo.</p>
+<ul>
+<li>On your <code>YOU/blog_website</code> repo in your GitHub account, click on <code>Pull requests</code>.</li>
+<li>On the right of the screen, there should be a green <code>New pull request</code> button. This will take to you a ‘Comparing changes’ window outlining the files and changes you have made. This will alert you to any merge conflicts with the original upstream repo. Again, sticking to creating a new post bundle/content should avoid any merge conflicts.</li>
+<li>Click the green <code>Create pull request</code> button on the right. This will take you to a ‘Open a pull request’ window that will have your last commit and space to add a larger message with your pull request or <strong>PR</strong>.</li>
+<li>Once you are happy, click the green button at the end and wait for approval. You can have a bit of a conversation to hash out any issues as well over the approval process.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/GitHub-openPR.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Screenshot of GitHub open a pull request.</figcaption><p></p>
+</figure>
+</div>
+<p>Congratulations - now you have submitted your blog post to a blogdown site!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://media.giphy.com/media/8Iv5lqKwKsZ2g/giphy.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Cheers Credit: Sony</figcaption><p></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting…</h2>
+<p>Let’s face it, the likelihood of something going awry following this tutorial is not 0… Few things that might help along the way:</p>
+<ul>
+<li>Sometimes it is difficult to tell when the ‘LiveReload’ has finished or if you are used to saving regularly every few minutes that constant updating of ‘LiveReload’ can freeze RStudio.
+<ul>
+<li><strong>Solution</strong>: The good ’ole Restart R (Session &gt; Restart R) or close and re-open.</li>
+</ul></li>
+<li>Formatting wise, it’s a good idea to put full line returns before/after formatting bits like lists and inserting images. Something to check if your content is not formatting as you expect.</li>
+<li>OTHERS??</li>
+</ul>
+</section>
+<section id="resources-mentioned" class="level2">
+<h2 class="anchored" data-anchor-id="resources-mentioned">Resources mentioned:</h2>
+<ul>
+<li><a href="https://bookdown.org/yihui/blogdown/yihui-xie.html">Creating Websites with R Markdown</a> by Yihui Xi, Amber Thomas, and Alison Presmanes Hill.</li>
+<li><a href="https://www.apreshill.com/blog/2020-12-new-year-new-blogdown/">“Up &amp; running with blogdown in 2021”</a> Alison Hill.</li>
+<li><a href="https://geospatial-community.netlify.app/post/create-a-geospatial-blog/">“Creating a Geospatial Blog with blogdown” on the UQGSAC blog</a> by Mitch Rudge and Stéphane Guillou.</li>
+<li><a href="https://peerj.com/preprints/3159v2/">Excuse me, do you have a moment to talk about version control?</a> by Jenny Bryan</li>
+<li><a href="https://happygitwithr.com/index.html">Happy Git and GitHub for the useR</a> by Jenny Bryan.</li>
+<li><a href="https://github.com/cdkuempel/getting_started_github">Getting Started with GitHub</a> R Ladies Brisbane presentation by Caitie Kuemple.</li>
+<li><a href="https://github.com/geocommunity/website">geocommunity/website GitHub repo</a></li>
+<li><a href="https://r-pkgs.org/git.html#commit-best-practices">18.6 Commit best practices</a> from the R packages book by Hadley Wickham and Jenny Bryan.</li>
+<li><a href="http://rmarkdown.rstudio.com">R Markdown</a></li>
+<li><a href="https://katex.org/docs/supported.html">KaTeX - Supported Functions</a></li>
+<li><a href="https://rmarkdown.rstudio.com/lesson-3.html">Code Chuncks</a></li>
+<li><a href="https://bookdown.org/yihui/rmarkdown-cookbook/">R Markdown Cookbook</a> by Yihui Xie, Christophe Dervieux, Emily Riederer.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
