@@ -1,14 +1,12 @@
 ---
-title: "geocommunity_blog"
+title: "Brisbane Geospatial Community of Practice"
 listing:
   contents: posts
   sort: "date desc"
   type: default
   categories: true
-  sort-ui: false
-  filter-ui: false
+  sort-ui: true
+  filter-ui: true
 page-layout: full
 title-block-banner: true
 ---
-
-
