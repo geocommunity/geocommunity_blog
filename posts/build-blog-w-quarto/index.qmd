@@ -1,18 +1,18 @@
 ---
 title: Build a blog with git, R, and quarto
 author: 'Catherine Kim'
-date: '2021-11-23'
+date: '2022-11-03'
 slug: how-to-post
 categories: [website]
 tags: [r, rstudio, git, GitHub, quarto]
 ---
 
 
-We will be covering some basics of multiple programming skills (Git/GitHub, R, html, etc...) with the aim of empowering people to contribute to quarto websites such as this one - the **Brisbane Geospatial Community of Practice**. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.
+We will be covering some basics of multiple programming skills (Git/GitHub, R, Markdwon, etc...) with the aim of empowering people to contribute to quarto websites such as this one - the **Brisbane Geospatial Community of Practice**. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.
 
-Unveil the new **name** and **website**! Background of the Community of Practice with founder, Mitchel Rudge.
+Unveil the new **name** and **website**! Background of the Community of Practice with founder, Mitchel Rudge. See the [About](/about.qmd) page for more info. 
 
-See the [About](/about) page for more info.
+So the group has a website... why another blog? Reasons for moving it to quarto - bit more intituitve, etc.
 
 ## Research Bazaar Queensland 2022
 
@@ -20,7 +20,7 @@ This session was run as a workshop for ResBaz Queensland 2022. ResBaz is a globa
 
 What we will cover:
 
-1. quarto basics
+1. Quarto basics
 2. Git and GitHub basics
 3. How to create a post on a quarto website
 4. Markdown basics
@@ -29,41 +29,99 @@ I have pieced this together using many other resources on the above which are me
 
 What you will need:
 
-1. Installations - R, RStudio, Git
-2. A GitHub account (free) with your login and personal access token (PAT) details handy
+- Installations - R, RStudio, Git
+- GitHub account (free) with your login and personal access token (PAT) details handy
+- Netlify account (free)
 
 ## Creating a blog with quarto
 
-### Part 1: What is quarto?
+### What is quarto?
 
 Quarto is a "multi-language, next-generation version of R markdown from RStudio." It is designed to be programming language (compatible with R, python, Julia, and more...?) and tool agnostic (RStudio, VSCode, jyputer, Observable). In this tutorial, we are focusing on **R** and **RStudio**. 
 
-The basic model of Quarto publishing is taking a source document and rendering it to a variety of outputs like html, pdfs, and Word. The backend process is illustrated below. For those, interested in the details I would recommend the [Welcome to Quarto! 2 hr workshop](https://www.youtube.com/watch?v=yvi5uXQMvu4) on Youtube led by Tom Mock at RStudio.
+The basic model of Quarto publishing is taking a source document and rendering it to a variety of outputs like html, pdfs, and Word. The backend process is illustrated below. THe key difference from R Markdown is that it uses **pandoc**. For those, interested in the details I would recommend the [Welcome to Quarto! 2 hr workshop](https://www.youtube.com/watch?v=yvi5uXQMvu4) on Youtube led by Tom Mock at RStudio.
 
 ![](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png)
 
 ![](https://quarto.org/docs/get-started/hello/images/rstudio-source-visual.png)
 
-[FAQ](https://quarto.org/docs/faq/rmarkdown.html) for Rmarkdown users.
+[FAQ](https://quarto.org/docs/faq/rmarkdown.html) for R Markdown users.
 
 ### Make a quarto blog in RStudio
 
+RStudio has quarto built-in with recent versions after 2022.07. Go to `File > New Project` or the R in a blue cube under 'Edit' and you will see Quarto options right there! 
+
+![](images/quarto-new-qproj.png)
+
+Let's click on the 'Quarto Blog' option. In the next window, name you project (e.g., myblog), select where to save the project with the `Browse` button, and ensure 'Create a git repository' is checked. More on git later.
+
+![](images/quarto-new-git.png)
+
+The default project is populated with some example files and folders. The open `index.qmd` file is the 'home page' of the blog that will list all the posts. The `.qmd` is the file extension for a Quarto file just like `.Rmd` for R Markdown. Go ahead and change the first `title` field in the YAML. For instance, change 'my blog' to 'My Blog'.
+
+> YAML stands for 'Yet Another Markup Language' and is delineated by a trip dash (---) at the beginning and end of the YAML section. This is where you define settings for you quarto document/post. 
+
+Now, let's look at one of the template posts. In the `Files` pane click on posts > welcome > index.qmd. Here we can see a template for a 'Welcome' post. 
+
+A recent addition to RStudio is that you can view the 'Source' (top left pane) as either the **Source code** or **Visual editor**.These views can be swapped by toggling the buttons at the top right of the pane. The Source code (blue box below) displays all the source code for your quarto file such are your R code (in chunks - none in this example) and Markdown narrative text. 
+
+![](images/quarto-source-visual.png)
+
+The Visual editor displays a rendered version of your quarto file - more like what it will look like when the site is published. This is more similar to writing in a text editor like Word. You can also see there some extra formatting buttons in the Visual Editor like **bold**/*italics* and super/subscripts. The 'Table' function is also a welcome edition as formatting tables in Markdown is very finicky and tedious.
+
+Try inserting a table or super/subscript (Format > Text > Strikethrough/Superscript/Subscript/Smallcaps) in the Visual editor and then toggle to the Source code. Now you can see the associated Markdown code for whatever you just did! Super handy.
+
+Now, open the `_quarto.yml` file. Here we can see the project type (a website), some website formatting (the navigation bar), and some other customization fields. Update the `title` field to match the title we edited earlier. In my case, it was 'My Blog'. Feel free to edit other fields such as your GitHub, Twitter, LinkedIn profile links etc. You can also change the theme to one of many built-in [themes](https://quarto.org/docs/websites/website-blog.html#themes).
+
+![](images/quarto_quarto-yml.png)
+
+> Don't forget to save your files when you make changes. If the file name in the tab is red - that means you have unsaved changes.
+
+:::{.callout-note}
+Don't forget to save your files when you make changes. If the file name in the tab is red - that means you have unsaved changes.
+:::
+
+The Visual editor is pretty cool, but it's not exactly the same as previewing your website before publishing. Click on the `Render` button at the top and see what happens. 
+
+A preview of your blog should have popped-up in a web browser. You can navigate like you would a website to see all the features. Go to the about page - we can see it is the default page with the Quarto blog project. If you'd like, open the `about.qmd` page in the project directory and make a change. Add some text, delete a link (like LinkedIn) and then save your changes. 
 
 Congrats - you've made a blog! 
 
-But how do I share it with the world?? 
+In the top right view pane of RStudio, you can see `Render` and `Background Jobs` tabs. If you'd like to get an idea of what is happening in the background, check out these tabs. In the `Backgroun Jobs` tab, there is a red stop sign in the top right corner to stop previewing your site. 
+
+But how do I share it with the world?? First, we will need to version control our project with git and store it in a remote repository. 
+
+### Git
+
+17.3 Happy git with R - create and connect a github repo with usethis
+usethis::use_github()
+
+make a change, save, commit, push - check out change on remote
 
 ### Publishing
 
 There are several options for publishing your quarto blog outlined [here](https://quarto.org/docs/publishing/). Such as [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html) and Netlify.
 
-Quarto Pub is a free publishing service for quarto content. It requires having a login and an access token. This is a relatively straight forward way to get your blog online. There are some limitations to the size and everythin published on Quarto Pub is **publicly visible**. The link above outlines the steps to publish with Quart Pub.
+:::{.callout-note}
+Quarto Pub is a free publishing service for quarto content. It requires having a login and an access token. This is a relatively straight forward way to get your blog online. There are some limitations to the size and everything published on Quarto Pub is **publicly visible**. The link above outlines the steps to publish with Quart Pub.
+:::
 
-For this workshop, we will focus on Netlify and git + GitHub.
+For this workshop, we will focus on Netlify.
+
+In your Netlify account, click on the teal 'Add new site' button.
+
+Import an existing project from a GitHub repository. You will probably need to configure your Netlify on GitHub. Can either configure all repositories or pick a specific repository.
+
+![](images/pub-configure-netlify-github.png)
+
+
+In the Site settings in the 'Publish directory' section at the bottom put the `_site/` folder where your website is rendered.
+
+It will take a few mintues to deploy your website. Netlify automatically generates a random url like "lighthearted-travesseiro-492jfg3" which can be changed in the 'Domain settings'.
 
 Enter:
 
-## Part 2: Git - what is it?
+## Git - what is it?
 
 A **version control software** (think track changes) useful for collaborating on and sharing code.
 
@@ -102,6 +160,7 @@ First, we will contribute a post to an existing website repository on GitHub, bu
 
 
 
+## not sure if will include all of this content:
 ### How to create a post in an existing blog
 
 Starting with Git and GitHub:
