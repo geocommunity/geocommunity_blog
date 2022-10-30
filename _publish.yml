@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 13cbd2a4-abbf-4413-8560-3b3e1dbfd276
+      url: 'https://fancy-khapse-feb5de.netlify.app'
