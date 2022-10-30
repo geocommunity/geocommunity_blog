@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Catherine Kim">
-<meta name="dcterms.date" content="2021-11-23">
+<meta name="dcterms.date" content="2022-11-03">
 
 <title>Brisbane Geospatial Community of Practice - Build a blog with git, R, and quarto</title>
 <style>
@@ -181,7 +181,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 23, 2021</p>
+        <p class="date">November 3, 2022</p>
       </div>
     </div>
       
@@ -198,14 +198,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#research-bazaar-queensland-2022" id="toc-research-bazaar-queensland-2022" class="nav-link active" data-scroll-target="#research-bazaar-queensland-2022">Research Bazaar Queensland 2022</a></li>
   <li><a href="#creating-a-blog-with-quarto" id="toc-creating-a-blog-with-quarto" class="nav-link" data-scroll-target="#creating-a-blog-with-quarto">Creating a blog with quarto</a>
   <ul class="collapse">
-  <li><a href="#part-1-what-is-quarto" id="toc-part-1-what-is-quarto" class="nav-link" data-scroll-target="#part-1-what-is-quarto">Part 1: What is quarto?</a></li>
+  <li><a href="#what-is-quarto" id="toc-what-is-quarto" class="nav-link" data-scroll-target="#what-is-quarto">What is quarto?</a></li>
   <li><a href="#make-a-quarto-blog-in-rstudio" id="toc-make-a-quarto-blog-in-rstudio" class="nav-link" data-scroll-target="#make-a-quarto-blog-in-rstudio">Make a quarto blog in RStudio</a></li>
+  <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git">Git</a></li>
   <li><a href="#publishing" id="toc-publishing" class="nav-link" data-scroll-target="#publishing">Publishing</a></li>
   </ul></li>
-  <li><a href="#part-2-git---what-is-it" id="toc-part-2-git---what-is-it" class="nav-link" data-scroll-target="#part-2-git---what-is-it">Part 2: Git - what is it?</a>
+  <li><a href="#git---what-is-it" id="toc-git---what-is-it" class="nav-link" data-scroll-target="#git---what-is-it">Git - what is it?</a>
   <ul class="collapse">
   <li><a href="#git-terminology" id="toc-git-terminology" class="nav-link" data-scroll-target="#git-terminology">Git Terminology</a></li>
   <li><a href="#publishing-our-blog-on-netlify" id="toc-publishing-our-blog-on-netlify" class="nav-link" data-scroll-target="#publishing-our-blog-on-netlify">Publishing our blog on Netlify</a></li>
+  </ul></li>
+  <li><a href="#not-sure-if-will-include-all-of-this-content" id="toc-not-sure-if-will-include-all-of-this-content" class="nav-link" data-scroll-target="#not-sure-if-will-include-all-of-this-content">not sure if will include all of this content:</a>
+  <ul class="collapse">
   <li><a href="#how-to-create-a-post-in-an-existing-blog" id="toc-how-to-create-a-post-in-an-existing-blog" class="nav-link" data-scroll-target="#how-to-create-a-post-in-an-existing-blog">How to create a post in an existing blog</a></li>
   <li><a href="#fork-the-repo" id="toc-fork-the-repo" class="nav-link" data-scroll-target="#fork-the-repo">1. Fork the repo</a></li>
   <li><a href="#clone-the-repo-in-a-new-rstudio-project" id="toc-clone-the-repo-in-a-new-rstudio-project" class="nav-link" data-scroll-target="#clone-the-repo-in-a-new-rstudio-project">2. Clone the repo in a new RStudio project</a></li>
@@ -230,55 +234,108 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<p>We will be covering some basics of multiple programming skills (Git/GitHub, R, html, etc…) with the aim of empowering people to contribute to quarto websites such as this one - the <strong>Brisbane Geospatial Community of Practice</strong>. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.</p>
-<p>Unveil the new <strong>name</strong> and <strong>website</strong>! Background of the Community of Practice with founder, Mitchel Rudge.</p>
-<p>See the <a href="../../about">About</a> page for more info.</p>
+<p>We will be covering some basics of multiple programming skills (Git/GitHub, R, Markdwon, etc…) with the aim of empowering people to contribute to quarto websites such as this one - the <strong>Brisbane Geospatial Community of Practice</strong>. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.</p>
+<p>Unveil the new <strong>name</strong> and <strong>website</strong>! Background of the Community of Practice with founder, Mitchel Rudge. See the <a href="../../about.html">About</a> page for more info.</p>
+<p>So the group has a website… why another blog? Reasons for moving it to quarto - bit more intituitve, etc.</p>
 <section id="research-bazaar-queensland-2022" class="level2">
 <h2 class="anchored" data-anchor-id="research-bazaar-queensland-2022">Research Bazaar Queensland 2022</h2>
 <p>This session was run as a workshop for ResBaz Queensland 2022. ResBaz is a global festival promoting digital literacy at the centre of modern research.</p>
 <p>What we will cover:</p>
 <ol type="1">
-<li>quarto basics</li>
+<li>Quarto basics</li>
 <li>Git and GitHub basics</li>
 <li>How to create a post on a quarto website</li>
 <li>Markdown basics</li>
 </ol>
 <p>I have pieced this together using many other resources on the above which are mentioned throughout. Thank you to Mitch and Christina for their help with this tutorial and workshop!</p>
 <p>What you will need:</p>
-<ol type="1">
+<ul>
 <li>Installations - R, RStudio, Git</li>
-<li>A GitHub account (free) with your login and personal access token (PAT) details handy</li>
-</ol>
+<li>GitHub account (free) with your login and personal access token (PAT) details handy</li>
+<li>Netlify account (free)</li>
+</ul>
 </section>
 <section id="creating-a-blog-with-quarto" class="level2">
 <h2 class="anchored" data-anchor-id="creating-a-blog-with-quarto">Creating a blog with quarto</h2>
-<section id="part-1-what-is-quarto" class="level3">
-<h3 class="anchored" data-anchor-id="part-1-what-is-quarto">Part 1: What is quarto?</h3>
+<section id="what-is-quarto" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-quarto">What is quarto?</h3>
 <p>Quarto is a “multi-language, next-generation version of R markdown from RStudio.” It is designed to be programming language (compatible with R, python, Julia, and more…?) and tool agnostic (RStudio, VSCode, jyputer, Observable). In this tutorial, we are focusing on <strong>R</strong> and <strong>RStudio</strong>.</p>
-<p>The basic model of Quarto publishing is taking a source document and rendering it to a variety of outputs like html, pdfs, and Word. The backend process is illustrated below. For those, interested in the details I would recommend the <a href="https://www.youtube.com/watch?v=yvi5uXQMvu4">Welcome to Quarto! 2 hr workshop</a> on Youtube led by Tom Mock at RStudio.</p>
+<p>The basic model of Quarto publishing is taking a source document and rendering it to a variety of outputs like html, pdfs, and Word. The backend process is illustrated below. THe key difference from R Markdown is that it uses <strong>pandoc</strong>. For those, interested in the details I would recommend the <a href="https://www.youtube.com/watch?v=yvi5uXQMvu4">Welcome to Quarto! 2 hr workshop</a> on Youtube led by Tom Mock at RStudio.</p>
 <p><img src="https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png" class="img-fluid"></p>
 <p><img src="https://quarto.org/docs/get-started/hello/images/rstudio-source-visual.png" class="img-fluid"></p>
-<p><a href="https://quarto.org/docs/faq/rmarkdown.html">FAQ</a> for Rmarkdown users.</p>
+<p><a href="https://quarto.org/docs/faq/rmarkdown.html">FAQ</a> for R Markdown users.</p>
 </section>
 <section id="make-a-quarto-blog-in-rstudio" class="level3">
 <h3 class="anchored" data-anchor-id="make-a-quarto-blog-in-rstudio">Make a quarto blog in RStudio</h3>
+<p>RStudio has quarto built-in with recent versions after 2022.07. Go to <code>File &gt; New Project</code> or the R in a blue cube under ‘Edit’ and you will see Quarto options right there!</p>
+<p><img src="images/quarto-new-qproj.png" class="img-fluid"></p>
+<p>Let’s click on the ‘Quarto Blog’ option. In the next window, name you project (e.g., myblog), select where to save the project with the <code>Browse</code> button, and ensure ‘Create a git repository’ is checked. More on git later.</p>
+<p><img src="images/quarto-new-git.png" class="img-fluid"></p>
+<p>The default project is populated with some example files and folders. The open <code>index.qmd</code> file is the ‘home page’ of the blog that will list all the posts. The <code>.qmd</code> is the file extension for a Quarto file just like <code>.Rmd</code> for R Markdown. Go ahead and change the first <code>title</code> field in the YAML. For instance, change ‘my blog’ to ‘My Blog’.</p>
+<blockquote class="blockquote">
+<p>YAML stands for ‘Yet Another Markup Language’ and is delineated by a trip dash (—) at the beginning and end of the YAML section. This is where you define settings for you quarto document/post.</p>
+</blockquote>
+<p>Now, let’s look at one of the template posts. In the <code>Files</code> pane click on posts &gt; welcome &gt; index.qmd. Here we can see a template for a ‘Welcome’ post.</p>
+<p>A recent addition to RStudio is that you can view the ‘Source’ (top left pane) as either the <strong>Source code</strong> or <strong>Visual editor</strong>.These views can be swapped by toggling the buttons at the top right of the pane. The Source code (blue box below) displays all the source code for your quarto file such are your R code (in chunks - none in this example) and Markdown narrative text.</p>
+<p><img src="images/quarto-source-visual.png" class="img-fluid"></p>
+<p>The Visual editor displays a rendered version of your quarto file - more like what it will look like when the site is published. This is more similar to writing in a text editor like Word. You can also see there some extra formatting buttons in the Visual Editor like <strong>bold</strong>/<em>italics</em> and super/subscripts. The ‘Table’ function is also a welcome edition as formatting tables in Markdown is very finicky and tedious.</p>
+<p>Try inserting a table or super/subscript (Format &gt; Text &gt; Strikethrough/Superscript/Subscript/Smallcaps) in the Visual editor and then toggle to the Source code. Now you can see the associated Markdown code for whatever you just did! Super handy.</p>
+<p>Now, open the <code>_quarto.yml</code> file. Here we can see the project type (a website), some website formatting (the navigation bar), and some other customization fields. Update the <code>title</code> field to match the title we edited earlier. In my case, it was ‘My Blog’. Feel free to edit other fields such as your GitHub, Twitter, LinkedIn profile links etc. You can also change the theme to one of many built-in <a href="https://quarto.org/docs/websites/website-blog.html#themes">themes</a>.</p>
+<p><img src="images/quarto_quarto-yml.png" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p>Don’t forget to save your files when you make changes. If the file name in the tab is red - that means you have unsaved changes.</p>
+</blockquote>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Don’t forget to save your files when you make changes. If the file name in the tab is red - that means you have unsaved changes.</p>
+</div>
+</div>
+<p>The Visual editor is pretty cool, but it’s not exactly the same as previewing your website before publishing. Click on the <code>Render</code> button at the top and see what happens.</p>
+<p>A preview of your blog should have popped-up in a web browser. You can navigate like you would a website to see all the features. Go to the about page - we can see it is the default page with the Quarto blog project. If you’d like, open the <code>about.qmd</code> page in the project directory and make a change. Add some text, delete a link (like LinkedIn) and then save your changes.</p>
 <p>Congrats - you’ve made a blog!</p>
-<p>But how do I share it with the world??</p>
+<p>In the top right view pane of RStudio, you can see <code>Render</code> and <code>Background Jobs</code> tabs. If you’d like to get an idea of what is happening in the background, check out these tabs. In the <code>Backgroun Jobs</code> tab, there is a red stop sign in the top right corner to stop previewing your site.</p>
+<p>But how do I share it with the world?? First, we will need to version control our project with git and store it in a remote repository.</p>
+</section>
+<section id="git" class="level3">
+<h3 class="anchored" data-anchor-id="git">Git</h3>
+<p>17.3 Happy git with R - create and connect a github repo with usethis usethis::use_github()</p>
+<p>make a change, save, commit, push - check out change on remote</p>
 </section>
 <section id="publishing" class="level3">
 <h3 class="anchored" data-anchor-id="publishing">Publishing</h3>
 <p>There are several options for publishing your quarto blog outlined <a href="https://quarto.org/docs/publishing/">here</a>. Such as <a href="https://quarto.org/docs/publishing/quarto-pub.html">Quarto Pub</a> and Netlify.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Quarto Pub is a free publishing service for quarto content. It requires having a login and an access token. This is a relatively straight forward way to get your blog online. There are some limitations to the size and everything published on Quarto Pub is <strong>publicly visible</strong>. The link above outlines the steps to publish with Quart Pub.</p>
-<p>For this workshop, we will focus on Netlify and git + GitHub.</p>
+</div>
+</div>
+<p>For this workshop, we will focus on Netlify.</p>
 <p>In your Netlify account, click on the teal ‘Add new site’ button.</p>
 <p>Import an existing project from a GitHub repository. You will probably need to configure your Netlify on GitHub. Can either configure all repositories or pick a specific repository.</p>
+<p><img src="images/pub-configure-netlify-github.png" class="img-fluid"></p>
 <p>In the Site settings in the ‘Publish directory’ section at the bottom put the <code>_site/</code> folder where your website is rendered.</p>
 <p>It will take a few mintues to deploy your website. Netlify automatically generates a random url like “lighthearted-travesseiro-492jfg3” which can be changed in the ‘Domain settings’.</p>
 <p>Enter:</p>
 </section>
 </section>
-<section id="part-2-git---what-is-it" class="level2">
-<h2 class="anchored" data-anchor-id="part-2-git---what-is-it">Part 2: Git - what is it?</h2>
+<section id="git---what-is-it" class="level2">
+<h2 class="anchored" data-anchor-id="git---what-is-it">Git - what is it?</h2>
 <p>A <strong>version control software</strong> (think track changes) useful for collaborating on and sharing code.</p>
 <p>Git is the <em>software itself</em> that records changes to a set of files locally. There are several hosting platforms that are like online repositories (think Dropbox, Google Drive, etc.) that work with Git: Bitbucket, GitLab, and GitHub to name a few.</p>
 <p>These platforms not only allow for version control but also to collaborate, organize, and back up projects.</p>
@@ -303,6 +360,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="publishing-our-blog-on-netlify" class="level3">
 <h3 class="anchored" data-anchor-id="publishing-our-blog-on-netlify">Publishing our blog on Netlify</h3>
 </section>
+</section>
+<section id="not-sure-if-will-include-all-of-this-content" class="level2">
+<h2 class="anchored" data-anchor-id="not-sure-if-will-include-all-of-this-content">not sure if will include all of this content:</h2>
 <section id="how-to-create-a-post-in-an-existing-blog" class="level3">
 <h3 class="anchored" data-anchor-id="how-to-create-a-post-in-an-existing-blog">How to create a post in an existing blog</h3>
 <p>Starting with Git and GitHub:</p>
