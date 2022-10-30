@@ -1,7 +1,7 @@
 ---
 title: "About"
 image: turkeypin.svg
-image-height: "1"
+image-height: "50%"
 image-alt: The logo for the Brisbane geospatial community of practice. A red, google-esque location pin with an Australian brush turkey in the center.
 about:
   template: marquee
