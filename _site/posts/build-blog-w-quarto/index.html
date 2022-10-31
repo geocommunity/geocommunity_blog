@@ -9,7 +9,7 @@
 <meta name="author" content="Catherine Kim">
 <meta name="dcterms.date" content="2022-11-03">
 
-<title>Brisbane Geospatial Community of Practice - Build a blog with git, R, and quarto</title>
+<title>Brisbane Geospatial Community of Practice - Build a blog with Quarto, git, RStudio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -161,7 +161,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Build a blog with git, R, and quarto</h1>
+      <h1 class="title">Build a blog with Quarto, git, RStudio</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">website</div>
               </div>
@@ -200,14 +200,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <ul class="collapse">
   <li><a href="#what-is-quarto" id="toc-what-is-quarto" class="nav-link" data-scroll-target="#what-is-quarto">What is quarto?</a></li>
   <li><a href="#make-a-quarto-blog-in-rstudio" id="toc-make-a-quarto-blog-in-rstudio" class="nav-link" data-scroll-target="#make-a-quarto-blog-in-rstudio">Make a quarto blog in RStudio</a></li>
-  <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git">Git</a></li>
-  <li><a href="#publishing" id="toc-publishing" class="nav-link" data-scroll-target="#publishing">Publishing</a></li>
   </ul></li>
   <li><a href="#git---what-is-it" id="toc-git---what-is-it" class="nav-link" data-scroll-target="#git---what-is-it">Git - what is it?</a>
   <ul class="collapse">
   <li><a href="#git-terminology" id="toc-git-terminology" class="nav-link" data-scroll-target="#git-terminology">Git Terminology</a></li>
-  <li><a href="#publishing-our-blog-on-netlify" id="toc-publishing-our-blog-on-netlify" class="nav-link" data-scroll-target="#publishing-our-blog-on-netlify">Publishing our blog on Netlify</a></li>
+  <li><a href="#usethis-on-our-blog-project" id="toc-usethis-on-our-blog-project" class="nav-link" data-scroll-target="#usethis-on-our-blog-project">Usethis on our blog project</a></li>
   </ul></li>
+  <li><a href="#publishing" id="toc-publishing" class="nav-link" data-scroll-target="#publishing">Publishing</a></li>
+  <li><a href="#git---what-is-it-1" id="toc-git---what-is-it-1" class="nav-link" data-scroll-target="#git---what-is-it-1">Git - what is it?</a></li>
   <li><a href="#not-sure-if-will-include-all-of-this-content" id="toc-not-sure-if-will-include-all-of-this-content" class="nav-link" data-scroll-target="#not-sure-if-will-include-all-of-this-content">not sure if will include all of this content:</a>
   <ul class="collapse">
   <li><a href="#how-to-create-a-post-in-an-existing-blog" id="toc-how-to-create-a-post-in-an-existing-blog" class="nav-link" data-scroll-target="#how-to-create-a-post-in-an-existing-blog">How to create a post in an existing blog</a></li>
@@ -236,6 +236,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <p>We will be covering some basics of multiple programming skills (Git/GitHub, R, Markdwon, etc…) with the aim of empowering people to contribute to quarto websites such as this one - the <strong>Brisbane Geospatial Community of Practice</strong>. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.</p>
 <p>Unveil the new <strong>name</strong> and <strong>website</strong>! Background of the Community of Practice with founder, Mitchel Rudge. See the <a href="../../about.html">About</a> page for more info.</p>
+<p><strong>Screenshot of meeting?</strong></p>
 <p>So the group has a website… why another blog? Reasons for moving it to quarto - bit more intituitve, etc.</p>
 <section id="research-bazaar-queensland-2022" class="level2">
 <h2 class="anchored" data-anchor-id="research-bazaar-queensland-2022">Research Bazaar Queensland 2022</h2>
@@ -262,7 +263,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Quarto is a “multi-language, next-generation version of R markdown from RStudio.” It is designed to be programming language (compatible with R, python, Julia, and more…?) and tool agnostic (RStudio, VSCode, jyputer, Observable). In this tutorial, we are focusing on <strong>R</strong> and <strong>RStudio</strong>.</p>
 <p>The basic model of Quarto publishing is taking a source document and rendering it to a variety of outputs like html, pdfs, and Word. The backend process is illustrated below. THe key difference from R Markdown is that it uses <strong>pandoc</strong>. For those, interested in the details I would recommend the <a href="https://www.youtube.com/watch?v=yvi5uXQMvu4">Welcome to Quarto! 2 hr workshop</a> on Youtube led by Tom Mock at RStudio.</p>
 <p><img src="https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png" class="img-fluid"></p>
-<p><img src="https://quarto.org/docs/get-started/hello/images/rstudio-source-visual.png" class="img-fluid"></p>
 <p><a href="https://quarto.org/docs/faq/rmarkdown.html">FAQ</a> for R Markdown users.</p>
 </section>
 <section id="make-a-quarto-blog-in-rstudio" class="level3">
@@ -301,37 +301,14 @@ Note
 <p>The Visual editor is pretty cool, but it’s not exactly the same as previewing your website before publishing. Click on the <code>Render</code> button at the top and see what happens.</p>
 <p>A preview of your blog should have popped-up in a web browser. You can navigate like you would a website to see all the features. Go to the about page - we can see it is the default page with the Quarto blog project. If you’d like, open the <code>about.qmd</code> page in the project directory and make a change. Add some text, delete a link (like LinkedIn) and then save your changes.</p>
 <p>Congrats - you’ve made a blog!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://i1.wp.com/justmaths.co.uk/wp-content/uploads/2016/10/celebration-gif.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Celebrate! Credit: http://www.reactiongifs.com/cheering-minions/</figcaption><p></p>
+</figure>
+</div>
 <p>In the top right view pane of RStudio, you can see <code>Render</code> and <code>Background Jobs</code> tabs. If you’d like to get an idea of what is happening in the background, check out these tabs. In the <code>Backgroun Jobs</code> tab, there is a red stop sign in the top right corner to stop previewing your site.</p>
 <p>But how do I share it with the world?? First, we will need to version control our project with git and store it in a remote repository.</p>
-</section>
-<section id="git" class="level3">
-<h3 class="anchored" data-anchor-id="git">Git</h3>
-<p>17.3 Happy git with R - create and connect a github repo with usethis usethis::use_github()</p>
-<p>make a change, save, commit, push - check out change on remote</p>
-</section>
-<section id="publishing" class="level3">
-<h3 class="anchored" data-anchor-id="publishing">Publishing</h3>
-<p>There are several options for publishing your quarto blog outlined <a href="https://quarto.org/docs/publishing/">here</a>. Such as <a href="https://quarto.org/docs/publishing/quarto-pub.html">Quarto Pub</a> and Netlify.</p>
-<div class="callout-note callout callout-style-default callout-captioned">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-caption-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Quarto Pub is a free publishing service for quarto content. It requires having a login and an access token. This is a relatively straight forward way to get your blog online. There are some limitations to the size and everything published on Quarto Pub is <strong>publicly visible</strong>. The link above outlines the steps to publish with Quart Pub.</p>
-</div>
-</div>
-<p>For this workshop, we will focus on Netlify.</p>
-<p>In your Netlify account, click on the teal ‘Add new site’ button.</p>
-<p>Import an existing project from a GitHub repository. You will probably need to configure your Netlify on GitHub. Can either configure all repositories or pick a specific repository.</p>
-<p><img src="images/pub-configure-netlify-github.png" class="img-fluid"></p>
-<p>In the Site settings in the ‘Publish directory’ section at the bottom put the <code>_site/</code> folder where your website is rendered.</p>
-<p>It will take a few mintues to deploy your website. Netlify automatically generates a random url like “lighthearted-travesseiro-492jfg3” which can be changed in the ‘Domain settings’.</p>
-<p>Enter:</p>
 </section>
 </section>
 <section id="git---what-is-it" class="level2">
@@ -348,18 +325,91 @@ Note
 <section id="git-terminology" class="level3">
 <h3 class="anchored" data-anchor-id="git-terminology">Git Terminology</h3>
 <p><strong>Repository/repo</strong> - where a project is stored in GitHub. Think of it like a folder holding all the relevant documents that you can version control, view history, and add collaborators. The repository or repo holds all the relevant files for the website - most of which we will not touch.</p>
-<p><strong>Fork</strong> - A copy of another user’s repo on your account. This allows you to freely change a project without affecting the original upstream repo. You can keep your fork synced with changes in the original repo. - this is <em>fetching upstream</em>.</p>
-<p><strong>Clone</strong> - a copy of a repository that lives on your computer instead of a website server like GitHub. Is still connected to the remote repo online and you can push/pull edits.</p>
 <p><strong>Commit</strong> - is one or more changes to a file or set of files that you are asking GitHub to keep track of.</p>
 <p><strong>Push</strong> - sending your committed changes to a remote repository on GitHub. Local changes updated on the GitHub website where other people can access.</p>
 <p><strong>Pull</strong> - incorporating and merging changes. An edit on the remote repository on GitHub can be pulled to a local repository.</p>
 <p><strong>Diff</strong> - difference, or changes made that are visible as insertions/deletions for a commit.</p>
 <p><strong>Main</strong> - the default branch you are on. Master has recently updated to main, but they are the same thing. You are more likely to come across master on older resources. <a href="https://happygitwithr.com/git-branches.html">Jenny Bryan</a> strongly urges you to create a new <strong>branch</strong> to work off of which requires using command line. For the purpose of contributing to a quarto website, I will forgo covering this as it is unlikely more than one person will be contributing at the same time.</p>
 <p><strong>Origin</strong> - the remote repo online from which you have cloned your local copy from.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://imgs.xkcd.com/comics/git_commit.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">How committing goes… Credit: xkcd comics</figcaption><p></p>
+</figure>
+</div>
 </section>
-<section id="publishing-our-blog-on-netlify" class="level3">
-<h3 class="anchored" data-anchor-id="publishing-our-blog-on-netlify">Publishing our blog on Netlify</h3>
+<section id="usethis-on-our-blog-project" class="level3">
+<h3 class="anchored" data-anchor-id="usethis-on-our-blog-project">Usethis on our blog project</h3>
+<p>We are going to use the <code>[usethis](https://usethis.r-lib.org/)</code> package. <code>Usethis</code> is a workflow package designed to autmoate repetitive tasks for package development and project setup (what we’ll be doing here).</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You might need to install <code>usethis</code>:</p>
+<p><code>install.packages("usethis")</code> <code>library(usethis)</code></p>
+<p>Or you can install the development version: <code>install.packages("devtools")</code> if you don’t have devtools. devtools::install_github(“r-lib/usethis”)`</p>
+</div>
+</div>
+<p>First, we must configure a <strong>personal access token</strong> or <strong>PAT</strong> using <code>usethis</code>. Type <code>usethis::create_github_token()</code> in the console. You will either need to log into GitHub or confirm your password. <code>usethis</code> will automatically select some scopes - which ones are selected?</p>
+<p>Leave this page open or copy this and keep it a text file/password manager. We will use it again later. You can even use <code>gitcreds::gitcreds_set()</code> to store your PAT now.</p>
+<div class="callout callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<blockquote class="blockquote">
+<p>gitcreds::gitcreds_set()</p>
+</blockquote>
+<p>? Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -&gt; Adding new credentials… -&gt; Removing credentials from cache… -&gt; Done.</p>
+</div>
+</div>
+</div>
+<p>Now let’s setup a remote repo on GitHub using <code>usethis::use_github</code>. This section is straight out of <a href="https://happygitwithr.com/existing-github-last.html##create-and-connect-a-github-repo">17.3 Happy git with R - create and connect a github repo with usethis</a>.</p>
+<blockquote class="blockquote">
+<p>Happy Git and GitHub for the useR is the online bible of using git with R by legendary Jenny Bryan. This book covers all the basics in details and provides workflows and troubleshooting Jenny Bryan has a whole chapter on <a href="https://happygitwithr.com/https-pat.html">PATs</a> that I would highly encourage you to check out.</p>
+</blockquote>
+<p>make a change - edit the template welcome post in some way</p>
+<p>Save the edits. Now look at the Git pane - what’s there?</p>
+<p>Next we need to <strong>stage</strong> and <strong>commit</strong> our changes. This is a record that we can view and go back to if we ever need to.</p>
+<p>Finally, let’s <strong>push</strong> these edits to our remote repo that we - check out change on remote</p>
+<p>get a PAT</p>
 </section>
+</section>
+<section id="publishing" class="level2">
+<h2 class="anchored" data-anchor-id="publishing">Publishing</h2>
+<p>There are several options for publishing your quarto blog outlined <a href="https://quarto.org/docs/publishing/">here</a>. Such as <a href="https://quarto.org/docs/publishing/quarto-pub.html">Quarto Pub</a> and Netlify.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Quarto Pub is a free publishing service for quarto content. It requires having a login and an access token. This is a relatively straight forward way to get your blog online. There are some limitations to the size and everything published on Quarto Pub is <strong>publicly visible</strong>. The link above outlines the steps to publish with Quart Pub. This method does not involve using git.</p>
+</div>
+</div>
+<p>For this workshop, we will focus on Netlify.</p>
+<p>In your Netlify account, click on the teal <code>Add new site</code> button.</p>
+<p>Import an existing project from a GitHub repository. You will probably need to configure your Netlify on GitHub. Can either configure all repositories or pick a specific repository.</p>
+<p><img src="images/pub-configure-netlify-github.png" class="img-fluid"></p>
+<p>Authorize Quarto to access Netlify.</p>
+<p><img src="images/pub-netlify-authorize.png" class="img-fluid"></p>
+<p>Now that we’ve connected our GitHub to Netlify, go to the Site settings. At the bottom ‘Publish directory’ section put the <code>_site/</code> folder where your website is rendered.</p>
+<p><img src="images/pub-dir-netlify.png" class="img-fluid"></p>
+<p>It will take a few mintues to deploy your website. Netlify automatically generates a random url like “lighthearted-travesseiro-492jfg3” which can be changed in the ‘Domain settings’. Or course, you can also use a custom url to remove the ‘netlify.app’ at the end of the url.</p>
+</section>
+<section id="git---what-is-it-1" class="level2">
+<h2 class="anchored" data-anchor-id="git---what-is-it-1">Git - what is it?</h2>
 </section>
 <section id="not-sure-if-will-include-all-of-this-content" class="level2">
 <h2 class="anchored" data-anchor-id="not-sure-if-will-include-all-of-this-content">not sure if will include all of this content:</h2>
@@ -466,12 +516,6 @@ Note
 <li>You will not be able to see diffs in the commit window until they have been <strong>saved</strong>.</li>
 </ul>
 <p>See more on committing and <a href="https://r-pkgs.org/git.html#commit-best-practices">best practices</a> from the R packages book.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://imgs.xkcd.com/comics/git_commit.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">How committing goes… Credit: xkcd comics</figcaption><p></p>
-</figure>
-</div>
 </section>
 <section id="push-the-changes-to-github" class="level3">
 <h3 class="anchored" data-anchor-id="push-the-changes-to-github">5. <strong>Push</strong> the changes to GitHub</h3>
