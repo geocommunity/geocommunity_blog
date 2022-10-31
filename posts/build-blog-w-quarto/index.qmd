@@ -158,6 +158,10 @@ Now let's setup a remote repo on GitHub using `usethis::use_github`. This sectio
 
 > Happy Git and GitHub for the useR is the online bible of using git with R by legendary Jenny Bryan. This book covers all the basics in details and provides workflows and troubleshooting Jenny Bryan has a whole chapter on [PATs](https://happygitwithr.com/https-pat.html) that I would highly encourage you to check out.
 
+How did that go? Did you get an error? 
+
+Initial commit -stage all files and commit- and then try again.
+
 make a change - edit the template welcome post in some way
 
 Save the edits. Now look at the Git pane - what's there?
@@ -166,7 +170,6 @@ Next we need to **stage** and **commit** our changes. This is a record that we c
 
 Finally, let's **push** these edits to our remote repo that we  - check out change on remote
 
-get a PAT
 
 ## Publishing
 
@@ -193,10 +196,6 @@ Now that we've connected our GitHub to Netlify, go to the Site settings. At the 
 ![](images/pub-dir-netlify.png)
 
 It will take a few mintues to deploy your website. Netlify automatically generates a random url like "lighthearted-travesseiro-492jfg3" which can be changed in the 'Domain settings'. Or course, you can also use a custom url to remove the 'netlify.app' at the end of the url.
-
-## Git - what is it?
-
-
 
 
 ## not sure if will include all of this content:
