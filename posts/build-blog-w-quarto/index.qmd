@@ -127,7 +127,7 @@ First, we will contribute a post to an existing website repository on GitHub, bu
 
 ### Usethis on our blog project
 
-We are going to use the `[usethis](https://usethis.r-lib.org/)` package. `Usethis` is a workflow package designed to autmoate repetitive tasks for package development and project setup (what we'll be doing here).
+We are going to use the `[usethis](https://usethis.r-lib.org/)` package. `Usethis` is a workflow package designed to automate repetitive tasks for package development and project setup (what we'll be doing here).
 
 ::: callout-note
 You might need to install `usethis`:
