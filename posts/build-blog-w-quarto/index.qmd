@@ -93,15 +93,82 @@ In the top right view pane of RStudio, you can see `Render` and `Background Jobs
 
 But how do I share it with the world?? First, we will need to version control our project with git and store it in a remote repository. 
 
-### Git - what is it?
+## Git - what is it?
 
-https://happygitwithr.com/existing-github-last.html
-17.3 Happy git with R - create and connect a github repo with usethis
-usethis::use_github()
+A **version control software** (think track changes) useful for collaborating on and sharing code.
 
-make a change, save, commit, push - check out change on remote
+Git is the *software itself* that records changes to a set of files locally. There are several hosting platforms that are like online repositories (think Dropbox, Google Drive, etc.) that work with Git: Bitbucket, GitLab, and GitHub to name a few.
 
-### Publishing
+These platforms not only allow for version control but also to collaborate, organize, and back up projects. 
+
+In this case, we will be using **GitHub** to access the website files, make some changes (i.e., add a post), and then incorporate those changes back to the website repository on GitHub which will automatically update the website itself. `r emo::ji("raised_hands")`
+
+First, we will contribute a post to an existing website repository on GitHub, but there are lots of fabulous and free resources online that go more into depth on Git:
+
+- If you need to be convinced to use Git for version control see this [article](https://peerj.com/preprints/3159v2/) and [Happy Git and GitHub for the useR](https://happygitwithr.com/index.html) to git started both by Git/R guru Jenny Bryan.
+- See Caitie Kuempel's R Ladies Brisbane [presentation](https://github.com/cdkuempel/getting_started_github) on getting started with GitHub in RStudio.
+
+### Git Terminology
+
+**Repository/repo** - where a project is stored in GitHub. Think of it like a folder holding all the relevant documents that you can version control, view history, and add collaborators. The repository or repo holds all the relevant files for the website - most of which we will not touch.
+
+**Commit** - is one or more changes to a file or set of files that you are asking GitHub to keep track of.
+
+**Push** - sending your committed changes to a remote repository on GitHub. Local changes updated on the GitHub website where other people can access.
+
+**Pull** - incorporating and merging changes. An edit on the remote repository on GitHub can be pulled to a local repository.
+
+**Diff** - difference, or changes made that are visible as insertions/deletions for a commit.
+
+**Main** - the default branch you are on. Master has recently updated to main, but they are the same thing. You are more likely to come across master on older resources. [Jenny Bryan](https://happygitwithr.com/git-branches.html) strongly urges you to create a new **branch** to work off of which requires using command line. For the purpose of contributing to a quarto website, I will forgo covering this as it is unlikely more than one person will be contributing at the same time.
+
+**Origin** - the remote repo online from which you have cloned your local copy from.
+
+![How committing goes... Credit: xkcd comics](https://imgs.xkcd.com/comics/git_commit.png)
+
+### Usethis on our blog project
+
+We are going to use the `[usethis](https://usethis.r-lib.org/)` package. `Usethis` is a workflow package designed to autmoate repetitive tasks for package development and project setup (what we'll be doing here).
+
+:::{.callout-note}
+You might need to install `usethis`:
+
+`install.packages("usethis")`
+`library(usethis)`
+
+Or you can install the development version:
+`install.packages("devtools")` if you don't have devtools.
+devtools::install_github("r-lib/usethis")`
+:::
+
+First, we must configure a **personal access token** or **PAT** using `usethis`. Type `usethis::create_github_token()` in the console. You will either need to log into GitHub or confirm your password. `usethis` will automatically select some scopes - which ones are selected?
+
+Leave this page open or copy this and keep it a text file/password manager. We will use it again later. You can even use `gitcreds::gitcreds_set()` to store your PAT now.
+
+:::{.callout}
+> gitcreds::gitcreds_set()
+
+? Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+-> Adding new credentials...
+-> Removing credentials from cache...
+-> Done.
+:::
+
+Now let's setup a remote repo on GitHub using `usethis::use_github`. This section is straight out of [17.3 Happy git with R - create and connect a github repo with usethis](https://happygitwithr.com/existing-github-last.html##create-and-connect-a-github-repo). 
+
+> Happy Git and GitHub for the useR is the online bible of using git with R by legendary Jenny Bryan. This book covers all the basics in details and provides workflows and troubleshooting Jenny Bryan has a whole chapter on [PATs](https://happygitwithr.com/https-pat.html) that I would highly encourage you to check out.
+
+make a change - edit the template welcome post in some way
+
+Save the edits. Now look at the Git pane - what's there?
+
+Next we need to **stage** and **commit** our changes. This is a record that we can view and go back to if we ever need to.
+
+Finally, let's **push** these edits to our remote repo that we  - check out change on remote
+
+get a PAT
+
+## Publishing
 
 There are several options for publishing your quarto blog outlined [here](https://quarto.org/docs/publishing/). Such as [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html) and Netlify.
 
@@ -129,38 +196,6 @@ It will take a few mintues to deploy your website. Netlify automatically generat
 
 ## Git - what is it?
 
-A **version control software** (think track changes) useful for collaborating on and sharing code.
-
-Git is the *software itself* that records changes to a set of files locally. There are several hosting platforms that are like online repositories (think Dropbox, Google Drive, etc.) that work with Git: Bitbucket, GitLab, and GitHub to name a few.
-
-These platforms not only allow for version control but also to collaborate, organize, and back up projects. 
-
-In this case, we will be using **GitHub** to access the website files, make some changes (i.e., add a post), and then incorporate those changes back to the website repository on GitHub which will automatically update the website itself. `r emo::ji("raised_hands")`
-
-First, we will contribute a post to an existing website repository on GitHub, but there are lots of fabulous and free resources online that go more into depth on Git:
-
-- If you need to be convinced to use Git for version control see this [article](https://peerj.com/preprints/3159v2/) and [Happy Git and GitHub for the useR](https://happygitwithr.com/index.html) to git started both by Git/R guru Jenny Bryan.
-- See Caitie Kuempel's R Ladies Brisbane [presentation](https://github.com/cdkuempel/getting_started_github) on getting started with GitHub in RStudio.
-
-### Git Terminology
-
-**Repository/repo** - where a project is stored in GitHub. Think of it like a folder holding all the relevant documents that you can version control, view history, and add collaborators. The repository or repo holds all the relevant files for the website - most of which we will not touch.
-
-**Fork** - A copy of another user's repo on your account. This allows you to freely change a project without affecting the original upstream repo. You can keep your fork synced with changes in the original repo. - this is *fetching upstream*.
-
-**Clone** - a copy of a repository that lives on your computer instead of a website server like GitHub. Is still connected to the remote repo online and you can push/pull edits.
-
-**Commit** - is one or more changes to a file or set of files that you are asking GitHub to keep track of.
-
-**Push** - sending your committed changes to a remote repository on GitHub. Local changes updated on the GitHub website where other people can access.
-
-**Pull** - incorporating and merging changes. An edit on the remote repository on GitHub can be pulled to a local repository.
-
-**Diff** - difference, or changes made that are visible as insertions/deletions for a commit.
-
-**Main** - the default branch you are on. Master has recently updated to main, but they are the same thing. You are more likely to come across master on older resources. [Jenny Bryan](https://happygitwithr.com/git-branches.html) strongly urges you to create a new **branch** to work off of which requires using command line. For the purpose of contributing to a quarto website, I will forgo covering this as it is unlikely more than one person will be contributing at the same time.
-
-**Origin** - the remote repo online from which you have cloned your local copy from.
 
 
 
@@ -249,7 +284,7 @@ Knowing when and how often to commit is a bit of an art that comes with experien
 
 See more on committing and [best practices](https://r-pkgs.org/git.html#commit-best-practices) from the R packages book.
 
-![How committing goes... Credit: xkcd comics](https://imgs.xkcd.com/comics/git_commit.png)
+
 
 ### 5. **Push** the changes to GitHub
 
