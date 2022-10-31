@@ -375,7 +375,10 @@ Note
 <p>Happy Git and GitHub for the useR is the online bible of using git with R by legendary Jenny Bryan. This book covers all the basics in details and provides workflows and troubleshooting Jenny Bryan has a whole chapter on <a href="https://happygitwithr.com/https-pat.html">PATs</a> that I would highly encourage you to check out.</p>
 </blockquote>
 <p>How did that go? Did you get an error?</p>
-<p>Initial commit and then try again.</p>
+<p>Don’t worry. This is a common mistake to forget to do an initial commit. Click on the <code>Commit</code> button in the <code>Git</code> pane, select all (Ctrl/Cmd + A) and click <code>Stage</code>. Then, make a commit message in the top right of the window. Click <code>Commit</code>. Once that’s complete, let’s <code>usethis::use_github()</code> in the <code>Console</code> again. How did it go this time?</p>
+<p>Hopefully, you see something like this: <img src="images/git-initial-commit.png" class="img-fluid"></p>
+<p>Notice that part of what <code>use_github()</code> does is push the master or <strong>main</strong> branch to GitHub.</p>
+<p>Now go to the link there <code>use_github()</code> set the remote too. You will see everything that you’ve commited is now in the online, remote repo! Have a look around. You can navigate, add a READMIE.md file, and even edit files in GitHub.</p>
 <p>make a change - edit the template welcome post in some way</p>
 <p>Save the edits. Now look at the Git pane - what’s there?</p>
 <p>Next we need to <strong>stage</strong> and <strong>commit</strong> our changes. This is a record that we can view and go back to if we ever need to.</p>
