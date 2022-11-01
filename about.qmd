@@ -1,14 +1,13 @@
 ---
 title: "About"
 image: turkeypin.svg
-image-height: "50%"
-image-alt: The logo for the Brisbane geospatial community of practice. A red, google-esque location pin with an Australian brush turkey in the center.
 about:
   template: marquee
+  image-width: 15% #css width
   links:
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/seaCatKim/geocommunity_blog
 ---
 
 Whether its making a simple site map or running deep learning analyses on satellite data, students and researchers are often called upon to conduct geospatial analysis. `r emo::ji("world_map")`
