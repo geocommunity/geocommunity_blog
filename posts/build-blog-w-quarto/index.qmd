@@ -1,5 +1,5 @@
 ---
-title: Build a blog with Quarto, git, RStudio
+title: Build a blog with Quarto, git, and RStudio
 author: 'Catherine Kim'
 date: '2022-11-03'
 slug: how-to-post
@@ -7,13 +7,13 @@ categories: [website]
 tags: [r, rstudio, git, GitHub, quarto]
 ---
 
-We will be covering some basics of multiple programming skills (Git/GitHub, R, Markdwon, etc...) with the aim of empowering people to contribute to quarto websites such as this one - the **Brisbane Geospatial Community of Practice**. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.
+We will be covering some basics of multiple programming skills (Git/GitHub, R, Markdown, etc...) with the aim of empowering people to contribute to quarto websites such as this one - the **Brisbane Geospatial Community of Practice**. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.
 
-Unveil the new **name** and **website**! Background of the Community of Practice with founder, Mitchel Rudge. See the [About](/about.qmd) page for more info.
+Background of the Community of Practice with founder, Mitchel Rudge (https://twitter.com/MitchRudge). See the [About](/about.qmd) page for more info.
 
-**Screenshot of meeting?**
+**Photo of meeting ?**
 
-So the group has a website... why another blog? Reasons for moving it to quarto - bit more intituitve, etc.
+So the group has a website... why another blog? Reasons for moving it to quarto - bit more intuitive, etc.
 
 ## Research Bazaar Queensland 2022
 
@@ -38,9 +38,9 @@ What you will need:
 
 ### What is quarto?
 
-Quarto is a "multi-language, next-generation version of R markdown from RStudio." It is designed to be programming language (compatible with R, python, Julia, and more...?) and tool agnostic (RStudio, VSCode, jyputer, Observable). In this tutorial, we are focusing on **R** and **RStudio**.
+Quarto is a "multi-language, next-generation version of R markdown from RStudio." It is designed to be programming language (compatible with R, python, Julia, and more...?) and tool agnostic (RStudio, VSCode, jupyter, Observable). In this tutorial, we are focusing on **R** and **RStudio**.
 
-The basic model of Quarto publishing is taking a source document and rendering it to a variety of outputs like html, pdfs, and Word. The backend process is illustrated below. The key difference from R Markdown is that it uses **pandoc**. For those, interested in the details I would recommend the [Welcome to Quarto! 2 hr workshop](https://www.youtube.com/watch?v=yvi5uXQMvu4) on Youtube led by Tom Mock at RStudio.
+The basic model of Quarto publishing is taking a source document and rendering it to a variety of outputs like html, pdfs, and Word. The backend process is illustrated below. The key difference from R Markdown is that it uses **pandoc**. For those interested in the details, I would recommend the [Welcome to Quarto! 2 hr workshop](https://www.youtube.com/watch?v=yvi5uXQMvu4) on Youtube led by Tom Mock at RStudio.
 
 ![](https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png)
 
@@ -187,7 +187,7 @@ Now that we've connected our GitHub to Netlify, go to the Site settings. At the 
 
 ![](images/pub-dir-netlify.png)
 
-It will take a few mintues to deploy your website. Netlify automatically generates a random url like "lighthearted-travesseiro-492jfg3" which can be changed in the 'Domain settings'. Or course, you can also use a custom url to remove the 'netlify.app' at the end of the url.
+It will take a few minutes to deploy your website. Netlify automatically generates a random url like "lighthearted-travesseiro-492jfg3" which can be changed in the 'Domain settings'. Or course, you can also use a custom url to remove the 'netlify.app' at the end of the url.
 
 ## not sure if will include all of this content:
 
