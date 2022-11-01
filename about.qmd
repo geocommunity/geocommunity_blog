@@ -3,7 +3,7 @@ title: "About"
 image: turkeypin.svg
 about:
   template: marquee
-  image-width: 15% #css width
+  image-width: 10% #css width
   links:
     - icon: github
       text: Github
