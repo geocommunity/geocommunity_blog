@@ -153,8 +153,7 @@ How did that go? Did you get an error?
 
 Don't worry. This is a common mistake to forget to do an initial commit. Click on the `Commit` button in the `Git` pane, select all (Ctrl/Cmd + A) and click `Stage`. Then, make a commit message in the top right of the window. Click `Commit`. Once that's complete, let's `usethis::use_github()` in the `Console` again. How did it go this time?
 
-Hopefully, you see something like this:
-![](images/git-initial-commit.png)
+Hopefully, you see something like this: ![](images/git-initial-commit.png)
 
 Notice that part of what `use_github()` does is push the master or **main** branch to GitHub.
 
@@ -162,8 +161,7 @@ Now go to the link there `use_github()` set the remote too. You will see everyth
 
 Let's go ahead and do this. Go to the 'Welcome' post, click on the pencil to edit, and make a change. At the bottom you can add a commit message then commit your change.
 
-Cool, but how do we get these changes we made on our remote repo into our local repo on our computer?
-make a change - edit the template welcome post in some way
+Cool, but how do we get these changes we made on our remote repo into our local repo on our computer? make a change - edit the template welcome post in some way
 
 Save the edits. Now look at the Git pane - what's there?
 
@@ -195,7 +193,7 @@ Now that we've connected our GitHub to Netlify, go to the Site settings. At the 
 
 ![](images/pub-dir-netlify.png)
 
-It will take a few minutes to deploy your website. Netlify automatically generates a random url like "lighthearted-travesseiro-492jfg3" which can be changed in the 'Domain settings'. Or course, you can also use a custom url to remove the 'netlify.app' at the end of the url.
+It will take a few minutes to deploy your website. Netlify automatically generates a random url like "lighthearted-travesseiro-492jfg3" which can be changed in the 'Domain settings'. Of course, you can also use a custom url to remove the 'netlify.app' at the end of the url.
 
 Now, make a change in the welcome post, render the site, commit the changes, and push the changes in the `.qmd` file. Look at your GitHub remote repo to check that the changes are there. Now check your website - did it update as well?
 
@@ -205,7 +203,7 @@ As we defined above, unless you also commited the updated contents of the `_site
 
 ## Add a map
 
-This is a spatial community of practic - let's add a map of ResBazQld 2022 to a post using leaflet. 
+This is a spatial community of practice - let's add a map of ResBazQld 2022 to a post using leaflet.
 
 ```{r}
 # install.packages("leaflet")
@@ -217,12 +215,41 @@ leaflet() %>%
              popup = "Location of ResBazQld 2022")
 ```
 
+
+## Pushing a post to an existing blog
+
+Sometimes, you will want to push a blog post to an established blog. That is the case with the Brisbane Geospatial CoP, where we have new contributors every month. This process (using blogdown) is covered in more detail in the https://brisbane-geocommunity.netlify.app/posts/how-to-contribute-post/ post. 
+
+
+
+To add content to another blog, we want to:
+
+1.  Fork the repo onto our personal github account
+
+2.  Create a new project (R studio > file > new project > version control > paste in repo url, e.g. https://github.com/mitchrudge/geocommunity_blog). 
+Now all of the blogs content should be on your computer. 
+
+3.  In the files tab, click on posts, tick an existing post and click more > copy.
+
+Now you can create your blog post. 
+
+
+once you are happy with how it looks
+
+4.  Click on git > stage and commit > push to your repository
+
+5. Now log back into your github account and on your forked repository, click on "new pull request". Click the green button and wait for  approval. 
+
+
+
+
+
+
 ## Troubleshooting TBC
 
 ## Resources
+
 **Quarto**
 
-- Building a blog with quarto, [Youtube video](https://www.youtube.com/watch?v=CVcvXfRyfE0), [website](https://ivelasq.quarto.pub/building-a-blog-with-quarto/intro.html) - Isabella Valasquez, Rstudio
-- [Welcome to Quarto!](https://www.youtube.com/watch?v=yvi5uXQMvu4), Tom Mock, RStudio
-
-
+-   Building a blog with quarto, [Youtube video](https://www.youtube.com/watch?v=CVcvXfRyfE0), [website](https://ivelasq.quarto.pub/building-a-blog-with-quarto/intro.html) - Isabella Valasquez, Rstudio
+-   [Welcome to Quarto!](https://www.youtube.com/watch?v=yvi5uXQMvu4), Tom Mock, RStudio
