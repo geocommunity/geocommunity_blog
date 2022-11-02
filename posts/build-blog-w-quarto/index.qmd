@@ -9,9 +9,9 @@ tags: [r, rstudio, git, GitHub, quarto]
 
 We will be covering some basics of multiple programming skills (Git/GitHub, R, Markdown, etc...) with the aim of empowering people to contribute to quarto websites such as this one - the **Brisbane Geospatial Community of Practice**. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.
 
-Background of the Community of Practice with founder, Mitchel Rudge (https://twitter.com/MitchRudge). See the [About](/about.qmd) page for more info.
+Background of the Community of Practice with founder, [Mitchel Rudge](https://twitter.com/MitchRudge). See the [About](/about.qmd) page for more info.
 
-So the group has a [website](https://geospatial-community.netlify.app/)... why another blog?
+So the group already has a [website](https://geospatial-community.netlify.app/)... why another blog?
 
 ## Research Bazaar Queensland 2022
 
