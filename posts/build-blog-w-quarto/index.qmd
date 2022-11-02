@@ -28,7 +28,7 @@ I have pieced this together using many other resources on the above which are me
 
 What you will need:
 
--   Installations - R, RStudio, Git
+-   Installations - R, RStudio (Quarto should be installed included - otherwise [download](https://quarto.org/docs/get-started/), Git
 -   GitHub account (free) with your login and personal access token (PAT) details handy
 -   Netlify account (free)
 
@@ -36,7 +36,7 @@ What you will need:
 
 ### What is quarto?
 
-Quarto is a "multi-language, next-generation version of R markdown from RStudio." It is designed to be programming language (compatible with R, python, Julia, and more...?) and tool agnostic (RStudio, VSCode, jupyter, Observable). In this tutorial, we are focusing on **R** and **RStudio**.
+Quarto is a "multi-language, next-generation version of R markdown from RStudio." It is designed to be programming language (compatible with R, python, Julia, and more...?) and tool agnostic (RStudio, VSCode, jupyter, Observable). In this tutorial, we are focusing on **Quarto** and **RStudio**.
 
 The basic model of Quarto publishing is taking a source document and rendering it to a variety of outputs like html, pdfs, and Word. The backend process is illustrated below. The key difference from R Markdown is that it uses **pandoc**. For those interested in the details, I would recommend the [Welcome to Quarto! 2 hr workshop](https://www.youtube.com/watch?v=yvi5uXQMvu4) on Youtube led by Tom Mock at RStudio.
 
@@ -50,17 +50,21 @@ RStudio has quarto built-in with recent versions after 2022.07. Go to `File > Ne
 
 ![](images/quarto-new-qproj.png)
 
-Let's click on the 'Quarto Blog' option. In the next window, name you project (e.g., myblog), select where to save the project with the `Browse` button, and ensure 'Create a git repository' is checked. More on git later.
+Let's click on the `Quarto Blog` option. In the next window, name you project (e.g., myblog), select where to save the project with the `Browse` button, and ensure 'Create a git repository' is checked. More on git later.
 
 ![](images/quarto-new-git.png)
 
 The default project is populated with some example files and folders. The open `index.qmd` file is the 'home page' of the blog that will list all the posts. The `.qmd` is the file extension for a Quarto file just like `.Rmd` for R Markdown. Go ahead and change the first `title` field in the YAML. For instance, change 'my blog' to 'My Blog'.
 
-> YAML stands for 'Yet Another Markup Language' and is delineated by a trip dash (---) at the beginning and end of the YAML section. This is where you define settings for you quarto document/post.
+> YAML stands for 'Yet Another Markup Language' and is delineated by a triple dash (---) at the beginning and end of the YAML section. This is where you define settings for you quarto document/post.
 
-Now, let's look at one of the template posts. In the `Files` pane click on posts \> welcome \> index.qmd. Here we can see a template for a 'Welcome' post.
+Now, let's look at one of the template posts. In the `Files` pane click on `posts > welcome > index.qmd`. Here we can see a template for a 'Welcome' post.
 
-A recent addition to RStudio is that you can view the 'Source' (top left pane) as either the **Source code** or **Visual editor**.These views can be swapped by toggling the buttons at the top right of the pane. The Source code (blue box below) displays all the source code for your quarto file such are your R code (in chunks - none in this example) and Markdown narrative text.
+A recent addition to RStudio is that you can view the 'Source' (top left pane) as either the **Source code** or **Visual editor**. These views can be swapped by toggling the buttons at the top right of the pane. The Source code (blue box below) displays all the source code for your quarto file such are your R code (in chunks - none in this example) and Markdown narrative text.
+
+:::{.callout-note}
+> A code chunck is delineated by three backticks (`) and {} with the language for the code chunk (R, python etc.). Click the green `C+` button to the left of run to add a new R chunck. Or keyboard shortcut `Ctrl/Cmd + Alt + I`.
+:::
 
 ![](images/quarto-source-visual.png)
 

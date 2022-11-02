@@ -231,8 +231,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <p>We will be covering some basics of multiple programming skills (Git/GitHub, R, Markdown, etc…) with the aim of empowering people to contribute to quarto websites such as this one - the <strong>Brisbane Geospatial Community of Practice</strong>. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.</p>
-<p>Background of the Community of Practice with founder, Mitchel Rudge (https://twitter.com/MitchRudge). See the <a href="../../about.html">About</a> page for more info.</p>
-<p>So the group has a <a href="https://geospatial-community.netlify.app/">website</a>… why another blog?</p>
+<p>Background of the Community of Practice with founder, <a href="https://twitter.com/MitchRudge">Mitchel Rudge</a>. See the <a href="../../about.html">About</a> page for more info.</p>
+<p>So the group already has a <a href="https://geospatial-community.netlify.app/">website</a>… why another blog?</p>
 <section id="research-bazaar-queensland-2022" class="level2">
 <h2 class="anchored" data-anchor-id="research-bazaar-queensland-2022">Research Bazaar Queensland 2022</h2>
 <p>This session was run as a workshop for ResBaz Queensland 2022. ResBaz is a global festival promoting digital literacy at the centre of modern research.</p>
@@ -246,7 +246,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>I have pieced this together using many other resources on the above which are mentioned throughout. Thank you to Mitch and Christina for their help with this tutorial and workshop!</p>
 <p>What you will need:</p>
 <ul>
-<li>Installations - R, RStudio, Git</li>
+<li>Installations - R, RStudio (Quarto should be installed included - otherwise <a href="https://quarto.org/docs/get-started/">download</a>, Git</li>
 <li>GitHub account (free) with your login and personal access token (PAT) details handy</li>
 <li>Netlify account (free)</li>
 </ul>
@@ -255,7 +255,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2 class="anchored" data-anchor-id="creating-a-blog-with-quarto">Creating a blog with quarto</h2>
 <section id="what-is-quarto" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-quarto">What is quarto?</h3>
-<p>Quarto is a “multi-language, next-generation version of R markdown from RStudio.” It is designed to be programming language (compatible with R, python, Julia, and more…?) and tool agnostic (RStudio, VSCode, jupyter, Observable). In this tutorial, we are focusing on <strong>R</strong> and <strong>RStudio</strong>.</p>
+<p>Quarto is a “multi-language, next-generation version of R markdown from RStudio.” It is designed to be programming language (compatible with R, python, Julia, and more…?) and tool agnostic (RStudio, VSCode, jupyter, Observable). In this tutorial, we are focusing on <strong>Quarto</strong> and <strong>RStudio</strong>.</p>
 <p>The basic model of Quarto publishing is taking a source document and rendering it to a variety of outputs like html, pdfs, and Word. The backend process is illustrated below. The key difference from R Markdown is that it uses <strong>pandoc</strong>. For those interested in the details, I would recommend the <a href="https://www.youtube.com/watch?v=yvi5uXQMvu4">Welcome to Quarto! 2 hr workshop</a> on Youtube led by Tom Mock at RStudio.</p>
 <p><img src="https://quarto.org/docs/get-started/hello/images/rstudio-qmd-how-it-works.png" class="img-fluid"></p>
 <p><a href="https://quarto.org/docs/faq/rmarkdown.html">FAQ</a> for R Markdown users.</p>
@@ -264,14 +264,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3 class="anchored" data-anchor-id="make-a-quarto-blog-in-rstudio">Make a quarto blog in RStudio</h3>
 <p>RStudio has quarto built-in with recent versions after 2022.07. Go to <code>File &gt; New Project</code> or the R in a blue cube under ‘Edit’ and you will see Quarto options right there!</p>
 <p><img src="images/quarto-new-qproj.png" class="img-fluid"></p>
-<p>Let’s click on the ‘Quarto Blog’ option. In the next window, name you project (e.g., myblog), select where to save the project with the <code>Browse</code> button, and ensure ‘Create a git repository’ is checked. More on git later.</p>
+<p>Let’s click on the <code>Quarto Blog</code> option. In the next window, name you project (e.g., myblog), select where to save the project with the <code>Browse</code> button, and ensure ‘Create a git repository’ is checked. More on git later.</p>
 <p><img src="images/quarto-new-git.png" class="img-fluid"></p>
 <p>The default project is populated with some example files and folders. The open <code>index.qmd</code> file is the ‘home page’ of the blog that will list all the posts. The <code>.qmd</code> is the file extension for a Quarto file just like <code>.Rmd</code> for R Markdown. Go ahead and change the first <code>title</code> field in the YAML. For instance, change ‘my blog’ to ‘My Blog’.</p>
 <blockquote class="blockquote">
-<p>YAML stands for ‘Yet Another Markup Language’ and is delineated by a trip dash (—) at the beginning and end of the YAML section. This is where you define settings for you quarto document/post.</p>
+<p>YAML stands for ‘Yet Another Markup Language’ and is delineated by a triple dash (—) at the beginning and end of the YAML section. This is where you define settings for you quarto document/post.</p>
 </blockquote>
-<p>Now, let’s look at one of the template posts. In the <code>Files</code> pane click on posts &gt; welcome &gt; index.qmd. Here we can see a template for a ‘Welcome’ post.</p>
-<p>A recent addition to RStudio is that you can view the ‘Source’ (top left pane) as either the <strong>Source code</strong> or <strong>Visual editor</strong>.These views can be swapped by toggling the buttons at the top right of the pane. The Source code (blue box below) displays all the source code for your quarto file such are your R code (in chunks - none in this example) and Markdown narrative text.</p>
+<p>Now, let’s look at one of the template posts. In the <code>Files</code> pane click on <code>posts &gt; welcome &gt; index.qmd</code>. Here we can see a template for a ‘Welcome’ post.</p>
+<p>A recent addition to RStudio is that you can view the ‘Source’ (top left pane) as either the <strong>Source code</strong> or <strong>Visual editor</strong>. These views can be swapped by toggling the buttons at the top right of the pane. The Source code (blue box below) displays all the source code for your quarto file such are your R code (in chunks - none in this example) and Markdown narrative text.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<blockquote class="blockquote">
+<p>A code chunck is delineated by three backticks (<code>) and {} with the language for the code chunk (R, python etc.). Click the green</code>C+<code>button to the left of run to add a new R chunck. Or keyboard shortcut</code>Ctrl/Cmd + Alt + I`.</p>
+</blockquote>
+</div>
+</div>
 <p><img src="images/quarto-source-visual.png" class="img-fluid"></p>
 <p>The Visual editor displays a rendered version of your quarto file - more like what it will look like when the site is published. This is more similar to writing in a text editor like Word. You can also see there some extra formatting buttons in the Visual Editor like <strong>bold</strong>/<em>italics</em> and super/subscripts. The ‘Table’ function is also a welcome edition as formatting tables in Markdown is very finicky and tedious.</p>
 <p>Try inserting a table or super/subscript (Format &gt; Text &gt; Strikethrough/Superscript/Subscript/Smallcaps) in the Visual editor and then toggle to the Source code. Now you can see the associated Markdown code for whatever you just did! Super handy.</p>
@@ -418,7 +433,7 @@ Note
 </section>
 <section id="add-a-map" class="level2">
 <h2 class="anchored" data-anchor-id="add-a-map">Add a map</h2>
-<p>This is a spatial community of practic - let’s add a map of ResBazQld 2022 to a post using leaflet.</p>
+<p>This is a spatial community of practic - let’s add a map of ResBazQld 2022 to a post using <a href="https://www.earthdatascience.org/courses/earth-analytics/get-data-using-apis/leaflet-r/">leaflet</a>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("leaflet")</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
@@ -428,8 +443,8 @@ Note
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lat =</span> <span class="sc">-</span><span class="fl">27.552</span>, <span class="at">lng =</span> <span class="fl">153.0535</span>,</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>             <span class="at">popup =</span> <span class="st">"Location of ResBazQld 2022"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="htmlwidget-0e420df78133be14db2c" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-0e420df78133be14db2c">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[-27.552,153.0535,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Location of ResBazQld 2022",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-27.552,-27.552],"lng":[153.0535,153.0535]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-848fa0f3f0108478213f" style="width:100%;height:464px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-848fa0f3f0108478213f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[-27.552,153.0535,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Location of ResBazQld 2022",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-27.552,-27.552],"lng":[153.0535,153.0535]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
