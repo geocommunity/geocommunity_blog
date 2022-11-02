@@ -205,7 +205,7 @@ As we defined above, unless you also commited the updated contents of the `_site
 
 ## Add a map
 
-This is a spatial community of practic - let's add a map of ResBazQld 2022 to a post using leaflet. 
+This is a spatial community of practic - let's add a map of ResBazQld 2022 to a post using [leaflet](https://www.earthdatascience.org/courses/earth-analytics/get-data-using-apis/leaflet-r/). 
 
 ```{r}
 # install.packages("leaflet")
