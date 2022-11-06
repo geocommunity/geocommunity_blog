@@ -9,7 +9,7 @@
 <meta name="author" content="Catherine Kim">
 <meta name="dcterms.date" content="2022-11-03">
 
-<title>Brisbane Geospatial Community of Practice - Build a blog with Quarto, git, and RStudio</title>
+<title>Brisbane Geospatial Community of Practice - Build a blog with Quarto, Git, and RStudio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -169,7 +169,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Build a blog with Quarto, git, and RStudio</h1>
+      <h1 class="title">Build a blog with Quarto, Git, and RStudio</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">website</div>
               </div>
@@ -230,25 +230,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<p>We will be covering some basics of multiple programming skills (Git/GitHub, R, Markdown, etc…) with the aim of empowering people to contribute to quarto websites such as this one - the <strong>Brisbane Geospatial Community of Practice</strong>. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.</p>
+<p>We will be covering some basics of multiple programming skills (Git/GitHub, R, Markdown, etc…) with the aim of empowering people to contribute to quarto websites such as this one - the <strong>Brisbane Spatial Share Community of Practice</strong>. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.</p>
 <p>Background of the Community of Practice with founder, <a href="https://twitter.com/MitchRudge">Mitchel Rudge</a>. See the <a href="../../about.html">About</a> page for more info.</p>
-<p>So the group already has a <a href="https://geospatial-community.netlify.app/">website</a>… why another blog?</p>
+<p>So the group already has a <a href="https://geospatial-community.netlify.app/">website</a>… why another blog? Essentially, we found <code>blogdown</code> to be buggier than we wanted. Also, the folder structure was not very intutitive and are unique to each <code>hugo</code> theme. Finally, for the needs of our <strong>Spatial Share</strong> group the multi-lingual aspects of quarto were an important draw.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/quarto.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">The quarto hex sticker. A blue hexagon with the quarto logo and quarto written in white, lower-case letters. Credit: RStudio</figcaption><p></p>
+</figure>
+</div>
 <section id="research-bazaar-queensland-2022" class="level2">
 <h2 class="anchored" data-anchor-id="research-bazaar-queensland-2022">Research Bazaar Queensland 2022</h2>
-<p>This session was run as a workshop for ResBaz Queensland 2022. ResBaz is a global festival promoting digital literacy at the centre of modern research.</p>
+<p>This session was run as a workshop for <a href="https://resbaz.github.io/resbaz2022qld/">ResBaz Queensland 2022</a>. ResBaz is a global festival promoting digital literacy at the centre of modern research.</p>
 <p>What we will cover:</p>
 <ol type="1">
 <li>Quarto basics</li>
 <li>Git and GitHub basics</li>
-<li>How to create a post on a quarto website</li>
-<li>Markdown basics</li>
+<li>How to create/edit a post on a quarto website</li>
 </ol>
-<p>I have pieced this together using many other resources on the above which are mentioned throughout. Thank you to Mitch and Christina for their help with this tutorial and workshop!</p>
+<p>I have pieced this together using many other resources on the above which are mentioned throughout. This is also coming from a learning-as-we-go approach and by no means expert opinion. Thank you to Mitch and Christina for their help with this tutorial and workshop!</p>
 <p>What you will need:</p>
 <ul>
-<li>Installations - R, RStudio (Quarto should be installed included - otherwise <a href="https://quarto.org/docs/get-started/">download</a>, Git</li>
-<li>GitHub account (free) with your login and personal access token (PAT) details handy</li>
-<li>Netlify account (free)</li>
+<li>Installations - <a href="https://git-scm.com/downloads">Git</a>, R <a href="https://cran.r-project.org/bin/windows/base/">Windows</a> <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjLh9_yp5n7AhX27zgGHVQ9BSgQFnoECBoQAQ&amp;url=https%3A%2F%2Fcran.r-project.org%2Fbin%2Fmacosx%2F&amp;usg=AOvVaw3WMiY1ueFQVBx_EVXIaVqG">mac</a>, <a href="https://posit.co/download/rstudio-desktop/">RStudio</a> (Quarto should be installed included with recent &gt;2022.07 versions of RSTudio - otherwise <a href="https://quarto.org/docs/get-started/">download Quarto</a> separately)</li>
+<li><a href="https://www.github.com">GitHub</a> account (free) with your login and personal access token (PAT) details handy</li>
+<li><a href="https://www.netlify.com/">Netlify</a> account (free)</li>
 </ul>
 </section>
 <section id="creating-a-blog-with-quarto" class="level2">
@@ -267,9 +272,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Let’s click on the <code>Quarto Blog</code> option. In the next window, name you project (e.g., myblog), select where to save the project with the <code>Browse</code> button, and ensure ‘Create a git repository’ is checked. More on git later.</p>
 <p><img src="images/quarto-new-git.png" class="img-fluid"></p>
 <p>The default project is populated with some example files and folders. The open <code>index.qmd</code> file is the ‘home page’ of the blog that will list all the posts. The <code>.qmd</code> is the file extension for a Quarto file just like <code>.Rmd</code> for R Markdown. Go ahead and change the first <code>title</code> field in the YAML. For instance, change ‘my blog’ to ‘My Blog’.</p>
-<blockquote class="blockquote">
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>YAML stands for ‘Yet Another Markup Language’ and is delineated by a triple dash (—) at the beginning and end of the YAML section. This is where you define settings for you quarto document/post.</p>
-</blockquote>
+</div>
+</div>
 <p>Now, let’s look at one of the template posts. In the <code>Files</code> pane click on <code>posts &gt; welcome &gt; index.qmd</code>. Here we can see a template for a ‘Welcome’ post.</p>
 <p>A recent addition to RStudio is that you can view the ‘Source’ (top left pane) as either the <strong>Source code</strong> or <strong>Visual editor</strong>. These views can be swapped by toggling the buttons at the top right of the pane. The Source code (blue box below) displays all the source code for your quarto file such are your R code (in chunks - none in this example) and Markdown narrative text.</p>
 <div class="callout-note callout callout-style-default callout-captioned">
@@ -282,9 +297,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<blockquote class="blockquote">
-<p>A code chunck is delineated by three backticks (<code>) and {} with the language for the code chunk (R, python etc.). Click the green</code>C+<code>button to the left of run to add a new R chunck. Or keyboard shortcut</code>Ctrl/Cmd + Alt + I`.</p>
-</blockquote>
+<p>A code chunck is delineated by three backticks (button to the left of 1) and {} with the language for the code chunk (R, python etc.). Click the green <code>C+</code> button to the left of run to add a new R chunck. Or keyboard shortcut <code>Ctrl/Cmd + Alt + I</code>.</p>
 </div>
 </div>
 <p><img src="images/quarto-source-visual.png" class="img-fluid"></p>
@@ -326,8 +339,9 @@ Note
 <p>A <strong>version control software</strong> (think track changes) useful for collaborating on and sharing code.</p>
 <p>Git is the <em>software itself</em> that records changes to a set of files locally. There are several hosting platforms that are like online repositories (think Dropbox, Google Drive, etc.) that work with Git: Bitbucket, GitLab, and GitHub to name a few.</p>
 <p>These platforms not only allow for version control but also to collaborate, organize, and back up projects.</p>
+<p><img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/main/github-illustrated-series/github_wickham_bryan_git_quote.png" class="img-fluid" alt="On the left is a quote from Hadley Wickham and Jenny Bryan that says 'Using a Git commit is like using anchors and other protection when climbing...if you make a mistake you can't fall past the previous commit. Commits are also helpful to others, because they show your journey, not just the destination.' On the right, two little monsters climb a cliff face. Their ropes are secured by several anchors, each labeled 'Commit'. Three monsters on the ground support the climbers."></p>
 <p>In this case, we will be using <strong>GitHub</strong> to access the website files, make some changes (i.e., add a post), and then incorporate those changes back to the website repository on GitHub which will automatically update the website itself. 🙌</p>
-<p>First, we will contribute a post to an existing website repository on GitHub, but there are lots of fabulous and free resources online that go more into depth on Git:</p>
+<p>There are lots of fabulous and free resources online that go more into depth on Git:</p>
 <ul>
 <li>If you need to be convinced to use Git for version control see this <a href="https://peerj.com/preprints/3159v2/">article</a> and <a href="https://happygitwithr.com/index.html">Happy Git and GitHub for the useR</a> to git started both by Git/R guru Jenny Bryan.</li>
 <li>See Caitie Kuempel’s R Ladies Brisbane <a href="https://github.com/cdkuempel/getting_started_github">presentation</a> on getting started with GitHub in RStudio.</li>
@@ -350,7 +364,17 @@ Note
 </section>
 <section id="usethis-on-our-blog-project" class="level3">
 <h3 class="anchored" data-anchor-id="usethis-on-our-blog-project">Usethis on our blog project</h3>
-<p>We are going to use the <code>[usethis](https://usethis.r-lib.org/)</code> package. <code>Usethis</code> is a workflow package designed to automate repetitive tasks for package development and project setup (what we’ll be doing here).</p>
+<div class="callout callout callout-style-simple no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><a href="https://happygitwithr.com">Happy Git and GitHub for the useR</a> is the online bible of using git with R by legendary Jenny Bryan. This book covers all the basics in details and provides workflows and troubleshooting Jenny Bryan has a whole chapters on what is covered below. <a href="https://happygitwithr.com/hello-git.html#hello-git">Ch 7 Configure Git</a>, <a href="https://happygitwithr.com/https-pat.html">Ch 9 PATs</a>, and <a href="https://happygitwithr.com/existing-github-last.html#create-and-connect-a-github-repo">Ch 17.3 Create and connect a GitHub repo</a>. It’s an excellent resource that I would highly encourage you to check out.</p>
+</div>
+</div>
+</div>
+<p><code>Usethis</code> is a workflow package designed to automate repetitive tasks for package development and project setup. Here, we’ll be using it for the latter.</p>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -361,12 +385,22 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You might need to install <code>usethis</code>:</p>
-<p><code>install.packages("usethis")</code> <code>library(usethis)</code></p>
-<p>Or you can install the development version: <code>install.packages("devtools")</code> if you don’t have devtools. devtools::install_github(“r-lib/usethis”)`</p>
+<p>You might need to install <code>usethis</code>. Check by search in the <code>Packages</code> window in the bottom right pane in RStudio.</p>
+<p><code>install.packages("usethis")</code></p>
+<p><code>library(usethis)</code></p>
+<p>Or you can install the development version: <code>install.packages("devtools")</code> if you don’t have devtools. devtools::install_github(“r-lib/usethis”)</p>
 </div>
 </div>
-<p>First, we must configure a <strong>personal access token</strong> or <strong>PAT</strong> using <code>usethis</code>. Type <code>usethis::create_github_token()</code> in the console. You will either need to log into GitHub or confirm your password. <code>usethis</code> will automatically select some scopes - which ones are selected?</p>
+<section id="configure-git" class="level4">
+<h4 class="anchored" data-anchor-id="configure-git">Configure Git</h4>
+<p>If you have never used Git before you will need to configure your account. We can do this in R with <code>usethis</code> using your GitHub username and email. <em>These <strong>must</strong> be the details associated with your GitHub account. You will only need to do this once.</em></p>
+<p><code>usethis::use_git_config(user.name = "Jane Doe", user.email = "jane@example.org")</code></p>
+<p>If you are not sure if you have configured Git, you can check with running <code>usethis::edit_git_config()</code> in the console. This will open your <code>.gitconfig</code> file and you can check the <code>[user]</code> details. If these are not right you can go ahead and change theme in the file and save.</p>
+<p><img src="images/gitconfig-user.png" class="img-fluid" alt="Screenshot of the `user` information found in the `.gitconfig` file opened using `usethis::edit_git_config()`."></p>
+</section>
+<section id="create-a-personal-access-token" class="level4">
+<h4 class="anchored" data-anchor-id="create-a-personal-access-token">Create a personal access token</h4>
+<p>We must also configure a <strong>personal access token</strong> or <strong>PAT</strong> with <code>usethis</code>. Type <code>usethis::create_github_token()</code> in the console. You will either need to log into GitHub or confirm your password. <code>usethis</code> will automatically select some scopes - which ones are selected? We can use these defaults - click the big, green <code>Generate token</code> button at the bottom.</p>
 <p>Leave this page open or copy this and keep it a text file/password manager. We will use it again later. You can even use <code>gitcreds::gitcreds_set()</code> to store your PAT now.</p>
 <div class="callout callout callout-style-simple no-icon">
 <div class="callout-body d-flex">
@@ -374,27 +408,36 @@ Note
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-body-container">
-<blockquote class="blockquote">
-<p>gitcreds::gitcreds_set()</p>
-</blockquote>
-<p>? Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -&gt; Adding new credentials… -&gt; Removing credentials from cache… -&gt; Done.</p>
+<p>We can also save our PAT in RStudio with: <code>gitcreds::gitcreds_set()</code></p>
+<p>This should result in the following message. Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+<p>Adding new credentials…</p>
+<p>Removing credentials from cache…</p>
+<p>Done.</p>
 </div>
 </div>
 </div>
+</section>
+<section id="setup-the-remote-github-repository" class="level4">
+<h4 class="anchored" data-anchor-id="setup-the-remote-github-repository">Setup the remote GitHub repository</h4>
 <p>Now let’s setup a remote repo on GitHub using <code>usethis::use_github</code>. This section is straight out of <a href="https://happygitwithr.com/existing-github-last.html##create-and-connect-a-github-repo">17.3 Happy git with R - create and connect a github repo with usethis</a>.</p>
-<blockquote class="blockquote">
-<p>Happy Git and GitHub for the useR is the online bible of using git with R by legendary Jenny Bryan. This book covers all the basics in details and provides workflows and troubleshooting Jenny Bryan has a whole chapter on <a href="https://happygitwithr.com/https-pat.html">PATs</a> that I would highly encourage you to check out.</p>
-</blockquote>
 <p>How did that go? Did you get an error?</p>
-<p>Don’t worry. This is a common mistake to forget to do an initial commit. Click on the <code>Commit</code> button in the <code>Git</code> pane, select all (Ctrl/Cmd + A) and click <code>Stage</code>. Then, make a commit message in the top right of the window. Click <code>Commit</code>. Once that’s complete, let’s <code>usethis::use_github()</code> in the <code>Console</code> again. How did it go this time?</p>
+<p>Don’t worry. We’ve forgotten to do an <strong>initial commit</strong> a common mistake. Click on the <code>Commit</code> button in the <code>Git</code> pane, select all (<code>Ctrl/Cmd + Shift + A</code>) and click <code>Stage</code>. We are going to stage all the files to <strong>push</strong> to our remote GitHub repo. This might be a bit slow since it is multiple files so be patient. Then, make a commit message in the top right of the window. Click <code>Commit</code>. This creates a record (or anchor in line with the climbing analogy below) in our project that we can view and go back to if we ever need to.</p>
+<p><img src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/main/github-illustrated-series/github_clip.png" class="img-fluid" alt="A close-up rear view of a monster climbing a rock face, clicking into an anchor point, with the word 'Click!'."></p>
+<p>Once that’s complete, let’s <code>usethis::use_github()</code> in the <code>Console</code> again. How did it go this time?</p>
 <p>Hopefully, you see something like this: <img src="images/git-initial-commit.png" class="img-fluid"></p>
-<p>Notice that part of what <code>use_github()</code> does is push the master or <strong>main</strong> branch to GitHub.</p>
-<p>Now go to the link there <code>use_github()</code> set the remote too. You will see everything that you’ve commited is now in the online, remote repo! Have a look around. You can navigate, add a READMIE.md file, and even edit files in GitHub.</p>
-<p>Let’s go ahead and do this. Go to the ‘Welcome’ post, click on the pencil to edit, and make a change. At the bottom you can add a commit message then commit your change.</p>
-<p>Cool, but how do we get these changes we made on our remote repo into our local repo on our computer? make a change - edit the template welcome post in some way</p>
-<p>Save the edits. Now look at the Git pane - what’s there?</p>
-<p>Next we need to <strong>stage</strong> and <strong>commit</strong> our changes. This is a record that we can view and go back to if we ever need to.</p>
-<p>Finally, let’s <strong>push</strong> these edits to our remote repo that we - check out change on remote</p>
+<p>Notice that part of what <code>use_github()</code> does is <strong>push</strong> the master or <strong>main</strong> branch to GitHub. (Master is legacy, but you may still see it around.)</p>
+<p>Now go to the link there <code>use_github()</code> set the remote too (in the third line with a ✔️). You will see everything that you’ve commited is now in the online, <strong>remote repo</strong>! Have a look around. You can navigate, add a README.md file, and even edit files in GitHub.</p>
+<p>Let’s go ahead and edit a file. Go to the ‘Welcome’ post, click on the pencil ✏️ to edit, and make a change. At the bottom you can add a commit message then commit your change.</p>
+<p>Cool, but how do we get these changes we made on our remote repo into our local repo on our computer? This is where <strong>pull</strong> comes in. Back in the RStudio Git pane, you should see a blue down arrow labelled <code>Pull</code>. Click this button. This will update your local repo on your computer with the edit we made in GitHub. Look at your files and see if you can find the change we just made online. Pulling is especially important if you are working on a collaborative project. In general, you want to <strong>pull</strong> <strong>first before pushing</strong> to ensure you are working with the most up-to-date version of the project. Even if you are not in a collaborative project, it is a good habit to get into.</p>
+<p>Those are the Git basics! In general, you want to use the following workflow when using git.</p>
+<ol type="1">
+<li>Make a change in your files and <strong>save</strong>. The changes will not show up in the Git pane unless you save the changes.</li>
+<li><strong>Stage</strong> the files you would like to commit. Can stage multiple files at a time.</li>
+<li>Write a concise, informative <strong>commit</strong> message and press the <code>Commit</code> button. If you don’t get any glaringly obvious Error messages, it’s probably all good.</li>
+<li><strong>Pull</strong> pressing the blue down arrow before <strong>pushing</strong> with the green up arrow.</li>
+<li>Repeat!</li>
+</ol>
+</section>
 </section>
 </section>
 <section id="publishing" class="level2">
@@ -413,27 +456,26 @@ Note
 <p>Quarto Pub is a free publishing service for quarto content. It requires having a login and an access token. This is a relatively straight forward way to get your blog online. There are some limitations to the size and everything published on Quarto Pub is <strong>publicly visible</strong>. The link above outlines the steps to publish with Quart Pub. This method does not involve using git.</p>
 </div>
 </div>
-<p>For this workshop, we will focus on Netlify.</p>
-<p>In your Netlify account, click on the teal <code>Add new site</code> button.</p>
+<p>For this workshop, we will focus on Netlify. In your Netlify account, click on the teal <code>Add new site</code> button.</p>
 <p>Import an existing project from a GitHub repository. You will probably need to configure your Netlify on GitHub. Can either configure all repositories or pick a specific repository.</p>
 <p><img src="images/pub-configure-netlify-github.png" class="img-fluid"></p>
 <p>Authorize Quarto to access Netlify.</p>
 <p><img src="images/pub-netlify-authorize.png" class="img-fluid"></p>
 <p>Now that we’ve connected our GitHub to Netlify, go to the Site settings. At the bottom ‘Publish directory’ section put the <code>_site/</code> folder where your website is rendered.</p>
 <p><img src="images/pub-dir-netlify.png" class="img-fluid"></p>
-<p>It will take a few minutes to deploy your website. Netlify automatically generates a random url like “lighthearted-travesseiro-492jfg3” which can be changed in the ‘Domain settings’. Or course, you can also use a custom url to remove the ‘netlify.app’ at the end of the url.</p>
+<p>It will take a few minutes to deploy your website. Netlify automatically generates a random url like “lighthearted-travesseiro-492jfg3” which can be changed in the ‘Domain settings’. Or course, you can also use/pay for a custom url to remove the ‘netlify.app’ at the end of the url.</p>
 <p>Now, make a change in the welcome post, render the site, commit the changes, and push the changes in the <code>.qmd</code> file. Look at your GitHub remote repo to check that the changes are there. Now check your website - did it update as well?</p>
-<p>As we defined above, unless you also commited the updated contents of the <code>_site/</code> the website will not have updated. This folder is where all the rendered outputs are that are used to build the site on Netlify. Commit the updated <code>_site/</code> folder and push. Now check your website again.</p>
+<p>As we defined above, unless you also commited the updated contents of the <strong><code>_site/</code></strong> foldr the website will not have updated. This folder is where all the rendered outputs are that are used to build the site on Netlify. Commit the updated <code>_site/</code> folder and push. Now check your website again.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://media.giphy.com/media/8Iv5lqKwKsZ2g/giphy.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Cheers Credit: Sony</figcaption><p></p>
+<p><img src="https://media.giphy.com/media/8Iv5lqKwKsZ2g/giphy.gif" class="img-fluid figure-img" alt="Leonardo DeCaprio in the Great Gatsby cheersing with a drink with fireworks in the background. Credit: Sony."></p>
+<p></p><figcaption class="figure-caption">Cheers</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="add-a-map" class="level2">
 <h2 class="anchored" data-anchor-id="add-a-map">Add a map</h2>
-<p>This is a spatial community of practic - let’s add a map of ResBazQld 2022 to a post using <a href="https://www.earthdatascience.org/courses/earth-analytics/get-data-using-apis/leaflet-r/">leaflet</a>.</p>
+<p>This is a spatial community of practice - let’s add a map of ResBazQld 2022 to a post using <a href="https://www.earthdatascience.org/courses/earth-analytics/get-data-using-apis/leaflet-r/">leaflet</a>.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("leaflet")</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
@@ -443,8 +485,8 @@ Note
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lat =</span> <span class="sc">-</span><span class="fl">27.552</span>, <span class="at">lng =</span> <span class="fl">153.0535</span>,</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>             <span class="at">popup =</span> <span class="st">"Location of ResBazQld 2022"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="htmlwidget-848fa0f3f0108478213f" style="width:100%;height:464px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-848fa0f3f0108478213f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[-27.552,153.0535,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Location of ResBazQld 2022",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-27.552,-27.552],"lng":[153.0535,153.0535]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-7ef22b48bb900371dbba" style="width:100%;height:464px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7ef22b48bb900371dbba">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[-27.552,153.0535,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Location of ResBazQld 2022",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-27.552,-27.552],"lng":[153.0535,153.0535]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>

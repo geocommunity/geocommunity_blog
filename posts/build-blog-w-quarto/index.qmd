@@ -4,33 +4,34 @@ author: 'Catherine Kim'
 date: '2022-11-03'
 slug: quarto-blog
 categories: [website]
-tags: [r, rstudio, git, GitHub, quarto]
+tags: [R, RStudio, git, GitHub, quarto]
 ---
 
-We will be covering some basics of multiple programming skills (Git/GitHub, R, Markdown, etc...) with the aim of empowering people to contribute to quarto websites such as this one - the **Brisbane Geospatial Community of Practice**. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.
+We will be covering some basics of multiple programming skills (Git/GitHub, R, Markdown, etc...) with the aim of empowering people to contribute to quarto websites such as this one - the **Brisbane Spatial Share Community of Practice**. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.
 
 Background of the Community of Practice with founder, [Mitchel Rudge](https://twitter.com/MitchRudge). See the [About](/about.qmd) page for more info.
 
-So the group already has a [website](https://geospatial-community.netlify.app/)... why another blog?
+So the group already has a [website](https://geospatial-community.netlify.app/)... why another blog? Essentially, we found `blogdown` to be buggier than we wanted. Also, the folder structure was not very intutitive and are unique to each `hugo` theme. Finally, for the needs of our **Spatial Share** group the multi-lingual aspects of quarto were an important draw.
+
+![The quarto hex sticker. A blue hexagon with the quarto logo and quarto written in white, lower-case letters. Credit: RStudio](https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/quarto.png)
 
 ## Research Bazaar Queensland 2022
 
-This session was run as a workshop for ResBaz Queensland 2022. ResBaz is a global festival promoting digital literacy at the centre of modern research.
+This session was run as a workshop for [ResBaz Queensland 2022](https://resbaz.github.io/resbaz2022qld/). ResBaz is a global festival promoting digital literacy at the centre of modern research.
 
 What we will cover:
 
 1.  Quarto basics
 2.  Git and GitHub basics
-3.  How to create a post on a quarto website
-4.  Markdown basics
+3.  How to create/edit a post on a quarto website
 
-I have pieced this together using many other resources on the above which are mentioned throughout. Thank you to Mitch and Christina for their help with this tutorial and workshop!
+I have pieced this together using many other resources on the above which are mentioned throughout. This is also coming from a learning-as-we-go approach and by no means expert opinion. Thank you to Mitch and Christina for their help with this tutorial and workshop!
 
 What you will need:
 
--   Installations - R, RStudio (Quarto should be installed included - otherwise [download](https://quarto.org/docs/get-started/), Git
--   GitHub account (free) with your login and personal access token (PAT) details handy
--   Netlify account (free)
+-   Installations - [Git](https://git-scm.com/downloads), R [Windows](https://cran.r-project.org/bin/windows/base/) [mac](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjLh9_yp5n7AhX27zgGHVQ9BSgQFnoECBoQAQ&url=https%3A%2F%2Fcran.r-project.org%2Fbin%2Fmacosx%2F&usg=AOvVaw3WMiY1ueFQVBx_EVXIaVqG), [RStudio](https://posit.co/download/rstudio-desktop/) (Quarto should be installed included with recent \>2022.07 versions of RSTudio - otherwise [download Quarto](https://quarto.org/docs/get-started/) separately)
+-   [GitHub](https://www.github.com) account (free) with your login and personal access token (PAT) details handy
+-   [Netlify](https://www.netlify.com/) account (free)
 
 ## Creating a blog with quarto
 
@@ -56,14 +57,16 @@ Let's click on the `Quarto Blog` option. In the next window, name you project (e
 
 The default project is populated with some example files and folders. The open `index.qmd` file is the 'home page' of the blog that will list all the posts. The `.qmd` is the file extension for a Quarto file just like `.Rmd` for R Markdown. Go ahead and change the first `title` field in the YAML. For instance, change 'my blog' to 'My Blog'.
 
-> YAML stands for 'Yet Another Markup Language' and is delineated by a triple dash (---) at the beginning and end of the YAML section. This is where you define settings for you quarto document/post.
+::: callout-note
+YAML stands for 'Yet Another Markup Language' and is delineated by a triple dash (---) at the beginning and end of the YAML section. This is where you define settings for you quarto document/post.
+:::
 
 Now, let's look at one of the template posts. In the `Files` pane click on `posts > welcome > index.qmd`. Here we can see a template for a 'Welcome' post.
 
 A recent addition to RStudio is that you can view the 'Source' (top left pane) as either the **Source code** or **Visual editor**. These views can be swapped by toggling the buttons at the top right of the pane. The Source code (blue box below) displays all the source code for your quarto file such are your R code (in chunks - none in this example) and Markdown narrative text.
 
-:::{.callout-note}
-> A code chunck is delineated by three backticks (`) and {} with the language for the code chunk (R, python etc.). Click the green `C+` button to the left of run to add a new R chunck. Or keyboard shortcut `Ctrl/Cmd + Alt + I`.
+::: callout-note
+A code chunck is delineated by three backticks (button to the left of 1) and {} with the language for the code chunk (R, python etc.). Click the green `C+` button to the left of run to add a new R chunck. Or keyboard shortcut `Ctrl/Cmd + Alt + I`.
 :::
 
 ![](images/quarto-source-visual.png)
@@ -102,7 +105,7 @@ Git is the *software itself* that records changes to a set of files locally. The
 
 These platforms not only allow for version control but also to collaborate, organize, and back up projects.
 
-![On the left is a quote from Hadley Wickham and Jenny Bryan that says “Using a Git commit is like using anchors and other protection when climbing…if you make a mistake you can’t fall past the previous commit. Commits are also helpful to others, because they show your journey, not just the destination.” On the right, two little monsters climb a cliff face. Their ropes are secured by several anchors, each labeled “Commit”. Three monsters on the ground support the climbers.](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/main/github-illustrated-series/github_wickham_bryan_git_quote.png)
+![](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/main/github-illustrated-series/github_wickham_bryan_git_quote.png){fig-alt="On the left is a quote from Hadley Wickham and Jenny Bryan that says 'Using a Git commit is like using anchors and other protection when climbing...if you make a mistake you can't fall past the previous commit. Commits are also helpful to others, because they show your journey, not just the destination.' On the right, two little monsters climb a cliff face. Their ropes are secured by several anchors, each labeled 'Commit'. Three monsters on the ground support the climbers."}
 
 In this case, we will be using **GitHub** to access the website files, make some changes (i.e., add a post), and then incorporate those changes back to the website repository on GitHub which will automatically update the website itself. `r emo::ji("raised_hands")`
 
@@ -131,16 +134,16 @@ There are lots of fabulous and free resources online that go more into depth on 
 
 ### Usethis on our blog project
 
-:::{.callout}
+::: callout
 [Happy Git and GitHub for the useR](https://happygitwithr.com) is the online bible of using git with R by legendary Jenny Bryan. This book covers all the basics in details and provides workflows and troubleshooting Jenny Bryan has a whole chapters on what is covered below. [Ch 7 Configure Git](https://happygitwithr.com/hello-git.html#hello-git), [Ch 9 PATs](https://happygitwithr.com/https-pat.html), and [Ch 17.3 Create and connect a GitHub repo](https://happygitwithr.com/existing-github-last.html#create-and-connect-a-github-repo). It's an excellent resource that I would highly encourage you to check out.
 :::
 
-[`uUethis`](https://usethis.r-lib.org/) is a workflow package designed to automate repetitive tasks for package development and project setup. Here, we'll be using it for the latter.
+`Usethis` is a workflow package designed to automate repetitive tasks for package development and project setup. Here, we'll be using it for the latter.
 
-:::{.callout-note}
+::: callout-note
 You might need to install `usethis`. Check by search in the `Packages` window in the bottom right pane in RStudio.
 
-`install.packages("usethis")` 
+`install.packages("usethis")`
 
 `library(usethis)`
 
@@ -155,24 +158,22 @@ If you have never used Git before you will need to configure your account. We ca
 
 If you are not sure if you have configured Git, you can check with running `usethis::edit_git_config()` in the console. This will open your `.gitconfig` file and you can check the `[user]` details. If these are not right you can go ahead and change theme in the file and save.
 
-![Screenshot of the `user` information found in the `.gitconfig` file opened using `usethis::edit_git_config()`](images/gitconfig-user.png)
+![](images/gitconfig-user.png){fig-alt="Screenshot of the `user` information found in the `.gitconfig` file opened using `usethis::edit_git_config()`."}
 
 #### Create a personal access token
 
-We must also configure a **personal access token** or **PAT** using `usethis`. Type `usethis::create_github_token()` in the console. You will either need to log into GitHub or confirm your password. `usethis` will automatically select some scopes - which ones are selected? We can use these defaults - click the big, green `Generate token` button at the bottom.
+We must also configure a **personal access token** or **PAT** with `usethis`. Type `usethis::create_github_token()` in the console. You will either need to log into GitHub or confirm your password. `usethis` will automatically select some scopes - which ones are selected? We can use these defaults - click the big, green `Generate token` button at the bottom.
 
 Leave this page open or copy this and keep it a text file/password manager. We will use it again later. You can even use `gitcreds::gitcreds_set()` to store your PAT now.
 
-:::{.callout}
-We can also save our PAT in RStudio with:
-`gitcreds::gitcreds_set()`
+::: callout
+We can also save our PAT in RStudio with: `gitcreds::gitcreds_set()`
 
-This should result in the following message.
-Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+This should result in the following message. Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-Adding new credentials... 
+Adding new credentials...
 
-Removing credentials from cache... 
+Removing credentials from cache...
 
 Done.
 :::
@@ -183,32 +184,35 @@ Now let's setup a remote repo on GitHub using `usethis::use_github`. This sectio
 
 How did that go? Did you get an error?
 
-Don't worry. We've forgotten to do an **initial commit** a common mistake. Click on the `Commit` button in the `Git` pane, select all (Ctrl/Cmd + A) and click `Stage`. We are going to stage all the files to **push** to our remote GitHub repo. This might be a bit slow since it is multiple files so be patient. Then, make a commit message in the top right of the window. Click `Commit`. Once that's complete, let's `usethis::use_github()` in the `Console` again. How did it go this time?
+Don't worry. We've forgotten to do an **initial commit** a common mistake. Click on the `Commit` button in the `Git` pane, select all (`Ctrl/Cmd + Shift + A`) and click `Stage`. We are going to stage all the files to **push** to our remote GitHub repo. This might be a bit slow since it is multiple files so be patient. Then, make a commit message in the top right of the window. Click `Commit`. This creates a record (or anchor in line with the climbing analogy below) in our project that we can view and go back to if we ever need to.
 
-Hopefully, you see something like this:
-![](images/git-initial-commit.png)
+![](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/main/github-illustrated-series/github_clip.png){fig-alt="A close-up rear view of a monster climbing a rock face, clicking into an anchor point, with the word 'Click!'."}
 
-A **commit** is a record (or anchor) in our project that we can view and go back to if we ever need to. 
+Once that's complete, let's `usethis::use_github()` in the `Console` again. How did it go this time?
 
-![A close-up rear view of a monster climbing a rock face, clicking into an anchor point, with the word “Click!”](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/main/github-illustrated-series/github_clip.png)
+Hopefully, you see something like this: ![](images/git-initial-commit.png)
 
 Notice that part of what `use_github()` does is **push** the master or **main** branch to GitHub. (Master is legacy, but you may still see it around.)
 
-Now go to the link there `use_github()` set the remote too. You will see everything that you've commited is now in the online, **remote repo**! Have a look around. You can navigate, add a README.md file, and even edit files in GitHub.
+Now go to the link there `use_github()` set the remote too (in the third line with a ✔️). You will see everything that you've commited is now in the online, **remote repo**! Have a look around. You can navigate, add a README.md file, and even edit files in GitHub.
 
-Let's go ahead and edit a file. Go to the 'Welcome' post, click on the pencil to edit, and make a change. At the bottom you can add a commit message then commit your change.
+Let's go ahead and edit a file. Go to the 'Welcome' post, click on the pencil ✏️ to edit, and make a change. At the bottom you can add a commit message then commit your change.
 
-Cool, but how do we get these changes we made on our remote repo into our local repo on our computer? This is where **pull** comes in. Back in the RStudio Git pane, you should see a blue down arrow labelled `Pull`. Click this button. This will update your local repo on your computer with the edit we made in GitHub.
+Cool, but how do we get these changes we made on our remote repo into our local repo on our computer? This is where **pull** comes in. Back in the RStudio Git pane, you should see a blue down arrow labelled `Pull`. Click this button. This will update your local repo on your computer with the edit we made in GitHub. Look at your files and see if you can find the change we just made online. Pulling is especially important if you are working on a collaborative project. In general, you want to **pull** **first before pushing** to ensure you are working with the most up-to-date version of the project. Even if you are not in a collaborative project, it is a good habit to get into.
 
+Those are the Git basics! In general, you want to use the following workflow when using git.
 
-
-Finally, let's **push** these edits to our remote repo that we - check out change on remote
+1.  Make a change in your files and **save**. The changes will not show up in the Git pane unless you save the changes.
+2.  **Stage** the files you would like to commit. Can stage multiple files at a time.
+3.  Write a concise, informative **commit** message and press the `Commit` button. If you don't get any glaringly obvious Error messages, it's probably all good.
+4.  **Pull** pressing the blue down arrow before **pushing** with the green up arrow.
+5.  Repeat!
 
 ## Publishing
 
 There are several options for publishing your quarto blog outlined [here](https://quarto.org/docs/publishing/). Such as [Quarto Pub](https://quarto.org/docs/publishing/quarto-pub.html) and Netlify.
 
-:::{,callout-note}
+::: callout-note
 Quarto Pub is a free publishing service for quarto content. It requires having a login and an access token. This is a relatively straight forward way to get your blog online. There are some limitations to the size and everything published on Quarto Pub is **publicly visible**. The link above outlines the steps to publish with Quart Pub. This method does not involve using git.
 :::
 
@@ -232,11 +236,11 @@ Now, make a change in the welcome post, render the site, commit the changes, and
 
 As we defined above, unless you also commited the updated contents of the **`_site/`** foldr the website will not have updated. This folder is where all the rendered outputs are that are used to build the site on Netlify. Commit the updated `_site/` folder and push. Now check your website again.
 
-![Cheers Credit: Sony](https://media.giphy.com/media/8Iv5lqKwKsZ2g/giphy.gif)
+![Cheers](https://media.giphy.com/media/8Iv5lqKwKsZ2g/giphy.gif){fig-alt="Leonardo DeCaprio in the Great Gatsby cheersing with a drink with fireworks in the background. Credit: Sony."}
 
 ## Add a map
 
-This is a spatial community of practic - let's add a map of ResBazQld 2022 to a post using [leaflet](https://www.earthdatascience.org/courses/earth-analytics/get-data-using-apis/leaflet-r/). 
+This is a spatial community of practice - let's add a map of ResBazQld 2022 to a post using [leaflet](https://www.earthdatascience.org/courses/earth-analytics/get-data-using-apis/leaflet-r/).
 
 ```{r}
 # install.packages("leaflet")
@@ -254,7 +258,5 @@ leaflet() %>%
 
 **Quarto**
 
-- Building a blog with quarto, [Youtube video](https://www.youtube.com/watch?v=CVcvXfRyfE0), [website](https://ivelasq.quarto.pub/building-a-blog-with-quarto/intro.html) - Isabella Valasquez, Rstudio
-- [Welcome to Quarto!](https://www.youtube.com/watch?v=yvi5uXQMvu4), Tom Mock, RStudio
-
-
+-   Building a blog with quarto, [Youtube video](https://www.youtube.com/watch?v=CVcvXfRyfE0), [website](https://ivelasq.quarto.pub/building-a-blog-with-quarto/intro.html) - Isabella Valasquez, Rstudio
+-   [Welcome to Quarto!](https://www.youtube.com/watch?v=yvi5uXQMvu4), Tom Mock, RStudio
