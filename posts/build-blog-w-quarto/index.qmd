@@ -1,8 +1,8 @@
 ---
-title: Build a blog with Quarto, git, and RStudio
+title: Build a blog with Quarto, Git, and RStudio
 author: 'Catherine Kim'
 date: '2022-11-03'
-slug: how-to-post
+slug: quarto-blog
 categories: [website]
 tags: [r, rstudio, git, GitHub, quarto]
 ---
