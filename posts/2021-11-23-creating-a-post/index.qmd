@@ -1,5 +1,5 @@
 ---
-title: How to contribute a post
+title: How to contribute a post (using blogdown on our old site)
 author: 'Catherine Kim'
 date: '2021-11-23'
 slug: []

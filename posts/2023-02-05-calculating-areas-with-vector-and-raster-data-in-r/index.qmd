@@ -90,7 +90,7 @@ area_s2 - area_GeoLib # subtract to get the difference in area estimates
 
 There is an \~6000 km2 difference in area (note the m2 indicated in the output is incorrect, because we divided by 1e6 to convert m2 to km2). The geodesic calculation using the GeographicLib (i.e, s2 turned off) will be the most accurate estimate because it doesn't assume the Earth is a perfect sphere. But which is faster? Let's use {microbenchmark} to find out.
 
-```{r, warning = FALSE}
+```{r, warning = FALSE, message = FALSE}
 library(microbenchmark)
 
 microbenchmark(

@@ -9,7 +9,6 @@ tags:
   - leaflet
   - tmap
   - sf
-Description: ''
 Tags: []
 output:
   blogdown::html_page:
