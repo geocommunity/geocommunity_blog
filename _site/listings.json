@@ -2,10 +2,19 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/build-blog-w-quarto/index.html",
-      "/posts/welcome/index.html",
-      "/posts/how-to-contribute-post/index.html",
-      "/posts/geospatial-blog-w-blogdown/index.html"
+      "/posts/2023-02-05-calculating-areas-with-vector-and-raster-data-in-r/index.html",
+      "/posts/2023-01-22-newsletter-happy-new-year-february-meet-up-r-training/index.html",
+      "/posts/2022-11-03-build-blog-w-quarto/index.html",
+      "/posts/2022-09-09-newsletter/index.html",
+      "/posts/2022-09-01-analysing-climate-data-with-r/index.html",
+      "/posts/2022-08-16-newsletter/index.html",
+      "/posts/2022-07-20-intro-interactive-mapping-rshiny/index.html",
+      "/posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html",
+      "/posts/2022-07-07-problem-solving-session-ii/index.html",
+      "/posts/2022-05-26-problem-solving-session/index.html",
+      "/posts/2022-04-28-cloud-computing-with-open-data-cube-and-python/index.html",
+      "/posts/2021-11-23-creating-a-post/index.html",
+      "/posts/2021-10-28-creating-a-geospatial-blog-with-blogdown/index.html"
     ]
   }
 ]

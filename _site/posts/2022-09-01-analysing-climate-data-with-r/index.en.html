@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Ralph Trancoso">
+<meta name="dcterms.date" content="2022-09-01">
+
+<title>Brisbane Geospatial Community of Practice - Analysing Climate data with R</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Brisbane Geospatial Community of Practice</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Analysing Climate data with R</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">R</div>
+                <div class="quarto-category">climate</div>
+                <div class="quarto-category">raster</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Ralph Trancoso </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">September 1, 2022</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#installing-and-loading-the-data-and-the-raster-ncdf4-rgdal-and-ggplot2-packages-setting-directory-loading-gridded-data" id="toc-installing-and-loading-the-data-and-the-raster-ncdf4-rgdal-and-ggplot2-packages-setting-directory-loading-gridded-data" class="nav-link active" data-scroll-target="#installing-and-loading-the-data-and-the-raster-ncdf4-rgdal-and-ggplot2-packages-setting-directory-loading-gridded-data">1 Installing and loading the data, and the <code>raster</code>, <code>ncdf4</code>, <code>rgdal</code>, and <code>ggplot2</code> packages, setting directory, loading gridded data</a></li>
+  <li><a href="#querying-the-rasterstack-data-and-quick-plot-using-rasterplot-and-rasterspplot" id="toc-querying-the-rasterstack-data-and-quick-plot-using-rasterplot-and-rasterspplot" class="nav-link" data-scroll-target="#querying-the-rasterstack-data-and-quick-plot-using-rasterplot-and-rasterspplot">2 Querying the RasterStack data and quick plot using raster::plot and raster::spplot</a></li>
+  <li><a href="#calculating-anomalies-as-gridded-time-series-and-global-average" id="toc-calculating-anomalies-as-gridded-time-series-and-global-average" class="nav-link" data-scroll-target="#calculating-anomalies-as-gridded-time-series-and-global-average">3 Calculating anomalies as gridded time-series and global average</a></li>
+  <li><a href="#handling-regions-as-shapefiles" id="toc-handling-regions-as-shapefiles" class="nav-link" data-scroll-target="#handling-regions-as-shapefiles">4 Handling regions as shapefiles</a></li>
+  <li><a href="#regionalizations-of-climate-data---plotting-time-series-as-line-plot-and-bar-chart" id="toc-regionalizations-of-climate-data---plotting-time-series-as-line-plot-and-bar-chart" class="nav-link" data-scroll-target="#regionalizations-of-climate-data---plotting-time-series-as-line-plot-and-bar-chart">5 Regionalizations of climate data - plotting time-series as line plot and bar chart</a></li>
+  <li><a href="#convertig-gridcells-to-data-frame-within-a-study-area-mask-and-plotting-boxplots-in-ggplot2" id="toc-convertig-gridcells-to-data-frame-within-a-study-area-mask-and-plotting-boxplots-in-ggplot2" class="nav-link" data-scroll-target="#convertig-gridcells-to-data-frame-within-a-study-area-mask-and-plotting-boxplots-in-ggplot2">6 Convertig gridcells to data frame within a study area mask and plotting boxplots in ggplot2</a></li>
+  <li><a href="#repeat-the-extraction-and-plot-for-precipitation-andor-other-metrics" id="toc-repeat-the-extraction-and-plot-for-precipitation-andor-other-metrics" class="nav-link" data-scroll-target="#repeat-the-extraction-and-plot-for-precipitation-andor-other-metrics">7 Repeat the extraction and plot for precipitation and/or other metrics</a></li>
+  <li><a href="#where-to-find-climate-data" id="toc-where-to-find-climate-data" class="nav-link" data-scroll-target="#where-to-find-climate-data">Where to find climate data</a></li>
+  <li><a href="#about-the-author" id="toc-about-the-author" class="nav-link" data-scroll-target="#about-the-author">About the author</a></li>
+  </ul>
+</nav>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>This post contains the scripts provided by Ralph Trancoso in the Analysing Climate Data in R workshop. The recording is also available, just email mitchel.rudge@uq.edu.au for access.</p>
+<section id="installing-and-loading-the-data-and-the-raster-ncdf4-rgdal-and-ggplot2-packages-setting-directory-loading-gridded-data" class="level1">
+<h1>1 Installing and loading the data, and the <code>raster</code>, <code>ncdf4</code>, <code>rgdal</code>, and <code>ggplot2</code> packages, setting directory, loading gridded data</h1>
+<p>To follow this tutorial, you will need to <a href="https://cloudstor.aarnet.edu.au/plus/s/Z35pnzhUEpnK7Gt">download some prepared climate data</a>.</p>
+<p>Save this link to somewhere on you computer, in our example the c drive, the unzip the folder.</p>
+<p>If you don’t have the ‘raster’ and <code>ncdf4</code> packages installed, install them:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"raster"</span>) <span class="co"># Installing the packages required for the workshop</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ncdf4"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"rgdal"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ggplot2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now load the <code>raster</code> package, and set the directory to where you stored the Rclim folder.</p>
+<p>Set your home directory, for example, if you put the rclim folder on you C drive:</p>
+<p>writeClipboard(gsub(“\\”, “/”, readClipboard())</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>home <span class="ot">&lt;-</span> <span class="st">"C:/Rclim"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now load the <code>raster</code> packages, and set your directory to where the climate data is.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(raster)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(home) <span class="co">#workshop dataset</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="fu">paste0</span>(home, <span class="st">"/worldclim"</span>)) <span class="co"># Set work directory to worldclim data</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#getwd() # get work directory</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#dir() # list files in the work directory</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>?stack <span class="co"># what does stack do?</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>aus_temp <span class="ot">&lt;-</span> <span class="fu">stack</span>(<span class="st">"tmean_australia_wc.nc"</span>)  <span class="co"># Loading gridded #data as RasterStack</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="querying-the-rasterstack-data-and-quick-plot-using-rasterplot-and-rasterspplot" class="level1">
+<h1>2 Querying the RasterStack data and quick plot using raster::plot and raster::spplot</h1>
+<p>Below are a whole bunch of checks that you can run on the raster data set.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ncol</span>(aus_temp) <span class="co">#check the number of columns</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 554</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(aus_temp) <span class="co">#check the number of rows</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 551</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ncell</span>(aus_temp) <span class="co">#check the number of cells</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 305254</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nlayers</span>(aus_temp) <span class="co">#check the number of layers</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 12</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(aus_temp) <span class="co">#check the dimensions (rows, columns, layers)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 551 554  12</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">projection</span>(aus_temp) <span class="co">#check the projection</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "+proj=longlat +datum=WGS84 +no_defs"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">res</span>(aus_temp) <span class="co">#check the resolution</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.08333333 0.08333333</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">inMemory</span>(aus_temp) <span class="co">#check if the data is stored in memory</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fromDisk</span>(aus_temp) <span class="co">#check if the data was read from disk</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(aus_temp) <span class="co">#check the names of the layers</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "X1"  "X2"  "X3"  "X4"  "X5"  "X6"  "X7"  "X8"  "X9"  "X10" "X11" "X12"</code></pre>
+</div>
+</div>
+<p>Now plot the rasters using the <code>plot</code> function:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(aus_temp<span class="sc">/</span><span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index.en_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Or use spplot:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spplot</span>(aus_temp<span class="sc">/</span><span class="dv">10</span>) <span class="co"># lattice plot, returns a trellice </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index.en_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Each layer represents a month of the year, from 1-12. So lets rename the layers and plot again.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>months <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Jan"</span>, <span class="st">"Feb"</span>, <span class="st">"Mar"</span>, <span class="st">"Apr"</span>, <span class="st">"May"</span>, <span class="st">"Jun"</span>,</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>            <span class="st">"Jul"</span>, <span class="st">"Aug"</span>, <span class="st">"Sep"</span>, <span class="st">"Oct"</span>, <span class="st">"Nov"</span>, <span class="st">"Dec"</span>)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(aus_temp) <span class="ot">&lt;-</span> months <span class="co">#set the layer names to months</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(aus_temp<span class="sc">/</span><span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index.en_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Or, using <code>spplot</code> to create a lattice plot</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spplot</span>(aus_temp<span class="sc">/</span><span class="dv">10</span>) <span class="co"># lattice plot, returns a trellice  </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index.en_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="calculating-anomalies-as-gridded-time-series-and-global-average" class="level1">
+<h1>3 Calculating anomalies as gridded time-series and global average</h1>
+<p>First, load the CMIP6 data set.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="fu">paste0</span>(home, <span class="st">"/CMIP6"</span>)) <span class="co"># Set work directory to CMIP6 data</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>proj_temp <span class="ot">&lt;-</span> <span class="fu">stack</span>(<span class="st">"tas_Asea_ACCESS-ESM1-5_ssp370_r1i1p1f1_gr1.5_1950-2100.nc"</span>)</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(proj_temp)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] "X1"   "X2"   "X3"   "X4"   "X5"   "X6"   "X7"   "X8"   "X9"   "X10" 
+ [11] "X11"  "X12"  "X13"  "X14"  "X15"  "X16"  "X17"  "X18"  "X19"  "X20" 
+ [21] "X21"  "X22"  "X23"  "X24"  "X25"  "X26"  "X27"  "X28"  "X29"  "X30" 
+ [31] "X31"  "X32"  "X33"  "X34"  "X35"  "X36"  "X37"  "X38"  "X39"  "X40" 
+ [41] "X41"  "X42"  "X43"  "X44"  "X45"  "X46"  "X47"  "X48"  "X49"  "X50" 
+ [51] "X51"  "X52"  "X53"  "X54"  "X55"  "X56"  "X57"  "X58"  "X59"  "X60" 
+ [61] "X61"  "X62"  "X63"  "X64"  "X65"  "X66"  "X67"  "X68"  "X69"  "X70" 
+ [71] "X71"  "X72"  "X73"  "X74"  "X75"  "X76"  "X77"  "X78"  "X79"  "X80" 
+ [81] "X81"  "X82"  "X83"  "X84"  "X85"  "X86"  "X87"  "X88"  "X89"  "X90" 
+ [91] "X91"  "X92"  "X93"  "X94"  "X95"  "X96"  "X97"  "X98"  "X99"  "X100"
+[101] "X101" "X102" "X103" "X104" "X105" "X106" "X107" "X108" "X109" "X110"
+[111] "X111" "X112" "X113" "X114" "X115" "X116" "X117" "X118" "X119" "X120"
+[121] "X121" "X122" "X123" "X124" "X125" "X126" "X127" "X128" "X129" "X130"
+[131] "X131" "X132" "X133" "X134" "X135" "X136" "X137" "X138" "X139" "X140"
+[141] "X141" "X142" "X143" "X144" "X145" "X146" "X147" "X148" "X149" "X150"
+[151] "X151"</code></pre>
+</div>
+</div>
+<p>We can see that these names make no sense. So the names relate to years, we can re-name each layer:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>years <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1950</span>, <span class="dv">2100</span>, <span class="at">by=</span><span class="dv">1</span>)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(proj_temp ) <span class="ot">&lt;-</span> years</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(proj_temp)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] "X1950" "X1951" "X1952" "X1953" "X1954" "X1955" "X1956" "X1957" "X1958"
+ [10] "X1959" "X1960" "X1961" "X1962" "X1963" "X1964" "X1965" "X1966" "X1967"
+ [19] "X1968" "X1969" "X1970" "X1971" "X1972" "X1973" "X1974" "X1975" "X1976"
+ [28] "X1977" "X1978" "X1979" "X1980" "X1981" "X1982" "X1983" "X1984" "X1985"
+ [37] "X1986" "X1987" "X1988" "X1989" "X1990" "X1991" "X1992" "X1993" "X1994"
+ [46] "X1995" "X1996" "X1997" "X1998" "X1999" "X2000" "X2001" "X2002" "X2003"
+ [55] "X2004" "X2005" "X2006" "X2007" "X2008" "X2009" "X2010" "X2011" "X2012"
+ [64] "X2013" "X2014" "X2015" "X2016" "X2017" "X2018" "X2019" "X2020" "X2021"
+ [73] "X2022" "X2023" "X2024" "X2025" "X2026" "X2027" "X2028" "X2029" "X2030"
+ [82] "X2031" "X2032" "X2033" "X2034" "X2035" "X2036" "X2037" "X2038" "X2039"
+ [91] "X2040" "X2041" "X2042" "X2043" "X2044" "X2045" "X2046" "X2047" "X2048"
+[100] "X2049" "X2050" "X2051" "X2052" "X2053" "X2054" "X2055" "X2056" "X2057"
+[109] "X2058" "X2059" "X2060" "X2061" "X2062" "X2063" "X2064" "X2065" "X2066"
+[118] "X2067" "X2068" "X2069" "X2070" "X2071" "X2072" "X2073" "X2074" "X2075"
+[127] "X2076" "X2077" "X2078" "X2079" "X2080" "X2081" "X2082" "X2083" "X2084"
+[136] "X2085" "X2086" "X2087" "X2088" "X2089" "X2090" "X2091" "X2092" "X2093"
+[145] "X2094" "X2095" "X2096" "X2097" "X2098" "X2099" "X2100"</code></pre>
+</div>
+</div>
+<p>The X is at the start of each of each year to ensure they are of type character.</p>
+<p>Now we can create a simple function to calculate the temperature anomaly.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>anomaly <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>    anom <span class="ot">&lt;-</span>  x <span class="sc">-</span> <span class="fu">mean</span>(x[[<span class="dv">32</span><span class="sc">:</span><span class="dv">61</span>]]) <span class="co"># for reference period 1981-2100</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">names</span>(anom) <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1950</span>, <span class="dv">2100</span>, <span class="at">by=</span><span class="dv">1</span>)    </span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(anom)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>T_anom <span class="ot">&lt;-</span> <span class="fu">anomaly</span>(proj_temp)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now plot the temperature anomaly, from 1:16 (1950 - 1965)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spplot</span>(T_anom[[<span class="dv">1</span><span class="sc">:</span><span class="dv">16</span>]])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index.en_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>And from 2084 - 2100</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spplot</span>(T_anom[[<span class="dv">135</span><span class="sc">:</span><span class="dv">151</span>]])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index.en_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Then we can calculate the average temperature anomaly</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>T_anom_mean <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">cbind</span>(years, <span class="fu">cellStats</span>(T_anom, mean)))</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(T_anom_mean) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"year"</span>, <span class="st">"T_anom_mean"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Finally, we can take a look at the average temperature anomaloy for the entire dataset.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(home) <span class="co"># Set work directory to main folder</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"output"</span>)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="fu">paste0</span>(home, <span class="st">"/output"</span>)) <span class="co">#set directory to output</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="fu">jpeg</span>(<span class="at">file=</span><span class="st">"anomaly_ts.jpeg"</span>, <span class="at">height =</span> <span class="dv">600</span>,  <span class="at">width =</span> <span class="dv">1000</span>, <span class="at">res=</span><span class="dv">150</span>)</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(T_anom_mean<span class="sc">$</span>year, T_anom_mean<span class="sc">$</span>T_anom_mean, <span class="at">type =</span> <span class="st">"p"</span>, <span class="at">pch =</span> <span class="dv">19</span>, </span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">xlab=</span><span class="st">"year"</span>, <span class="at">ylab=</span><span class="st">"Projected temperature anomaly"</span>, </span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">main=</span><span class="st">"ACCESS-ESM1-5 SSP370 - ref period:1981-2010"</span>)</span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>png 
+  2 </code></pre>
+</div>
+</div>
+<p>Have a look in the output folder, you should see something like this</p>
+<p><img src="images/anomaly_ts.jpeg" class="img-fluid"></p>
+</section>
+<section id="handling-regions-as-shapefiles" class="level1">
+<h1>4 Handling regions as shapefiles</h1>
+<p>Here, we load and plot a shapefile of the worlds country boundaries.</p>
+<p>Here, we load and plot a shapefile of the worlds country boundaries.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rgdal)</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="fu">paste0</span>(home, <span class="st">"/shp"</span>))</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>countries <span class="ot">=</span> <span class="fu">readOGR</span>(<span class="at">dsn=</span><span class="st">"."</span>, <span class="at">layer=</span><span class="st">"TM_WORLD_BORDERS_SIMPL-0.3"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>OGR data source with driver: ESRI Shapefile 
+Source: "C:\Users\uqnwiggi\OneDrive - The University of Queensland\UQGAC\Rclim\shp", layer: "TM_WORLD_BORDERS_SIMPL-0.3"
+with 246 features
+It has 11 fields
+Integer64 fields read as strings:  POP2005 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(countries)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index.en_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Or use <code>spplot</code> to color by population:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">spplot</span>(countries, <span class="st">"POP2005"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index.en_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="regionalizations-of-climate-data---plotting-time-series-as-line-plot-and-bar-chart" class="level1">
+<h1>5 Regionalizations of climate data - plotting time-series as line plot and bar chart</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="fu">paste0</span>(home, <span class="st">"/CMIP6"</span>)) <span class="co"># Set work directory to CMIP6 data</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>proj_temp <span class="ot">&lt;-</span> <span class="fu">stack</span>(<span class="st">"tas_Asea_ACCESS-ESM1-5_ssp370_r1i1p1f1_gr1.5_1950-2100.nc"</span>)</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>proj_temp <span class="ot">&lt;-</span> proj_temp <span class="sc">-</span><span class="fl">273.15</span></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(proj_temp) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">seq</span>(<span class="dv">1950</span>,<span class="dv">2100</span>, <span class="at">by=</span><span class="dv">1</span>))</span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a><span class="do">## From your countries vector we read in, select a country customise your study area for the workshop analysis:</span></span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>my_country <span class="ot">&lt;-</span> <span class="fu">subset</span>(countries, NAME <span class="sc">==</span> <span class="st">"Australia"</span>)</span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a>df<span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(countries<span class="sc">@</span>data)</span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a><span class="co">#fix(df) # to have a look at the dataframe of the countries</span></span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>mydf <span class="ot">&lt;-</span> <span class="fu">structure</span>(<span class="fu">list</span>(</span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a><span class="at">longitude =</span> <span class="fu">c</span>(<span class="fl">153.0251</span>, <span class="fl">145.7781</span>, <span class="fl">149.1821</span>, <span class="fl">146.8169</span>, <span class="fl">139.4927</span>, <span class="fl">144.2555</span>), </span>
+<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a><span class="at">latitude =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">27.4698</span>, <span class="sc">-</span><span class="fl">16.9186</span>, <span class="sc">-</span><span class="fl">21.1425</span>, <span class="sc">-</span><span class="fl">19.2590</span>, <span class="sc">-</span><span class="fl">20.7256</span>, <span class="sc">-</span><span class="fl">23.4422</span>)), </span>
+<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a><span class="at">.Names =</span> <span class="fu">c</span>(<span class="st">"longitude"</span>, <span class="st">"latitude"</span>), <span class="at">class =</span> <span class="st">"data.frame"</span>, <span class="at">row.names =</span> <span class="fu">c</span>(<span class="cn">NA</span>, <span class="sc">-</span>6L))</span>
+<span id="cb43-19"><a href="#cb43-19" aria-hidden="true" tabindex="-1"></a>xy <span class="ot">&lt;-</span> mydf[,<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>)]</span>
+<span id="cb43-20"><a href="#cb43-20" aria-hidden="true" tabindex="-1"></a>spdf <span class="ot">&lt;-</span> <span class="fu">SpatialPointsDataFrame</span>(<span class="at">coords =</span> xy, <span class="at">data =</span> mydf, <span class="at">proj4string =</span> <span class="fu">CRS</span>(<span class="st">"+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Finally, plot the points we chose on the map of Australia.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(my_country)</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(spdf, <span class="at">add=</span>T, <span class="at">col=</span><span class="st">"red"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index.en_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a>proj_temp_cities <span class="ot">&lt;-</span> <span class="fu">extract</span>(proj_temp, spdf)</span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>proj_temp_cities <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(proj_temp_cities)</span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>proj_temp_cities <span class="ot">&lt;-</span><span class="fu">as.data.frame</span>(<span class="fu">t</span>(proj_temp_cities))</span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>proj_temp_cities<span class="sc">$</span>year <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(proj_temp_cities)<span class="sc">+</span><span class="dv">1980</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(proj_temp_cities) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Brisbane"</span>, <span class="st">"Cairns"</span>, <span class="st">"Mackay"</span>, <span class="st">"Townsville"</span>, <span class="st">"Mount_Isa"</span>, <span class="st">"Longreach"</span>, <span class="st">"year"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We can plot the projected temperature change of the cities we have selected.</p>
+<p>We can plot the projected temperature change of the cities we have selected.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("reshape2")</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(reshape2)</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>proj_temp_cities_melt <span class="ot">&lt;-</span> <span class="fu">melt</span>(proj_temp_cities, <span class="at">id=</span><span class="st">"year"</span>)</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>ts1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(proj_temp_cities_melt) <span class="sc">+</span></span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x=</span>year, <span class="at">y=</span>value, <span class="at">colour=</span>variable)) <span class="sc">+</span></span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="st">"Projected average temperature ACCESS-ESM1.5 SSP3-7.0"</span>) <span class="sc">+</span></span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ylab</span>(<span class="st">"Temperature (°C)"</span>)  <span class="sc">+</span></span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_color_brewer</span>(<span class="at">name=</span> <span class="st">"cities"</span>, <span class="at">palette=</span><span class="st">"Set1"</span>) <span class="sc">+</span></span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme_bw</span>() </span>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>ts1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index.en_files/figure-html/unnamed-chunk-23-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="convertig-gridcells-to-data-frame-within-a-study-area-mask-and-plotting-boxplots-in-ggplot2" class="level1">
+<h1>6 Convertig gridcells to data frame within a study area mask and plotting boxplots in ggplot2</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="fu">paste0</span>(home, <span class="st">"/IPCC"</span>)) <span class="co"># Set work directory to CMIP6 data</span></span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dir</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "CMIP6 - Consecutive Dry Days (CDD) Change days - Warming 1.5°C SSP5-8.5 (rel. to 1850-1900) - Annual (32 models).nc"
+ [2] "CMIP6 - Consecutive Dry Days (CDD) Change days - Warming 2°C SSP5-8.5 (rel. to 1850-1900) - Annual (32 models).nc"  
+ [3] "CMIP6 - Consecutive Dry Days (CDD) Change days - Warming 3°C SSP5-8.5 (rel. to 1850-1900) - Annual (32 models).nc"  
+ [4] "CMIP6 - Consecutive Dry Days (CDD) Change days - Warming 4°C SSP5-8.5 (rel. to 1850-1900) - Annual (19 models).nc"  
+ [5] "CMIP6 - Maximum temperature (TX) Change deg C - Warming 1.5°C SSP5-8.5 (rel. to 1850-1900) - Annual (27 models).nc" 
+ [6] "CMIP6 - Maximum temperature (TX) Change deg C - Warming 2°C SSP5-8.5 (rel. to 1850-1900) - Annual (27 models).nc"   
+ [7] "CMIP6 - Maximum temperature (TX) Change deg C - Warming 3°C SSP5-8.5 (rel. to 1850-1900) - Annual (27 models).nc"   
+ [8] "CMIP6 - Maximum temperature (TX) Change deg C - Warming 4°C SSP5-8.5 (rel. to 1850-1900) - Annual (16 models).nc"   
+ [9] "CMIP6 - Mean temperature (T) Change deg C - Warming 1.5°C SSP5-8.5 (rel. to 1850-1900) - Annual (34 models).nc"     
+[10] "CMIP6 - Mean temperature (T) Change deg C - Warming 2°C SSP5-8.5 (rel. to 1850-1900) - Annual (34 models).nc"       
+[11] "CMIP6 - Mean temperature (T) Change deg C - Warming 3°C SSP5-8.5 (rel. to 1850-1900) - Annual (34 models).nc"       
+[12] "CMIP6 - Mean temperature (T) Change deg C - Warming 4°C SSP5-8.5 (rel. to 1850-1900) - Annual (20 models).nc"       
+[13] "CMIP6 - Total precipitation (PR) Change % - Warming 1.5°C SSP5-8.5 (rel. to 1850-1900) - Annual (33 models).nc"     
+[14] "CMIP6 - Total precipitation (PR) Change % - Warming 2°C SSP5-8.5 (rel. to 1850-1900) - Annual (33 models).nc"       
+[15] "CMIP6 - Total precipitation (PR) Change % - Warming 3°C SSP5-8.5 (rel. to 1850-1900) - Annual (33 models).nc"       
+[16] "CMIP6 - Total precipitation (PR) Change % - Warming 4°C SSP5-8.5 (rel. to 1850-1900) - Annual (19 models).nc"       </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mean temperature</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a>temp_list <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="at">path=</span> <span class="fu">paste0</span>(home, <span class="st">"/IPCC"</span>), <span class="at">pattern =</span> <span class="st">"Mean temperature"</span>, <span class="at">full.names =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>temp_GW <span class="ot">&lt;-</span> <span class="fu">stack</span>(temp_list)</span>
+<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(temp_GW) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"GW1.5"</span>, <span class="st">"GW2.0"</span>, <span class="st">"GW3.0"</span>, <span class="st">"GW4.0"</span>) </span>
+<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(temp_GW)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index.en_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co">#masking data outside country and converting grid to dataframe</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>temp_GW_country <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">mask</span>(temp_GW, my_country))</span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(temp_GW_country)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 64800     4</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(temp_GW_country)   </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  GW1.5 GW2.0 GW3.0 GW4.0
+1    NA    NA    NA    NA
+2    NA    NA    NA    NA
+3    NA    NA    NA    NA
+4    NA    NA    NA    NA
+5    NA    NA    NA    NA
+6    NA    NA    NA    NA</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>temp_GW_country <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(temp_GW_country)</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(temp_GW_country)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 699   4</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("reshape2")</span></span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(reshape2)</span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>temp_GW_country_m <span class="ot">&lt;-</span> <span class="fu">melt</span>(temp_GW_country)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>No id variables; using all as measure variables</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co">#creating a boxplot of avg temp per global warming level on ggplot2</span></span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>bp1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(temp_GW_country_m, <span class="fu">aes</span>(<span class="at">x=</span>variable, <span class="at">y=</span>value, <span class="at">fill=</span>variable)) <span class="sc">+</span></span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_boxplot</span>()<span class="sc">+</span></span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a><span class="fu">xlab</span>(<span class="st">"Global warming level (°C)"</span>)<span class="sc">+</span></span>
+<span id="cb58-6"><a href="#cb58-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylab</span>(<span class="st">"Change in average surface temperature (°C)"</span>)<span class="sc">+</span></span>
+<span id="cb58-7"><a href="#cb58-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggtitle</span>(<span class="fu">paste</span>(<span class="st">"Change in average surface temperature per global warming level in "</span>, my_country<span class="sc">@</span>data<span class="sc">$</span>NAME[<span class="dv">1</span>], <span class="at">sep=</span><span class="st">""</span>)) <span class="sc">+</span></span>
+<span id="cb58-8"><a href="#cb58-8" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>()</span>
+<span id="cb58-9"><a href="#cb58-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb58-10"><a href="#cb58-10" aria-hidden="true" tabindex="-1"></a>bp1 <span class="ot">&lt;-</span> bp1 <span class="sc">+</span> <span class="fu">scale_color_brewer</span>(<span class="at">name=</span> <span class="st">"GW level"</span>, <span class="at">palette=</span><span class="st">"YlOrRd"</span>) <span class="co"># why it does not work? - change from color to fill</span></span>
+<span id="cb58-11"><a href="#cb58-11" aria-hidden="true" tabindex="-1"></a>bp1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index.en_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="repeat-the-extraction-and-plot-for-precipitation-andor-other-metrics" class="level1">
+<h1>7 Repeat the extraction and plot for precipitation and/or other metrics</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Total precipitation</span></span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>prec_list <span class="ot">&lt;-</span> <span class="fu">list.files</span>(<span class="at">path=</span> <span class="fu">paste0</span>(home, <span class="st">"/IPCC"</span>), <span class="at">pattern =</span> <span class="st">"Total precipitation"</span>, <span class="at">full.names =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>prec_GW <span class="ot">&lt;-</span> <span class="fu">stack</span>(prec_list)</span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(prec_GW) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"GW1.5"</span>, <span class="st">"GW2.0"</span>, <span class="st">"GW3.0"</span>, <span class="st">"GW4.0"</span>) </span>
+<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(prec_GW)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index.en_files/figure-html/unnamed-chunk-26-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="co">#masking data outside country and converting grid to dataframe</span></span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>prec_GW_country <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">mask</span>(prec_GW, my_country))</span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>prec_GW_GW_country <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(prec_GW_country)</span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>prec_GW_country_m <span class="ot">&lt;-</span> <span class="fu">melt</span>(prec_GW_country)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>No id variables; using all as measure variables</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co">#creating a boxplot of precipitation per global warming level on ggplot2</span></span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>bp2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(prec_GW_country_m, <span class="fu">aes</span>(<span class="at">x=</span>variable, <span class="at">y=</span>value, <span class="at">fill=</span>variable)) <span class="sc">+</span></span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a><span class="fu">geom_boxplot</span>()<span class="sc">+</span></span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a><span class="fu">xlab</span>(<span class="st">"Global warming level (°C)"</span>)<span class="sc">+</span></span>
+<span id="cb62-6"><a href="#cb62-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ylab</span>(<span class="st">"Change in total precipitation (%)"</span>)<span class="sc">+</span></span>
+<span id="cb62-7"><a href="#cb62-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggtitle</span>(<span class="fu">paste</span>(<span class="st">"Change in total precipitation per global warming level in "</span>, my_country<span class="sc">@</span>data<span class="sc">$</span>NAME[<span class="dv">1</span>], <span class="at">sep=</span><span class="st">""</span>)) <span class="sc">+</span></span>
+<span id="cb62-8"><a href="#cb62-8" aria-hidden="true" tabindex="-1"></a><span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb62-9"><a href="#cb62-9" aria-hidden="true" tabindex="-1"></a><span class="fu">scale_fill_brewer</span>(<span class="at">name=</span> <span class="st">"GW level"</span>, <span class="at">palette=</span><span class="st">"YlOrRd"</span>)</span>
+<span id="cb62-10"><a href="#cb62-10" aria-hidden="true" tabindex="-1"></a>bp2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 256404 rows containing non-finite values (`stat_boxplot()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index.en_files/figure-html/unnamed-chunk-27-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="where-to-find-climate-data" class="level1">
+<h1>Where to find climate data</h1>
+<p><strong>IPCC interactive atlas</strong> The authority for climate data is the IPCC. And the interactive atlas has the latest data https://interactive-atlas.ipcc.ch/regional-information</p>
+<p><strong>Worldclim</strong> Global climate and weather data. WorldClim is a database of high spatial resolution global weather and climate data. https://www.worldclim.org/</p>
+<p><strong>SILO</strong> gridded data for Australia until yesterday: https://longpaddock.qld.gov.au/silo/gridded-data/</p>
+<p><strong>LongPaddock</strong> Provided by the Queensland Government, gridded data available for a range of variables in NetCDF and GeoTiff formats. The NetCDF datasets are arranged in annual blocks where each file contains all of the grids for the selected year and variable. https://longpaddock.qld.gov.au</p>
+<p><strong>CMIP5 downscaled climate projections over Queensland</strong> High-resolution climate change projections for Queensland using dynamical downscaling of CMIP5 global climate models are available for download in gridded format with spatial resolution of 10 km at Terrestrial Ecosystem Research Network (TERN) https://longpaddock.qld.gov.au/qld-future-climate/data-info/tern/</p>
+</section>
+<section id="about-the-author" class="level1">
+<h1>About the author</h1>
+<p><img src="https://its-ss-academicportal.s3.amazonaws.com/prod/uqresearchers/photo/18673.jpeg" width="180" align="right"></p>
+<p><br> <a href="https://twitter.com/RalphTrancoso"><img src="https://img.shields.io/twitter/url/https/twitter.com/bukotsunikki.svg?style=social&amp;label=Follow%20%2540RalphTrancoso" class="img-fluid" alt="Twitter URL"></a></p>
+<p>Ralph is a research scientist with expertise in climate change, ecohydrology, and deforestation impacts. Ralph is particularly interested in how climate and landscape changes affect the environment and impact society. He is a Principal Climate Change Scientist at the Department of Environment and Science (Queensland Government) and a Research Fellow at the School of Biological Sciences (University of Queensland).</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

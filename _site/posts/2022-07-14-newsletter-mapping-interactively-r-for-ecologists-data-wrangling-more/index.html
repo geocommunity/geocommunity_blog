@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="">
+<meta name="dcterms.date" content="2022-07-14">
+
+<title>Brisbane Geospatial Community of Practice - Newsletter | Mapping interactively + R for ecologists + Data wrangling + more.</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Brisbane Geospatial Community of Practice</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Newsletter | Mapping interactively + R for ecologists + Data wrangling + more.</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">July 14, 2022</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#uq-geospatial-cop-newsletter-for-july-2022" id="toc-uq-geospatial-cop-newsletter-for-july-2022" class="nav-link active" data-scroll-target="#uq-geospatial-cop-newsletter-for-july-2022">UQ geospatial CoP Newsletter for July 2022</a>
+  <ul class="collapse">
+  <li><a href="#latest-blog-post" id="toc-latest-blog-post" class="nav-link" data-scroll-target="#latest-blog-post">Latest blog post</a></li>
+  <li><a href="#advanced-data-wrangling-for-spatial-analysis-in-r-this-friday-tomorrow" id="toc-advanced-data-wrangling-for-spatial-analysis-in-r-this-friday-tomorrow" class="nav-link" data-scroll-target="#advanced-data-wrangling-for-spatial-analysis-in-r-this-friday-tomorrow">Advanced data wrangling for spatial analysis in R this Friday (TOMORROW)</a></li>
+  <li><a href="#interactive-maps-in-rshiny" id="toc-interactive-maps-in-rshiny" class="nav-link" data-scroll-target="#interactive-maps-in-rshiny">Interactive maps in Rshiny</a></li>
+  <li><a href="#advanced-r-workshop-with-bill-venables" id="toc-advanced-r-workshop-with-bill-venables" class="nav-link" data-scroll-target="#advanced-r-workshop-with-bill-venables">Advanced R workshop with Bill Venables</a></li>
+  <li><a href="#r-for-ecologists." id="toc-r-for-ecologists." class="nav-link" data-scroll-target="#r-for-ecologists.">R for Ecologists.</a></li>
+  <li><a href="#organising-committee" id="toc-organising-committee" class="nav-link" data-scroll-target="#organising-committee">Organising committee</a></li>
+  <li><a href="#spatial-job-vacancies" id="toc-spatial-job-vacancies" class="nav-link" data-scroll-target="#spatial-job-vacancies">Spatial Job vacancies</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="uq-geospatial-cop-newsletter-for-july-2022" class="level1">
+<h1>UQ geospatial CoP Newsletter for July 2022</h1>
+<section id="latest-blog-post" class="level2">
+<h2 class="anchored" data-anchor-id="latest-blog-post">Latest blog post</h2>
+<p>We have put together a <a href="https://geospatial-community.netlify.app/post/2022-07-07-problem-solving-session-ii/">summary of last week’s workshop</a>.</p>
+<p>Thanks to everyone who had questions, answers, and contributions. It should all be captured in the post now. If you would like me to make any edits to the post, or better still if there are development on the problems, please let me know and I can easily update the details.</p>
+</section>
+<section id="advanced-data-wrangling-for-spatial-analysis-in-r-this-friday-tomorrow" class="level2">
+<h2 class="anchored" data-anchor-id="advanced-data-wrangling-for-spatial-analysis-in-r-this-friday-tomorrow">Advanced data wrangling for spatial analysis in R this Friday (TOMORROW)</h2>
+<p>Christina Buelow from Griffith will be hosting this 1-day course. It will be extremely useful whether you are relatively new to geospatial in R, or looking to hone your skills. <a href="https://smp.uq.edu.au/event/session/11370" class="uri">https://smp.uq.edu.au/event/session/11370</a> Cost is $150 for students (hopefully there are still spots available)</p>
+</section>
+<section id="interactive-maps-in-rshiny" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-maps-in-rshiny">Interactive maps in Rshiny</h2>
+<p>Christina will also be hosting a 100% free <a href="https://geospatial-community.netlify.app/upcoming-events/">Mapping interactively with Rshiny workshop</a> later in the month. Please spread the word, this is sure to be an excellent use of time if you have ever thought about putting your maps and data online.</p>
+</section>
+<section id="advanced-r-workshop-with-bill-venables" class="level2">
+<h2 class="anchored" data-anchor-id="advanced-r-workshop-with-bill-venables">Advanced R workshop with Bill Venables</h2>
+<p>Advanced R workshop with Bill Venables The advanced R workshop with Bill Venables was cancelled but he is doing it for free over several weeks 1 hr on Monday, Wednesday and Friday.<br>
+If you’re interested, email <a href="mailto:roxanne.jemison@uq.edu.au" class="email">roxanne.jemison@uq.edu.au</a> who is organising it.</p>
+</section>
+<section id="r-for-ecologists." class="level2">
+<h2 class="anchored" data-anchor-id="r-for-ecologists.">R for Ecologists.</h2>
+<p>EcoCommons, who are creating a platform for digital modelling and analysis (read more here <a href="https://www.ecocommons.org.au/about/" class="uri">https://www.ecocommons.org.au/about/</a>), have a new educational package: R for Ecologists (<a href="https://www.ecocommons.org.au/educational-material/" class="uri">https://www.ecocommons.org.au/educational-material/</a>). This is based on this data carpentry module. All videos are 100% free on youtube, and include plenty of spatial content including species distribution modelling.</p>
+</section>
+<section id="organising-committee" class="level2">
+<h2 class="anchored" data-anchor-id="organising-committee">Organising committee</h2>
+<p>We are putting together an organising committee to help coordinate workshops, this newsletter, and any other new ideas we might have. If you would be interested in volunteering a small amount of time, please get in touch.</p>
+</section>
+<section id="spatial-job-vacancies" class="level2">
+<h2 class="anchored" data-anchor-id="spatial-job-vacancies">Spatial Job vacancies</h2>
+<p>Here are a few job vacancies from across the country that might be of interest. Mainly taken from NRM jobs. If you know of any vacancies, send them in and I’ll include them on the next newsletter.</p>
+<p><a href="https://nrmjobs.com.au/jobs/2022/20013435/scientist-spatial?back=1">Spatial Scientist – NSW Department of Planning and Environment (Paramatta, NSW)</a></p>
+<p><a href="https://awejobs.nga.net.au/cp/index.cfm?event=jobs.checkJobDetailsNewApplication&amp;returnToEvent=jobs.listJobs&amp;jobid=D82A402D-FCF6-BAC7-7728-C88BE35D5D96&amp;CurATC=EXT&amp;CurBID=62AFB35D%2D9273%2D4A11%2D8DCC%2D9DB401354197&amp;JobListID=22FC4F47%2DE994%2D46A3%2DB8C9%2D9BC901269F43&amp;jobsListKey=87446f03%2D30c1%2D4d88%2D85ff%2Df6eea5a77a25&amp;persistVariables=CurATC,CurBID,JobListID,jobsListKey,JobID&amp;lid=55308770144">Assistant Director – Scientist (Geospatial – Land use). Federal department of Agriculture, Fisheries and Forestry. (Canberra)</a></p>
+<p><a href="https://nrmjobs.com.au/jobs/2022/20013322/spatial-information-systems-officer?back=1">Spatial Information Systems Officer. Timberlands Pacific (Launceston, Tasmania)</a></p>
+<p><a href="https://nrmjobs.com.au/jobs/2022/20013317/gis-analyst?back=1">GIS analyst. Eco Logical Australia. (Adelaide, SA)</a></p>
+<p><a href="https://nrmjobs.com.au/jobs/2022/20013172/natural-hazard-spatial-analyst?back=1">Natural Hazard and Spatial Analyst. Molino Stewart (Paramatta, NSW)</a></p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

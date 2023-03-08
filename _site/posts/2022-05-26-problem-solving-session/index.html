@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="">
+<meta name="dcterms.date" content="2022-05-26">
+
+<title>Brisbane Geospatial Community of Practice - Problem Solving Session I</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Brisbane Geospatial Community of Practice</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com"><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Problem Solving Session I</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 26, 2022</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#about-the-session" id="toc-about-the-session" class="nav-link active" data-scroll-target="#about-the-session">About the session</a></li>
+  <li><a href="#question-1---rasterizing-field-size-information-per-farm." id="toc-question-1---rasterizing-field-size-information-per-farm." class="nav-link" data-scroll-target="#question-1---rasterizing-field-size-information-per-farm.">Question 1 - Rasterizing field size information per farm.</a>
+  <ul class="collapse">
+  <li><a href="#the-question." id="toc-the-question." class="nav-link" data-scroll-target="#the-question.">The question.</a></li>
+  <li><a href="#create-some-dummy-data" id="toc-create-some-dummy-data" class="nav-link" data-scroll-target="#create-some-dummy-data">Create some dummy data</a></li>
+  <li><a href="#method-1.-go-back-to-point-data-and-add-rasterise-points-using-the-grid." id="toc-method-1.-go-back-to-point-data-and-add-rasterise-points-using-the-grid." class="nav-link" data-scroll-target="#method-1.-go-back-to-point-data-and-add-rasterise-points-using-the-grid.">Method 1. go back to point data, and add rasterise points using the grid.</a></li>
+  <li><a href="#method-2.-add-values-of-buffer-to-grid-cell-and-account-for-the-proportion-of-overlap." id="toc-method-2.-add-values-of-buffer-to-grid-cell-and-account-for-the-proportion-of-overlap." class="nav-link" data-scroll-target="#method-2.-add-values-of-buffer-to-grid-cell-and-account-for-the-proportion-of-overlap.">Method 2. add values of buffer to grid cell, and account for the proportion of overlap.</a></li>
+  </ul></li>
+  <li><a href="#question-2.-take-a-sample-of-a-continuous-raster-using-a-random-sample-of-a-categorical-raster." id="toc-question-2.-take-a-sample-of-a-continuous-raster-using-a-random-sample-of-a-categorical-raster." class="nav-link" data-scroll-target="#question-2.-take-a-sample-of-a-continuous-raster-using-a-random-sample-of-a-categorical-raster.">Question 2. Take a sample of a continuous raster using a random sample of a categorical raster.</a>
+  <ul class="collapse">
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">The problem</a></li>
+  <li><a href="#attempted-solution" id="toc-attempted-solution" class="nav-link" data-scroll-target="#attempted-solution">Attempted solution</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="about-the-session" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-session">About the session</h2>
+<p>We did something different for May: a problem solving session!</p>
+<p><img src="https://c.tenor.com/Ay19-AbBCfIAAAAC/hangover-math.gif" class="img-fluid"></p>
+<p>Here, people emailed in some questions which we went through and discussed in the workshop.</p>
+<p>It seemed to go pretty well, so we will probably use this format from time to time.</p>
+<p>Below, we have the two main questions that were discussed, attempted solutions</p>
+</section>
+<section id="question-1---rasterizing-field-size-information-per-farm." class="level2">
+<h2 class="anchored" data-anchor-id="question-1---rasterizing-field-size-information-per-farm.">Question 1 - Rasterizing field size information per farm.</h2>
+<section id="the-question." class="level3">
+<h3 class="anchored" data-anchor-id="the-question.">The question.</h3>
+<p>I have a geospatial problem to crop field mapping.I am using household survey data that includes a section on crop fields, their location, their area, use, distance to homestead and other things. An example for one country, Ethiopia, is <a href="https://microdata.worldbank.org/index.php/catalog/3823/data-dictionary/F68?file_name=ETH_PlotGeovariables_Y4.dta">here</a>.</p>
+<p>For privacy reasons I cannot get the GPS coordinates of each crop field although this data was collected. The household GPS locations are easier to access.</p>
+<p>I try to think through a process of calculating field size per raster grid cell that intersects with a circle around a household that is defined by the maximum field-homestead distance. I know that all the fields have to be within that circle and I know the mean field size and the distribution of field sizes within that circle. I was thinking to just assume that every grid cell in the circle has the mean field size of that circle with an error range based on the field size distribution. But there are also overlaps between circles and I don’t just want to calculate averages in this case.</p>
+<p>Do you know of a similar geospatial problem that someone has solved already that I could look into to get some ideas? From another field outside agriculture even?</p>
+<p><img src="images/katharina.png" class="img-fluid"></p>
+</section>
+<section id="create-some-dummy-data" class="level3">
+<h3 class="anchored" data-anchor-id="create-some-dummy-data">Create some dummy data</h3>
+<p>In this problem, we have point data (the households), with attributes related to the crop fields that are associated with that household, such as their area, use and distance to homestead. One of those attributes, maximum distance of field to homestead, was used to generate the buffers (red circles). But because maximum distance doesn’t perfectly capture the distance of fields to homesteads, they overlap. This complicates the process of rasterising the buffers.</p>
+<p>To explore our options, we will use the Terra R package.</p>
+<p>First, we will create some dummy data.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(terra)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>terra 1.7.18</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">rast</span>(<span class="at">ncols=</span><span class="dv">10</span>, <span class="at">nrows=</span><span class="dv">10</span>, <span class="at">xmin =</span> <span class="dv">1</span>, <span class="at">xmax =</span> <span class="fl">1.1</span>, <span class="at">ymin =</span> <span class="dv">1</span>, <span class="at">ymax =</span> <span class="fl">1.1</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">values</span>(r) <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">ncell</span>(r), <span class="fu">ncell</span>(r))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Then create some random points within our dummy raster (r). These represent the household locations.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>samp <span class="ot">&lt;-</span> <span class="fu">spatSample</span>(r, <span class="dv">25</span>, <span class="at">as.points=</span><span class="cn">TRUE</span>, <span class="at">method =</span> <span class="st">"random"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>widths <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">100</span><span class="sc">:</span><span class="dv">1000</span>, <span class="fu">length</span>(samp), <span class="at">replace =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Finally, we will add buffers to each of the points, randomly sized to represent the variability in maximum distance to field from household.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>buf<span class="ot">&lt;-</span><span class="fu">list</span>()</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(samp)) {buf[[i]] <span class="ot">&lt;-</span> <span class="fu">buffer</span>(samp[i], widths[i])}</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>fields <span class="ot">&lt;-</span> <span class="fu">vect</span>(buf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Also, add in other attributes (dmax, dmin and dmed) representing other field attributes like mean field size etc.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fields<span class="sc">$</span>ID <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">25</span> <span class="co">#field IDs</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>fields<span class="sc">$</span>dmax <span class="ot">&lt;-</span> <span class="fu">expanse</span>(fields) <span class="sc">/</span> <span class="dv">1000</span> <span class="co">#based on area covered by vector. </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: [expanse] unknown CRS. Results can be wrong</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fields<span class="sc">$</span>dmin <span class="ot">&lt;-</span> fields<span class="sc">$</span>dmax <span class="sc">/</span> <span class="dv">4</span> </span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>fields<span class="sc">$</span>dmed <span class="ot">&lt;-</span> fields<span class="sc">$</span>dmax <span class="sc">/</span> <span class="dv">2</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>So now when we plot everything, we have essentially recreated the problem.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(r) <span class="co">#plot the dummy raster</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fields, <span class="at">add =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>And when we look at the attributes of the fields dataset, we have attributes for each field.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>fields</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> class       : SpatVector 
+ geometry    : polygons 
+ dimensions  : 25, 5  (geometries, attributes)
+ extent      : 0.9961141, 1.096878, 0.9973581, 1.102877  (xmin, xmax, ymin, ymax)
+ coord. ref. :  
+ names       : lyr.1    ID      dmax      dmin      dmed
+ type        : &lt;int&gt; &lt;int&gt;     &lt;num&gt;     &lt;num&gt;     &lt;num&gt;
+ values      :     5     1 1.071e-07 2.677e-08 5.354e-08
+                 100     2 6.054e-08 1.514e-08 3.027e-08
+                  23     3 1.221e-07 3.052e-08 6.104e-08</code></pre>
+</div>
+</div>
+</section>
+<section id="method-1.-go-back-to-point-data-and-add-rasterise-points-using-the-grid." class="level3">
+<h3 class="anchored" data-anchor-id="method-1.-go-back-to-point-data-and-add-rasterise-points-using-the-grid.">Method 1. go back to point data, and add rasterise points using the grid.</h3>
+<p>This ensures that polygons are not overlapping - 1 point per grid cell. but it removes the spatial representation of the radius.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>centres <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">centroids</span>(fields)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(r)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(centres, <span class="at">add=</span><span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Now that we have converted the buffers to points, we can use the <code>rasterize</code> function to add the point data to the rasters - one layer per attribute.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>dmax_cent <span class="ot">&lt;-</span> <span class="fu">rasterize</span>(centres, r, <span class="st">"dmax"</span>, <span class="st">"mean"</span>) <span class="co">#rasterize the dmax attribute of the points</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(dmax_cent) <span class="ot">&lt;-</span> <span class="st">"dmax_cent"</span> <span class="co">#name the dmax layer</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>dmin_cent <span class="ot">&lt;-</span> <span class="fu">rasterize</span>(centres, r, <span class="st">"dmed"</span>, <span class="st">"mean"</span>) <span class="co"># rasterize the median field size attribute from the points</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(dmin_cent) <span class="ot">&lt;-</span> <span class="st">"dmin_cent"</span> <span class="co">#name the dmin layer</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>dmed_cent <span class="ot">&lt;-</span> <span class="fu">rasterize</span>(centres, r, <span class="st">"dmin"</span>, <span class="st">"mean"</span>) <span class="co">#rasterize the min field size from the point layers</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(dmed_cent) <span class="ot">&lt;-</span> <span class="st">"dmed_cent"</span> <span class="co">#name the dmed layer</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>cent_combined <span class="ot">&lt;-</span> <span class="fu">c</span>(dmax_cent, dmin_cent, dmed_cent) <span class="co">#combine the rasters into a single spatVector</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>))</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dmin_cent, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="fl">1.1</span>))</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(centres, <span class="at">add=</span>T)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dmax_cent)</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(centres, <span class="at">add=</span>T)</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dmax_cent)</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(centres, <span class="at">add=</span>T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>We can see that each household, represented by the points, relates to a single raster grid cell. This might be enough, but the spatial information embedded in the buffers - where the buffer size is proportional to maximum distance - is lost.</p>
+<p>So what options are there to preserve this information when rasterizing?</p>
+</section>
+<section id="method-2.-add-values-of-buffer-to-grid-cell-and-account-for-the-proportion-of-overlap." class="level3">
+<h3 class="anchored" data-anchor-id="method-2.-add-values-of-buffer-to-grid-cell-and-account-for-the-proportion-of-overlap.">Method 2. add values of buffer to grid cell, and account for the proportion of overlap.</h3>
+<p>There has been a <a href="https://stackoverflow.com/questions/71065269/rasterize-polygons-based-on-maximum-overlap-using-r-packages-terra-or-stars">similar issue posted on stackoverflow</a> which gives us some clues.</p>
+<p>Ok, going back to our fields and our raster:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(r)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fields, <span class="at">add=</span>T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>One idea was to scale the field size by the fraction of the grid cell that it covers, such that a 100m max field size, that covered 5% of a grid would become 5m. Unfortunately this doesn’t make a lot of sense, as the actual size of the field hasnt changed.</p>
+<p>So really what we want to do is just add the field size onto the raster. so even if its a small fraction, the average size would still be 100m.</p>
+<p>But its not so simple when field buffers overlap: what happens when a 100m field and 50m field overlap within the same grid cell?</p>
+<p>One approach is to reduce the cell size of the original raster, then individually rasterize all of the field polygons using this fine resolution raster, before merging the musing the <code>mosaic</code> function to make the grid cells much smaller than they currently are.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>dis <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">disagg</span>(r, <span class="dv">20</span>) <span class="co"># 20x smaller cells. </span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>dvalue <span class="ot">&lt;-</span> <span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(fields), \(i) <span class="fu">rasterize</span>(fields[i,], dis, <span class="at">field =</span> <span class="st">"dmax"</span>)) <span class="co">#rasterize each of the fields using the fine raster  </span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>dvalue <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">sprc</span>(dvalue) <span class="co">#make a spatraster collection out of the list of rasterised fields </span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>dvalue <span class="ot">&lt;-</span> <span class="fu">mosaic</span>(dvalue) <span class="co">#mosaic them all together, which by default will average overlapping cells</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dvalue)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fields, <span class="at">add=</span><span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Now, the original question was what is the average field size per grid cell. When we re-aggregate the data</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(dmax_cent)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fields, <span class="at">add=</span>T)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">aggregate</span>(dvalue, <span class="dv">20</span>, mean, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(fields, <span class="at">add=</span>T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>So now, each cell <em>should</em> represent the average field size within it. This is not perfect: It might tell you where there are trends toward bigger or smaller fields, but the raster cell is not proportional to field size so be careful with summary statistics.</p>
+</section>
+</section>
+<section id="question-2.-take-a-sample-of-a-continuous-raster-using-a-random-sample-of-a-categorical-raster." class="level2">
+<h2 class="anchored" data-anchor-id="question-2.-take-a-sample-of-a-continuous-raster-using-a-random-sample-of-a-categorical-raster.">Question 2. Take a sample of a continuous raster using a random sample of a categorical raster.</h2>
+<section id="the-problem" class="level3">
+<h3 class="anchored" data-anchor-id="the-problem">The problem</h3>
+<p>Have 2 rasters, one categorical representing classes of coral reef cover, and one continuous representing wave action.</p>
+<p>Wanting to take a random sample of the reef cover raster (excluding NAs), then use that sample to return corresponding values of the continuous raster. The two rasters have different resolutions.</p>
+</section>
+<section id="attempted-solution" class="level3">
+<h3 class="anchored" data-anchor-id="attempted-solution">Attempted solution</h3>
+<p>As always, we will start by trying to create a dummy dataset. Starting with the reef cover raster.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(terra) <span class="co">#load the terra library, the best for raster analysis in R </span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co">#make a coral cover raster</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>coral <span class="ot">&lt;-</span> <span class="fu">rast</span>(<span class="at">ncol=</span><span class="dv">10</span>, <span class="at">nrow=</span><span class="dv">10</span>, <span class="at">names=</span><span class="st">"stratum"</span>)  <span class="co"># a 10x10 raster</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="fu">values</span>(coral) <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">runif</span>(<span class="fu">ncell</span>(coral), <span class="dv">1</span>, <span class="dv">5</span>)) <span class="co">#values 1-5, setting 5 as NA</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>coral <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">classify</span>(coral, <span class="fu">cbind</span>(<span class="dv">5</span>, <span class="cn">NA</span>)) <span class="co"># #make 5 NA, so the dataset has some NA</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="co">#make a wave action raster</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>wave <span class="ot">&lt;-</span> <span class="fu">rast</span>(<span class="at">ncol=</span><span class="dv">20</span>, <span class="at">nrow=</span><span class="dv">20</span>) </span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a><span class="fu">values</span>(wave) <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="fu">ncell</span>(wave), <span class="dv">1</span>, <span class="dv">25</span>)</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a>wave <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">classify</span>(wave, <span class="fu">cbind</span>(<span class="dv">5</span>, <span class="cn">NA</span>))</span>
+<span id="cb18-14"><a href="#cb18-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-15"><a href="#cb18-15" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>)) <span class="co">#plot them side-by-side</span></span>
+<span id="cb18-16"><a href="#cb18-16" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(coral)</span>
+<span id="cb18-17"><a href="#cb18-17" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(wave)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>Now we can take a random sample of the coral cover raster using the <code>spatSample</code> function.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>rand_pts <span class="ot">&lt;-</span> <span class="fu">spatSample</span>(coral, <span class="dv">10</span>, <span class="st">"random"</span>, <span class="at">as.points=</span><span class="cn">TRUE</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="co">#this will sample the number from among the strata (not #NA) </span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(coral)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(rand_pts, <span class="dv">1</span>, <span class="at">add=</span><span class="cn">TRUE</span>, <span class="at">plg=</span><span class="fu">list</span>(<span class="at">x=</span><span class="dv">185</span>, <span class="at">y=</span><span class="dv">1</span>, <span class="at">title=</span><span class="st">"points"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>And we can see that each point relates to the stratum integer of the raster:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>rand_pts<span class="sc">$</span>stratum</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 3 3 3 4 1 4 4 3 3 4</code></pre>
+</div>
+</div>
+<p>As an aside, this doesn’t seem to work when we have a <em>named</em> categorical raster, as opposed to a categorical raster represented by integers. As we will see if we label the categories using the <code>levels</code> function:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>coral_named <span class="ot">=</span> coral<span class="dv">-1</span> <span class="co">#values need to start at zero, not one, for the levels function. </span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="co">#the way we made the raster, they started at one. </span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(coral_named) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Rubble"</span>, <span class="st">"Coral/Algae"</span>, <span class="st">"Sand"</span>, <span class="st">"Rock"</span>) <span class="co">#now we Can add our category labels in </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: [set.cats] setting categories like this is deprecated; use a two-column
+data.frame instead</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(coral_named)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-16-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>We would obviously prefer our categorical raster to look like this, with names rather then integers representing the categories. But when we randomly sample it with <code>spatSample</code> (using the exact same code as above), we get a whole pile of NAs.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>rand_pts_named <span class="ot">&lt;-</span> <span class="fu">spatSample</span>(coral_named, <span class="dv">10</span>, <span class="st">"random"</span>, <span class="at">as.points=</span><span class="cn">TRUE</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="co">#this will sample the number from among the strata (not NA) </span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>rand_pts_named<span class="sc">$</span>stratum</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] Coral/Algae Rock        Rock        Sand        Rock        Coral/Algae
+ [7] Rock        Sand        Sand        Rubble     
+Levels: Rubble Coral/Algae Sand Rock</code></pre>
+</div>
+</div>
+<p>Not sure why this is the case and it might be a good one to put on stack overflow… but for now, lets just move on knowing the integers represent the cover classes.</p>
+<p>So getting back to the task - we can use the random sample from the <code>coral</code> layer stored in the <code>rand_pts</code> <code>spatVector</code> using <code>rasterize</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>coral_sample <span class="ot">&lt;-</span> <span class="fu">rasterize</span>(rand_pts, wave, <span class="at">field =</span> <span class="st">"stratum"</span>) <span class="co">#rasterize the points using the wave raster as a template</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>And now that we are done sampling, we can name our coral categories.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>coral_sample <span class="ot">&lt;-</span> coral_sample <span class="sc">-</span><span class="dv">1</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(coral_sample) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Rubble"</span>, <span class="st">"Coral/Algae"</span>, <span class="st">"Sand"</span>, <span class="st">"Rock"</span>) <span class="co">#now we can add our category labels in</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: [set.cats] setting categories like this is deprecated; use a two-column
+data.frame instead</code></pre>
+</div>
+</div>
+<p>Finally, we can use the mask function to grab the cells where we have sample values of coral:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>waves_sample <span class="ot">&lt;-</span> <span class="fu">mask</span>(wave, coral_sample) <span class="co">#get the waves cells where the points were </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Lets have a look at the two rasters to see if they it all makes sense.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>)) <span class="co">#plot them side-by-side</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(coral_sample)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(waves_sample)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-21-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
