@@ -2,11 +2,10 @@
 title: Newsletter | Climate data blog post + problem solving session + conference in Fiji + more 
 author: ''
 date: '2022-09-09'
-slug: []
-categories: []
+slug: newsletter-sep2022
+categories:
+  - newsletter
 tags: []
-Tags: []
-Categories: [newsletter]
 DisableComments: no
 ---
 

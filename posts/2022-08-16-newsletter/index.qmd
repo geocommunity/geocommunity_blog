@@ -3,10 +3,10 @@ title: 'Newsletter | Analysing climate data with R +  Interactive Maps  + AEO Fo
 author: ''
 date: '2022-08-16'
 slug: []
-categories: []
+categories:
+  - newsletter
 tags: []
-Tags: []
-Categories: [newsletter]
+
 DisableComments: no
 ---
 

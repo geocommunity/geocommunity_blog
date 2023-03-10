@@ -1,5 +1,6 @@
 ---
 title: Build a blog with Quarto, Git, and RStudio
+subtitle: A workshop given at the Research Bazaar Queensland 2022.
 author: 'Catherine Kim'
 date: '2022-11-03'
 slug: quarto-blog
@@ -107,7 +108,7 @@ These platforms not only allow for version control but also to collaborate, orga
 
 ![](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/main/github-illustrated-series/github_wickham_bryan_git_quote.png){fig-alt="On the left is a quote from Hadley Wickham and Jenny Bryan that says 'Using a Git commit is like using anchors and other protection when climbing...if you make a mistake you can't fall past the previous commit. Commits are also helpful to others, because they show your journey, not just the destination.' On the right, two little monsters climb a cliff face. Their ropes are secured by several anchors, each labeled 'Commit'. Three monsters on the ground support the climbers."}
 
-In this case, we will be using **GitHub** to access the website files, make some changes (i.e., add a post), and then incorporate those changes back to the website repository on GitHub which will automatically update the website itself. `r emo::ji("raised_hands")`
+In this case, we will be using **GitHub** to access the website files, make some changes (i.e., add a post), and then incorporate those changes back to the website repository on GitHub which will automatically update the website itself. 🙌
 
 There are lots of fabulous and free resources online that go more into depth on Git:
 

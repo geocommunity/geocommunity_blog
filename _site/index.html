@@ -71,9 +71,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -151,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(13)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(1)</span></div><div class="category" data-category="climate">climate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="raster">raster <span class="quarto-category-count">(1)</span></div><div class="category" data-category="spatial">spatial <span class="quarto-category-count">(2)</span></div><div class="category" data-category="tutorial">tutorial <span class="quarto-category-count">(3)</span></div><div class="category" data-category="visualisation">visualisation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="website">website <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(13)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(1)</span></div><div class="category" data-category="climate">climate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="newsletter">newsletter <span class="quarto-category-count">(4)</span></div><div class="category" data-category="raster">raster <span class="quarto-category-count">(1)</span></div><div class="category" data-category="spatial">spatial <span class="quarto-category-count">(2)</span></div><div class="category" data-category="tutorial">tutorial <span class="quarto-category-count">(3)</span></div><div class="category" data-category="visualisation">visualisation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="website">website <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -222,7 +222,7 @@ Christina Buelow
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="" data-listing-date-sort="1674309600000" data-listing-file-modified-sort="1678425214115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1.27">
+<div class="quarto-post image-right" data-index="1" data-categories="newsletter" data-listing-date-sort="1674309600000" data-listing-file-modified-sort="1678428861820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1.27">
 <div class="thumbnail">
 <p><a href="./posts/2023-01-22-newsletter-happy-new-year-february-meet-up-r-training/index.html"> <img src="./posts/2023-01-22-newsletter-happy-new-year-february-meet-up-r-training/turkeypin.png" class="thumnail-image" alt="A red, google style location pin with a bush turkey inside. The logo of the Geospatial Community."> </a></p>
 </div>
@@ -236,7 +236,9 @@ Newsletter | Happy New Year! | February meet-up | R Training
 </div>
 </a>
 <div class="listing-categories">
-
+<div class="listing-category" onclick="window.quartoListingCategory('newsletter'); return false;">
+newsletter
+</div>
 </div>
 <a href="./posts/2023-01-22-newsletter-happy-new-year-february-meet-up-r-training/index.html">
 <div class="listing-description">
@@ -255,7 +257,7 @@ Christina Buelow
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="website" data-listing-date-sort="1667397600000" data-listing-file-modified-sort="1678409417006" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14.43">
+<div class="quarto-post image-right" data-index="2" data-categories="website" data-listing-date-sort="1667397600000" data-listing-file-modified-sort="1678428670059" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14.425">
 <div class="thumbnail">
 <p><a href="./posts/2022-11-03-build-blog-w-quarto/index.html"> <img src="./posts/2022-11-03-build-blog-w-quarto/images/quarto.png" class="thumnail-image"> </a></p>
 </div>
@@ -265,7 +267,7 @@ Christina Buelow
 Build a blog with Quarto, Git, and RStudio
 </h3>
 <div class="listing-subtitle">
-
+A workshop given at the Research Bazaar Queensland 2022.
 </div>
 </a>
 <div class="listing-categories">
@@ -290,7 +292,7 @@ Catherine Kim
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="" data-listing-date-sort="1662645600000" data-listing-file-modified-sort="1678409416908" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1.29">
+<div class="quarto-post image-right" data-index="3" data-categories="newsletter" data-listing-date-sort="1662645600000" data-listing-file-modified-sort="1678428964992" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1.29">
 <div class="thumbnail">
 <a href="./posts/2022-09-09-newsletter/index.html">
 <div class="thumbnail-image">
@@ -308,7 +310,9 @@ Newsletter | Climate data blog post + problem solving session + conference in Fi
 </div>
 </a>
 <div class="listing-categories">
-
+<div class="listing-category" onclick="window.quartoListingCategory('newsletter'); return false;">
+newsletter
+</div>
 </div>
 <a href="./posts/2022-09-09-newsletter/index.html">
 <div class="listing-description">
@@ -365,7 +369,7 @@ Ralph Trancoso
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="" data-listing-date-sort="1660572000000" data-listing-file-modified-sort="1678409416904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1.865">
+<div class="quarto-post image-right" data-index="5" data-categories="newsletter" data-listing-date-sort="1660572000000" data-listing-file-modified-sort="1678429060333" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1.865">
 <div class="thumbnail">
 <a href="./posts/2022-08-16-newsletter/index.html">
 <div class="thumbnail-image">
@@ -383,7 +387,9 @@ Newsletter | Analysing climate data with R + Interactive Maps + AEO Forum + more
 </div>
 </a>
 <div class="listing-categories">
-
+<div class="listing-category" onclick="window.quartoListingCategory('newsletter'); return false;">
+newsletter
+</div>
 </div>
 <a href="./posts/2022-08-16-newsletter/index.html">
 <div class="listing-description">
@@ -437,7 +443,7 @@ Jul 20, 2022
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="" data-listing-date-sort="1657720800000" data-listing-file-modified-sort="1678409416901" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1.9">
+<div class="quarto-post image-right" data-index="7" data-categories="newsletter" data-listing-date-sort="1657720800000" data-listing-file-modified-sort="1678429238141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1.89">
 <div class="thumbnail">
 <a href="./posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html">
 <div class="thumbnail-image">
@@ -455,7 +461,9 @@ Newsletter | Mapping interactively + R for ecologists + Data wrangling + more.
 </div>
 </a>
 <div class="listing-categories">
-
+<div class="listing-category" onclick="window.quartoListingCategory('newsletter'); return false;">
+newsletter
+</div>
 </div>
 <a href="./posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html">
 <div class="listing-description">

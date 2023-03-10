@@ -3,11 +3,10 @@ title: Newsletter | Mapping interactively +  R for ecologists  + Data wrangling 
   more.
 author: ''
 date: '2022-07-14'
-slug: []
-categories: []
+slug: newsletter-jul2022
+categories:
+  - newsletter
 tags: []
-Tags: []
-Categories: [newsletter]
 DisableComments: no
 ---
 
@@ -19,7 +18,7 @@ We have put together a [summary of last week's workshop](https://geospatial-comm
 
 Thanks to everyone who had questions, answers, and contributions. It should all be captured in the post now. If you would like me to make any edits to the post, or better still if there are development on the problems, please let me know and I can easily update the details.
 
-## Advanced data wrangling for spatial analysis in R this Friday (TOMORROW)
+## Advanced data wrangling for spatial analysis in R 
 
 Christina Buelow from Griffith will be hosting this 1-day course. It will be extremely useful whether you are relatively new to geospatial in R, or looking to hone your skills. <https://smp.uq.edu.au/event/session/11370> Cost is \$150 for students (hopefully there are still spots available)
 
