@@ -2,14 +2,14 @@ project:
   type: website
 
 website:
-  title: "Brisbane Geospatial Community of Practice"
+  title: "Geospatial Community"
   navbar:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/geocommunity/geocommunity_blog
+      # - icon: twitter
+      #   href: https://twitter.com
 format:
   html:
     theme: litera
