@@ -1,5 +1,6 @@
 ---
-title: "Brisbane Geospatial Community of Practice"
+title: "Geospatial Community"
+
 listing:
   contents: posts
   sort: "date desc"
