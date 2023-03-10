@@ -3,11 +3,11 @@ title: "About"
 image: turkeypin.svg
 about:
   template: marquee
-  image-width: 10% #css width
+  image-width: 15% #css width
   links:
     - icon: github
       text: Github
-      href: https://github.com/seaCatKim/geocommunity_blog
+      href: https://github.com/geocommunity/geocommunity_blog
 ---
 
 Whether its making a simple site map or running deep learning analyses on satellite data, students and researchers are often called upon to conduct geospatial analysis. `r emo::ji("world_map")`
@@ -26,4 +26,4 @@ See [upcoming events](/upcoming-events/) for the next session.
 
 And check out our [blog](/index.qmd) for previous sessions.
 
-If you want to get involved, just email us at uqgeo.community @ gmail dot com
+If you want to get involved, just email us at uqgeo.community \@ gmail dot com
