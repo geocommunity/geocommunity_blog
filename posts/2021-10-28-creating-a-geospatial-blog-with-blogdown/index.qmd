@@ -1,6 +1,6 @@
 ---
 title: Creating a geospatial blog with blogdown (on our old site)
-author: UQGSAC
+author: Geospatial Community
 date: '2021-10-28'
 slug: create-a-geospatial-blog
 categories:
