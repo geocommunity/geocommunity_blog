@@ -10,6 +10,7 @@ website:
         href: https://github.com/geocommunity/geocommunity_blog
       # - icon: twitter
       #   href: https://twitter.com
+  favicon: turkeypin.svg
 format:
   html:
     theme: litera
