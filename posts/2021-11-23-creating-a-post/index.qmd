@@ -5,8 +5,9 @@ date: '2021-11-23'
 slug: []
 categories: 
   - website
+  - tutorial
 tags: 
-  - r
+  - R
   - rstudio
   - git
   - GitHub
@@ -86,7 +87,7 @@ Git is the *software itself* that records changes to a set of files locally. The
 
 These platforms not only allow for version control but also to collaborate, organize, and back up projects.
 
-In this case, we will be using **GitHub** to access the website files, make some changes (i.e., add a post), and then incorporate those changes back to the website repository on GitHub which will automatically update the website itself. `r emo::ji("raised_hands")`
+In this case, we will be using **GitHub** to access the website files, make some changes (i.e., add a post), and then incorporate those changes back to the website repository on GitHub which will automatically update the website itself. 🙌
 
 We will focus on contributing a post to an existing website repository on GitHub, but there are lots of fabulous and free resources online that go more into depth on Git:
 
@@ -264,7 +265,7 @@ Once the website is set-up, forked, and cloned... you can get on with creating a
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML documents that we can incorporate into the website. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. For a website post, knitting is not as important because we can serve our site locally which automatically knits anything new and view the changes as we just learned `r emo::ji("point_up_2")`.
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. For a website post, knitting is not as important because we can serve our site locally which automatically knits anything new and view the changes as we just learned 👆.
 
 Now let's add some information about R Markdown:
 

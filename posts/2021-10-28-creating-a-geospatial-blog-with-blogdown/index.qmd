@@ -4,6 +4,7 @@ author: Geospatial Community
 date: '2021-10-28'
 slug: create-a-geospatial-blog
 categories:
+  - tutorial
   - spatial
   - visualisation
 tags:
@@ -144,6 +145,8 @@ Then, when you push the repo it'll ask you for credential through the browser.
 ## 5. Publish site!
 
 Log into netlify (using github account). Then click new site from git, continuous deployment: Github. you should be able to see the repo from within netlify. Select deploy site.
+
+![Deploys by Netlify](https://www.netlify.com/v3/img/components/netlify-color-accent.svg){alt="Deploys by Netlify"}
 
 It will give you a temporary URL which is live! Now it will automatically update every time you push changes to github.
 
