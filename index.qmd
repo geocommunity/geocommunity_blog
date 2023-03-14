@@ -49,7 +49,7 @@ The Geospatial Community tries to make this process a bit less painful, by shari
 
 We run **monthly skill sharing tutorial sessions** where a member of our community teaches us something they have learned along the way.
 
-This usually occurs on the last Thursday of each month. See our [upcoming events](https://geospatial-community.netlify.app/workshops/).
+This usually occurs on the last Thursday of each month. See our [upcoming events](/workshops.html).
 
 ## Upcoming Workshop {style="padding-top: 10px;"}
 

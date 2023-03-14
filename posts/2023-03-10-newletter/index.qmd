@@ -15,9 +15,9 @@ DisableComments: no
 
 ### Next workshop -- Thursday March 23rd, 2-4pm
 
-We will have a combined session for our March workshop. In the first half, Christina will run through some R spatial basics. 
+We will have a combined session for our March workshop. In the first half, Christina will run through some R spatial basics.
 
-Check out the material ![here](https://cabuelow.quarto.pub/r-for-mapping-and-more/). And if you want to follow along on your own computer during the workshop, download the code and data ![here](https://github.com/cabuelow/R-spatial-2022). In the second half, we will host a problem-solving session. So bring along your spatial questions (ideally send them through before the workshop).
+Check out the material [here](https://cabuelow.quarto.pub/r-for-mapping-and-more/). And if you want to follow along on your own computer during the workshop, download the code and data [here](https://github.com/cabuelow/R-spatial-2022). In the second half, we will host a problem-solving session. So bring along your spatial questions (ideally send them through before the workshop).
 
 ### Previous workshop
 
@@ -25,13 +25,13 @@ Christina showed us how to measure area in R - PROPERLY. And it's not as simple 
 
 ### Geospatial Jobs
 
-There are quite a few geospatial jobs going at the moment: 
+There are quite a few geospatial jobs going at the moment:
 
-- Environmental GIS analyst, Eco-logical, Brisbane 
-- Senior Spatial Scientist and Spatial Scientist, NT government, Darwin 
-- Spatial Systems and Data Officer, Central Land Council, Alice Springs 
-- Natural capital data science internship (paid), Bush Heritage, remote 
-- Data integration and stratification intern (paid), Bush Heritage, remote
+-   Environmental GIS analyst, Eco-logical, Brisbane
+-   Senior Spatial Scientist and Spatial Scientist, NT government, Darwin
+-   Spatial Systems and Data Officer, Central Land Council, Alice Springs
+-   Natural capital data science internship (paid), Bush Heritage, remote
+-   Data integration and stratification intern (paid), Bush Heritage, remote
 
 ### New Website!
 
@@ -47,7 +47,7 @@ Thanks to everyone who took to time to fill out our survey. Here are a few of th
 
 ![](survey-who-we-are.png)
 
-#### *What should we be called?* 
+#### *What should we be called?*
 
 We put it to the group to vote on a new name, mainly because a lot of our members are not affiliated with UQ -- so UQ geospatial didn't seem appropriate anymore. The most popular result was Geospatial Community, so we will stick with that.
 
@@ -60,27 +60,26 @@ From the survey results and some discussion among the organising committee, we a
 I hope this captures what the group is all about; please get in touch to suggested changes.
 
 #### What people want to learn about?
+
 There were some really interesting and topical suggestions for future workshops:
 
--	How to handle big spatial data on the HPC – learn the basics of transferring data and scripts to the HPC, writing a bash shell script to submit a batch job to the HPC, and parallel processing to speed things up
--	Pros and Cons of different GIS software, e.g., ArcGIS, QGIS, R, python, etc
--	What is GDAL and why is it important for spatial data scientists to know about?
--	How to model spatial data and deal with spatial autocorrelation
--	Remote-sensing image analysis using machine learning 
-We will do our best to find presenters to deliver workshops around these themes. 
+-   How to handle big spatial data on the HPC -- learn the basics of transferring data and scripts to the HPC, writing a bash shell script to submit a batch job to the HPC, and parallel processing to speed things up
+-   Pros and Cons of different GIS software, e.g., ArcGIS, QGIS, R, python, etc
+-   What is GDAL and why is it important for spatial data scientists to know about?
+-   How to model spatial data and deal with spatial autocorrelation
+-   Remote-sensing image analysis using machine learning We will do our best to find presenters to deliver workshops around these themes.
 
 ### Organising committe
 
 Huge thanks to
 
--	Christina Buelow
--	Catherine Kim
--	Nick Wiggins 
--	Mitchel Rudge
--	Tanya Dodgen
--	Annie Nguyen 
--	Jason Dail 
--	Kaiching Cheong 
+-   Christina Buelow
+-   Catherine Kim
+-   Nick Wiggins
+-   Mitchel Rudge
+-   Tanya Dodgen
+-   Annie Nguyen
+-   Jason Dail
+-   Kaiching Cheong
 
-for volunteering to help out on the organising committee. Excited for the year ahead 😊 
-
+for volunteering to help out on the organising committee. Excited for the year ahead 😊
