@@ -1,13 +1,69 @@
 ---
 title: "Geospatial Community"
+image: turkeypin.svg
 
 listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: true
-  filter-ui: true
+  - id: latest
+    contents: posts
+    sort: "date desc"
+    type: default
+    max-items: 1
+  - id: old
+    contents: posts
+    sort: "date desc"
+    type: grid
+    max-items: 3
+    grid-columns: 3
+    fields: [image, title]
+  - id: testimonials
+    contents: testimonials
+    sort: "date desc"
+    type: grid
+    max-items: 3
+    grid-columns: 1
 page-layout: full
 title-block-banner: true
 ---
+
+```{=html}
+<style>
+#title-block-header{
+display: none;
+}
+</style>
+```
+```{=html}
+<div style="padding-bottom: 2em;">
+  <div style="display: inline-block;width: 100px;">
+    <img src="turkeypin.svg" style="width: 4em; vertical-align: -15px;" class="GeoCommunity Turkey Pin Logo">
+  </div>
+
+  <div style="display: inline-block;width: 70%;">
+    <h1 class="title">Brisbane Geospatial Community of Practice</h1>
+  </div>
+</div>
+```
+Welcome to the **Geospatial Community**! Geospatial analysis can be difficult and intimidating, particularly when we don't have a strong background in coding, GIS or remote sensing.
+
+The Geospatial Community tries to make this process a bit less painful, by sharing our experiences, skills and tricks in a friendly and inclusive environment.
+
+We run monthly skill sharing tutorial sessions where a member of our community teaches us something they have learned along the way.
+
+This usually occurs on the last Thursday of each month. See our [upcoming events](https://geospatial-community.netlify.app/upcoming-events/).
+
+## Upcoming Workshop
+
+::: {#latest}
+:::
+
+::: column-margin
+## Testimonials
+
+::: {#testimonials}
+:::
+:::
+
+## Workshops
+
+::: {#old}
+:::
