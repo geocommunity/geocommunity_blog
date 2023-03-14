@@ -1,7 +1,7 @@
 ---
 title: Newsletter | Happy New Year! | February meet-up | R Training
 author: Christina Buelow
-image: turkeypin.png
+image: explore.jpg
 image-width: "10"
 image-alt: A red, google style location pin with a bush turkey inside. The logo of the Geospatial Community.
 date: '2023-01-22'

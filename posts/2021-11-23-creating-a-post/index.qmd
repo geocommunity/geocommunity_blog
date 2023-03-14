@@ -15,7 +15,6 @@ tags:
   - RMarkdown
 Description: ''
 DisableComments: no
-math: true
 ---
 
 We will be covering some basics of multiple programming skills (Git/GitHub, R, html, etc...) with the aim of empowering people to contribute to blogdown websites such as the **University of Queensland Geospatial Analysis Community of practice (UQGAC)** blog. The idea is to encourage community members to contribute material directly instead of funneling everything through a website administrator.

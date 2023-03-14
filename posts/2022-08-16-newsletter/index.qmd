@@ -1,6 +1,7 @@
 ---
 title: 'Newsletter | Analysing climate data with R +  Interactive Maps  + AEO Forum + more.'
 author: ''
+image: computer.jpg
 date: '2022-08-16'
 slug: []
 categories:
@@ -15,6 +16,7 @@ DisableComments: no
 ## Blog post -- Interactive mapping with Rshiny, Christina Buelow
 
 A huge thanks to Christina for the interactive mapping with RShiny workshop. All the material is available [here](https://geospatial-community.netlify.app/post/2022-07-20-intro-interactive-mapping-rshiny/). There was a lot of interest in the subject of interactive maps, and talk of a follow up session. Christina is very knowledgeable on all thing R-spatial, and would be happy to help if you are stuck trying to make a web map.
+
 
 ## Next workshop - Analysing climate data with R, Ralph Trancoso
 

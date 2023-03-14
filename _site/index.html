@@ -92,48 +92,20 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-old .list');
+    const listingTargetEl = window.document.querySelector('#listing-all .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-old'] = new List('listing-old', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-testimonials .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-testimonials'] = new List('listing-testimonials', options);
+    window['quarto-listings']['listing-all'] = new List('listing-all', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -172,6 +144,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./about.html">
  <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./workshops.html">
+ <span class="menu-text">Workshops</span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/geocommunity/geocommunity_blog"><i class="bi bi-github" role="img">
 </i> 
@@ -186,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
+    <div class="quarto-title column-page">
       <h1 class="title">Geospatial Community</h1>
                       </div>
   </div>
@@ -203,11 +179,9 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    </div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block page-columns page-full column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
@@ -217,21 +191,24 @@ ul.task-list li input[type="checkbox"] {
 display: none;
 }
 </style>
+
+<!-- html code containing the turkey pin and page title -->
+
 <div style="padding-bottom: 2em;">
   <div style="display: inline-block;width: 100px;">
-    <img src="turkeypin.svg" style="width: 4em; vertical-align: -15px;" class="GeoCommunity Turkey Pin Logo">
+    <img src="turkeypin.svg" style="width: 4em; vertical-align: -50px;" class="GeoCommunity Turkey Pin Logo">
   </div>
 
   <div style="display: inline-block;width: 70%;">
-    <h1 class="title">Brisbane Geospatial Community of Practice</h1>
+    <h1 class="title">Geospatial Community</h1>
   </div>
 </div>
 <p>Welcome to the <strong>Geospatial Community</strong>! Geospatial analysis can be difficult and intimidating, particularly when we don’t have a strong background in coding, GIS or remote sensing.</p>
 <p>The Geospatial Community tries to make this process a bit less painful, by sharing our experiences, skills and tricks in a friendly and inclusive environment.</p>
-<p>We run monthly skill sharing tutorial sessions where a member of our community teaches us something they have learned along the way.</p>
-<p>This usually occurs on the last Thursday of each month. See our <a href="https://geospatial-community.netlify.app/upcoming-events/">upcoming events</a>.</p>
-<section id="upcoming-workshop" class="level2">
-<h2 class="anchored" data-anchor-id="upcoming-workshop">Upcoming Workshop</h2>
+<p>We run <strong>monthly skill sharing tutorial sessions</strong> where a member of our community teaches us something they have learned along the way.</p>
+<p>This usually occurs on the last Thursday of each month. See our <a href="https://geospatial-community.netlify.app/workshops/">upcoming events</a>.</p>
+<section id="upcoming-workshop" class="level2" style="padding-top: 10px;">
+<h2 style="padding-top: 10px;" class="anchored" data-anchor-id="upcoming-workshop">Upcoming Workshop</h2>
 <div id="listing-latest" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
 <div class="quarto-post image-right" data-index="0" data-categories="newsletter" data-listing-date-sort="1678370400000" data-listing-file-modified-sort="1678753043848" data-listing-reading-time-sort="2.625">
@@ -267,86 +244,209 @@ Mitchel Rudge
 No matching items
 </div>
 </div>
+<!-- ::: column-margin -->
+<!-- ## Testimonials -->
+<!-- ::: {#testimonials} -->
+<!-- ::: -->
+<!-- ::: -->
 </section>
-
-<div class="no-row-height column-margin column-container"><section id="testimonials" class="level2">
-<h2 class="anchored" data-anchor-id="testimonials">Testimonials</h2>
-<div id="listing-testimonials" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-1">
-<div class="g-col-1" data-index="0" data-categories="" data-listing-date-sort="1660572000000" data-listing-file-modified-sort="1678753068056" data-listing-reading-time-sort="0.005">
-<a href="./testimonials/chris_M/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Achievements from Chris M
-</h5>
-<div class="card-text listing-description">
-
+<section id="all-workshops" class="level2">
+<h2 class="anchored" data-anchor-id="all-workshops">All Workshops</h2>
+<div id="listing-all" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-all-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-all'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
 
-</div>
-<div class="listing-date">
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+</th>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="newsletter" data-listing-date-sort="1678370400000" data-listing-file-modified-sort="1678753043848" data-listing-reading-time-sort="2.625" data-listing-title-sort="Newsletter | R spatial basics | How to measure area | Survey results" data-listing-filename-sort="index.qmd">
+<td class="listing-image">
+<img src="./posts/2023-03-10-newletter/survey-who-we-are.png" style="height: 40px;">
+</td>
+<td class="listing-date">
+Mar 10, 2023
+</td>
+<td class="listing-title">
+<a href="./posts/2023-03-10-newletter/index.html" class="title">Newsletter | R spatial basics | How to measure area | Survey results</a>
+</td>
+</tr>
+<tr data-index="1" data-categories="" data-listing-date-sort="1675519200000" data-listing-file-modified-sort="1678259134634" data-listing-reading-time-sort="8.765" data-listing-title-sort="Calculating areas with vector and raster data in R" data-listing-filename-sort="index.qmd">
+<td class="listing-image">
+<img src="./posts/2023-02-05-calculating-areas-with-vector-and-raster-data-in-r/images/Fig2.png" style="height: 40px;">
+</td>
+<td class="listing-date">
+Feb 5, 2023
+</td>
+<td class="listing-title">
+<a href="./posts/2023-02-05-calculating-areas-with-vector-and-raster-data-in-r/index.html" class="title">Calculating areas with vector and raster data in R</a>
+</td>
+</tr>
+<tr data-index="2" data-categories="newsletter" data-listing-date-sort="1674309600000" data-listing-file-modified-sort="1678756737667" data-listing-reading-time-sort="1.27" data-listing-title-sort="Newsletter | Happy New Year! | February meet-up | R Training" data-listing-filename-sort="index.qmd">
+<td class="listing-image">
+<img src="./posts/2023-01-22-newsletter-happy-new-year-february-meet-up-r-training/explore.jpg" style="height: 40px;" alt="A red, google style location pin with a bush turkey inside. The logo of the Geospatial Community.">
+</td>
+<td class="listing-date">
+Jan 22, 2023
+</td>
+<td class="listing-title">
+<a href="./posts/2023-01-22-newsletter-happy-new-year-february-meet-up-r-training/index.html" class="title">Newsletter | Happy New Year! | February meet-up | R Training</a>
+</td>
+</tr>
+<tr data-index="3" data-categories="website" data-listing-date-sort="1667397600000" data-listing-file-modified-sort="1678753043843" data-listing-reading-time-sort="14.425" data-listing-title-sort="Build a blog with Quarto, Git, and RStudio" data-listing-filename-sort="index.qmd">
+<td class="listing-image">
+<img src="./posts/2022-11-03-build-blog-w-quarto/images/quarto.png" style="height: 40px;">
+</td>
+<td class="listing-date">
+Nov 3, 2022
+</td>
+<td class="listing-title">
+<a href="./posts/2022-11-03-build-blog-w-quarto/index.html" class="title">Build a blog with Quarto, Git, and RStudio</a>
+</td>
+</tr>
+<tr data-index="4" data-categories="newsletter" data-listing-date-sort="1662645600000" data-listing-file-modified-sort="1678756753062" data-listing-reading-time-sort="1.29" data-listing-title-sort="Newsletter | Climate data blog post + problem solving session + conference in Fiji + more" data-listing-filename-sort="index.qmd">
+<td class="listing-image">
+<img src="./posts/2022-09-09-newsletter/newsletter.jpg" style="height: 40px;">
+</td>
+<td class="listing-date">
+Sep 9, 2022
+</td>
+<td class="listing-title">
+<a href="./posts/2022-09-09-newsletter/index.html" class="title">Newsletter | Climate data blog post + problem solving session + conference in Fiji + more</a>
+</td>
+</tr>
+<tr data-index="5" data-categories="R,climate,raster" data-listing-date-sort="1661954400000" data-listing-file-modified-sort="1678257451917" data-listing-reading-time-sort="6.08" data-listing-title-sort="Analysing Climate data with R" data-listing-filename-sort="index.qmd">
+<td class="listing-image">
+<img src="./posts/2022-09-01-analysing-climate-data-with-r/images/anomaly_ts.jpeg" style="height: 40px;">
+</td>
+<td class="listing-date">
+Sep 1, 2022
+</td>
+<td class="listing-title">
+<a href="./posts/2022-09-01-analysing-climate-data-with-r/index.html" class="title">Analysing Climate data with R</a>
+</td>
+</tr>
+<tr data-index="6" data-categories="newsletter" data-listing-date-sort="1660572000000" data-listing-file-modified-sort="1678756763516" data-listing-reading-time-sort="1.865" data-listing-title-sort="Newsletter | Analysing climate data with R +  Interactive Maps  + AEO Forum + more." data-listing-filename-sort="index.qmd">
+<td class="listing-image">
+<img src="./posts/2022-08-16-newsletter/computer.jpg" style="height: 40px;">
+</td>
+<td class="listing-date">
 Aug 16, 2022
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section></div><section id="workshops" class="level2">
-<h2 class="anchored" data-anchor-id="workshops">Workshops</h2>
-<div id="listing-old" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="newsletter" data-listing-date-sort="1678370400000" data-listing-file-modified-sort="1678753043848" data-listing-reading-time-sort="2.625">
-<a href="./posts/2023-03-10-newletter/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/2023-03-10-newletter/survey-who-we-are.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Newsletter | R spatial basics | How to measure area | Survey results
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="" data-listing-date-sort="1675519200000" data-listing-file-modified-sort="1678259134634" data-listing-reading-time-sort="8.765">
-<a href="./posts/2023-02-05-calculating-areas-with-vector-and-raster-data-in-r/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/2023-02-05-calculating-areas-with-vector-and-raster-data-in-r/images/Fig2.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Calculating areas with vector and raster data in R
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="newsletter" data-listing-date-sort="1674309600000" data-listing-file-modified-sort="1678753043845" data-listing-reading-time-sort="1.27">
-<a href="./posts/2023-01-22-newsletter-happy-new-year-february-meet-up-r-training/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./posts/2023-01-22-newsletter-happy-new-year-february-meet-up-r-training/turkeypin.png" class="thumbnail-image card-img" style="height: 150px;" alt="A red, google style location pin with a bush turkey inside. The logo of the Geospatial Community.">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Newsletter | Happy New Year! | February meet-up | R Training
-</h5>
-</div>
-</div>
-</a>
-</div>
-</div>
+</td>
+<td class="listing-title">
+<a href="./posts/2022-08-16-newsletter/index.html" class="title">Newsletter | Analysing climate data with R + Interactive Maps + AEO Forum + more.</a>
+</td>
+</tr>
+<tr data-index="7" data-categories="tutorial,spatial,visualisation" data-listing-date-sort="1658239200000" data-listing-file-modified-sort="1678753043833" data-listing-reading-time-sort="4.47" data-listing-title-sort="Interactive mapping with RShiny" data-listing-filename-sort="index.qmd">
+<td class="listing-image">
+<img src="./posts/2022-07-20-intro-interactive-mapping-rshiny/shiny.png" style="height: 40px;">
+</td>
+<td class="listing-date">
+Jul 20, 2022
+</td>
+<td class="listing-title">
+<a href="./posts/2022-07-20-intro-interactive-mapping-rshiny/index.html" class="title">Interactive mapping with RShiny</a>
+</td>
+</tr>
+<tr data-index="8" data-categories="newsletter" data-listing-date-sort="1657720800000" data-listing-file-modified-sort="1678756774111" data-listing-reading-time-sort="1.885" data-listing-title-sort="Newsletter | Mapping interactively +  R for ecologists  + Data wrangling + more." data-listing-filename-sort="index.qmd">
+<td class="listing-image">
+<img src="./posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/progress.jpg" style="height: 40px;">
+</td>
+<td class="listing-date">
+Jul 14, 2022
+</td>
+<td class="listing-title">
+<a href="./posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html" class="title">Newsletter | Mapping interactively + R for ecologists + Data wrangling + more.</a>
+</td>
+</tr>
+<tr data-index="9" data-categories="" data-listing-date-sort="1657116000000" data-listing-file-modified-sort="1678756795625" data-listing-reading-time-sort="7.785" data-listing-title-sort="Problem Solving Session II" data-listing-filename-sort="index.qmd">
+<td class="listing-image">
+<img src="https://c.tenor.com/dlJSiLUJNmsAAAAC/math-calculate.gif" style="height: 40px;">
+</td>
+<td class="listing-date">
+Jul 7, 2022
+</td>
+<td class="listing-title">
+<a href="./posts/2022-07-07-problem-solving-session-ii/index.html" class="title">Problem Solving Session II</a>
+</td>
+</tr>
+<tr data-index="10" data-categories="" data-listing-date-sort="1653487200000" data-listing-file-modified-sort="1678257443589" data-listing-reading-time-sort="7.87" data-listing-title-sort="Problem Solving Session I" data-listing-filename-sort="index.qmd">
+<td class="listing-image">
+<img src="https://c.tenor.com/Ay19-AbBCfIAAAAC/hangover-math.gif" style="height: 40px;">
+</td>
+<td class="listing-date">
+May 26, 2022
+</td>
+<td class="listing-title">
+<a href="./posts/2022-05-26-problem-solving-session/index.html" class="title">Problem Solving Session I</a>
+</td>
+</tr>
+<tr data-index="11" data-categories="" data-listing-date-sort="1650808800000" data-listing-file-modified-sort="1678257448923" data-listing-reading-time-sort="0.985" data-listing-title-sort="Cloud computing with Open Data Cube and Python" data-listing-filename-sort="index.qmd">
+<td class="listing-image">
+<img src="./posts/2022-04-28-cloud-computing-with-open-data-cube-and-python/images/python-logo.png" style="height: 40px;">
+</td>
+<td class="listing-date">
+Apr 25, 2022
+</td>
+<td class="listing-title">
+<a href="./posts/2022-04-28-cloud-computing-with-open-data-cube-and-python/index.html" class="title">Cloud computing with Open Data Cube and Python</a>
+</td>
+</tr>
+<tr data-index="12" data-categories="website,tutorial" data-listing-date-sort="1637589600000" data-listing-file-modified-sort="1678754021255" data-listing-reading-time-sort="20.55" data-listing-title-sort="How to contribute a post (using blogdown on our old site)" data-listing-filename-sort="index.qmd">
+<td class="listing-image">
+<img src="https://bookdown.org/yihui/blogdown/images/logo.png" style="height: 40px;">
+</td>
+<td class="listing-date">
+Nov 23, 2021
+</td>
+<td class="listing-title">
+<a href="./posts/2021-11-23-creating-a-post/index.html" class="title">How to contribute a post (using blogdown on our old site)</a>
+</td>
+</tr>
+<tr data-index="13" data-categories="tutorial,spatial,visualisation" data-listing-date-sort="1635343200000" data-listing-file-modified-sort="1678753043824" data-listing-reading-time-sort="4.685" data-listing-title-sort="Creating a geospatial blog with blogdown (on our old site)" data-listing-filename-sort="index.qmd">
+<td class="listing-image">
+<img src="https://www.netlify.com/v3/img/components/netlify-color-accent.svg" style="height: 40px;">
+</td>
+<td class="listing-date">
+Oct 28, 2021
+</td>
+<td class="listing-title">
+<a href="./posts/2021-10-28-creating-a-geospatial-blog-with-blogdown/index.html" class="title">Creating a geospatial blog with blogdown (on our old site)</a>
+</td>
+</tr>
+</tbody>
+
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>

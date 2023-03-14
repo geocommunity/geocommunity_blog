@@ -1,6 +1,7 @@
 ---
 title: Newsletter | Climate data blog post + problem solving session + conference in Fiji + more 
 author: ''
+image: newsletter.jpg
 date: '2022-09-09'
 slug: newsletter-sep2022
 categories:
@@ -13,7 +14,7 @@ DisableComments: no
 
 ## Blog post -- Analysing climate data with R, Ralph Trancoso
 
-Last Thursday Ralph ran us through the basics of climate analysis in R. This was a really informative workshop that demystified climate data. All the scripts are now up [on the blog](https://geospatial-community.netlify.app/post/2022-09-01-analysing-climate-data-with-r/), as well as a link to the materials. If you missed the workshop, the recording is up on cloudstor (let me know if you don't have access).
+Last Thursday Ralph ran us through the basics of climate analysis in R. This was a really informative workshop that demystified climate data. All the scripts are now up [on the blog](/posts/2022-09-01-analysing-climate-data-with-r/), as well as a link to the materials. If you missed the workshop, the recording is up on cloudstor (let me know if you don't have access).
 
 ## Problem solving session
 

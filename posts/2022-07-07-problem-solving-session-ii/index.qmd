@@ -26,6 +26,8 @@ DisableComments: no
 
 Following the success of our last problem solving session, we ran another one in June.
 
+<!-- image for icon ![](https://c.tenor.com/dlJSiLUJNmsAAAAC/math-calculate.gif) -->
+
 <img src="https://m.media-amazon.com/images/I/81nKJATxK2L._AC_SX679_.jpg" width="200"/>
 
 We had interesting and wide-ranging discussions about the issues people are having with geospatial analysis.\

@@ -8,19 +8,18 @@ listing:
     sort: "date desc"
     type: default
     max-items: 1
-  - id: old
+  - id: all
     contents: posts
     sort: "date desc"
-    type: grid
-    max-items: 3
-    grid-columns: 3
-    fields: [image, title]
-  - id: testimonials
-    contents: testimonials
-    sort: "date desc"
-    type: grid
-    max-items: 3
-    grid-columns: 1
+    type: table 
+    fields: [image, date, title]
+  # - id: testimonials
+  #   contents: testimonials
+  #   sort: "date desc"
+  #   type: grid
+  #   max-items: 3
+  #   grid-columns: 1
+
 page-layout: full
 title-block-banner: true
 ---
@@ -31,15 +30,16 @@ title-block-banner: true
 display: none;
 }
 </style>
-```
-```{=html}
+
+<!-- html code containing the turkey pin and page title -->
+
 <div style="padding-bottom: 2em;">
   <div style="display: inline-block;width: 100px;">
-    <img src="turkeypin.svg" style="width: 4em; vertical-align: -15px;" class="GeoCommunity Turkey Pin Logo">
+    <img src="turkeypin.svg" style="width: 4em; vertical-align: -50px;" class="GeoCommunity Turkey Pin Logo">
   </div>
 
   <div style="display: inline-block;width: 70%;">
-    <h1 class="title">Brisbane Geospatial Community of Practice</h1>
+    <h1 class="title">Geospatial Community</h1>
   </div>
 </div>
 ```
@@ -47,23 +47,26 @@ Welcome to the **Geospatial Community**! Geospatial analysis can be difficult an
 
 The Geospatial Community tries to make this process a bit less painful, by sharing our experiences, skills and tricks in a friendly and inclusive environment.
 
-We run monthly skill sharing tutorial sessions where a member of our community teaches us something they have learned along the way.
+We run **monthly skill sharing tutorial sessions** where a member of our community teaches us something they have learned along the way.
 
-This usually occurs on the last Thursday of each month. See our [upcoming events](https://geospatial-community.netlify.app/upcoming-events/).
+This usually occurs on the last Thursday of each month. See our [upcoming events](https://geospatial-community.netlify.app/workshops/).
 
-## Upcoming Workshop
+## Upcoming Workshop {style="padding-top: 10px;"}
 
 ::: {#latest}
 :::
 
-::: column-margin
-## Testimonials
+<!-- ::: column-margin -->
 
-::: {#testimonials}
-:::
-:::
+<!-- ## Testimonials -->
 
-## Workshops
+<!-- ::: {#testimonials} -->
 
-::: {#old}
+<!-- ::: -->
+
+<!-- ::: -->
+
+## All Workshops
+
+::: {#all}
 :::
