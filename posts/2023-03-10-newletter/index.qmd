@@ -3,6 +3,7 @@ title: "Newsletter | R spatial basics | How to measure area | Survey results"
 editor: visual
 author: 'Mitchel Rudge'
 date: '2023-03-10'
+image: survey-who-we-are.png
 slug: newsletter-mar2023
 categories:
   - newsletter
