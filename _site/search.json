@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Brisbane Geospatial Community of Practice",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n  \n\n\n\n\nCalculating areas with vector and raster data in R\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 5, 2023\n\n\nChristina Buelow\n\n\n\n\n\n\n  \n\n\n\n\nNewsletter | Happy New Year! | February meet-up | R Training\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJan 22, 2023\n\n\nChristina Buelow\n\n\n\n\n\n\n  \n\n\n\n\nBuild a blog with Quarto, Git, and RStudio\n\n\n\n\n\n\n\nwebsite\n\n\n\n\n\n\n\n\n\n\n\nNov 3, 2022\n\n\nCatherine Kim\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNewsletter | Climate data blog post + problem solving session + conference in Fiji + more\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSep 9, 2022\n\n\n\n\n\n\n  \n\n\n\n\nAnalysing Climate data with R\n\n\n\n\n\n\n\nR\n\n\nclimate\n\n\nraster\n\n\n\n\n\n\n\n\n\n\n\nSep 1, 2022\n\n\nRalph Trancoso\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNewsletter | Analysing climate data with R + Interactive Maps + AEO Forum + more.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAug 16, 2022\n\n\n\n\n\n\n  \n\n\n\n\nInteractive mapping with RShiny\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 20, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNewsletter | Mapping interactively + R for ecologists + Data wrangling + more.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProblem Solving Session II\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n  \n\n\n\n\nProblem Solving Session I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMay 26, 2022\n\n\n\n\n\n\n  \n\n\n\n\nCloud computing with Open Data Cube and Python\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nApr 25, 2022\n\n\nTim Devereux\n\n\n\n\n\n\n  \n\n\n\n\nHow to contribute a post (using blogdown on our old site)\n\n\n\n\n\n\n\nwebsite\n\n\n\n\n\n\n\n\n\n\n\nNov 23, 2021\n\n\nCatherine Kim\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCreating a geospatial blog with blogdown (on our old site)\n\n\n\n\n\n\n\nspatial\n\n\nvisualisation\n\n\n\n\n\n\n\n\n\n\n\nOct 28, 2021\n\n\nUQGSAC\n\n\n\n\n\n\nNo matching items"
+    "text": "The Brisbane Geospatial Analysis Community of Practice (take the survey to choose a new name!) tries to make this process a bit less painful, by sharing our experiences, skills and tricks in a friendly and inclusive environment. 👩‍💻 We run monthly skill sharing tutorial sessions where a member of the community teaches us something they have learned along the way.\nThis usually occurs on the last Thursday of each month. See upcoming events for the next session and check out our blog for previous sessions.\nIf you want to get involved, just email ✉️ uqgeo dot community at gmail.com."
   },
   {
     "objectID": "posts/build-blog-w-quarto/index.html",
@@ -810,5 +810,47 @@
     "title": "Creating a geospatial blog with blogdown",
     "section": "Visualise",
     "text": "Visualise\nMake sure to add a caption to visualisations, and some alternative text if needed!\n\nplot(rain)\n\n\n\n\nAverage annual rainfall in mm (1980 to 2010)"
+  },
+  {
+    "objectID": "index.html#upcoming-workshops",
+    "href": "index.html#upcoming-workshops",
+    "title": "Brisbane Geospatial Community of Practice",
+    "section": "Upcoming Workshops",
+    "text": "Upcoming Workshops\n\n\n\n\n  \n\n\n\n\nCalculating areas with vector and raster data in R\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 5, 2023\n\n\nChristina Buelow\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#previous-workshops",
+    "href": "index.html#previous-workshops",
+    "title": "Brisbane Geospatial Community of Practice",
+    "section": "Previous Workshops",
+    "text": "Previous Workshops\n\n\n\n\n\n\n\n\n\n\nCalculating areas with vector and raster data in R\n\n\n\n\n\n\nChristina Buelow\n\n\nFeb 5, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNewsletter | Happy New Year! | February meet-up | R Training\n\n\n\n\n\n\nChristina Buelow\n\n\nJan 22, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuild a blog with Quarto, Git, and RStudio\n\n\n\n\n\n\nCatherine Kim\n\n\nNov 3, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#testimonials",
+    "href": "index.html#testimonials",
+    "title": "Brisbane Geospatial Community of Practice",
+    "section": "Testimonials",
+    "text": "Testimonials\n\n\n\n\n\n\n\nAchievements from Chris M\n\n\n\n\n\n\n\n\n\nAug 16, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "testimonials/chris_M/index.html",
+    "href": "testimonials/chris_M/index.html",
+    "title": "Achievements from Chris M",
+    "section": "",
+    "text": "Achievements from Chris M"
+  },
+  {
+    "objectID": "index.html#upcoming-workshop",
+    "href": "index.html#upcoming-workshop",
+    "title": "Brisbane Geospatial Community of Practice",
+    "section": "Upcoming Workshop",
+    "text": "Upcoming Workshop\n\n\n\n\n  \n\n\n\n\nCalculating areas with vector and raster data in R\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 5, 2023\n\n\nChristina Buelow\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#workshops",
+    "href": "index.html#workshops",
+    "title": "Brisbane Geospatial Community of Practice",
+    "section": "Workshops",
+    "text": "Workshops\n\n\n\n\n\n\n\n\n\n\nCalculating areas with vector and raster data in R\n\n\n\n\n\n\n\n\n\n\n\n\n\nNewsletter | Happy New Year! | February meet-up | R Training\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuild a blog with Quarto, Git, and RStudio\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

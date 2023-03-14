@@ -1,12 +1,67 @@
 ---
 title: "Brisbane Geospatial Community of Practice"
+image: turkeypin.svg
 listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: true
-  filter-ui: true
+  - id: latest
+    contents: posts
+    sort: "date desc"
+    type: default
+    max-items: 1
+  - id: old
+    contents: posts
+    sort: "date desc"
+    type: grid
+    max-items: 3
+    grid-columns: 3
+    fields: [image, title]
+  - id: testimonials
+    contents: testimonials
+    sort: "date desc"
+    type: grid
+    max-items: 3
+    grid-columns: 1
 page-layout: full
 title-block-banner: true
 ---
+
+```{=html}
+<style>
+#title-block-header{
+display: none;
+}
+</style>
+```
+```{=html}
+<div style="padding-bottom: 2em;">
+  <div style="display: inline-block;width: 100px;">
+    <img src="turkeypin.svg" style="width: 4em; vertical-align: -15px;" class="GeoCommunity Turkey Pin Logo">
+  </div>
+
+  <div style="display: inline-block;width: 70%;">
+    <h1 class="title">Brisbane Geospatial Community of Practice</h1>
+  </div>
+</div>
+
+```
+The **Brisbane Geospatial Analysis Community of Practice** (take the [survey](https://docs.google.com/forms/d/e/1FAIpQLScyIqFRi1ySR0z0d7u0lSmXu1Vt5_wRq-0aD5bUCml8VziUGQ/viewform) to choose a new name!) tries to make this process a bit less painful, by sharing our experiences, skills and tricks in a friendly and inclusive environment. 👩‍💻 We run monthly skill sharing tutorial sessions where a member of the community teaches us something they have learned along the way.
+
+This usually occurs on the last Thursday of each month. See [upcoming events](https://geospatial-community.netlify.app/upcoming-events/) for the next session and check out our [blog](https://geospatial-community.netlify.app/post/) for previous sessions.
+
+If you want to get involved, just email ✉️ uqgeo dot community at gmail.com.
+
+## Upcoming Workshop
+
+::: {#latest}
+:::
+
+::: column-margin
+## Testimonials
+
+::: {#testimonials}
+:::
+:::
+
+## Workshops
+
+::: {#old}
+:::
