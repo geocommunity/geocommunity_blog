@@ -1,0 +1,41 @@
+---
+title: "How community groups can help with Continuing Professional Development (CPD)"
+author: "Chris Mancini"
+editor: source
+date: '2023-03-22'
+image: ChrisMancini-profile.jpg
+slug: cpd-chris-mancini
+categories:
+  - testimonial
+tags:
+  - development
+DisableComments: no
+---
+
+This post is provided by Chris Mancini (Civil Engineer, RPEQ, MIEAust, CPEng, NER), and to help inform the Geospatial Community including University Staff, Students, Researchers, and Industry Professionals about considering professional credentials and continuing professional development (CPD). 
+
+Continuing professional development can generally be described as increasing and enhancing knowledge and skills. Individual members of professional institutions that are awarded the status and credential of being Chartered and/or Registered are required to complete and maintain continuing professional development each year. 
+
+![](ChrisMancini-linkedIn.png)
+
+If you would like your university activities to be considered with CPD, keep a log including the date, the CPD activity/topic/provider, how the activity has extended your knowledge, and the number of hours.
+Academic research, postgraduate courses, university training, and university communities that advance and enhance your knowledge and skills, including the Geospatial Community, and the [UQ R Users Group](https://uqrug.netlify.app/) (UQRUG), and UQ Library Training, and other UQ communities including the UQ Research Computing Centre and Hacky Hour UQ (for example AI and machine learning) can be considered with CPD.
+
+While professional institutions and statutory bodies require approved university degrees (for example accredited with the Sydney Accord and/or the Washington Accord) and work experience (5 to 15+ years) to grant approval for membership status, CPD is also required for Chartered and Registered credentials. This is typically at least 150 hours across 1 to 3 years.
+
+In Australia and New Zealand examples of professional credentials and professional bodies requiring CPD include (and are not limited to) Chartered Accountants with Chartered Accountants Australia and New Zealand (CAANZ); and Chartered Professional Engineers (CPEng) with Engineers Australia (EA) and Engineering New Zealand (ENZ). In Britain, the [Royal Geographical Society](https://www.rgs.org/) includes Chartered Geographers and Geospatial Professionals, CGeog (GIS). I respect that there is a lot involved with and required for a professional and statutory body and institution to establish and maintain credentialing.
+
+Engineers Australia (EA) covers all of Australia. Each State and Territory of Australia has independent statutory and professional bodies that also require Professional Registration. The Board of Professional Engineers of Queensland (BPEQ) requires approved Registered Professional Engineers of Queensland (RPEQ) to maintain and enhance knowledge and skills with CPD (Continuing Professional Development - [Board of Professional Engineers Queensland](bpeq.qld.gov.au)).
+
+Types of CPD can be the following with Engineers Australia (CPD requirements | Engineers Australia).
+
+- any tertiary course taken as an individual course or for a formal post-graduate award
+- short courses, workshops, seminars, conferences, technical inspections and meetings
+- workplace learning activities that extend competence in your area of practice or area of engineering
+- private study that extends your knowledge and skill
+- service to the engineering profession
+- preparation and presentation of materials for courses and conferences
+- tertiary teaching or academic research 
+- structured activities that meet the objectives of the CPD policy
+
+Groups such as the Geospatial Community enabled me to complete the 150 hours of CPD in order to become a Chartered Engineer.
