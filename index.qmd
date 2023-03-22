@@ -50,7 +50,7 @@ Welcome!
 
 We run **monthly skill sharing tutorial sessions** where a member of our community teaches us something they have learned along the way.
 
-## Upcoming Workshop {style="padding-top: 10px;"}
+## Upcoming Workshop {style="padding-top: 7px;"}
 
 R Spatial basics with Dr. Christina Buelow and a problem solving session!
 
