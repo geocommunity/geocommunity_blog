@@ -44,7 +44,7 @@ You will need installations of R, RStudio and Terra.
 
 **Vectors** consist of a series of coordinates that make points, lines or polygons.
 
-![Raster vs vector credit: http://gsp.humboldt.edu/](http://gsp.humboldt.edu/olm/Lessons/GIS/08%20Rasters/Images/convertingdatamodels2.png) http://gsp.humboldt.edu/
+![Raster vs vector credit: http://gsp.humboldt.edu/](https://gsp.humboldt.edu/olm/Lessons/GIS/08%20Rasters/Images/convertingdatamodels2.png) http://gsp.humboldt.edu/
 
 ## 2. Introducing the Terra package
 
