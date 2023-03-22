@@ -17,7 +17,6 @@ DisableComments: no
 
 We have put together a [summary of last week's workshop](https://geospatial-community.netlify.app/post/2022-07-07-problem-solving-session-ii/).
 
-
 Thanks to everyone who had questions, answers, and contributions. It should all be captured in the post now. If you would like me to make any edits to the post, or better still if there are development on the problems, please let me know and I can easily update the details.
 
 ## Advanced data wrangling for spatial analysis in R
