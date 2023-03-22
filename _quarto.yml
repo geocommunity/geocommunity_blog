@@ -14,7 +14,9 @@ website:
   favicon: turkeypin.svg
 format:
   html:
-    theme: litera
+    theme: 
+      light: litera
+      dark: solar
     css: styles.css
 
 editor: visual
