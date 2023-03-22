@@ -2,6 +2,7 @@
 title: Introduction to tidy spatial networks
 author: 'Stéphane Guillou (UQ Library)'
 date: '2022-03-31'
+image: images/paste-8141125C.png
 slug: []
 categories:
   - spatial
@@ -16,8 +17,6 @@ tags:
   - routing
   - OSM
   - isodistance
-draft: no
-Description: ''
 DisableComments: no
 ---
 
