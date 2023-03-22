@@ -1,8 +1,8 @@
 ---
-title: "How community groups can help with Continuing Professional Development (CPD)"
+title: "Community groups for Continuing Professional Development (CPD)"
 author: "Chris Mancini"
 editor: source
-date: '2023-03-22'
+date: 2023-03-22
 image: ChrisMancini-profile.jpg
 slug: cpd-chris-mancini
 categories:
@@ -10,18 +10,26 @@ categories:
 tags:
   - development
 DisableComments: no
+
 ---
 
 This post is provided by Chris Mancini (Civil Engineer, RPEQ, MIEAust, CPEng, NER), and to help inform the Geospatial Community including University Staff, Students, Researchers, and Industry Professionals about considering professional credentials and continuing professional development (CPD). 
 
+![](ChrisMancini-linkedIn.png)
+
+## What is Continuing Professional Development?
+
 Continuing professional development can generally be described as increasing and enhancing knowledge and skills. Individual members of professional institutions that are awarded the status and credential of being Chartered and/or Registered are required to complete and maintain continuing professional development each year. 
 
-![](ChrisMancini-linkedIn.png)
+
+## How do you use CPD?
 
 If you would like your university activities to be considered with CPD, keep a log including the date, the CPD activity/topic/provider, how the activity has extended your knowledge, and the number of hours.
 Academic research, postgraduate courses, university training, and university communities that advance and enhance your knowledge and skills, including the Geospatial Community, and the [UQ R Users Group](https://uqrug.netlify.app/) (UQRUG), and UQ Library Training, and other UQ communities including the UQ Research Computing Centre and Hacky Hour UQ (for example AI and machine learning) can be considered with CPD.
 
 While professional institutions and statutory bodies require approved university degrees (for example accredited with the Sydney Accord and/or the Washington Accord) and work experience (5 to 15+ years) to grant approval for membership status, CPD is also required for Chartered and Registered credentials. This is typically at least 150 hours across 1 to 3 years.
+
+## What types of professional bodies use CPD?
 
 In Australia and New Zealand examples of professional credentials and professional bodies requiring CPD include (and are not limited to) Chartered Accountants with Chartered Accountants Australia and New Zealand (CAANZ); and Chartered Professional Engineers (CPEng) with Engineers Australia (EA) and Engineering New Zealand (ENZ). In Britain, the [Royal Geographical Society](https://www.rgs.org/) includes Chartered Geographers and Geospatial Professionals, CGeog (GIS). I respect that there is a lot involved with and required for a professional and statutory body and institution to establish and maintain credentialing.
 
