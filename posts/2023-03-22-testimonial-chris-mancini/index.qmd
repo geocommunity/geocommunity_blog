@@ -1,5 +1,5 @@
 ---
-title: "Community groups for Continuing Professional Development (CPD)"
+title: "Community groups for Continuing Professional Development"
 author: "Chris Mancini"
 editor: source
 date: 2023-03-22
