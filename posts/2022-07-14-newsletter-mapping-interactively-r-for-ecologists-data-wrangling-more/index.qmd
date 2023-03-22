@@ -7,7 +7,10 @@ date: '2022-07-14'
 slug: newsletter-jul2022
 categories:
   - newsletter
-tags: []
+tags:
+  - jobs
+  - RShiny
+  - ecology
 DisableComments: no
 ---
 
