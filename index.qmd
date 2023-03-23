@@ -61,7 +61,7 @@ Christina will be covering the below [content](https://cabuelow.quarto.pub/r-for
 Want to get access to the online workshop link? Email us at: uqgeo.community \@ gmail dot com
 
 ```{=html}
-<iframe width="980" height="400" src="https://cabuelow.quarto.pub/r-for-mapping-and-more/" title="R for mapping and more"></iframe>
+<iframe width="100%" height="400" src="https://cabuelow.quarto.pub/r-for-mapping-and-more/" title="R for mapping and more"></iframe>
 ```
 
 ## All Posts

@@ -649,5 +649,54 @@
     "title": "Community groups for Continuing Professional Development",
     "section": "What types of professional bodies use CPD?",
     "text": "What types of professional bodies use CPD?\nIn Australia and New Zealand examples of professional credentials and professional bodies requiring CPD include (and are not limited to) Chartered Accountants with Chartered Accountants Australia and New Zealand (CAANZ); and Chartered Professional Engineers (CPEng) with Engineers Australia (EA) and Engineering New Zealand (ENZ). In Britain, the Royal Geographical Society includes Chartered Geographers and Geospatial Professionals, CGeog (GIS). I respect that there is a lot involved with and required for a professional and statutory body and institution to establish and maintain credentialing.\nEngineers Australia (EA) covers all of Australia. Each State and Territory of Australia has independent statutory and professional bodies that also require Professional Registration. The Board of Professional Engineers of Queensland (BPEQ) requires approved Registered Professional Engineers of Queensland (RPEQ) to maintain and enhance knowledge and skills with CPD (Continuing Professional Development - Board of Professional Engineers Queensland).\nTypes of CPD can be the following with Engineers Australia (CPD requirements | Engineers Australia).\n\nany tertiary course taken as an individual course or for a formal post-graduate award\nshort courses, workshops, seminars, conferences, technical inspections and meetings\nworkplace learning activities that extend competence in your area of practice or area of engineering\nprivate study that extends your knowledge and skill\nservice to the engineering profession\npreparation and presentation of materials for courses and conferences\ntertiary teaching or academic research\nstructured activities that meet the objectives of the CPD policy\n\nGroups such as the Geospatial Community who run regular workshops are a great resource for professionals looking to complete requirements for CPD."
+  },
+  {
+    "objectID": "posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html#latest-blog-post",
+    "href": "posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html#latest-blog-post",
+    "title": "Newsletter | Mapping interactively + R for ecologists + Data wrangling + more.",
+    "section": "",
+    "text": "We have put together a summary of last week’s workshop.\nThanks to everyone who had questions, answers, and contributions. It should all be captured in the post now. If you would like me to make any edits to the post, or better still if there are development on the problems, please let me know and I can easily update the details."
+  },
+  {
+    "objectID": "posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html#advanced-data-wrangling-for-spatial-analysis-in-r",
+    "href": "posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html#advanced-data-wrangling-for-spatial-analysis-in-r",
+    "title": "Newsletter | Mapping interactively + R for ecologists + Data wrangling + more.",
+    "section": "",
+    "text": "Christina Buelow from Griffith will be hosting this 1-day course. It will be extremely useful whether you are relatively new to geospatial in R, or looking to hone your skills. https://smp.uq.edu.au/event/session/11370 Cost is $150 for students (hopefully there are still spots available)"
+  },
+  {
+    "objectID": "posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html#interactive-maps-in-rshiny",
+    "href": "posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html#interactive-maps-in-rshiny",
+    "title": "Newsletter | Mapping interactively + R for ecologists + Data wrangling + more.",
+    "section": "",
+    "text": "Christina will also be hosting a 100% free Mapping interactively with Rshiny workshop later in the month. Please spread the word, this is sure to be an excellent use of time if you have ever thought about putting your maps and data online."
+  },
+  {
+    "objectID": "posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html#advanced-r-workshop-with-bill-venables",
+    "href": "posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html#advanced-r-workshop-with-bill-venables",
+    "title": "Newsletter | Mapping interactively + R for ecologists + Data wrangling + more.",
+    "section": "",
+    "text": "Advanced R workshop with Bill Venables The advanced R workshop with Bill Venables was cancelled but he is doing it for free over several weeks 1 hr on Monday, Wednesday and Friday.\nIf you’re interested, email roxanne.jemison@uq.edu.au who is organising it."
+  },
+  {
+    "objectID": "posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html#r-for-ecologists.",
+    "href": "posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html#r-for-ecologists.",
+    "title": "Newsletter | Mapping interactively + R for ecologists + Data wrangling + more.",
+    "section": "",
+    "text": "EcoCommons, who are creating a platform for digital modelling and analysis (read more here https://www.ecocommons.org.au/about/), have a new educational package: R for Ecologists (https://www.ecocommons.org.au/educational-material/). This is based on this data carpentry module. All videos are 100% free on youtube, and include plenty of spatial content including species distribution modelling."
+  },
+  {
+    "objectID": "posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html#organising-committee",
+    "href": "posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html#organising-committee",
+    "title": "Newsletter | Mapping interactively + R for ecologists + Data wrangling + more.",
+    "section": "",
+    "text": "We are putting together an organising committee to help coordinate workshops, this newsletter, and any other new ideas we might have. If you would be interested in volunteering a small amount of time, please get in touch."
+  },
+  {
+    "objectID": "posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html#spatial-job-vacancies",
+    "href": "posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html#spatial-job-vacancies",
+    "title": "Newsletter | Mapping interactively + R for ecologists + Data wrangling + more.",
+    "section": "",
+    "text": "Here are a few job vacancies from across the country that might be of interest. Mainly taken from NRM jobs. If you know of any vacancies, send them in and I’ll include them on the next newsletter.\nSpatial Scientist – NSW Department of Planning and Environment (Paramatta, NSW)\nAssistant Director – Scientist (Geospatial – Land use). Federal department of Agriculture, Fisheries and Forestry. (Canberra)\nSpatial Information Systems Officer. Timberlands Pacific (Launceston, Tasmania)\nGIS analyst. Eco Logical Australia. (Adelaide, SA)\nNatural Hazard and Spatial Analyst. Molino Stewart (Paramatta, NSW)"
   }
 ]
