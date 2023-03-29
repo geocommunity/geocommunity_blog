@@ -66,6 +66,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-latest .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-latest'] = new List('listing-latest', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-all .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -98,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -139,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
+    <div class="quarto-title column-body">
       <h1 class="title">Geospatial Community</h1>
                       </div>
   </div>
@@ -153,19 +181,25 @@ ul.task-list li input[type="checkbox"] {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 <style>
 #title-block-header{
-display: none;
+  display: none;
+}
+#all-posts h2 {
+  margin-top: 0px;
+}
+div.quarto-post {
+  margin-bottom: 0px;
 }
 </style>
 
@@ -181,15 +215,54 @@ display: none;
   </div>
 </div>
 <p>Welcome!</p>
-<p><strong><em>Our mission is to build a supportive and inclusive community where students and professionals can grow their geospatial skills together.</em></strong></p>
+<p>Our mission is to build a <strong>supportive</strong> and <strong>inclusive</strong> community where students and professionals can <strong>grow their geospatial skills together</strong>.</p>
+<hr>
 <p>We run <strong>monthly skill sharing tutorial sessions</strong> where a member of our community teaches us something they have learned along the way.</p>
-<section id="upcoming-workshop" class="level2" style="padding-top: 7px;">
-<h2 style="padding-top: 7px;" class="anchored" data-anchor-id="upcoming-workshop">Upcoming Workshop</h2>
-<p>R Spatial basics with Dr.&nbsp;Christina Buelow and a problem solving session!</p>
-<p>Christina will be covering the below <a href="https://cabuelow.quarto.pub/r-for-mapping-and-more/">content</a>. Download the code and data <a href="https://github.com/cabuelow/R-spatial-2022">here</a>.</p>
-<p><strong>March 23rd, 2023 2-4pm AEST</strong></p>
-<p>Want to get access to the online workshop link? Email us at: uqgeo.community @ gmail dot com</p>
-<iframe width="100%" height="400" src="https://cabuelow.quarto.pub/r-for-mapping-and-more/" title="R for mapping and more"></iframe>
+<hr>
+<p>Want to join the community and get access to the online workshop link? Email us at: uqgeo.community @ gmail dot com<br>
+<br></p>
+<!-- ## Upcoming Workshop {style="padding-top: 7px;"} -->
+<!-- ### <workshop title> -->
+<!-- **March 23rd, 2023 2-4pm AEST** -->
+<!-- <short description of what it is, and who is presenting. And if we are doing a problem solving session.> -->
+<!-- <links to the content being covered, or to the presenter's website/bio, etc.> -->
+<section id="latest-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="latest-workshop">Latest Workshop</h2>
+<div id="listing-latest" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Workshop" data-listing-date-sort="1679493600000" data-listing-file-modified-sort="1680051427938" data-listing-reading-time-sort="0.16">
+<div class="thumbnail">
+<p><a href="./posts/2023-03-23-r-spatial-basics/index.html"> <img src="./posts/2023-03-23-r-spatial-basics/thumb.png" class="thumnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="./posts/2023-03-23-r-spatial-basics/index.html">
+<h3 class="no-anchor listing-title">
+R Spatial Basics
+</h3>
+<div class="listing-subtitle">
+
+</div>
+<div class="listing-description">
+R Spatial basics with Dr.&nbsp;Christina Buelow
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/2023-03-23-r-spatial-basics/index.html">
+<div class="listing-date">
+Mar 23, 2023
+</div>
+<div class="listing-author">
+Christina Buelow
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
 </section>
 <section id="all-posts" class="level2">
 <h2 class="anchored" data-anchor-id="all-posts">All Posts</h2>
