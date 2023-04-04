@@ -1,15 +1,15 @@
-<!-- To create a newsletter blog post on the site do either of the following set of steps: -->
-<!-- A.  -->
-<!-- 1. Copy this text to a raw text editor -->
-<!-- 2. Replace or remove all of the < > sections where appropriate -->
-<!-- 3. Delete these instructions -->
+<!-- To create a newsletter blog post on the site do either of the following set of steps: -->\
+<!-- A. Simple -->\
+<!-- 1. Copy this text to a raw text editor -->\
+<!-- 2. Replace or remove all of the < > sections where appropriate -->\
+<!-- 3. Delete these instructions -->\
 <!-- 4. Send a copy of this to another member who can upload it -->
 
-<!-- B.  -->
-<!-- 1. Create a new folder in the posts folder with the format YYYY-MM-DD-newsletter-very-brief-description -->
-<!-- 2. Copy this newsletter.qmd file into the folder you created and rename it to index.qmd-->
-<!-- 3. Replace or remove all of the < > sections where appropriate -->
-<!-- 4. Delete these instructions -->
+<!-- B. Complete -->\
+<!-- 1. Create a new folder in the posts folder with the format YYYY-MM-DD-newsletter-very-brief-description -->\
+<!-- 2. Copy this newsletter.qmd file into the folder you created and rename it to index.qmd-->\
+<!-- 3. Replace or remove all of the < > sections where appropriate -->\
+<!-- 4. Delete these instructions -->\
 <!-- 5. Click Render and push to GitHub -->
 
 ---
@@ -29,43 +29,24 @@ DisableComments: no
 
 ### Next workshop -- <DATE>, <TIME>
 
-<Paragraph outlining the contents of the next workshop. Who, what, when, where>
+\<Paragraph outlining the contents of the next workshop. Who, what, when, where\>
 
 ### Previous workshop
 
-<Short paragraph thanking previous presenter. Short summary of what was covered. Add a link to the content>
-
+\<Short paragraph thanking previous presenter. Short summary of what was covered. Add a link to the content\>
 
 ### Geospatial Community Updates
 
-<Optional Section about our community>
- <!-- Group changes -->
- <!-- website updates -->
- <!-- surveys -->
- <!-- ideas for upcoming workshops -->
- <!-- testimonials -->
- <!-- org committee details -->
- <!-- Anything about us that we might want to share -->
+<Optional Section about our community> <!-- Group changes --> <!-- website updates --> <!-- surveys --> <!-- ideas for upcoming workshops --> <!-- testimonials --> <!-- org committee details --> <!-- Anything about us that we might want to share -->
 
 ### Geospatial News
 
-<Optional section covering broader geospatial news>
-<!-- Conferences/Forums/Resbaz -->
-<!-- New software/packages -->
-<!-- Podcasts/Media -->
-<!-- New useful resources -->
+<Optional section covering broader geospatial news> <!-- Conferences/Forums/Resbaz --> <!-- New software/packages --> <!-- Podcasts/Media --> <!-- New useful resources -->
 
 ### Geospatial Jobs
 
-<Optional section listing geospatial job vacancies>
-<!-- Government Jobs -->
-<!-- Industry Jobs -->
-<!-- Not for profit/NGO Jobs -->
-<!-- University Jobs -->
- 
+<Optional section listing geospatial job vacancies> <!-- Government Jobs --> <!-- Industry Jobs --> <!-- Not for profit/NGO Jobs --> <!-- University Jobs -->
+
 ### Training
 
- <Optional section on GeoSpatial training opportunities>
-<!-- Upcoming UQ Library Training -->
-<!-- University/School specific training -->
-<!-- Other training opportunities -->
+<Optional section on GeoSpatial training opportunities> <!-- Upcoming UQ Library Training --> <!-- University/School specific training --> <!-- Other training opportunities -->

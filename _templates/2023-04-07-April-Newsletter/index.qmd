@@ -1,0 +1,48 @@
+---
+title: "April Newsletter | Converting rasters to dataframes | Filling gaps in Satellite data"
+editor: visual
+author: 'Nicholas Wiggins'
+date: "`r Sys.Date()`"
+image: <thumbnail image for post>
+slug: newsletter-<Mmmyyyy>
+categories:
+  - newsletter
+tags: []
+DisableComments: no
+---
+
+## Geospatial Community April Newsletter
+
+### Next workshop -- Friday April 21st, 1-3pm
+
+####Raster and Spatial Random Forest w Dr Jacinta Holloway-Brown
+
+Dr Jacinta Holloway-Brown will be providing a workshop on using the Stochastic spatial random forest [SS-RF](https://github.com/thejholloway/SS-RF_tutorial) method for filling missing data in satellite images due to clouds, and also going over using [raster2data](https://github.com/thejholloway/raster2data) for working with spatial image files (such as rasters), and converting these to dataframes in R in order to perform statistical analyses.
+
+### Previous workshop
+
+In March Dr Christina Buelow gave an awesome overview of the basics of analysing spatial data in R. You can find the full details of the workshop [here](https://brisbane-geocommunity.netlify.app/posts/2023-03-23-r-spatial-basics/), and keep an eye out for the recording on our YouTube channel (it will be linked on our website when it's up and running).
+
+### Geospatial Community Updates
+
+<Optional Section about our community> <!-- Group changes --> <!-- website updates --> <!-- surveys --> <!-- ideas for upcoming workshops --> <!-- testimonials --> <!-- org committee details --> <!-- Anything about us that we might want to share -->
+
+### Geospatial News
+
+<Optional section covering broader geospatial news> <!-- Conferences/Forums/Resbaz --> <!-- New software/packages --> <!-- Podcasts/Media --> <!-- New useful resources -->
+
+### Geospatial Jobs
+
+<Optional section listing geospatial job vacancies> <!-- Government Jobs --> <!-- Industry Jobs --> <!-- Not for profit/NGO Jobs --> <!-- University Jobs -->
+
+### Training
+
+<Optional section on GeoSpatial training opportunities> <!-- Upcoming UQ Library Training --> <!-- University/School specific training --> <!-- Other training opportunities -->\
+
+#### UQ Library Training
+
+[**QGIS: Custom Maps on your Phone**](https://studenthub.uq.edu.au/students/events/detail/4472959) - Tuesday 11th April 2023, 9:30-11:30am
+
+[**QGIS: Vector Analysis**](https://studenthub.uq.edu.au/students/events/detail/4472960) - Tuesday 18th April 2023, 9:30-11:30am
+
+[**UQ R Usergroup (UQRUG)**](https://uqrug.netlify.app/) - Wednesday 26th April 2023, 12-2pm
