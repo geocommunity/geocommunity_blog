@@ -37,7 +37,7 @@ In March Dr Christina Buelow gave an awesome overview of the basics of analysing
 
 ### Training
 
-<Optional section on GeoSpatial training opportunities> <!-- Upcoming UQ Library Training --> <!-- University/School specific training --> <!-- Other training opportunities -->\
+<Optional section on GeoSpatial training opportunities> <!-- Upcoming UQ Library Training --> <!-- University/School specific training --> <!-- Other training opportunities -->
 
 #### UQ Library Training
 
@@ -46,3 +46,11 @@ In March Dr Christina Buelow gave an awesome overview of the basics of analysing
 [**QGIS: Vector Analysis**](https://studenthub.uq.edu.au/students/events/detail/4472960) - Tuesday 18th April 2023, 9:30-11:30am
 
 [**UQ R Usergroup (UQRUG)**](https://uqrug.netlify.app/) - Wednesday 26th April 2023, 12-2pm
+
+#### EXPERIMENTAL DESIGN AND DATA ANALYSIS FOR TESTING CASUAL HYPOTHESES IN R
+
+Find out more and register [here](https://www.amsa2023.amsa.asn.au/workshop).
+
+Date: July 2nd 2023, Time: 9:00-16:00, Location: Griffith University Gold Coast Campus, Building/Room G14_1.13B. Cost: \$30.
+
+**Note** This isn't a spatial workshop, but if you're interested in statistical analysis and R programming, this will be a good one. Spots are limited so please only register if you are sure you can make it.
