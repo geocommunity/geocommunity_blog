@@ -23,43 +23,7 @@ Dr Jacinta Holloway-Brown will be providing a workshop on using the Stochastic s
 
 In March Dr Christina Buelow gave an awesome overview of the basics of analysing spatial data in R. You can find the full details of the workshop [here](https://brisbane-geocommunity.netlify.app/posts/2023-03-23-r-spatial-basics/), and keep an eye out for the recording on our YouTube channel (it will be linked on our website when it's up and running).
 
-## Geospatial Community Updates
-
-<Optional Section about our community>
-
--   Group changes
--   website updates
--   surveys
--   ideas for upcoming workshops
--   testimonials
--   org committee details
--   Anything about us that we might want to share
-
-## Geospatial News
-
-<Optional section covering broader geospatial news>
-
--   Conferences/Forums/Resbaz
--   New software/packages
--   Podcasts/Media
--   New useful resources
-
-## Geospatial Jobs
-
-<Optional section listing geospatial job vacancies>
-
--   Government Jobs
--   Industry Jobs
--   Not for profit/NGO Jobs
--   University Jobs
-
 ## Training
-
-<Optional section on GeoSpatial training opportunities>
-
--   Upcoming UQ Library Training
--   University/School specific training
--   Other training opportunities
 
 ### UQ Library Training
 
