@@ -20,8 +20,8 @@
 title: "<Month> Newsletter | <3-4 word summary of next workshop>"
 editor: visual
 author: '<your name here>'
-date: "`r Sys.Date()`"
-image: <thumbnail image for post>
+date: "<YYYY-MM-DD>"
+image: <thumbnail image for post, delete if no image>
 slug: newsletter-<Mmmyyyy>
 categories:
   - newsletter
