@@ -1,0 +1,14 @@
+{
+  "hash": "f1e772dfe54fac3ab5900359a288a2c6",
+  "result": {
+    "markdown": "---\ntitle: \"April Newsletter | Converting rasters to dataframes | Filling gaps in Satellite data\"\neditor: visual\nauthor: 'Nicholas Wiggins'\ndate: \"2023-04-12\"\n\nslug: newsletter-April2023\ncategories:\n  - newsletter\ntags: []\nDisableComments: no\n---\n\n\n# Geospatial Community April Newsletter\n\n## Next workshop -- Friday April 21st, 1-3pm\n\n### Raster and Spatial Random Forest with Dr Jacinta Holloway-Brown\n\nDr Jacinta Holloway-Brown will be providing a workshop on using the Stochastic spatial random forest [SS-RF](https://github.com/thejholloway/SS-RF_tutorial) method for filling missing data in satellite images due to clouds, and also going over using [raster2data](https://github.com/thejholloway/raster2data) for working with spatial image files (such as rasters), and converting these to dataframes in R in order to perform statistical analyses.\n\n## Previous workshop\n\nIn March Dr Christina Buelow gave an awesome overview of the basics of analysing spatial data in R. You can find the full details of the workshop [here](https://brisbane-geocommunity.netlify.app/posts/2023-03-23-r-spatial-basics/), and keep an eye out for the recording on our YouTube channel (it will be linked on our website when it's up and running).\n\n## Training\n\n### UQ Library Training\n\n[**QGIS: Custom Maps on your Phone**](https://studenthub.uq.edu.au/students/events/detail/4472959) - Tuesday 11th April 2023, 9:30-11:30am\n\n[**QGIS: Vector Analysis**](https://studenthub.uq.edu.au/students/events/detail/4472960) - Tuesday 18th April 2023, 9:30-11:30am\n\n[**UQ R Usergroup (UQRUG)**](https://uqrug.netlify.app/) - Wednesday 26th April 2023, 12-2pm\n\n### Experimental Design and Data Analysis for Testing Casual Hypotheses in R\n\nFind more details and registration [here](https://www.amsa2023.amsa.asn.au/workshop).\\\n**Date:** July 2nd 2023\\\n**Time:** 9:00-16:00\\\n**Location**: Griffith University Gold Coast Campus, Building/Room G14_1.13B\\\n**Cost**: \\$30.\n\n**Note** This isn't a spatial workshop, but if you're interested in statistical analysis and R programming, this will be a good one. Spots are limited so please only register if you are sure you can make it.\n\n## Conference\n\n### [Locate23 Conference](https://locateconference.com/) \n\nMay 10-12, Adelaide South Australia\n\nAnnual conference put on by the [Geospatial Council of Australia](https://geospatialcouncil.org.au/) bringing together national and international delegates within and outside the geospatial Industry.",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

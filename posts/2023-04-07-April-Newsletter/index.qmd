@@ -1,13 +1,13 @@
 ---
-title: "April Newsletter | Converting rasters to dataframes | Filling gaps in Satellite data"
+title: "Newsletter | April Workshop Rasters and Random Forests"
 editor: visual
 author: 'Nicholas Wiggins'
-date: "`r Sys.Date()`"
-image: <thumbnail image for post>
-slug: newsletter-<Mmmyyyy>
+date: "2023-04-12"
+image: landsat.png
+slug: newsletter-April2023
 categories:
   - newsletter
-tags: []
+tags: [training, conference]
 DisableComments: no
 ---
 
@@ -42,3 +42,11 @@ Find more details and registration [here](https://www.amsa2023.amsa.asn.au/works
 **Cost**: \$30.
 
 **Note** This isn't a spatial workshop, but if you're interested in statistical analysis and R programming, this will be a good one. Spots are limited so please only register if you are sure you can make it.
+
+## Conference
+
+### [Locate23 Conference](https://locateconference.com/) 
+
+May 10-12, Adelaide South Australia
+
+Annual conference put on by the [Geospatial Council of Australia](https://geospatialcouncil.org.au/) bringing together national and international delegates within and outside the geospatial Industry.
