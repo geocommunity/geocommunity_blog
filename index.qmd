@@ -49,20 +49,18 @@ div.quarto-post {
   </div>
 </div>
 ```
-
-Welcome! 
+Welcome!
 
 Our mission is to build a **supportive** and **inclusive** community where students and professionals can **grow their geospatial skills together**.
 
----
+------------------------------------------------------------------------
 
 We run **monthly skill sharing tutorial sessions** where a member of our community teaches us something they have learned along the way.
 
----
+------------------------------------------------------------------------
 
-Want to join the community and get access to the online workshop link? Email us at: uqgeo.community \@ gmail dot com   
+Want to join the community and get access to the online workshop link? Email us at: uqgeo.community \@ gmail dot com\
 <br>
-
 
 <!-- ## Upcoming Workshop {style="padding-top: 7px;"} -->
 
@@ -75,9 +73,11 @@ Want to join the community and get access to the online workshop link? Email us 
 <!-- <links to the content being covered, or to the presenter's website/bio, etc.> -->
 
 ## Latest Workshop
+
 ::: {#latest}
 :::
 
 ## All Posts
+
 ::: {#all}
 :::
