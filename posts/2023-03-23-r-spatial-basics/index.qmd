@@ -14,8 +14,7 @@ R Spatial basics with Dr. Christina Buelow
 
 You can find a direct link to the below content [here](https://cabuelow.quarto.pub/r-for-mapping-and-more/), and download the code and data [here](https://github.com/cabuelow/R-spatial-2022).
 
-:::{.column-page}
-
+::: column-page
 ```{=html}
 <iframe width="100%" height="600px" src="https://cabuelow.quarto.pub/r-for-mapping-and-more/" title="R for mapping and more"></iframe>
 ```
