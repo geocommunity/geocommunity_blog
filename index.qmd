@@ -81,7 +81,7 @@ Want to join the community and get access to the online workshop link? Email us 
 
 -   How to fit a spatial random forest to satellite image data. This will include a brief overview of decision trees, random forest and stochastic spatial random forest methods. Code to fit spatial random forest will be provided and shared with the group.
 
--   How to fit stochastic spatial random forest SS-RF to get predictions of land cover for missing observations with associated probabilities.
+-   How to fit stochastic spatial random forest [SS-RF](https://github.com/thejholloway/SS-RF_tutorial) to get predictions of land cover for missing observations with associated probabilities.
 
 Email us if you would like to be invited to the Teams link! See above email.
 
