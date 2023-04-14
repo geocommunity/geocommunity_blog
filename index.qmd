@@ -62,20 +62,31 @@ We run **monthly skill sharing tutorial sessions** where a member of our communi
 Want to join the community and get access to the online workshop link? Email us at: uqgeo.community \@ gmail dot com\
 <br>
 
-<!-- ## Upcoming Workshop {style="padding-top: 7px;"} -->
+## Upcoming Workshop {style="padding-top: 7px;"}
 
-<!-- ### <workshop title> -->
+### Satellite Image Analysis Pipeline in R
 
-<!-- **March 23rd, 2023 2-4pm AEST** -->
+**April 21st, 2023 1-3pm AEST**
 
-<!-- <short description of what it is, and who is presenting. And if we are doing a problem solving session.> -->
+Dr Jacinta Holloway-Brown will be providing a workshop discussing the satellite image analysis pipeline from start to finish with examples. Steps covered will be:
+
+-   How to search for and download free satellite images from US Geological Survey Earth Explorer https://earthexplorer.usgs.gov/
+
+-   How to convert a satellite image to a data frame. Includes how to calculate a vegetation index and derive land cover classes in R. Tutorial: raster2data
+
+-   How to fit a spatial random forest to satellite image data. This will include a brief overview of decision trees, random forest and stochastic spatial random forest methods. Code to fit spatial random forest will be provided and shared with the group.
+
+-   How to fit stochastic spatial random forest SS-RF to get predictions of land cover for missing observations with associated probabilities.
+
+Email us if you would like to be invited to the Teams link! See above email.
 
 <!-- <links to the content being covered, or to the presenter's website/bio, etc.> -->
 
-## Latest Workshop
+<!-- ## Latest Workshop -->
 
-::: {#latest}
-:::
+<!--::: {#latest}  -->
+
+<!--::: -->
 
 ## All Posts
 

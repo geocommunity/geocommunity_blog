@@ -11,7 +11,7 @@
     "href": "index.html#upcoming-workshop",
     "title": "Geospatial Community",
     "section": "Upcoming Workshop",
-    "text": "Upcoming Workshop\nR Spatial basics with Dr. Christina Buelow and a problem solving session!\nChristina will be covering the below content. Download the code and data here.\nMarch 23rd, 2023 2-4pm AEST\nWant to get access to the online workshop link? Email us at: uqgeo.community @ gmail dot com"
+    "text": "Upcoming Workshop\n\nSatellite Image Analysis Pipeline in R\nApril 21st, 2023 1-3pm AEST\nDr Jacinta Holloway-Brown will be providing a workshop discussing the satellite image analysis pipeline from start to finish with examples. Steps covered will be:\n\nHow to search for and download free satellite images from US Geological Survey Earth Explorer https://earthexplorer.usgs.gov/\nHow to convert a satellite image to a data frame. Includes how to calculate a vegetation index and derive land cover classes in R. Tutorial: raster2data\nHow to fit a spatial random forest to satellite image data. This will include a brief overview of decision trees, random forest and stochastic spatial random forest methods. Code to fit spatial random forest will be provided and shared with the group.\nHow to fit stochastic spatial random forest SS-RF to get predictions of land cover for missing observations with associated probabilities.\n\nEmail us if you would like to be invited to the Teams link! See above email."
   },
   {
     "objectID": "index.html#testimonials",
