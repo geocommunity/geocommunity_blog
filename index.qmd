@@ -60,7 +60,7 @@ We run **monthly skill sharing tutorial sessions** where a member of our communi
 ------------------------------------------------------------------------
 
 Want to join the community and get access to the online workshop link? Email us at: uqgeo.community \@ gmail dot com\
-<br>
+
 
 ## Upcoming Workshop {style="padding-top: 7px;"}
 
@@ -68,11 +68,16 @@ Want to join the community and get access to the online workshop link? Email us 
 
 **April 21st, 2023 1-3pm AEST**
 
-Dr Jacinta Holloway-Brown will be providing a workshop discussing the satellite image analysis pipeline from start to finish with examples. Steps covered will be:
+::: {.column-margin}
+![Landsat image from Dr. Jacinta Holloway-Brown's materials](posts/2023-04-07-April-Newsletter/landsat.png)
+:::
 
--   How to search for and download free satellite images from US Geological Survey Earth Explorer https://earthexplorer.usgs.gov/
 
--   How to convert a satellite image to a data frame. Includes how to calculate a vegetation index and derive land cover classes in R. Tutorial: raster2data
+[Dr Jacinta Holloway-Brown](https://researchers.adelaide.edu.au/profile/jacinta.holloway-brown) will be providing a workshop discussing the satellite image analysis pipeline from start to finish with examples. Steps covered will be:
+
+-   How to search for and download free satellite images from US Geological Survey [Earth Explorer](https://earthexplorer.usgs.gov/)
+
+-   How to convert a satellite image to a data frame. Includes how to calculate a vegetation index and derive land cover classes in R. Tutorial: [raster2data](https://github.com/thejholloway/raster2data)
 
 -   How to fit a spatial random forest to satellite image data. This will include a brief overview of decision trees, random forest and stochastic spatial random forest methods. Code to fit spatial random forest will be provided and shared with the group.
 

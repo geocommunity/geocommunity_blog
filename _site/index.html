@@ -126,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -184,9 +184,11 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
@@ -220,16 +222,24 @@ div.quarto-post {
 <p>We run <strong>monthly skill sharing tutorial sessions</strong> where a member of our community teaches us something they have learned along the way.</p>
 <hr>
 <p>Want to join the community and get access to the online workshop link? Email us at: uqgeo.community @ gmail dot com<br>
-<br></p>
-<section id="upcoming-workshop" class="level2" style="padding-top: 7px;">
+</p>
+<section id="upcoming-workshop" class="level2 page-columns page-full" style="padding-top: 7px;">
 <h2 style="padding-top: 7px;" class="anchored" data-anchor-id="upcoming-workshop">Upcoming Workshop</h2>
-<section id="satellite-image-analysis-pipeline-in-r" class="level3">
+<section id="satellite-image-analysis-pipeline-in-r" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="satellite-image-analysis-pipeline-in-r">Satellite Image Analysis Pipeline in R</h3>
 <p><strong>April 21st, 2023 1-3pm AEST</strong></p>
-<p>Dr Jacinta Holloway-Brown will be providing a workshop discussing the satellite image analysis pipeline from start to finish with examples. Steps covered will be:</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="posts/2023-04-07-April-Newsletter/landsat.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Landsat image from Dr.&nbsp;Jacinta Holloway-Brown’s materials</figcaption><p></p>
+</figure>
+</div>
+</div></div><p><a href="https://researchers.adelaide.edu.au/profile/jacinta.holloway-brown">Dr Jacinta Holloway-Brown</a> will be providing a workshop discussing the satellite image analysis pipeline from start to finish with examples. Steps covered will be:</p>
 <ul>
-<li><p>How to search for and download free satellite images from US Geological Survey Earth Explorer https://earthexplorer.usgs.gov/</p></li>
-<li><p>How to convert a satellite image to a data frame. Includes how to calculate a vegetation index and derive land cover classes in R. Tutorial: raster2data</p></li>
+<li><p>How to search for and download free satellite images from US Geological Survey <a href="https://earthexplorer.usgs.gov/">Earth Explorer</a></p></li>
+<li><p>How to convert a satellite image to a data frame. Includes how to calculate a vegetation index and derive land cover classes in R. Tutorial: <a href="https://github.com/thejholloway/raster2data">raster2data</a></p></li>
 <li><p>How to fit a spatial random forest to satellite image data. This will include a brief overview of decision trees, random forest and stochastic spatial random forest methods. Code to fit spatial random forest will be provided and shared with the group.</p></li>
 <li><p>How to fit stochastic spatial random forest SS-RF to get predictions of land cover for missing observations with associated probabilities.</p></li>
 </ul>
