@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nicholas Wiggins">
+<meta name="dcterms.date" content="2023-04-05">
+
+<title>April Newsletter | Converting rasters to dataframes | Filling gaps in Satellite data</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">April Newsletter | Converting rasters to dataframes | Filling gaps in Satellite data</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">newsletter</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nicholas Wiggins </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 5, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="geospatial-community-april-newsletter" class="level1">
+<h1>Geospatial Community April Newsletter</h1>
+<section id="next-workshop-friday-april-21st-1-3pm" class="level2">
+<h2 class="anchored" data-anchor-id="next-workshop-friday-april-21st-1-3pm">Next workshop – Friday April 21st, 1-3pm</h2>
+<section id="raster-and-spatial-random-forest-with-dr-jacinta-holloway-brown" class="level3">
+<h3 class="anchored" data-anchor-id="raster-and-spatial-random-forest-with-dr-jacinta-holloway-brown">Raster and Spatial Random Forest with Dr Jacinta Holloway-Brown</h3>
+<p>Dr Jacinta Holloway-Brown will be providing a workshop on using the Stochastic spatial random forest <a href="https://github.com/thejholloway/SS-RF_tutorial">SS-RF</a> method for filling missing data in satellite images due to clouds, and also going over using <a href="https://github.com/thejholloway/raster2data">raster2data</a> for working with spatial image files (such as rasters), and converting these to dataframes in R in order to perform statistical analyses.</p>
+</section>
+</section>
+<section id="previous-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="previous-workshop">Previous workshop</h2>
+<p>In March Dr Christina Buelow gave an awesome overview of the basics of analysing spatial data in R. You can find the full details of the workshop <a href="https://brisbane-geocommunity.netlify.app/posts/2023-03-23-r-spatial-basics/">here</a>, and keep an eye out for the recording on our YouTube channel (it will be linked on our website when it’s up and running).</p>
+</section>
+<section id="geospatial-community-updates" class="level2">
+<h2 class="anchored" data-anchor-id="geospatial-community-updates">Geospatial Community Updates</h2>
+<p><optional section="" about="" our="" community=""></optional></p>
+<ul>
+<li>Group changes</li>
+<li>website updates</li>
+<li>surveys</li>
+<li>ideas for upcoming workshops</li>
+<li>testimonials</li>
+<li>org committee details</li>
+<li>Anything about us that we might want to share</li>
+</ul>
+</section>
+<section id="geospatial-news" class="level2">
+<h2 class="anchored" data-anchor-id="geospatial-news">Geospatial News</h2>
+<p><optional section="" covering="" broader="" geospatial="" news=""></optional></p>
+<ul>
+<li>Conferences/Forums/Resbaz</li>
+<li>New software/packages</li>
+<li>Podcasts/Media</li>
+<li>New useful resources</li>
+</ul>
+</section>
+<section id="geospatial-jobs" class="level2">
+<h2 class="anchored" data-anchor-id="geospatial-jobs">Geospatial Jobs</h2>
+<p><optional section="" listing="" geospatial="" job="" vacancies=""></optional></p>
+<ul>
+<li>Government Jobs</li>
+<li>Industry Jobs</li>
+<li>Not for profit/NGO Jobs</li>
+<li>University Jobs</li>
+</ul>
+</section>
+<section id="training" class="level2">
+<h2 class="anchored" data-anchor-id="training">Training</h2>
+<p><optional section="" on="" geospatial="" training="" opportunities=""></optional></p>
+<ul>
+<li>Upcoming UQ Library Training</li>
+<li>University/School specific training</li>
+<li>Other training opportunities</li>
+</ul>
+<section id="uq-library-training" class="level3">
+<h3 class="anchored" data-anchor-id="uq-library-training">UQ Library Training</h3>
+<p><a href="https://studenthub.uq.edu.au/students/events/detail/4472959"><strong>QGIS: Custom Maps on your Phone</strong></a> - Tuesday 11th April 2023, 9:30-11:30am</p>
+<p><a href="https://studenthub.uq.edu.au/students/events/detail/4472960"><strong>QGIS: Vector Analysis</strong></a> - Tuesday 18th April 2023, 9:30-11:30am</p>
+<p><a href="https://uqrug.netlify.app/"><strong>UQ R Usergroup (UQRUG)</strong></a> - Wednesday 26th April 2023, 12-2pm</p>
+</section>
+<section id="experimental-design-and-data-analysis-for-testing-casual-hypotheses-in-r" class="level3">
+<h3 class="anchored" data-anchor-id="experimental-design-and-data-analysis-for-testing-casual-hypotheses-in-r">Experimental Design and Data Analysis for Testing Casual Hypotheses in R</h3>
+<p>Find more details and registration <a href="https://www.amsa2023.amsa.asn.au/workshop">here</a>.<br>
+<strong>Date:</strong> July 2nd 2023<br>
+<strong>Time:</strong> 9:00-16:00<br>
+<strong>Location</strong>: Griffith University Gold Coast Campus, Building/Room G14_1.13B<br>
+<strong>Cost</strong>: $30.</p>
+<p><strong>Note</strong> This isn’t a spatial workshop, but if you’re interested in statistical analysis and R programming, this will be a good one. Spots are limited so please only register if you are sure you can make it.</p>
+</section>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
