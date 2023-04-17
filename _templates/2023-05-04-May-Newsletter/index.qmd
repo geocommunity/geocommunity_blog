@@ -15,15 +15,15 @@ DisableComments: no
 
 ### Next workshop -- <DATE>, <TIME>
 
-\<Paragraph outlining the contents of the next workshop. Who, what, when, where\>
+INSERT Paragraph outlining the contents of the next workshop. Who, what, when, where
 
 ### Previous workshop
 
-\<Short paragraph thanking previous presenter. Short summary of what was covered. Add a link to the content\>
+INSERT Short paragraph thanking previous presenter. Short summary of what was covered. Add a link to the content
 
 ## Geospatial Community Updates
 
-<Optional Section about our community>
+INSERTOptional Section about our community
 
 -   Group changes
 -   website updates
@@ -35,7 +35,7 @@ DisableComments: no
 
 ## Geospatial News
 
-<Optional section covering broader geospatial news>
+INSERT Optional section covering broader geospatial news
 
 -   Conferences/Forums/Resbaz
 -   New software/packages
@@ -44,7 +44,7 @@ DisableComments: no
 
 ## Geospatial Jobs
 
-<Optional section listing geospatial job vacancies>
+INSERT Optional section listing geospatial job vacancies
 
 -   Government Jobs
 -   Industry Jobs
@@ -53,7 +53,7 @@ DisableComments: no
 
 ## Training
 
-<Optional section on GeoSpatial training opportunities>
+INSERT Optional section on GeoSpatial training opportunities
 
 -   Upcoming UQ Library Training
 -   University/School specific training
