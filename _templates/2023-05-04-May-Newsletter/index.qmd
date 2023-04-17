@@ -1,0 +1,60 @@
+---
+title: "May Newsletter | <3-4 word summary of next workshop>"
+editor: visual
+author: 'Nicholas Wiggins'
+date: "2023-05-04"
+image: <thumbnail image for post, delete if no image>
+slug: newsletter-<Mmmyyyy>
+categories:
+  - newsletter
+tags: []
+DisableComments: no
+---
+
+## Geospatial Community May Newsletter
+
+### Next workshop -- <DATE>, <TIME>
+
+\<Paragraph outlining the contents of the next workshop. Who, what, when, where\>
+
+### Previous workshop
+
+\<Short paragraph thanking previous presenter. Short summary of what was covered. Add a link to the content\>
+
+## Geospatial Community Updates
+
+<Optional Section about our community>
+
+-   Group changes
+-   website updates
+-   surveys
+-   ideas for upcoming workshops
+-   testimonials
+-   org committee details
+-   Anything about us that we might want to share
+
+## Geospatial News
+
+<Optional section covering broader geospatial news>
+
+-   Conferences/Forums/Resbaz
+-   New software/packages
+-   Podcasts/Media
+-   New useful resources
+
+## Geospatial Jobs
+
+<Optional section listing geospatial job vacancies>
+
+-   Government Jobs
+-   Industry Jobs
+-   Not for profit/NGO Jobs
+-   University Jobs
+
+## Training
+
+<Optional section on GeoSpatial training opportunities>
+
+-   Upcoming UQ Library Training
+-   University/School specific training
+-   Other training opportunities
