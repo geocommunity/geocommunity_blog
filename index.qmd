@@ -55,15 +55,16 @@ Our mission is to build a **supportive** and **inclusive** community where stude
 
 ::: {.callout-note icon=false collapse="true"}
 
-## Want to Join one of our GeoSpatial workshops?
-
+# Want to Join one of our GeoSpatial workshops?
+<br>
 We run **monthly skill sharing tutorial sessions** where a member of our community teaches us something they have learned along the way.
 
-------------------------------------------------------------------------
+Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform) to join and get the Zoom link:
 
-Want to join the community and get access to the online workshop link? 
 
-Email us at: uqgeo.community @ gmail dot com
+```{=html}
+<iframe width="100%" height="400px" src="https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform" title="R for mapping and more"></iframe>
+```
 
 :::
 
