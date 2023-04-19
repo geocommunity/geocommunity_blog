@@ -53,14 +53,19 @@ Welcome!
 
 Our mission is to build a **supportive** and **inclusive** community where students and professionals can **grow their geospatial skills together**.
 
-------------------------------------------------------------------------
+::: {.callout-note icon=false collapse="true"}
+
+## Want to Join one of our GeoSpatial workshops?
 
 We run **monthly skill sharing tutorial sessions** where a member of our community teaches us something they have learned along the way.
 
 ------------------------------------------------------------------------
 
-Want to join the community and get access to the online workshop link? Email us at: uqgeo.community \@ gmail dot com\
+Want to join the community and get access to the online workshop link? 
 
+Email us at: uqgeo.community @ gmail dot com
+
+:::
 
 ## Upcoming Workshop {style="padding-top: 7px;"}
 
@@ -68,10 +73,9 @@ Want to join the community and get access to the online workshop link? Email us 
 
 **April 21st, 2023 1-3pm AEST**
 
-::: {.column-margin}
+::: column-margin
 ![Landsat image from Dr. Jacinta Holloway-Brown's materials](posts/2023-04-07-April-Newsletter/landsat.png)
 :::
-
 
 [Dr Jacinta Holloway-Brown](https://researchers.adelaide.edu.au/profile/jacinta.holloway-brown) will be providing a workshop discussing the satellite image analysis pipeline from start to finish with examples. Steps covered will be:
 

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Geospatial Community",
     "section": "",
-    "text": "Welcome!\nOur mission is to build a supportive and inclusive community where students and professionals can grow their geospatial skills together.\nWe run monthly skill sharing tutorial sessions where a member of our community teaches us something they have learned along the way.\nWant to join the community and get access to the online workshop link? Email us at: uqgeo.community @ gmail dot com"
+    "text": "Welcome!\nOur mission is to build a supportive and inclusive community where students and professionals can grow their geospatial skills together."
   },
   {
     "objectID": "index.html#upcoming-workshop",
@@ -726,5 +726,33 @@
     "title": "Newsletter | April Workshop Rasters and Random Forests",
     "section": "",
     "text": "Dr Jacinta Holloway-Brown will be providing a workshop on using the Stochastic spatial random forest SS-RF method for filling missing data in satellite images due to clouds, and also going over using raster2data for working with spatial image files (such as rasters), and converting these to dataframes in R in order to perform statistical analyses.\n\n\n\n\nIn March Dr Christina Buelow gave an awesome overview of the basics of analysing spatial data in R. You can find the full details of the workshop here, and keep an eye out for the recording on our YouTube channel (it will be linked on our website when it’s up and running).\n\n\n\n\n\nQGIS: Custom Maps on your Phone - Tuesday 11th April 2023, 9:30-11:30am\nQGIS: Vector Analysis - Tuesday 18th April 2023, 9:30-11:30am\nUQ R Usergroup (UQRUG) - Wednesday 26th April 2023, 12-2pm\n\n\n\nFind more details and registration here.\nDate: July 2nd 2023\nTime: 9:00-16:00\nLocation: Griffith University Gold Coast Campus, Building/Room G14_1.13B\nCost: $30.\nNote This isn’t a spatial workshop, but if you’re interested in statistical analysis and R programming, this will be a good one. Spots are limited so please only register if you are sure you can make it.\n\n\n\n\n\n\nMay 10-12, Adelaide South Australia\nAnnual conference put on by the Geospatial Council of Australia bringing together national and international delegates within and outside the geospatial Industry."
+  },
+  {
+    "objectID": "posts/2023-04-07-April-Newsletter/index.html#next-workshop-friday-april-21st-1-3pm",
+    "href": "posts/2023-04-07-April-Newsletter/index.html#next-workshop-friday-april-21st-1-3pm",
+    "title": "Newsletter | April Workshop Rasters and Random Forests",
+    "section": "",
+    "text": "Dr Jacinta Holloway-Brown will be providing a workshop on using the Stochastic spatial random forest SS-RF method for filling missing data in satellite images due to clouds, and also going over using raster2data for working with spatial image files (such as rasters), and converting these to dataframes in R in order to perform statistical analyses."
+  },
+  {
+    "objectID": "posts/2023-04-07-April-Newsletter/index.html#previous-workshop",
+    "href": "posts/2023-04-07-April-Newsletter/index.html#previous-workshop",
+    "title": "Newsletter | April Workshop Rasters and Random Forests",
+    "section": "",
+    "text": "In March Dr Christina Buelow gave an awesome overview of the basics of analysing spatial data in R. You can find the full details of the workshop here, and keep an eye out for the recording on our YouTube channel (it will be linked on our website when it’s up and running)."
+  },
+  {
+    "objectID": "posts/2023-04-07-April-Newsletter/index.html#training",
+    "href": "posts/2023-04-07-April-Newsletter/index.html#training",
+    "title": "Newsletter | April Workshop Rasters and Random Forests",
+    "section": "",
+    "text": "QGIS: Custom Maps on your Phone - Tuesday 11th April 2023, 9:30-11:30am\nQGIS: Vector Analysis - Tuesday 18th April 2023, 9:30-11:30am\nUQ R Usergroup (UQRUG) - Wednesday 26th April 2023, 12-2pm\n\n\n\nFind more details and registration here.\nDate: July 2nd 2023\nTime: 9:00-16:00\nLocation: Griffith University Gold Coast Campus, Building/Room G14_1.13B\nCost: $30.\nNote This isn’t a spatial workshop, but if you’re interested in statistical analysis and R programming, this will be a good one. Spots are limited so please only register if you are sure you can make it."
+  },
+  {
+    "objectID": "posts/2023-04-07-April-Newsletter/index.html#conference",
+    "href": "posts/2023-04-07-April-Newsletter/index.html#conference",
+    "title": "Newsletter | April Workshop Rasters and Random Forests",
+    "section": "",
+    "text": "May 10-12, Adelaide South Australia\nAnnual conference put on by the Geospatial Council of Australia bringing together national and international delegates within and outside the geospatial Industry."
   }
 ]
