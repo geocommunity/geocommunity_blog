@@ -51,24 +51,21 @@ div.quarto-post {
 ```
 Welcome!
 
-Our mission is to build a **supportive** and **inclusive** community where students and professionals can **grow their geospatial skills together**.
+Our mission is to build a **supportive** and **inclusive** community where students, researchers, and professionals can **grow their geospatial skills together**. 🌱
 
-::: {.callout-note icon=false collapse="true"}
+::: {.callout-note icon="false" collapse="true"}
+# Want to **join** our Geospatial Community workshops?
 
-# Want to Join one of our GeoSpatial workshops?
-<br>
-We run **monthly skill sharing tutorial sessions** where a member of our community teaches us something they have learned along the way.
+<br> We run **monthly skill sharing tutorial sessions** where a member of our community teaches us something they have learned along the way.
 
-Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform) to join and get the Zoom link:
-
+Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform) to join and get the workshop link:
 
 ```{=html}
 <iframe width="100%" height="400px" src="https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform" title="R for mapping and more"></iframe>
 ```
-
 :::
 
-## Upcoming Workshop {style="padding-top: 7px;"}
+## Upcoming Workshop {style="padding-top: 5px;"}
 
 ### Satellite Image Analysis Pipeline in R
 
@@ -88,7 +85,7 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 
 -   How to fit stochastic spatial random forest [SS-RF](https://github.com/thejholloway/SS-RF_tutorial) to get predictions of land cover for missing observations with associated probabilities.
 
-Email us if you would like to be invited to the Teams link! See above email.
+Fill out the [form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform) (see ⬆️) to get the invitation for the workshop.
 
 <!-- <links to the content being covered, or to the presenter's website/bio, etc.> -->
 
