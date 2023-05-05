@@ -42,7 +42,16 @@ format:
 div.quarto-post {
   margin-bottom: 0px;
 }
-
+.tui-view-7 {
+height: 100% !important;
+}
+.tui-full-calendar-month {
+    height: 75%;
+    min-height: 500px;
+}
+.tui-full-calendar-popup-detail .tui-full-calendar-popup-container {
+    width: 330px;
+}
 .card-img{
   width: auto;
 }
@@ -68,7 +77,34 @@ div.quarto-post {
 ```
 Welcome!
 
+::: column-margin
+## Events Calendar
+```{r calendar}
+#| include: false
 
+library(googlesheets4)
+#gs4_auth(cache = ".secrets", email = "itsuqnick@gmail.com")
+gs4_deauth()
+cal_data <- read_sheet("https://docs.google.com/spreadsheets/d/1HHxs4SsFO1ImH5XbMgTwK2QrheN8d8N3_9P5L0QiPUg/edit#gid=308321545", sheet = "confirmed")
+cal_prop <- read_sheet("https://docs.google.com/spreadsheets/d/1HHxs4SsFO1ImH5XbMgTwK2QrheN8d8N3_9P5L0QiPUg/edit#gid=308321545", sheet = "cal_properties")
+
+#install.packages("toastui")
+library(toastui)
+```
+
+```{r }
+#| echo: false
+#| warning: false
+#| error: false
+
+calendar(cal_data, navigation = TRUE, defaultDate = Sys.Date(), height = "600") %>% 
+  cal_month_options(
+    startDayOfWeek  = 1, 
+    workweek = TRUE
+  ) %>% 
+  cal_props(cal_prop)
+```
+:::
 
 Our mission is to build a **supportive** and **inclusive** community where students, researchers, and professionals can **grow their geospatial skills together**. 🌱
 

@@ -120,6 +120,11 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="site_libs/calendar-binding-0.2.1/calendar.js"></script>
+<link href="site_libs/font-awesome-6.1.1/css/all.min.css" rel="stylesheet">
+<link href="site_libs/font-awesome-6.1.1/css/v4-shims.min.css" rel="stylesheet">
+<link href="site_libs/bttn-0.2.4/bttn.min.css" rel="stylesheet">
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -127,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -185,9 +190,11 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
@@ -202,7 +209,16 @@ ul.task-list li input[type="checkbox"] {
 div.quarto-post {
   margin-bottom: 0px;
 }
-
+.tui-view-7 {
+height: 100% !important;
+}
+.tui-full-calendar-month {
+    height: 75%;
+    min-height: 500px;
+}
+.tui-full-calendar-popup-detail .tui-full-calendar-popup-container {
+    width: 330px;
+}
 .card-img{
   width: auto;
 }
@@ -226,7 +242,29 @@ div.quarto-post {
   </div>
 </div>
 <p>Welcome!</p>
-<p>Our mission is to build a <strong>supportive</strong> and <strong>inclusive</strong> community where students, researchers, and professionals can <strong>grow their geospatial skills together</strong>. 🌱</p>
+
+<div class="no-row-height column-margin column-container"><section id="events-calendar" class="level2">
+<h2 class="anchored" data-anchor-id="events-calendar">Events Calendar</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-d29797ae3edbc1173cbd_menu">
+<span id="htmlwidget-d29797ae3edbc1173cbd_menu_navi">
+<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-d29797ae3edbc1173cbd_today">Today</button>
+<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-d29797ae3edbc1173cbd_prev">
+<i class="fa fa-chevron-left"></i>
+</button>
+<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-d29797ae3edbc1173cbd_next">
+<i class="fa fa-chevron-right"></i>
+</button>
+</span>
+<span id="htmlwidget-d29797ae3edbc1173cbd_renderRange" class="render-range"></span>
+</div>
+<br>
+<div id="htmlwidget-d29797ae3edbc1173cbd" style="width:100%;height:600px;" class="calendar html-widget" width="100%" height="600"></div>
+<script type="application/json" data-for="htmlwidget-d29797ae3edbc1173cbd">{"x":{"options":{"defaultView":"month","taskView":false,"scheduleView":true,"useDetailPopup":true,"useCreationPopup":false,"isReadOnly":true,"usageStatistics":false,"month":{"startDayOfWeek":1,"workweek":true},"calendars":[{"id":1,"name":"Workshop","color":"#000","bgColor":"#c6d19d","borderColor":"forestgreen"},{"id":2,"name":"Workshop TBD","color":"#000","bgColor":"#F5A9A9","borderColor":"firebrick"},{"id":3,"name":"Event","color":"#000","bgColor":"#c6e2f6","borderColor":"#3b7cc6"}]},"schedules":[{"category":"time","dueDateClass":"","id":"schedule74d05d9dd38717a5ed011ff2","calendarId":"1","title":"Satellite Image Analysis Pipeline in R","body":"Jacinta Holloway-Brown presents on how to convert a satellite image to a data frame. Tutorial: raster2data. And, how to fit stochastic spatial random forest SS-RF to get predictions of land cover for missing observations with associated probabilities.","start":"2023-04-21 13:00:00","end":"2023-04-21 15:00:00"},{"category":"time","dueDateClass":"","id":"schedule583644b004288c2debc822ea","calendarId":"1","title":"Python: Using folium for Spatial Analysis","body":"Tony Howes provies a brief intro to Python; overview of a tool to collect geospatial data; and using python, <a href=\"https://python-visualization.github.io/folium/ \">folium<\/a> and leaflet all together.","start":"2023-05-18 15:00:00","end":"2023-05-18 17:00:00"},{"category":"time","dueDateClass":"","id":"schedule2d7eb7458cc037a36e222ab3","calendarId":"1","title":"CrabSpy","body":"Cesar goes over his creation and use of CrabSpy","start":"2023-06-15 00:00:00","end":"2023-06-15 00:00:00"},{"category":"time","dueDateClass":"","id":"schedule566ffec3f5a3aec8fd37291c","calendarId":"1","title":"HPC use, skills, and pitfalls - Date TBD","body":"Nena Bulovic goes over running your code on a High Performance Computer (HPC) and provides tips and best practices.","start":"2023-07-13 00:00:00","end":"2023-07-13 00:00:00"},{"category":"time","dueDateClass":"","id":"schedulef5ca2a107aa511abdc1d904e","calendarId":"1","title":"Dealing with spatial autocorrelation - Date TBD","body":"Xiang Zhao helps us over come the hurdles of spatial autocorrelation.","start":"2023-08-17 00:00:00","end":"2023-08-17 00:00:00"},{"category":"time","dueDateClass":"","id":"schedulecfbf1a2885f58f12ec8f9b28","calendarId":"2","title":"TDB","body":"NA","start":"2023-09-14 00:00:00","end":"2023-09-14 00:00:00"},{"category":"time","dueDateClass":"","id":"schedulebef76d549e71f19b23d81881","calendarId":"2","title":"TDB","body":"NA","start":"2023-10-12 00:00:00","end":"2023-10-12 00:00:00"},{"category":"time","dueDateClass":"","id":"scheduleefb6f550643dbeedb9195a6b","calendarId":"3","title":"ResBazQld Workshop","body":"We will be doing a Spatial workshop during ResBazQld 2023","start":"2023-11-21 00:00:00","end":"2023-11-23 00:00:00"}],"navigation":true,"defaultDate":"2023-05-05","events":[],"navigationOptions":{"today_label":"Today","prev_label":"<i class=\"fa fa-chevron-left\" role=\"presentation\" aria-label=\"chevron-left icon\"><\/i>","next_label":"<i class=\"fa fa-chevron-right\" role=\"presentation\" aria-label=\"chevron-right icon\"><\/i>","class":" bttn-bordered bttn-sm bttn-primary","fmt_date":"YYYY-MM-DD","sep_date":" ~ "}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section></div><p>Our mission is to build a <strong>supportive</strong> and <strong>inclusive</strong> community where students, researchers, and professionals can <strong>grow their geospatial skills together</strong>. 🌱</p>
 <div class="callout callout-style-default callout-note no-icon callout-titled">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
