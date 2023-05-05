@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.217">
+<meta name="generator" content="quarto-1.3.283">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -19,7 +19,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -159,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
 <div style="float:right ;position: relativ" ;out.width="75%" ,="" out.extra="style=&quot;float:left; padding:10px&quot;">
 <img src="https://static.wixstatic.com/media/8959d6_98a1d74703d946ecab030b32f53db883~mv2.png/v1/fill/w_268,h_68,al_c,usm_0.66_1.00_0.01,enc_auto/f9d4ea_7a2d1d0c69ad4da0a2f48b69bc481612_.png" width="200"> 
 </div>
-<p><img src="images/python-logo.png" class="img-fluid"></p>
+<p><img src="images/python-logo.png" class="quarto-discovered-preview-image img-fluid"></p>
 <p>This workshop broadly covered remote sensing data analysis using the <a href="https://www.opendatacube.org/">Open Data Cube</a> (ODC), developed by Geoscience Australia. We went over some important Python packages that the ODC is built upon: <a href="https://numpy.org/">Numpy</a>, <a href="https://docs.xarray.dev/en/stable/">Xarray</a>, and <a href="https://dask.org/">Dask</a>, and explored how they enable fast and scalable computation.</p>
 <p>All the learning material used in this tutorial is available on the Digital Earth Australia Sandbox as Jupyter Notebooks. <strong>An account was required to participate</strong>, which can easily be created <a href="https://app.sandbox.dea.ga.gov.au/hub/login?next=%2Fhub%2F">here</a>.</p>
 <p>Additional documentation for the DEA Sandbox is available <a href="https://docs.dea.ga.gov.au/index.html">here</a> which includes useful guides, a dataset catalogue and examples.</p>
@@ -320,9 +320,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
