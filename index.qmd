@@ -53,8 +53,14 @@ height: 100% !important;
     width: 330px;
 }
 .card-img{
-  width: auto;
+  width: 100px;
 }
+img {
+    width: 100px;
+    height: 100% !important;
+    max-height: 100px !important;
+}
+
 
 @media (max-width: 767.98px){
   #events-calendar{
