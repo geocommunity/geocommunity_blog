@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Nicholas Wiggins">
-<meta name="dcterms.date" content="2023-04-12">
+<meta name="author" content="Dr Jacinta Holloway-Brown">
+<meta name="dcterms.date" content="2023-04-21">
 
-<title>Geospatial Community - Newsletter | April Workshop Rasters and Random Forests</title>
+<title>Geospatial Community - Satellite Image Analysis Pipeline in R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -110,9 +110,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Newsletter | April Workshop Rasters and Random Forests</h1>
+      <h1 class="title">Satellite Image Analysis Pipeline in R</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">newsletter</div>
+                <div class="quarto-category">Workshop</div>
               </div>
                   </div>
   </div>
@@ -123,14 +123,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Nicholas Wiggins </p>
+               <p>Dr Jacinta Holloway-Brown </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">April 12, 2023</p>
+        <p class="date">April 21, 2023</p>
       </div>
     </div>
     
@@ -141,82 +141,36 @@ ul.task-list li input[type="checkbox"] {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#geospatial-community-april-newsletter" id="toc-geospatial-community-april-newsletter" class="nav-link active" data-scroll-target="#geospatial-community-april-newsletter">Geospatial Community April Newsletter</a>
-  <ul class="collapse">
-  <li><a href="#next-workshop-friday-april-21st-1-3pm" id="toc-next-workshop-friday-april-21st-1-3pm" class="nav-link" data-scroll-target="#next-workshop-friday-april-21st-1-3pm">Next workshop – Friday April 21st, 1-3pm</a>
-  <ul class="collapse">
-  <li><a href="#raster-and-spatial-random-forest-with-dr-jacinta-holloway-brown" id="toc-raster-and-spatial-random-forest-with-dr-jacinta-holloway-brown" class="nav-link" data-scroll-target="#raster-and-spatial-random-forest-with-dr-jacinta-holloway-brown">Raster and Spatial Random Forest with Dr Jacinta Holloway-Brown</a></li>
-  </ul></li>
-  <li><a href="#previous-workshop" id="toc-previous-workshop" class="nav-link" data-scroll-target="#previous-workshop">Previous workshop</a></li>
-  <li><a href="#training" id="toc-training" class="nav-link" data-scroll-target="#training">Training</a>
-  <ul class="collapse">
-  <li><a href="#uq-library-training" id="toc-uq-library-training" class="nav-link" data-scroll-target="#uq-library-training">UQ Library Training</a></li>
-  <li><a href="#experimental-design-and-data-analysis-for-testing-casual-hypotheses-in-r" id="toc-experimental-design-and-data-analysis-for-testing-casual-hypotheses-in-r" class="nav-link" data-scroll-target="#experimental-design-and-data-analysis-for-testing-casual-hypotheses-in-r">Experimental Design and Data Analysis for Testing Casual Hypotheses in R</a></li>
-  </ul></li>
-  <li><a href="#conference" id="toc-conference" class="nav-link" data-scroll-target="#conference">Conference</a>
-  <ul class="collapse">
-  <li><a href="#locate23-conference" id="toc-locate23-conference" class="nav-link" data-scroll-target="#locate23-conference">Locate23 Conference</a></li>
-  </ul></li>
-  </ul></li>
-  </ul>
-</nav>
+    
 </nav>
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
 
 
 
 
-<section id="geospatial-community-april-newsletter" class="level1">
-<h1>Geospatial Community April Newsletter</h1>
-<section id="next-workshop-friday-april-21st-1-3pm" class="level2">
-<h2 class="anchored" data-anchor-id="next-workshop-friday-april-21st-1-3pm">Next workshop – Friday April 21st, 1-3pm</h2>
-<section id="raster-and-spatial-random-forest-with-dr-jacinta-holloway-brown" class="level3">
-<h3 class="anchored" data-anchor-id="raster-and-spatial-random-forest-with-dr-jacinta-holloway-brown">Raster and Spatial Random Forest with Dr Jacinta Holloway-Brown</h3>
-<p>Dr Jacinta Holloway-Brown will be providing a workshop on using the Stochastic spatial random forest <a href="https://github.com/thejholloway/SS-RF_tutorial">SS-RF</a> method for filling missing data in satellite images due to clouds, and also going over using <a href="https://github.com/thejholloway/raster2data">raster2data</a> for working with spatial image files (such as rasters), and converting these to dataframes in R in order to perform statistical analyses.</p>
-</section>
-</section>
-<section id="previous-workshop" class="level2">
-<h2 class="anchored" data-anchor-id="previous-workshop">Previous workshop</h2>
-<p>In March Dr Christina Buelow gave an awesome overview of the basics of analysing spatial data in R. You can find the full details of the workshop <a href="https://brisbane-geocommunity.netlify.app/posts/2023-03-23-r-spatial-basics/">here</a>, and keep an eye out for the recording on our YouTube channel (it will be linked on our website when it’s up and running).</p>
-</section>
-<section id="training" class="level2">
-<h2 class="anchored" data-anchor-id="training">Training</h2>
-<section id="uq-library-training" class="level3">
-<h3 class="anchored" data-anchor-id="uq-library-training">UQ Library Training</h3>
-<p><a href="https://studenthub.uq.edu.au/students/events/detail/4472959"><strong>QGIS: Custom Maps on your Phone</strong></a> - Tuesday 11th April 2023, 9:30-11:30am</p>
-<p><a href="https://studenthub.uq.edu.au/students/events/detail/4472960"><strong>QGIS: Vector Analysis</strong></a> - Tuesday 18th April 2023, 9:30-11:30am</p>
-<p><a href="https://uqrug.netlify.app/"><strong>UQ R Usergroup (UQRUG)</strong></a> - Wednesday 26th April 2023, 12-2pm</p>
-</section>
-<section id="experimental-design-and-data-analysis-for-testing-casual-hypotheses-in-r" class="level3">
-<h3 class="anchored" data-anchor-id="experimental-design-and-data-analysis-for-testing-casual-hypotheses-in-r">Experimental Design and Data Analysis for Testing Casual Hypotheses in R</h3>
-<p>Find more details and registration <a href="https://www.amsa2023.amsa.asn.au/workshop">here</a>.<br>
-<strong>Date:</strong> July 2nd 2023<br>
-<strong>Time:</strong> 9:00-16:00<br>
-<strong>Location</strong>: Griffith University Gold Coast Campus, Building/Room G14_1.13B<br>
-<strong>Cost</strong>: $30.</p>
-<p><strong>Note</strong> This isn’t a spatial workshop, but if you’re interested in statistical analysis and R programming, this will be a good one. Spots are limited so please only register if you are sure you can make it.</p>
-</section>
-</section>
-<section id="conference" class="level2">
-<h2 class="anchored" data-anchor-id="conference">Conference</h2>
-<section id="locate23-conference" class="level3">
-<h3 class="anchored" data-anchor-id="locate23-conference"><a href="https://locateconference.com/">Locate23 Conference</a></h3>
-<p>May 10-12, Adelaide South Australia</p>
-<p>Annual conference put on by the <a href="https://geospatialcouncil.org.au/">Geospatial Council of Australia</a> bringing together national and international delegates within and outside the geospatial Industry.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="posts/2023-04-07-April-Newsletter/landsat.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Landsat image from Dr.&nbsp;Jacinta Holloway-Brown’s materials</figcaption><p></p>
+</figure>
+</div>
+</div></div><p><a href="https://researchers.adelaide.edu.au/profile/jacinta.holloway-brown">Dr Jacinta Holloway-Brown</a> will be providing a workshop discussing the satellite image analysis pipeline from start to finish with examples. Steps covered will be:</p>
+<ul>
+<li><p>How to search for and download free satellite images from US Geological Survey <a href="https://earthexplorer.usgs.gov/">Earth Explorer</a></p></li>
+<li><p>How to convert a satellite image to a data frame. Includes how to calculate a vegetation index and derive land cover classes in R. Tutorial: <a href="https://github.com/thejholloway/raster2data">raster2data</a></p></li>
+<li><p>How to fit a spatial random forest to satellite image data. This will include a brief overview of decision trees, random forest and stochastic spatial random forest methods. Code to fit spatial random forest will be provided and shared with the group.</p></li>
+<li><p>How to fit stochastic spatial random forest <a href="https://github.com/thejholloway/SS-RF_tutorial">SS-RF</a> to get predictions of land cover for missing observations with associated probabilities.</p></li>
+</ul>
+<p>Fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform">form</a> (see ⬆️) to get the invitation for the workshop.</p>
 
 
-</section>
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

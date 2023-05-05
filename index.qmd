@@ -13,6 +13,7 @@ listing:
     sort: "date desc"
     type: table 
     fields: [image, date, title]
+    image-height: 60px
   # - id: testimonials
   #   contents: testimonials
   #   sort: "date desc"
@@ -22,6 +23,12 @@ listing:
 
 page-layout: article
 title-block-banner: true
+
+format:
+  html:
+    grid: 
+      margin-width: 400px
+
 ---
 
 ```{=html}
@@ -34,6 +41,13 @@ title-block-banner: true
 }
 div.quarto-post {
   margin-bottom: 0px;
+}
+
+
+@media (max-width: 767.98px){
+  #events-calendar{
+    display: none;
+  }
 }
 </style>
 
@@ -51,7 +65,10 @@ div.quarto-post {
 ```
 Welcome!
 
+
+
 Our mission is to build a **supportive** and **inclusive** community where students, researchers, and professionals can **grow their geospatial skills together**. 🌱
+
 
 ::: {.callout-note icon="false" collapse="true"}
 # Want to **join** our Geospatial Community workshops?
@@ -65,35 +82,17 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 ```
 :::
 
-## Upcoming Workshop {style="padding-top: 5px;"}
+<!-- ## Upcoming Workshop {style="padding-top: 5px;"} -->
 
-### Satellite Image Analysis Pipeline in R
-
-**April 21st, 2023 1-3pm AEST**
-
-::: column-margin
-![Landsat image from Dr. Jacinta Holloway-Brown's materials](posts/2023-04-07-April-Newsletter/landsat.png)
-:::
-
-[Dr Jacinta Holloway-Brown](https://researchers.adelaide.edu.au/profile/jacinta.holloway-brown) will be providing a workshop discussing the satellite image analysis pipeline from start to finish with examples. Steps covered will be:
-
--   How to search for and download free satellite images from US Geological Survey [Earth Explorer](https://earthexplorer.usgs.gov/)
-
--   How to convert a satellite image to a data frame. Includes how to calculate a vegetation index and derive land cover classes in R. Tutorial: [raster2data](https://github.com/thejholloway/raster2data)
-
--   How to fit a spatial random forest to satellite image data. This will include a brief overview of decision trees, random forest and stochastic spatial random forest methods. Code to fit spatial random forest will be provided and shared with the group.
-
--   How to fit stochastic spatial random forest [SS-RF](https://github.com/thejholloway/SS-RF_tutorial) to get predictions of land cover for missing observations with associated probabilities.
-
-Fill out the [form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform) (see ⬆️) to get the invitation for the workshop.
+<!-- ### Satellite Image Analysis Pipeline in R -->
 
 <!-- <links to the content being covered, or to the presenter's website/bio, etc.> -->
 
-<!-- ## Latest Workshop -->
+## Latest Workshop
 
-<!--::: {#latest}  -->
+::: {#latest}
 
-<!--::: -->
+:::
 
 ## All Posts
 

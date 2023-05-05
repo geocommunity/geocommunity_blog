@@ -1,0 +1,27 @@
+---
+title: Satellite Image Analysis Pipeline in R
+author: Dr Jacinta Holloway-Brown
+date: '2023-04-21'
+image: landsat.png
+slug: []
+categories: 
+ - Workshop
+tags: [raster2data, SS-RF, spatial, random forest, R]
+DisableComments: no
+---
+
+::: column-margin
+![Landsat image from Dr. Jacinta Holloway-Brown's materials](posts/2023-04-07-April-Newsletter/landsat.png)
+:::
+
+[Dr Jacinta Holloway-Brown](https://researchers.adelaide.edu.au/profile/jacinta.holloway-brown) will be providing a workshop discussing the satellite image analysis pipeline from start to finish with examples. Steps covered will be:
+
+-   How to search for and download free satellite images from US Geological Survey [Earth Explorer](https://earthexplorer.usgs.gov/)
+
+-   How to convert a satellite image to a data frame. Includes how to calculate a vegetation index and derive land cover classes in R. Tutorial: [raster2data](https://github.com/thejholloway/raster2data)
+
+-   How to fit a spatial random forest to satellite image data. This will include a brief overview of decision trees, random forest and stochastic spatial random forest methods. Code to fit spatial random forest will be provided and shared with the group.
+
+-   How to fit stochastic spatial random forest [SS-RF](https://github.com/thejholloway/SS-RF_tutorial) to get predictions of land cover for missing observations with associated probabilities.
+
+Fill out the [form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform) (see ⬆️) to get the invitation for the workshop.

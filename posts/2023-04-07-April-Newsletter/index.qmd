@@ -3,7 +3,7 @@ title: "Newsletter | April Workshop Rasters and Random Forests"
 editor: visual
 author: 'Nicholas Wiggins'
 date: "2023-04-12"
-image: landsat.png
+image: thumb.jpg
 slug: newsletter-April2023
 categories:
   - newsletter
@@ -45,7 +45,7 @@ Find more details and registration [here](https://www.amsa2023.amsa.asn.au/works
 
 ## Conference
 
-### [Locate23 Conference](https://locateconference.com/) 
+### [Locate23 Conference](https://locateconference.com/)
 
 May 10-12, Adelaide South Australia
 
