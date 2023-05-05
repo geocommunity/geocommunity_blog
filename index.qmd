@@ -61,6 +61,9 @@ img {
     max-height: 100px !important;
 }
 
+.column-margin.column-container>*:not(.collapse) {
+    padding-top: 14em;
+}
 
 @media (max-width: 767.98px){
   #events-calendar{
