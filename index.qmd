@@ -43,6 +43,9 @@ div.quarto-post {
   margin-bottom: 0px;
 }
 
+.card-img{
+  width: auto;
+}
 
 @media (max-width: 767.98px){
   #events-calendar{
