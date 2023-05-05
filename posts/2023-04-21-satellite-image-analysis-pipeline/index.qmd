@@ -11,7 +11,7 @@ DisableComments: no
 ---
 
 ::: column-margin
-![Landsat image from Dr. Jacinta Holloway-Brown's materials](posts/2023-04-07-April-Newsletter/landsat.png)
+![Landsat image from Dr. Jacinta Holloway-Brown's materials](landsat.png)
 :::
 
 [Dr Jacinta Holloway-Brown](https://researchers.adelaide.edu.au/profile/jacinta.holloway-brown) will be providing a workshop discussing the satellite image analysis pipeline from start to finish with examples. Steps covered will be:
