@@ -1,5 +1,5 @@
 ---
-title: "Geospatial Community"
+title: "Welcome to the Geospatial Community"
 image: turkeypin.svg
 
 listing:
@@ -84,7 +84,6 @@ img {
   </div>
 </div>
 ```
-Welcome!
 
 ::: column-margin
 ## Events Calendar
