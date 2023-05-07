@@ -129,13 +129,18 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 ```
 :::
 
-<!-- ## Upcoming Workshop {style="padding-top: 5px;"} -->
+## Upcoming Workshop {style="padding-top: 5px;"}
 
-<!-- ### Satellite Image Analysis Pipeline in R -->
+### Interactive Map with Python + Folium
 
-<!-- <links to the content being covered, or to the presenter's website/bio, etc.> -->
+#### May 18th, 3-5pm AEST on Teams
 
-## Latest Workshop
+[Dr Tony Howes](https://chemeng.uq.edu.au/profile/2223/tony-howes) (UQ, School of Chemical Engineering) will be sharing how Python and Folium (a wrapper for Python of the JavaScript Leaflet library) work together to create an interactive map. 
+
+The  data will be from the Brisbane Dawn Nav, May 5th MapRun. Workshop materials will be in a Jupyter notebook and downloading [Anaconda](https://www.anaconda.com/) is recommended if you wish to follow along.
+
+
+## Last Workshop
 
 ::: {#latest}
 

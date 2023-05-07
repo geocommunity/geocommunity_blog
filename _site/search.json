@@ -2,14 +2,14 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Geospatial Community",
+    "title": "Welcome to the Geospatial Community",
     "section": "",
-    "text": "Welcome!\nOur mission is to build a supportive and inclusive community where students, researchers, and professionals can grow their geospatial skills together. 🌱"
+    "text": "Our mission is to build a supportive and inclusive community where students, researchers, and professionals can grow their geospatial skills together. 🌱"
   },
   {
     "objectID": "index.html#events-calendar",
     "href": "index.html#events-calendar",
-    "title": "Geospatial Community",
+    "title": "Welcome to the Geospatial Community",
     "section": "Events Calendar",
     "text": "Events Calendar\n\n\n\n\nToday"
   },
@@ -23,7 +23,7 @@
   {
     "objectID": "index.html#all-posts",
     "href": "index.html#all-posts",
-    "title": "Geospatial Community",
+    "title": "Welcome to the Geospatial Community",
     "section": "All Posts",
     "text": "All Posts\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\n\n\n\n\n\n\n\nApr 21, 2023\n\n\nSatellite Image Analysis Pipeline in R\n\n\n\n\n\n\n\nApr 12, 2023\n\n\nNewsletter | April Workshop Rasters and Random Forests\n\n\n\n\n\n\n\nMar 23, 2023\n\n\nR Spatial Basics\n\n\n\n\n\n\n\nMar 22, 2023\n\n\nCommunity groups for Continuing Professional Development\n\n\n\n\n\n\n\nMar 10, 2023\n\n\nNewsletter | R spatial basics | How to measure area | Survey results\n\n\n\n\n\n\n\nFeb 5, 2023\n\n\nCalculating areas with vector and raster data in R\n\n\n\n\n\n\n\nJan 22, 2023\n\n\nNewsletter | Happy New Year! | February meet-up | R Training\n\n\n\n\n\n\n\nNov 3, 2022\n\n\nBuild a blog with Quarto, Git, and RStudio\n\n\n\n\n\n\n\nSep 9, 2022\n\n\nNewsletter | Climate data blog post + problem solving session + conference in Fiji + more\n\n\n\n\n\n\n\nSep 1, 2022\n\n\nAnalysing Climate data with R\n\n\n\n\n\n\n\nAug 16, 2022\n\n\nNewsletter | Analysing climate data with R + Interactive Maps + AEO Forum + more.\n\n\n\n\n\n\n\nJul 20, 2022\n\n\nInteractive mapping with RShiny\n\n\n\n\n\n\n\nJul 14, 2022\n\n\nNewsletter | Mapping interactively + R for ecologists + Data wrangling + more.\n\n\n\n\n\n\n\nJul 7, 2022\n\n\nProblem Solving Session II\n\n\n\n\n\n\n\nMay 26, 2022\n\n\nProblem Solving Session I\n\n\n\n\n\n\n\nApr 25, 2022\n\n\nCloud computing with Open Data Cube and Python\n\n\n\n\n\n\n\nMar 31, 2022\n\n\nIntroduction to tidy spatial networks\n\n\n\n\n\n\n\nFeb 24, 2022\n\n\nBasic Raster Analysis with R\n\n\n\n\n\n\n\nNov 23, 2021\n\n\nHow to contribute a post (using blogdown on our old site)\n\n\n\n\n\n\n\nOct 28, 2021\n\n\nCreating a geospatial blog with blogdown (on our old site)\n\n\n\n\n\n\nNo matching items"
   },
@@ -908,5 +908,19 @@
     "title": "Workshops",
     "section": "",
     "text": "Satellite Image Analysis Pipeline in R\n\n\n\n\n\n\n\nWorkshop\n\n\n\n\n\n\n\n\n\n\n\nApr 21, 2023\n\n\nDr Jacinta Holloway-Brown\n\n\n\n\n\n\n  \n\n\n\n\nNewsletter | April Workshop Rasters and Random Forests\n\n\n\n\n\n\n\nnewsletter\n\n\n\n\n\n\n\n\n\n\n\nApr 12, 2023\n\n\nNicholas Wiggins\n\n\n\n\n\n\n  \n\n\n\n\nR Spatial Basics\n\n\n\n\n\n\n\nWorkshop\n\n\n\n\n\n\n\n\n\n\n\nMar 23, 2023\n\n\nChristina Buelow\n\n\n\n\n\n\n  \n\n\n\n\nCommunity groups for Continuing Professional Development\n\n\n\n\n\n\n\ntestimonial\n\n\n\n\n\n\n\n\n\n\n\nMar 22, 2023\n\n\nChris Mancini\n\n\n\n\n\n\n  \n\n\n\n\nNewsletter | R spatial basics | How to measure area | Survey results\n\n\n\n\n\n\n\nnewsletter\n\n\n\n\n\n\n\n\n\n\n\nMar 10, 2023\n\n\nMitchel Rudge\n\n\n\n\n\n\n  \n\n\n\n\nCalculating areas with vector and raster data in R\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 5, 2023\n\n\nChristina Buelow\n\n\n\n\n\n\n  \n\n\n\n\nNewsletter | Happy New Year! | February meet-up | R Training\n\n\n\n\n\n\n\nnewsletter\n\n\n\n\n\n\n\n\n\n\n\nJan 22, 2023\n\n\nChristina Buelow\n\n\n\n\n\n\n  \n\n\n\n\nBuild a blog with Quarto, Git, and RStudio\n\n\nA workshop given at the Research Bazaar Queensland 2022.\n\n\n\n\nwebsite\n\n\n\n\n\n\n\n\n\n\n\nNov 3, 2022\n\n\nCatherine Kim\n\n\n\n\n\n\n  \n\n\n\n\nNewsletter | Climate data blog post + problem solving session + conference in Fiji + more\n\n\n\n\n\n\n\nnewsletter\n\n\n\n\n\n\n\n\n\n\n\nSep 9, 2022\n\n\n\n\n\n\n  \n\n\n\n\nAnalysing Climate data with R\n\n\n\n\n\n\n\nR\n\n\nclimate\n\n\nraster\n\n\n\n\n\n\n\n\n\n\n\nSep 1, 2022\n\n\nRalph Trancoso\n\n\n\n\n\n\n  \n\n\n\n\nNewsletter | Analysing climate data with R + Interactive Maps + AEO Forum + more.\n\n\n\n\n\n\n\nnewsletter\n\n\n\n\n\n\n\n\n\n\n\nAug 16, 2022\n\n\n\n\n\n\n  \n\n\n\n\nInteractive mapping with RShiny\n\n\n\n\n\n\n\ntutorial\n\n\nspatial\n\n\nvisualisation\n\n\n\n\n\n\n\n\n\n\n\nJul 20, 2022\n\n\n\n\n\n\n  \n\n\n\n\nNewsletter | Mapping interactively + R for ecologists + Data wrangling + more.\n\n\n\n\n\n\n\nnewsletter\n\n\n\n\n\n\n\n\n\n\n\nJul 14, 2022\n\n\n\n\n\n\n  \n\n\n\n\nProblem Solving Session II\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJul 7, 2022\n\n\n\n\n\n\n  \n\n\n\n\nProblem Solving Session I\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMay 26, 2022\n\n\n\n\n\n\n  \n\n\n\n\nCloud computing with Open Data Cube and Python\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nApr 25, 2022\n\n\nTim Devereux\n\n\n\n\n\n\n  \n\n\n\n\nIntroduction to tidy spatial networks\n\n\n\n\n\n\n\nspatial\n\n\nR\n\n\ntutorial\n\n\n\n\n\n\n\n\n\n\n\nMar 31, 2022\n\n\nStéphane Guillou (UQ Library)\n\n\n\n\n\n\n  \n\n\n\n\nBasic Raster Analysis with R\n\n\n\n\n\n\n\nspatial\n\n\nR\n\n\nterra\n\n\n\n\n\n\n\n\n\n\n\nFeb 24, 2022\n\n\nMitch Rudge\n\n\n\n\n\n\n  \n\n\n\n\nHow to contribute a post (using blogdown on our old site)\n\n\n\n\n\n\n\nwebsite\n\n\ntutorial\n\n\n\n\n\n\n\n\n\n\n\nNov 23, 2021\n\n\nCatherine Kim\n\n\n\n\n\n\n  \n\n\n\n\nCreating a geospatial blog with blogdown (on our old site)\n\n\n\n\n\n\n\ntutorial\n\n\nspatial\n\n\nvisualisation\n\n\n\n\n\n\n\n\n\n\n\nOct 28, 2021\n\n\nGeospatial Community\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#upcoming-workshop",
+    "href": "index.html#upcoming-workshop",
+    "title": "Welcome to the Geospatial Community",
+    "section": "Upcoming Workshop",
+    "text": "Upcoming Workshop\n\nInteractive Map with Python + Folium\n\nMay 18th, 3-5pm AEST on Teams\nDr Tony Howes (UQ, School of Chemical Engineering) will be sharing how Python and Folium (a wrapper for Python of the JavaScript Leaflet library) work together to create an interactive map.\nThe data will be from the Brisbane Dawn Nav, May 5th MapRun. Workshop materials will be in a Jupyter notebook and downloading Anaconda is recommended if you wish to follow along."
+  },
+  {
+    "objectID": "index.html#last-workshop",
+    "href": "index.html#last-workshop",
+    "title": "Welcome to the Geospatial Community",
+    "section": "Last Workshop",
+    "text": "Last Workshop\n\n\n\n\n  \n\n\n\n\nSatellite Image Analysis Pipeline in R\n\n\n\n\n\n\n\n\n\n\n\n\nApr 21, 2023\n\n\nDr Jacinta Holloway-Brown\n\n\n\n\n\n\nNo matching items"
   }
 ]
