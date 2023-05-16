@@ -140,11 +140,11 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 The  data will be from the Brisbane Dawn Nav, May 5th MapRun. Workshop materials will be in a Jupyter notebook and downloading [Anaconda](https://www.anaconda.com/) is recommended if you wish to follow along.
 
 
-<!-- ## Last Workshop -->
+## Last Post
 
-<!-- ::: {#latest} -->
+::: {#latest}
 
-<!-- ::: -->
+:::
 
 ## All Posts
 
