@@ -1,0 +1,66 @@
+---
+title: "Newsletter | Python + Folium | Help Sessions are Back!"
+editor: visual
+author: 'Nicholas Wiggins'
+date: "2023-05-16"
+image: folium-map.png
+slug: newsletter-May2023
+categories:
+  - newsletter
+tags: 
+  - help session
+  - website
+  - jobs
+  - training
+  - workshops
+DisableComments: no
+---
+
+## Geospatial Community May Newsletter
+
+### Next workshop -- Interactive Map with Python + Folium
+#### Thursday May 18th, 3-5pm
+
+![](folium-map.png)
+
+[Dr Tony Howes](https://urldefense.com/v3/__https:/chemeng.uq.edu.au/profile/2223/tony-howes__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlTDKRGYG$) (UQ, School of Chemical Engineering) will be sharing how Python and Folium (a wrapper for Python of the JavaScript Leaflet library) work together to create an interactive map. The data will be from the Brisbane Dawn Nav, May 5th MapRun. Workshop materials will be in a Jupyter notebook and downloading [Anaconda](https://urldefense.com/v3/__https:/www.anaconda.com/__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGleFX1Am_$) is recommended if you wish to follow along.
+
+### Previous workshop
+
+In April, Dr Jacinta Holloway-Brown presented a very informative and interesting workshop that outlined her use of Stochastic spatial random forest SS-RF methods for filling missing data in satellite images due to clouds, and also went over using raster2data for working with spatial image files (such as rasters), and converting these to dataframes in R in order to perform statistical analyses. Expect the blog post and recording associated with this workshop to be available shortly.
+
+## Geospatial Community Updates
+
+### First Thursday help sessions
+
+If you have a geospatial problem (or are good at answering them), we will be trialling help sessions on the first Thursday of each month. We will do our best to have people from a variety of backgrounds answer questions and will circulate a Teams link over email.
+
+### Website changes
+
+You will have noticed some major changes to the [website](https://urldefense.com/v3/__https://brisbane-geocommunity.netlify.app/workshops.html__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlWEcVnBR$), which now includes an easy way to join the group, and a calendar so everyone can quickly see when the next workshop will be. A massive thanks to Nick Wiggins for all the work in getting this together.
+
+## Geospatial Jobs
+
+[GIS Consultant](https://urldefense.com/v3/__https://www.livehire.com/careers/wspaustralia/job/AP7BB/LM635UWF3/gis-consultant__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlbcKIUZy$), WSP Australia, Brisbane 
+[GIS Consultant](https://urldefense.com/v3/__https://careers.arcadis.com/job/ARCAGLOBAL11365ORCEXTERNALENGLOBAL/GIS-Consultant?utm_source=linkedin&utm_medium=phenom-feeds&utm_source=external*2Bcareer*2Bsite&utm_medium=career*2Bsite__;JSUl!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlZb4VWxI$), Arcadis, Brisbane 
+[Spatial Officers](https://urldefense.com/v3/__https://jobs.powerlink.com.au/job/Brisbane*2C-Virginia-Spatial-Officers-QLD/937693710/?utm_campaign=LinkedinJobPostings&utm_source=LinkedinJobPostings&applySourceOverride=LinkedIn__;JQ!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlUil9xkI$), PowerLink Queensland, Brisbane 
+[Spatial Data Officer](https://urldefense.com/v3/__https://unitywater.careers.site/?job=spatial-data-officer_93335&source_key=6d4c0d55-7a2b-4d49-933e-0adb98f7bb15*detail__;Iw!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlX1Flk2m$), Unitywater, Moreton Bay 
+[GIS \| Data and Analytics](https://urldefense.com/v3/__https://careers.ey.com/ey/job/Sydney-GIS-Data-and-Analytics-NSW-2000/896662401/?feedId=337401&utm_source=LinkedInJobPostings&utm_campaign=j2w_linkedin__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlTDhApUN$), EY, Brisbane city / flexible 
+[Biodiversity Modeller / Spatial Ecologist](https://urldefense.com/v3/__https://www.seek.com.au/job/66953101?type=standout&mc_cid=3666af46bb&mc_eid=2ee7c25fd8*sol=a05254f097ef05206d5d9f59ea86964c2f51961c__;Iw!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlWAIgXvr$), CSIRO, Canberra
+
+## Training
+
+### UQ Library Training
+
+[UQ R User Group (UQRUG)](https://urldefense.com/v3/__https://uqrug.netlify.app/__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlQSsdMm-$) - Wednesday 31st May 2023, 12-2pm 
+[QGIS: Introduction to Mapping](https://urldefense.com/v3/__https://studenthub.uq.edu.au/students/events/detail/4485945__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlaGYtIU7$) - Friday 19th May 2023, 9:30 am - 11:30 am
+[QGIS: Custom Maps on your phone](https://urldefense.com/v3/__https://studenthub.uq.edu.au/students/events/detail/4485946__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlU8uYhPk$)  - Friday 26th May 2023, 9:30 am - 11:30 am 
+[QGIS: Vector Analysis](https://urldefense.com/v3/__https://studenthub.uq.edu.au/students/events/detail/4485947__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlYYHOtyG$) - Friday 2nd June 2023, 9:30 am - 11:30 am
+
+### Experimental Design and Data Analysis for Testing Casual Hypotheses in R
+
+Find more details and registration [here](https://urldefense.com/v3/__https://www.amsa2023.amsa.asn.au/workshop__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlYAHlnYt$). 
+Date: July 2nd 2023 
+Time: 9:00-16:00 
+Location: Griffith University Gold Coast Campus, Building/Room G14_1.13B 
+Cost: \$30. Note: This isn't a spatial workshop, but if you're interested in statistical analysis and R programming, this will be a good one. Spots are limited so please only register if you are sure you can make it.
