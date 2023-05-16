@@ -37,7 +37,7 @@ If you have a geospatial problem (or are good at answering them), we will be tri
 
 ### Website changes
 
-You will have noticed some major changes to the [website](https://urldefense.com/v3/__https://brisbane-geocommunity.netlify.app/workshops.html__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlWEcVnBR$), which now includes an easy way to join the group, and a calendar so everyone can quickly see when the next workshop will be. A massive thanks to Nick Wiggins for all the work in getting this together.
+You will have noticed some major changes to the [website](https://brisbane-geocommunity.netlify.app/), which now includes an easy way to join the group, and a calendar so everyone can quickly see when the next workshop will be. A massive thanks to Nick Wiggins for all the work in getting this together.
 
 ## Geospatial Jobs
 
