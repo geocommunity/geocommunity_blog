@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.217">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nicholas Wiggins">
+<meta name="dcterms.date" content="2023-05-16">
+
+<title>Geospatial Community - Newsletter | Python + Folium | Help Sessions are Back!</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../turkeypin.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Geospatial Community</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../workshops.html" rel="" target="">
+ <span class="menu-text">Workshops</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/geocommunity/geocommunity_blog" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Newsletter | Python + Folium | Help Sessions are Back!</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">newsletter</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Nicholas Wiggins </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">May 16, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#geospatial-community-may-newsletter" id="toc-geospatial-community-may-newsletter" class="nav-link active" data-scroll-target="#geospatial-community-may-newsletter">Geospatial Community May Newsletter</a>
+  <ul class="collapse">
+  <li><a href="#next-workshop-interactive-map-with-python-folium" id="toc-next-workshop-interactive-map-with-python-folium" class="nav-link" data-scroll-target="#next-workshop-interactive-map-with-python-folium">Next workshop – Interactive Map with Python + Folium</a></li>
+  <li><a href="#previous-workshop" id="toc-previous-workshop" class="nav-link" data-scroll-target="#previous-workshop">Previous workshop</a></li>
+  </ul></li>
+  <li><a href="#geospatial-community-updates" id="toc-geospatial-community-updates" class="nav-link" data-scroll-target="#geospatial-community-updates">Geospatial Community Updates</a>
+  <ul class="collapse">
+  <li><a href="#first-thursday-help-sessions" id="toc-first-thursday-help-sessions" class="nav-link" data-scroll-target="#first-thursday-help-sessions">First Thursday help sessions</a></li>
+  <li><a href="#website-changes" id="toc-website-changes" class="nav-link" data-scroll-target="#website-changes">Website changes</a></li>
+  </ul></li>
+  <li><a href="#geospatial-jobs" id="toc-geospatial-jobs" class="nav-link" data-scroll-target="#geospatial-jobs">Geospatial Jobs</a></li>
+  <li><a href="#training" id="toc-training" class="nav-link" data-scroll-target="#training">Training</a>
+  <ul class="collapse">
+  <li><a href="#uq-library-training" id="toc-uq-library-training" class="nav-link" data-scroll-target="#uq-library-training">UQ Library Training</a></li>
+  <li><a href="#experimental-design-and-data-analysis-for-testing-casual-hypotheses-in-r" id="toc-experimental-design-and-data-analysis-for-testing-casual-hypotheses-in-r" class="nav-link" data-scroll-target="#experimental-design-and-data-analysis-for-testing-casual-hypotheses-in-r">Experimental Design and Data Analysis for Testing Casual Hypotheses in R</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="geospatial-community-may-newsletter" class="level2">
+<h2 class="anchored" data-anchor-id="geospatial-community-may-newsletter">Geospatial Community May Newsletter</h2>
+<section id="next-workshop-interactive-map-with-python-folium" class="level3">
+<h3 class="anchored" data-anchor-id="next-workshop-interactive-map-with-python-folium">Next workshop – Interactive Map with Python + Folium</h3>
+<section id="thursday-may-18th-3-5pm" class="level4">
+<h4 class="anchored" data-anchor-id="thursday-may-18th-3-5pm">Thursday May 18th, 3-5pm</h4>
+<p><img src="folium-map.png" class="img-fluid"></p>
+<p><a href="https://urldefense.com/v3/__https:/chemeng.uq.edu.au/profile/2223/tony-howes__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlTDKRGYG$">Dr Tony Howes</a>&nbsp;(UQ, School of Chemical Engineering) will be sharing how Python and Folium (a wrapper for Python of the JavaScript Leaflet library) work together to create an interactive map. The data will be from the Brisbane Dawn Nav, May 5th MapRun. Workshop materials will be in a Jupyter notebook and downloading&nbsp;<a href="https://urldefense.com/v3/__https:/www.anaconda.com/__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGleFX1Am_$">Anaconda</a>&nbsp;is recommended if you wish to follow along.</p>
+</section>
+</section>
+<section id="previous-workshop" class="level3">
+<h3 class="anchored" data-anchor-id="previous-workshop">Previous workshop</h3>
+<p>In April, Dr Jacinta Holloway-Brown presented a very informative and interesting workshop that outlined her use of Stochastic spatial random forest SS-RF methods for filling missing data in satellite images due to clouds, and also went over using raster2data for working with spatial image files (such as rasters), and converting these to dataframes in R in order to perform statistical analyses. Expect the blog post and recording associated with this workshop to be available shortly.</p>
+</section>
+</section>
+<section id="geospatial-community-updates" class="level2">
+<h2 class="anchored" data-anchor-id="geospatial-community-updates">Geospatial Community Updates</h2>
+<section id="first-thursday-help-sessions" class="level3">
+<h3 class="anchored" data-anchor-id="first-thursday-help-sessions">First Thursday help sessions</h3>
+<p>If you have a geospatial problem (or are good at answering them), we will be trialling help sessions on the first Thursday of each month. We will do our best to have people from a variety of backgrounds answer questions and will circulate a Teams link over email.</p>
+</section>
+<section id="website-changes" class="level3">
+<h3 class="anchored" data-anchor-id="website-changes">Website changes</h3>
+<p>You will have noticed some major changes to the <a href="https://urldefense.com/v3/__https://brisbane-geocommunity.netlify.app/workshops.html__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlWEcVnBR$">website</a>, which now includes an easy way to join the group, and a calendar so everyone can quickly see when the next workshop will be. A massive thanks to Nick Wiggins for all the work in getting this together.</p>
+</section>
+</section>
+<section id="geospatial-jobs" class="level2">
+<h2 class="anchored" data-anchor-id="geospatial-jobs">Geospatial Jobs</h2>
+<p><a href="https://urldefense.com/v3/__https://www.livehire.com/careers/wspaustralia/job/AP7BB/LM635UWF3/gis-consultant__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlbcKIUZy$">GIS Consultant</a>, WSP Australia, Brisbane <a href="https://urldefense.com/v3/__https://careers.arcadis.com/job/ARCAGLOBAL11365ORCEXTERNALENGLOBAL/GIS-Consultant?utm_source=linkedin&amp;utm_medium=phenom-feeds&amp;utm_source=external*2Bcareer*2Bsite&amp;utm_medium=career*2Bsite__;JSUl!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlZb4VWxI$">GIS Consultant</a>, Arcadis, Brisbane <a href="https://urldefense.com/v3/__https://jobs.powerlink.com.au/job/Brisbane*2C-Virginia-Spatial-Officers-QLD/937693710/?utm_campaign=LinkedinJobPostings&amp;utm_source=LinkedinJobPostings&amp;applySourceOverride=LinkedIn__;JQ!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlUil9xkI$">Spatial Officers</a>, PowerLink Queensland, Brisbane <a href="https://urldefense.com/v3/__https://unitywater.careers.site/?job=spatial-data-officer_93335&amp;source_key=6d4c0d55-7a2b-4d49-933e-0adb98f7bb15*detail__;Iw!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlX1Flk2m$">Spatial Data Officer</a>, Unitywater, Moreton Bay <a href="https://urldefense.com/v3/__https://careers.ey.com/ey/job/Sydney-GIS-Data-and-Analytics-NSW-2000/896662401/?feedId=337401&amp;utm_source=LinkedInJobPostings&amp;utm_campaign=j2w_linkedin__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlTDhApUN$">GIS | Data and Analytics</a>, EY, Brisbane city / flexible <a href="https://urldefense.com/v3/__https://www.seek.com.au/job/66953101?type=standout&amp;mc_cid=3666af46bb&amp;mc_eid=2ee7c25fd8*sol=a05254f097ef05206d5d9f59ea86964c2f51961c__;Iw!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlWAIgXvr$">Biodiversity Modeller / Spatial Ecologist</a>, CSIRO, Canberra</p>
+</section>
+<section id="training" class="level2">
+<h2 class="anchored" data-anchor-id="training">Training</h2>
+<section id="uq-library-training" class="level3">
+<h3 class="anchored" data-anchor-id="uq-library-training">UQ Library Training</h3>
+<p><a href="https://urldefense.com/v3/__https://uqrug.netlify.app/__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlQSsdMm-$">UQ R User Group (UQRUG)</a> - Wednesday 31st May 2023, 12-2pm <a href="https://urldefense.com/v3/__https://studenthub.uq.edu.au/students/events/detail/4485945__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlaGYtIU7$">QGIS: Introduction to Mapping</a> - Friday 19th May 2023, 9:30 am - 11:30 am <a href="https://urldefense.com/v3/__https://studenthub.uq.edu.au/students/events/detail/4485946__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlU8uYhPk$">QGIS: Custom Maps on your phone</a> - Friday 26th May 2023, 9:30 am - 11:30 am <a href="https://urldefense.com/v3/__https://studenthub.uq.edu.au/students/events/detail/4485947__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlYYHOtyG$">QGIS: Vector Analysis</a> - Friday 2nd June 2023, 9:30 am - 11:30 am</p>
+</section>
+<section id="experimental-design-and-data-analysis-for-testing-casual-hypotheses-in-r" class="level3">
+<h3 class="anchored" data-anchor-id="experimental-design-and-data-analysis-for-testing-casual-hypotheses-in-r">Experimental Design and Data Analysis for Testing Casual Hypotheses in R</h3>
+<p>Find more details and registration <a href="https://urldefense.com/v3/__https://www.amsa2023.amsa.asn.au/workshop__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlYAHlnYt$">here</a>. Date: July 2nd 2023 Time: 9:00-16:00 Location: Griffith University Gold Coast Campus, Building/Room G14_1.13B Cost: $30. Note: This isn’t a spatial workshop, but if you’re interested in statistical analysis and R programming, this will be a good one. Spots are limited so please only register if you are sure you can make it.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
