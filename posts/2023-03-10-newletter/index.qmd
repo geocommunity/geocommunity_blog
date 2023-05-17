@@ -23,6 +23,7 @@ Check out the material [here](https://cabuelow.quarto.pub/r-for-mapping-and-more
 
 Christina showed us how to measure area in R - PROPERLY. And it's not as simple as you might think. Very much recommend watching the recording and reading the material if you ever need to measure area using R. (Please get in touch if you need the link.)
 
+
 ### Geospatial Jobs
 
 There are quite a few geospatial jobs going at the moment:
