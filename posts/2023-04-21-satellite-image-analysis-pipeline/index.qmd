@@ -3,7 +3,7 @@ title: Satellite Image Analysis Pipeline in R
 author: Dr Jacinta Holloway-Brown
 date: '2023-04-21'
 image: landsat.png
-slug: []
+slug: [satellite-analysis-R]
 categories: 
  - Workshop
 tags: [raster2data, SS-RF, spatial, random forest, R]
@@ -25,3 +25,236 @@ DisableComments: no
 -   How to fit stochastic spatial random forest [SS-RF](https://github.com/thejholloway/SS-RF_tutorial) to get predictions of land cover for missing observations with associated probabilities.
 
 Fill out the [form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform) (see ⬆️) to get the invitation for the workshop.
+
+# Satellite Image Analysis in R
+
+This post is a summarised version of the R scripts provided by [Dr Jacinta Holloway-Brown](https://researchers.adelaide.edu.au/profile/jacinta.holloway-brown) for the Satellite Image Analysis Pipeline in R workshop presented to the Geospatial Community on the 21^st^ of April 2023. The recording is available on our YouTube channel. You can download the R scripts and data we used in this workshop from [here](https://drive.google.com/file/d/1OMr-lEDsa-jHonrEz9nuKEFoFnHG55v_/view?usp=sharing).
+
+## Step 1: Getting Satellite Images from USGS
+
+You can search and preview freely available satellite imagery from the [U.S. Geological Survey Earth Explore](https://earthexplorer.usgs.gov/), however you will need to create an account to download the data.
+
+Once you've selected the images (specify the co-ordinates and date range) and downloaded them, we can analysis them. The images will be a raster layer so the next step is to extract the data from those images.
+
+## Step 2: Raster to data frame
+
+You will need to load the following libraries:
+
+### Load libraries:
+
+```{r}
+#| output: false
+
+library(raster)
+library(sp)
+library(rgdal)
+library(rgeos)
+```
+
+Use `install.packages('package_name')` if you need to install them first.
+
+For this workshop example, we are using an image from Injune in Central Queensland, Australia. This code imports Landsat imagery of Injune into R in raster format and prepares the data for statistical analyses.
+
+```{r}
+
+img <- stack('l7tmre_p093r078_20000716_dbgm5.img')
+
+```
+
+### Plot and view structure of data
+
+Visualise the landsat scene using plotRGB - this function makes a Red-Green-Blue plot based on three layers in a RasterBrick or RasterStack
+
+```{r}
+plotRGB(img, r = 3, g = 2, b = 1, axes = TRUE, stretch = "lin", main = "Landsat True Colour Composite")
+```
+
+if you want to check the structure of the data use `str()` :
+
+```{r}
+#| output: false
+
+str(img)
+```
+
+Check the number of layers in the image. There are 6 spectral bands in Landsat images, so there should be 6 layers.
+
+```{r}
+nlayers(img)
+```
+
+Get the spatial resolution of the image.
+
+```{r}
+res(img)
+```
+
+This is correct because Landsat images are at 30m by 30m resolution.
+
+### Creating a data frame
+
+To extract data from this image to run statistical analyses on a dataset in data frame format we need to create a data frame from the Injune raster - it includes the band values from Landsat bands 1-6.
+
+```{r}
+img.df <- as.data.frame(img)
+```
+
+Check the structure of img.df to ensure it is a data frame:
+
+```{r}
+str(img.df)
+```
+
+Add column names for the Landsat bands:
+
+```{r}
+colnames(img.df) <- c("Band1", "Band2","Band3", "Band4", "Band5","Band6")
+```
+
+Check column names are correctly displayed:
+
+```{r}
+head(img.df) 
+```
+
+Now you have a data frame you can use to calculate indices such as the [Normalised Difference Vegetation Index (NDVI)](https://earthobservatory.nasa.gov/features/MeasuringVegetation/measuring_vegetation_2.php).
+
+## Step 3: Calculating statistics such as NDVI
+
+NDVI = (Near Infrared - Visible light) / (Near Infrared + Visible light)
+
+Since our image is from [Landsat 7](https://www.usgs.gov/landsat-missions/landsat-7) that means NDVI = (Band 4 - Band 3) / (Band 4 + Band 3)
+
+So we need to make a function in R to calculate NDVI :
+
+```{r}
+ndvCalc <- function(x) {
+  ndvi <- (x[[4]] - x[[3]]) / (x[[4]] + x[[3]])
+  return(ndvi)
+}
+```
+
+now apply our function on the RasterStack image. This step will take a few minutes.
+
+```{r}
+ndvi <- calc(x=img, fun=ndvCalc)
+```
+
+and to plot the results of the NDVI values we use `plot()` :
+
+```{r}
+plot(ndvi)
+```
+
+## Step 4: Filling in Missing Data using SS-RF
+
+Because satellite images are optical images, there are often missing data due to cloud cover, especially in tropical areas. We can implement a \*\*Stochastic spatial random forest (SS-RF) method\*\* for filling in missing data in satellite images due to clouds. The theory behind this technique is available [here](https://www.mdpi.com/2072-4292/11/15/1796).
+
+If you do use SS-RF \*\*please cite the original paper\*\*. A suggested format is:
+
+Holloway-Brown, J., Helmstedt, K. J., & Mengersen, K. L. (2020). Stochastic spatial random forest (SS-RF) for interpolating probabilities of missing land cover data. Journal of Big Data, 7(1), 55. https://doi.org/10.1186/s40537-020-00331-8
+
+### Load the libraries:
+
+```{r}
+#| output: false
+
+library(data.table)
+library(randomForest)
+library(caret)
+```
+
+load the data, this is a small subset of the full data
+
+```{r}
+
+data <- read.csv("./Spatial_tutorial2023/subset.csv", sep=",", header=TRUE)
+```
+
+### sub-sampling the data
+
+Read in the probabilities of forest for the current image (t) and past image (t-1) predicted by random forest models.
+
+```{r}
+sample <- data[sample(1:nrow(data), 10000,
+                      replace=FALSE),] 
+
+```
+
+Split the sample data set into a training data set (80%) and test data set (20%).
+
+The training data is used to train the model, and then the model is run on the test data to check how well it is classifying the data.
+
+```{r}
+
+inTrain <- createDataPartition(y=sample$class, 
+                               times = 1,
+                               list = FALSE,
+                               p = .8)
+
+training <- sample [inTrain,]
+testing <- sample [-inTrain,]
+```
+
+we nee to make each class a factor
+
+```{r}
+training$class <- as.factor(training$class)
+testing$class <- as.factor(testing$class)
+```
+
+### Train and test a random forest
+
+```{r}
+x_test <- testing[,3:11]
+head(x_test) #x_test now has 9 variables, doesn't include class
+y_test <- testing[,12] #Choosing the column for class
+
+```
+
+#### Step 1: specify the random forest model for longitude and latitude only
+
+```{r}
+rf_lonlat <- randomForest(class ~ Longitude + Latitude, data = training)
+
+```
+
+#### Step 2: Run predictions and return results as percentages
+
+```{r}
+lonlat.rf.pred <- predict(rf_lonlat, x_test, type = "response")
+
+```
+
+Check accuracy
+
+```{r}
+lonlat.rf.confu <- confusionMatrix(lonlat.rf.pred, y_test)
+
+lonlat.rf.confu
+```
+
+Get predictions as probabilities instead of responses
+
+```{r}
+#1 specify the random forest model for longitude and latitude only
+rf_lonlat_prob <- randomForest(class ~ Longitude + Latitude, data = training)
+
+# 2 - Run predictions and return results as percentages
+lonlat.rf.prob.pred <- predict(rf_lonlat_prob, x_test, type = "prob")
+
+```
+
+Save random forest model
+
+```{r}
+save(rf_lonlat_prob, file= "rf.prob.RData")
+```
+
+Save the predictions as a csv
+
+```{r}
+write.csv(lonlat.rf.prob.pred, "rf.probs.csv")
+```
+
+That's all folks, hope you had fun following along and we look forward to seeing you at one of our future Geospatial Community events!
