@@ -29,15 +29,19 @@ tags: []
 DisableComments: no
 ---
 
-## Geospatial Community <MONTH> Newsletter
+## Geospatial Community June Newsletter
 
-### Next workshop -- <DATE>, <TIME>
+### Drop-in virtual help session this Thursday (June 1st, 3-5 pm)
 
-\<Paragraph outlining the contents of the next workshop. Who, what, when, where\>
+Drop-in sessions are back this Thursday, so bring your thorniest spatial questions and we'll help problem solve. The first half of the session [Dr Jackson Stockbridge](https://experts.griffith.edu.au/40748-jackson-stockbridge) will give a brief overview of how to access web mapping services (WMS) and web feature services (WFS) in R.
+
+### Next workshop -- June 15th, 2-4pm
+
+Join us for an exciting session where [Dr César Herrara Acosta](https://experts.griffith.edu.au/30877-c%C3%A9sar-herrera-acosta) (Griffith University) will take you on a new dive into the dynamic world of the Python programming language ecosystem! Building upon previous sessions, César will showcase Python libraries for (1) analysis and visualization of spatial data (e.g. geopandas, datashader, holoviews) and (2) basic computer vision algorithms (OpenCV). César will also make use of the incredibly versatile Jupyter Notebooks and Jupyter Lab frameworks, which empowers users with seamless workflows for code development, data exploration, and interactive presentations.
 
 ### Previous workshop
 
-\<Short paragraph thanking previous presenter. Short summary of what was covered. Add a link to the content\>
+Last month, Dr Tony Howes (UQ, School of Chemical Engineering) ran an excellent workshop on how to make an interactive map using Python and Folium. 
 
 ## Geospatial Community Updates
 
