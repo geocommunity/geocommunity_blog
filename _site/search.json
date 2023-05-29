@@ -914,7 +914,7 @@
     "href": "index.html#upcoming-workshop",
     "title": "Welcome to the Geospatial Community",
     "section": "Upcoming Workshop",
-    "text": "Upcoming Workshop\n\nInteractive Map with Python + Folium\n\nMay 18th, 3-5pm AEST on Teams\nDr Tony Howes (UQ, School of Chemical Engineering) will be sharing how Python and Folium (a wrapper for Python of the JavaScript Leaflet library) work together to create an interactive map.\nThe data will be from the Brisbane Dawn Nav, May 5th MapRun. Workshop materials will be in a Jupyter notebook and downloading Anaconda is recommended if you wish to follow along."
+    "text": "Upcoming Workshop\n\nMore spatial data in Python!\n\nJune 15th, 2-4pm AEST on Teams\nJoin us for an exciting session where Dr César Herrara Acosta (Griffith University) will take you on a new dive into the dynamic world of the Python programming language ecosystem! Building upon previous sessions, César will showcase Python libraries for (1) analysis and visualization of spatial data (e.g. geopandas, datashader, holoviews) and (2) basic computer vision algorithms (OpenCV). César will also make use of the incredibly versatile Jupyter Notebooks and Jupyter Lab frameworks, which empowers users with seamless workflows for code development, data exploration, and interactive presentations."
   },
   {
     "objectID": "index.html#last-workshop",
