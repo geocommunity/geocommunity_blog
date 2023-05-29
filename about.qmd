@@ -18,7 +18,7 @@ Unfortunately, a steep learning curve is often required to apply these tools, pa
 
 The Geospatial Community tries to make this process a bit less painful, by sharing our experiences, skills and tricks in a friendly and inclusive environment.
 
-👩‍💻 We are based in Brisbane, Australia run monthly, onlinr, skill-sharing tutorial sessions where a member of the community teaches us something they have learned along the way.
+👩‍💻 We are based in Brisbane, Australia run monthly, online, skill-sharing tutorial sessions where a member of the community teaches us something they have learned along the way.
 
 This usually occurs on the last Thursday of each month.
 

@@ -1006,5 +1006,12 @@
     "title": "June Newsletter | Drop-in sessions | More Python this month",
     "section": "",
     "text": "Drop-in sessions are back this Thursday, so bring your thorniest spatial questions and we’ll help problem solve. In the first half of the session Dr Jackson Stockbridge will give a brief overview of how to access web mapping services (WMS) and web feature services (WFS) in R.\n\n\n\nJoin us for an exciting session where Dr César Herrara Acosta (Griffith University) will take you on a new dive into the dynamic world of the Python programming language ecosystem! Building upon previous sessions, César will showcase Python libraries for (1) analysis and visualization of spatial data (e.g. geopandas, datashader, holoviews) and (2) basic computer vision algorithms (OpenCV). César will also make use of the incredibly versatile Jupyter Notebooks and Jupyter Lab frameworks, which empowers users with seamless workflows for code development, data exploration, and interactive presentations.\n\n\n\nLast month, Dr Tony Howes (UQ, School of Chemical Engineering) ran an excellent workshop on how to make an interactive map using Python and Folium."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Whether its making a simple site map or running deep learning analyses on satellite data, students and researchers are often called upon to conduct geospatial analysis. 🗺️\nFortunately, there a wealth of freely available tools can help to complete these tasks: think R, Python and QGIS. 🔨\nUnfortunately, a steep learning curve is often required to apply these tools, particularly when we don’t all have a strong background in coding, GIS or remote sensing.\nThe Geospatial Community tries to make this process a bit less painful, by sharing our experiences, skills and tricks in a friendly and inclusive environment.\n👩‍💻 We are based in Brisbane, Australia run monthly, online, skill-sharing tutorial sessions where a member of the community teaches us something they have learned along the way.\nThis usually occurs on the last Thursday of each month.\nAnd check out our blog for previous sessions.\nIf you want to get involved, just email us at uqgeo.community @ gmail dot com"
   }
 ]
