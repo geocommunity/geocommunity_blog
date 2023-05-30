@@ -8,6 +8,9 @@ categories:
  - Workshop
 tags: [raster2data, SS-RF, spatial, random forest, R]
 DisableComments: no
+
+execute: 
+  freeze: true
 ---
 
 ::: column-margin

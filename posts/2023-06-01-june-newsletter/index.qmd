@@ -3,6 +3,7 @@ title: "June Newsletter | Drop-in sessions | More Python this month"
 editor: visual
 author: 'Christina'
 date: "2023-06-01"
+image: thumb.jpg
 slug: newsletter-<Mmmyyyy>
 categories:
   - newsletter
@@ -23,4 +24,3 @@ Join us for an exciting session where [Dr César Herrara Acosta](https://experts
 ### Previous workshop
 
 Last month, Dr Tony Howes (UQ, School of Chemical Engineering) ran an excellent workshop on how to make an interactive map using Python and Folium.
-

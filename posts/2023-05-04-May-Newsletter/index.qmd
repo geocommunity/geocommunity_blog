@@ -1,7 +1,7 @@
 ---
 title: "Newsletter | Python + Folium | Help Sessions are Back!"
 editor: visual
-author: 'Nicholas Wiggins'
+author: 'Annie'
 date: "2023-05-16"
 image: folium-map.png
 slug: newsletter-May2023
@@ -18,18 +18,18 @@ DisableComments: no
 
 ## Geospatial Community May Newsletter
 
-:::{.callout-important collapse="true"}
-
+::: {.callout-important collapse="true"}
 ## **Petition** to increase Australian PhD Stipends
 
 Please consider signing this [e-petition](https://www.aph.gov.au/e-petitions/petition/EN5085) to increase PhD stipends to minimum wage. Petition reason from the online petition is copied below.
 
 Petition Reason
 
-PhD students contribute enormously to Australia’s research every year, with their time accounting for 56% the total research output. They are the future professors and industry professionals of this country, responsible for driving innovation and ensuring strong international collaborations and competition. Their contribution is often rewarded with a stipend intended to cover the cost of living, with a minimum rate set by the Australian government. Currently, this scholarship rate is $29,863 per year for PhD students to live on while usually working more than 40 hrs per week on their research. Not only is this below minimum wage, but it is even forcing students to live below the poverty line. With this treatment, students are incentivised to accept positions abroad, reject higher degrees by research, or quit midway through their degree due to financial distress. Australia is actively discouraging higher education and slowing its economic growth and productivity by underpaying PhD students. We believe the government should support higher education and ensure a competitive standing for Australia. The way to do this is by setting a fair, liveable rate for PhD scholarships, which is at least equivalent to the minimum wage.
-
+PhD students contribute enormously to Australia's research every year, with their time accounting for 56% the total research output. They are the future professors and industry professionals of this country, responsible for driving innovation and ensuring strong international collaborations and competition. Their contribution is often rewarded with a stipend intended to cover the cost of living, with a minimum rate set by the Australian government. Currently, this scholarship rate is \$29,863 per year for PhD students to live on while usually working more than 40 hrs per week on their research. Not only is this below minimum wage, but it is even forcing students to live below the poverty line. With this treatment, students are incentivised to accept positions abroad, reject higher degrees by research, or quit midway through their degree due to financial distress. Australia is actively discouraging higher education and slowing its economic growth and productivity by underpaying PhD students. We believe the government should support higher education and ensure a competitive standing for Australia. The way to do this is by setting a fair, liveable rate for PhD scholarships, which is at least equivalent to the minimum wage.
 :::
+
 ### Next workshop -- Interactive Map with Python + Folium
+
 #### Thursday May 18th, 3-5pm
 
 ![](folium-map.png)
@@ -52,26 +52,14 @@ You will have noticed some major changes to the [website](https://brisbane-geoco
 
 ## Geospatial Jobs
 
-[GIS Consultant](https://urldefense.com/v3/__https://www.livehire.com/careers/wspaustralia/job/AP7BB/LM635UWF3/gis-consultant__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlbcKIUZy$), WSP Australia, Brisbane 
-[GIS Consultant](https://urldefense.com/v3/__https://careers.arcadis.com/job/ARCAGLOBAL11365ORCEXTERNALENGLOBAL/GIS-Consultant?utm_source=linkedin&utm_medium=phenom-feeds&utm_source=external*2Bcareer*2Bsite&utm_medium=career*2Bsite__;JSUl!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlZb4VWxI$), Arcadis, Brisbane 
-[Spatial Officers](https://urldefense.com/v3/__https://jobs.powerlink.com.au/job/Brisbane*2C-Virginia-Spatial-Officers-QLD/937693710/?utm_campaign=LinkedinJobPostings&utm_source=LinkedinJobPostings&applySourceOverride=LinkedIn__;JQ!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlUil9xkI$), PowerLink Queensland, Brisbane 
-[Spatial Data Officer](https://urldefense.com/v3/__https://unitywater.careers.site/?job=spatial-data-officer_93335&source_key=6d4c0d55-7a2b-4d49-933e-0adb98f7bb15*detail__;Iw!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlX1Flk2m$), Unitywater, Moreton Bay 
-[GIS \| Data and Analytics](https://urldefense.com/v3/__https://careers.ey.com/ey/job/Sydney-GIS-Data-and-Analytics-NSW-2000/896662401/?feedId=337401&utm_source=LinkedInJobPostings&utm_campaign=j2w_linkedin__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlTDhApUN$), EY, Brisbane city / flexible 
-[Biodiversity Modeller / Spatial Ecologist](https://urldefense.com/v3/__https://www.seek.com.au/job/66953101?type=standout&mc_cid=3666af46bb&mc_eid=2ee7c25fd8*sol=a05254f097ef05206d5d9f59ea86964c2f51961c__;Iw!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlWAIgXvr$), CSIRO, Canberra
+[GIS Consultant](https://urldefense.com/v3/__https://www.livehire.com/careers/wspaustralia/job/AP7BB/LM635UWF3/gis-consultant__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlbcKIUZy$), WSP Australia, Brisbane [GIS Consultant](https://urldefense.com/v3/__https://careers.arcadis.com/job/ARCAGLOBAL11365ORCEXTERNALENGLOBAL/GIS-Consultant?utm_source=linkedin&utm_medium=phenom-feeds&utm_source=external*2Bcareer*2Bsite&utm_medium=career*2Bsite__;JSUl!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlZb4VWxI$), Arcadis, Brisbane [Spatial Officers](https://urldefense.com/v3/__https://jobs.powerlink.com.au/job/Brisbane*2C-Virginia-Spatial-Officers-QLD/937693710/?utm_campaign=LinkedinJobPostings&utm_source=LinkedinJobPostings&applySourceOverride=LinkedIn__;JQ!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlUil9xkI$), PowerLink Queensland, Brisbane [Spatial Data Officer](https://urldefense.com/v3/__https://unitywater.careers.site/?job=spatial-data-officer_93335&source_key=6d4c0d55-7a2b-4d49-933e-0adb98f7bb15*detail__;Iw!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlX1Flk2m$), Unitywater, Moreton Bay [GIS \| Data and Analytics](https://urldefense.com/v3/__https://careers.ey.com/ey/job/Sydney-GIS-Data-and-Analytics-NSW-2000/896662401/?feedId=337401&utm_source=LinkedInJobPostings&utm_campaign=j2w_linkedin__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlTDhApUN$), EY, Brisbane city / flexible [Biodiversity Modeller / Spatial Ecologist](https://urldefense.com/v3/__https://www.seek.com.au/job/66953101?type=standout&mc_cid=3666af46bb&mc_eid=2ee7c25fd8*sol=a05254f097ef05206d5d9f59ea86964c2f51961c__;Iw!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlWAIgXvr$), CSIRO, Canberra
 
 ## Training
 
 ### UQ Library Training
 
-[UQ R User Group (UQRUG)](https://urldefense.com/v3/__https://uqrug.netlify.app/__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlQSsdMm-$) - Wednesday 31st May 2023, 12-2pm 
-[QGIS: Introduction to Mapping](https://urldefense.com/v3/__https://studenthub.uq.edu.au/students/events/detail/4485945__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlaGYtIU7$) - Friday 19th May 2023, 9:30 am - 11:30 am
-[QGIS: Custom Maps on your phone](https://urldefense.com/v3/__https://studenthub.uq.edu.au/students/events/detail/4485946__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlU8uYhPk$)  - Friday 26th May 2023, 9:30 am - 11:30 am 
-[QGIS: Vector Analysis](https://urldefense.com/v3/__https://studenthub.uq.edu.au/students/events/detail/4485947__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlYYHOtyG$) - Friday 2nd June 2023, 9:30 am - 11:30 am
+[UQ R User Group (UQRUG)](https://urldefense.com/v3/__https://uqrug.netlify.app/__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlQSsdMm-$) - Wednesday 31st May 2023, 12-2pm [QGIS: Introduction to Mapping](https://urldefense.com/v3/__https://studenthub.uq.edu.au/students/events/detail/4485945__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlaGYtIU7$) - Friday 19th May 2023, 9:30 am - 11:30 am [QGIS: Custom Maps on your phone](https://urldefense.com/v3/__https://studenthub.uq.edu.au/students/events/detail/4485946__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlU8uYhPk$) - Friday 26th May 2023, 9:30 am - 11:30 am [QGIS: Vector Analysis](https://urldefense.com/v3/__https://studenthub.uq.edu.au/students/events/detail/4485947__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlYYHOtyG$) - Friday 2nd June 2023, 9:30 am - 11:30 am
 
 ### Experimental Design and Data Analysis for Testing Casual Hypotheses in R
 
-Find more details and registration [here](https://urldefense.com/v3/__https://www.amsa2023.amsa.asn.au/workshop__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlYAHlnYt$). 
-Date: July 2nd 2023 
-Time: 9:00-16:00 
-Location: Griffith University Gold Coast Campus, Building/Room G14_1.13B 
-Cost: \$30. Note: This isn't a spatial workshop, but if you're interested in statistical analysis and R programming, this will be a good one. Spots are limited so please only register if you are sure you can make it.
+Find more details and registration [here](https://urldefense.com/v3/__https://www.amsa2023.amsa.asn.au/workshop__;!!NVzLfOphnbDXSw!Gl1LA-5_dhmY-PZPZSFZMQVxtKwR_Q7CYu5dRjyPolIO2s3iq5LpB8R0X7EU8bn05szg66MaPBPfai00b6iGlYAHlnYt$). Date: July 2nd 2023 Time: 9:00-16:00 Location: Griffith University Gold Coast Campus, Building/Room G14_1.13B Cost: \$30. Note: This isn't a spatial workshop, but if you're interested in statistical analysis and R programming, this will be a good one. Spots are limited so please only register if you are sure you can make it.

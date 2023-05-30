@@ -133,8 +133,7 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 
 #### June 15th, 2-4pm AEST on Teams
 
-Join us for an exciting session where [Dr César Herrara Acosta](https://experts.griffith.edu.au/30877-c%C3%A9sar-herrera-acosta) (Griffith University) will take you on a new dive into the dynamic world of the Python programming language ecosystem! Building upon previous sessions, César will showcase Python libraries for (1) analysis and visualization of spatial data (e.g. geopandas, datashader, holoviews) and (2) basic computer vision algorithms (OpenCV). 
-César will also make use of the incredibly versatile Jupyter Notebooks and Jupyter Lab frameworks, which empowers users with seamless workflows for code development, data exploration, and interactive presentations.
+Join us for an exciting session where [Dr César Herrara Acosta](https://experts.griffith.edu.au/30877-c%C3%A9sar-herrera-acosta) (Griffith University) will take you on a new dive into the dynamic world of the Python programming language ecosystem! Building upon previous sessions, César will showcase Python libraries for (1) analysis and visualization of spatial data (e.g. geopandas, datashader, holoviews) and (2) basic computer vision algorithms (OpenCV). César will also make use of the incredibly versatile Jupyter Notebooks and Jupyter Lab frameworks, which empowers users with seamless workflows for code development, data exploration, and interactive presentations.
 
 ## Last Post
 
