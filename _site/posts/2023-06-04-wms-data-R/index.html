@@ -210,8 +210,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-problem" id="toc-the-problem" class="nav-link active" data-scroll-target="#the-problem">The problem</a></li>
+  <li><a href="#extracting-spatial-data-from-web-map-servers-in-r" id="toc-extracting-spatial-data-from-web-map-servers-in-r" class="nav-link active" data-scroll-target="#extracting-spatial-data-from-web-map-servers-in-r">Extracting spatial data from web map servers in R</a>
+  <ul>
+  <li><a href="#what-youll-learn-in-these-notes" id="toc-what-youll-learn-in-these-notes" class="nav-link" data-scroll-target="#what-youll-learn-in-these-notes">What you’ll learn in these notes</a></li>
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">The problem</a></li>
   <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
+  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -224,6 +228,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
+<section id="extracting-spatial-data-from-web-map-servers-in-r" class="level3">
+<h3 class="anchored" data-anchor-id="extracting-spatial-data-from-web-map-servers-in-r">Extracting spatial data from web map servers in R</h3>
+<p>by <a href="https://experts.griffith.edu.au/40748-jackson-stockbridge">Dr Jackson Stockbridge</a></p>
 <section id="what-youll-learn-in-these-notes" class="level4">
 <h4 class="anchored" data-anchor-id="what-youll-learn-in-these-notes">What you’ll learn in these notes</h4>
 <ol type="1">
@@ -233,8 +240,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>A broad overview of the capabilities of importing WMS data into R</li>
 </ol>
 </section>
-<section id="the-problem" class="level2">
-<h2 class="anchored" data-anchor-id="the-problem">The problem</h2>
+<section id="the-problem" class="level4">
+<h4 class="anchored" data-anchor-id="the-problem">The problem</h4>
 <p>I have recently embarked on a mission to collate a spatial database on environmental features and pressures that will eventually feed into a project aiming to develop marine spatial planning frameworks. I love working with data, so the idea of going out and finding as much as I could to work with in R was exciting (I appreciate that there are few people that would share this excitement).</p>
 <p>Soon into my mission, I was provided a report that was seemingly a gold mine of different, and relevant datasets. However, I quickly stumbled upon a problem I did not foresee. I was directed to a link leading to an interactive map server, and the data I was after were displayed beautifully online (Fig. 1). I figured it would be a simple case of clicking another link to download the data behind this map, but for the life of me, I could not find this link.</p>
 <div class="quarto-figure quarto-figure-left">
@@ -250,8 +257,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>I should also state that the tutorial by Thierry provides more details on the capabilities of this code and the objects it creates, as well as what the functions are doing ‘behind the scenes’. The code provided here will just scratch the surface, and provide a way to read the WMS data into R as an ‘sf’ object.</p>
 <p>If you have not come across a data link that leads to a WMS, an example is provided below. This <a href="https://www.cmar.csiro.au/geoserver/nerp/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=nerp:ausrep_shipping_1999&amp;styles=&amp;bbox=105.0,-49.0,165.0,-5.0&amp;width=768&amp;height=563&amp;srs=EPSG:4326&amp;format=application/openlayers">link</a> will display a summary of Australian shipping activity during 1999.</p>
 </section>
-<section id="code" class="level2">
-<h2 class="anchored" data-anchor-id="code">Code</h2>
+<section id="code" class="level4">
+<h4 class="anchored" data-anchor-id="code">Code</h4>
 <p>Disclaimer: These notes assume a basic understanding of how to use R and working with spatial data as ‘sf’ objects.</p>
 <p>Install <a href="https://www.r-project.org/">R</a> and <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a></p>
 <p>So, you have followed a link (like the example above) and found yourself looking at the data you want on a WMS. Lets head over to R to start the process of extracting the data.</p>
@@ -685,6 +692,7 @@ named list()
 <p>Happy data hunting!</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

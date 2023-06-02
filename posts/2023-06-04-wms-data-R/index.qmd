@@ -3,6 +3,8 @@ title: "Extracting spatial data from web map servers in R"
 editor: visual
 author: 'Dr Jackson Stockbridge'
 date: "<2023-06-03>"
+toc: true
+toc-depth: 4
 image: thumb.png
 slug: newsletter-<Mmmyyyy>
 categories:
@@ -13,6 +15,10 @@ tags: []
 DisableComments: no
 ---
 
+### Extracting spatial data from web map servers in R
+
+by [Dr Jackson Stockbridge](https://experts.griffith.edu.au/40748-jackson-stockbridge)
+
 #### What you'll learn in these notes
 
 1.  What does spatial data on a web map server (WMS) look like?
@@ -20,7 +26,7 @@ DisableComments: no
 3.  Convert WMS data in a simple features (sf) object
 4.  A broad overview of the capabilities of importing WMS data into R
 
-## The problem
+#### The problem
 
 I have recently embarked on a mission to collate a spatial database on environmental features and pressures that will eventually feed into a project aiming to develop marine spatial planning frameworks. I love working with data, so the idea of going out and finding as much as I could to work with in R was exciting (I appreciate that there are few people that would share this excitement).
 
@@ -40,7 +46,7 @@ I should also state that the tutorial by Thierry provides more details on the ca
 
 If you have not come across a data link that leads to a WMS, an example is provided below. This [link](https://www.cmar.csiro.au/geoserver/nerp/wms?service=WMS&version=1.1.0&request=GetMap&layers=nerp:ausrep_shipping_1999&styles=&bbox=105.0,-49.0,165.0,-5.0&width=768&height=563&srs=EPSG:4326&format=application/openlayers) will display a summary of Australian shipping activity during 1999.
 
-## Code
+#### Code
 
 Disclaimer: These notes assume a basic understanding of how to use R and working with spatial data as 'sf' objects.
 
