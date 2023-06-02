@@ -1,0 +1,205 @@
+---
+title: "Extracting spatial data from web map servers in R"
+editor: visual
+author: 'Dr Jackson Stockbridge'
+date: "<2023-06-03>"
+image: thumb.png
+slug: newsletter-<Mmmyyyy>
+categories:
+  - blog
+  - tutorial
+  - R
+tags: []
+DisableComments: no
+---
+
+#### What you'll learn in these notes
+
+1.  What does spatial data on a web map server (WMS) look like?
+2.  How to use R to access these data
+3.  Convert WMS data in a simple features (sf) object
+4.  A broad overview of the capabilities of importing WMS data into R
+
+## The problem
+
+I have recently embarked on a mission to collate a spatial database on environmental features and pressures that will eventually feed into a project aiming to develop marine spatial planning frameworks. I love working with data, so the idea of going out and finding as much as I could to work with in R was exciting (I appreciate that there are few people that would share this excitement).
+
+Soon into my mission, I was provided a report that was seemingly a gold mine of different, and relevant datasets. However, I quickly stumbled upon a problem I did not foresee. I was directed to a link leading to an interactive map server, and the data I was after were displayed beautifully online (Fig. 1). I figured it would be a simple case of clicking another link to download the data behind this map, but for the life of me, I could not find this link.
+
+![***Fig. 1.** A screenshot of the data I was trying to access displayed on a web map server. Looks great, how do I access it myself!?*](fig1.png){fig-align="left"}
+
+As with most of the issues I come across with data (or just with life in general) I figured that R would have a solution. And it did! Here, I will provide a brief overview of how I managed to get the data from the web map server (WMS) into the wonderfully friendly and versatile 'sf' format in R.
+
+Before getting into the code, I want to acknowledge that the solution and code provided here originally accessed from a very helpful blog post by Thierry Onkelinx. I will post the link to the tutorial below, along with a link to their github page, which is full of useful blogs, codes, and functions.
+
+[**Tutorial**](https://inbo.github.io/tutorials/tutorials/spatial_wfs_services/)
+
+[**Github page**](https://inbo.github.io/tutorials/authors/thierryo/)
+
+I should also state that the tutorial by Thierry provides more details on the capabilities of this code and the objects it creates, as well as what the functions are doing 'behind the scenes'. The code provided here will just scratch the surface, and provide a way to read the WMS data into R as an 'sf' object.
+
+If you have not come across a data link that leads to a WMS, an example is provided below. This [link](https://www.cmar.csiro.au/geoserver/nerp/wms?service=WMS&version=1.1.0&request=GetMap&layers=nerp:ausrep_shipping_1999&styles=&bbox=105.0,-49.0,165.0,-5.0&width=768&height=563&srs=EPSG:4326&format=application/openlayers) will display a summary of Australian shipping activity during 1999.
+
+## Code
+
+Disclaimer: These notes assume a basic understanding of how to use R and working with spatial data as 'sf' objects.
+
+Install [R](https://www.r-project.org/) and [RStudio](https://www.rstudio.com/products/rstudio/download/)
+
+So, you have followed a link (like the example above) and found yourself looking at the data you want on a WMS. Lets head over to R to start the process of extracting the data.
+
+Install and load the following packages:
+
+```{r}
+#| echo: true
+#| output: false
+# Load packages
+#install.packages('tidyverse', 'sf', 'httr', 'ows4R')
+library(tidyverse)
+library(sf)
+library(httr)
+library(ows4R)
+```
+
+There is an important part of the link provided that R will use to request the data. This is [**bold and underlined**]{.underline} in our example link below:
+
+[**https://www.cmar.csiro.au/geoserver/nerp/wms?**]{.underline}service=WMS&version=1.1.0&request=GetMap&layers=nerp:ausrep_shipping_1999&styles=&bbox=105.0,-49.0,165.0,-5.0&width=768&height=563&srs=EPSG:4326&format=application/openlayers
+
+Lets copy this section of the link into our R script and save it into our global environment. **IMPORTANTLY**, we need to change 'wms' to 'wfs' in the link.
+
+```{r}
+#| echo: true
+#| output: true
+# Save URL
+wfs_url <- 'https://www.cmar.csiro.au/geoserver/nerp/wfs?'
+```
+
+I will humbly admit that the nuts and bolts of WMS and web features servers (WFS) are beyond my understanding. I like to think of it as WMS refers to the finished map product, and WFS to the meta data behind the map. WFS seems to be more versatile and useful than WMS when it comes to using these in R.
+
+Next, we use the 'parse' function to convert the URL into a list, allowing us (and R) to do more useful things with it.
+
+```{r}
+#| echo: true
+#| output: false
+# Make URL R-friendly
+url <- parse_url(wfs_url)
+```
+
+We now need to generate a connection that will allow R to talk to the server.
+
+```{r}
+#| echo: true
+#| output: true
+# Generate connection to server
+url_client <- WFSClient$new(wfs_url, serviceVersion = "2.0.0")
+```
+
+This will add 'url_client' into the global environment as an R6 object (or 'environment'). Don't worry if this seems new or strange, this is another example of something that I do not fully understand. However, it does allow us to get a closer look at the capabilities of bringing WMS data into R. By viewing this object (using 'View'), we can dive into its many layers and see what is at our fingertips!
+
+```{r}
+#| echo: true
+#| output: false
+#View(url_client)
+```
+
+We can also use the following function to explore the operations that provide us with more information on our data.
+
+```{r}
+#| echo: true
+#| output: true
+# Explore operations
+url_client$
+  getCapabilities()$
+  getOperationsMetadata()$
+  getOperations() %>%
+  map_chr(function(x){x$getName()})
+```
+
+Someone with advanced knowledge and experience with R will be able to use these to truly get the most out of the WMS data. However, this is beyond the scope of this blog, and we will just focus on getting the spatial data into an 'sf' object.
+
+In saying that, we will get a taste of the capabilities using the following function, which will allow us to look at the data layers that we are able to extract.
+
+```{r}
+#| echo: true
+#| output: true
+# See layer names
+url_client$getFeatureTypes() %>%
+  map_chr(function(x){x$getName()})
+```
+
+As you can see, there are actually far more data available than just the shipping summary we were originally looking for! There are over 200 different spatial layers available here, making this a very fruitful endeavour (something we can not always admit to when spending time solving an R problem...).
+
+Now we'll get to the important part, getting this layer into an oh-so-familiar-and-comforting-and-versatile 'sf' object.
+
+```{r}
+#| echo: true
+#| output: true
+# Extract as sf
+url$query <- list(service = 'wfs',
+                  # version = '2.0.0', # optional
+                  request = 'GetFeature',
+                  # Change typename to layer name
+                  typename = 'nerp:ausrep_shipping_1999',
+                  srsName = 'EPSG:4326')
+layer_url <- build_url(url)
+```
+
+Some notes on this code:
+
+-   'version' is an optional argument and allows us to specify the server version we want R to talk to.
+
+-   'typename' refers to the data layer you are wanting to extract. We can change this to any of those listed from the output of the code we ran to get the names of all data layers. Doing so will extract that layer from the server.
+
+-   'srsName' is where we state the coordinate reference system we want our data projected to. If this does not make sense, there are some other great blogs on the Geospatial website to help with this!
+
+-   'build_url' is doing just that; building a URL for our request.
+
+Lets turn this into our 'sf' object!
+
+```{r}
+#| echo: true
+#| output: true
+layer_sf <- read_sf(layer_url)
+```
+
+And that's it! We now have our data layer into a format that allows us to tidy, wrangle, and analyse to our hearts content.
+
+We have the all important data now, but that is really only scratching the surface with what we can do with this 'url_client' object. Going into more detail is beyond the scope of this blog but I encourage people who want to learn more to go onto the tutorial and Github page of that tutorials author (links are repeated below).
+
+[**Tutorial**](https://inbo.github.io/tutorials/tutorials/spatial_wfs_services/)
+
+[**Github page**](https://inbo.github.io/tutorials/authors/thierryo/)
+
+Just to give you a taste of the other operations available, here are some example functions. First, we can access the meta data (if available on the server).
+
+```{r}
+#| echo: true
+#| output: true
+# Get meta data
+url_client$
+  getCapabilities()$
+  getOperationsMetadata()$
+  getOperations() %>%
+  map(function(x){x$getParameters()})
+```
+
+We can also use the 'pluck' function from the 'purrr' package to extract an element hidden deep within a nested object. Here, we are extracting the available output formats for the data layers.
+
+```{r}
+#| echo: true
+#| output: true
+# See output formats
+url_client$
+  getCapabilities()$
+  getOperationsMetadata()$
+  getOperations() %>%
+  map(function(x){x$getParameters()}) %>%
+  # '3' is an index into the object
+  pluck(3, 'outputFormat')
+```
+
+As you can see, you can export the data in a different format if you are wanting it as something other than an 'sf' object or shapefile. We can also turn it into an Excel friendly .csv file.
+
+So that brings us to the end of our brief look into WMS and WFS data and how we can access the data (and much more) using R. Hopefully, you have learned something useful.
+
+Happy data hunting!
