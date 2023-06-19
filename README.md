@@ -1,6 +1,8 @@
 # geocommunity_blog
 This repository is used to create the [Geospatial Community website and blog](https://brisbane-geocommunity.netlify.app/).
 
+To make our events enjoyable, safe and welcoming, we have a [Code of Conduct](https://github.com/geocommunity/geocommunity_blog/blob/main/Code_of_Conduct.md)
+
 ## Adding to and editing the Monthly Newsletter
 The next month's newsletter draft can be found in that month's folder in the [_templates folder on GitHub](https://github.com/geocommunity/geocommunity_blog/tree/main/_templates). <br>
 If you have a GitHub account, you can go to the .qmd file for that month, click the edit pencil ![image](https://user-images.githubusercontent.com/67612228/232414718-fe2829d2-dfd4-4f47-9afb-bea02bdfc1c9.png) in the top right, and you can then add text to the Newsletter. <br>
