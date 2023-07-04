@@ -3,7 +3,7 @@ title: "July Newsletter | Learn Google Earth Engine this month"
 editor: visual
 author: 'Christina'
 date: "2023-07-04"
-image: thumb.jpg
+image: thumb.png
 slug: newsletter-<Mmmyyyy>
 categories:
   - newsletter
