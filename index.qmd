@@ -129,11 +129,11 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 
 ## Upcoming Workshop {style="padding-top: 5px;"}
 
-### More spatial data in Python!
+### Learn machine-learning in Google Earth Engine!
 
-#### June 15th, 2-4pm AEST on Teams
+#### July 25th, 3-5pm AEST on Teams
 
-Join us for an exciting session where [Dr César Herrara Acosta](https://experts.griffith.edu.au/30877-c%C3%A9sar-herrera-acosta) (Griffith University) will take you on a new dive into the dynamic world of the Python programming language ecosystem! Building upon previous sessions, César will showcase Python libraries for (1) analysis and visualization of spatial data (e.g. geopandas, datashader, holoviews) and (2) basic computer vision algorithms (OpenCV). César will also make use of the incredibly versatile Jupyter Notebooks and Jupyter Lab frameworks, which empowers users with seamless workflows for code development, data exploration, and interactive presentations.
+We have an exciting workshop coming up this month; Martin Peikert from Queensland University of Technology will provide an introduction to **Google Earth Engine**, how it works, how to set it up and get started, where to get data, and finally he'll take us through a case study in machine learning land-cover classification.
 
 ## Last Post
 
