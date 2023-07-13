@@ -41,34 +41,7 @@ format:
 div.quarto-post {
   margin-bottom: 0px;
 }
-.tui-view-7 {
-height: 100% !important;
-}
-.tui-full-calendar-month {
-    height: 75%;
-    min-height: 500px;
-}
-.tui-full-calendar-popup-detail .tui-full-calendar-popup-container {
-    width: 330px;
-}
-.card-img{
-  width: 100px;
-}
-img {
-    width: 100px;
-    height: 100% !important;
-    max-height: 100px !important;
-}
 
-.column-margin.column-container>*:not(.collapse) {
-    padding-top: 14em;
-}
-
-@media (max-width: 767.98px){
-  #events-calendar{
-    display: none;
-  }
-}
 </style>
 
 <!-- html code containing the turkey pin and page title -->
