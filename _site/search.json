@@ -11,7 +11,7 @@
     "href": "index.html#events-calendar",
     "title": "Welcome to the Geospatial Community",
     "section": "Events Calendar",
-    "text": "Events Calendar\n\n\n\n\nToday"
+    "text": "Events Calendar"
   },
   {
     "objectID": "index.html#latest-workshop",
@@ -1062,5 +1062,19 @@
     "title": "July Newsletter | Learn Google Earth Engine this month",
     "section": "",
     "text": "We have an exciting workshop coming up this month; Martin Peikert from Queensland University of Technology will provide an introduction to Google Earth Engine, how it works, how to set it up and get started, where to get data, and finally he’ll take us through a case study in machine learning land-cover classification.\n\n\n\nLast month Dr César Herrara Acosta (Griffith University) provided an excellent tour of geospatial analysis and computer vision in Python. Check-out his Jupyter Notebooks to try it for yourself, a top-of-the-line learning resource for those starting out in Python: link here.\n\n\n\n\n\nDon’t miss out, registration is still open for the TERN Science Symposium in Brisbane, July 26th-27th.\n\n\n\nWe’re planning an in-person get together for the Geospatial Community in Southbank, Brisbane this August - dates etc. still to be decided."
+  },
+  {
+    "objectID": "calendar.html",
+    "href": "calendar.html",
+    "title": "Geospatial Community",
+    "section": "",
+    "text": "Today"
+  },
+  {
+    "objectID": "calendar/calendar.html",
+    "href": "calendar/calendar.html",
+    "title": "Geospatial Community",
+    "section": "",
+    "text": "Today"
   }
 ]

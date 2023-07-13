@@ -12,12 +12,16 @@ website:
       # - icon: twitter
       #   href: https://twitter.com
   favicon: turkeypin.svg
-format:
+format: 
   html:
     theme: 
       light: litera
       dark: solar
     css: styles.css
+    grid: 
+      body-width: 750px
+      sidebar-width: 300px
+      margin-width: 150px
 
 editor: visual
 

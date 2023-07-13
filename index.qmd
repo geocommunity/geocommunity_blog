@@ -59,30 +59,8 @@ div.quarto-post {
 ::: column-margin
 ## Events Calendar
 
-```{r calendar}
-#| include: false
-
-library(googlesheets4)
-#gs4_auth(cache = ".secrets", email = "itsuqnick@gmail.com")
-gs4_deauth()
-cal_data <- read_sheet("https://docs.google.com/spreadsheets/d/1HHxs4SsFO1ImH5XbMgTwK2QrheN8d8N3_9P5L0QiPUg/edit#gid=308321545", sheet = "confirmed")
-cal_prop <- read_sheet("https://docs.google.com/spreadsheets/d/1HHxs4SsFO1ImH5XbMgTwK2QrheN8d8N3_9P5L0QiPUg/edit#gid=308321545", sheet = "cal_properties")
-
-#install.packages("toastui")
-library(toastui)
-```
-
-```{r }
-#| echo: false
-#| warning: false
-#| error: false
-
-calendar(cal_data, navigation = TRUE, defaultDate = Sys.Date(), height = "600") %>% 
-  cal_month_options(
-    startDayOfWeek  = 1, 
-    workweek = TRUE
-  ) %>% 
-  cal_props(cal_prop)
+```{=html}
+<iframe width="110%" height="800px" src="/calendar/calendar.html" title="Events Calendar"></iframe>
 ```
 :::
 
