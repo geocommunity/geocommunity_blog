@@ -60,7 +60,7 @@ div.quarto-post {
 ## Events Calendar
 
 ```{=html}
-<iframe width="110%" height="800px" src="/calendar/calendar.html" title="Events Calendar"></iframe>
+<iframe width="380px" height="800px" src="/calendar/calendar.html" title="Events Calendar"></iframe>
 ```
 :::
 
