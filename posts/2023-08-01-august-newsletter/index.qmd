@@ -16,9 +16,17 @@ DisableComments: no
 
 This month Nena Bulovic will demonstrate how to run your code on a High Performance Computer (HPC) and provides tips and best practices.
 
+### Drop-in help sessions
+
+Let us know if you want to meet with the group this month and get some help - fill out the form [here](https://docs.google.com/forms/d/1Kwc3T2l2UcM-EnHWsz8kuakGVZ704ZVnmdXglgb2rhk/edit). If there's interest in a drop-in session, we'll organise it for Thursday, August 10th, 2-4pm AEST.
+
+### In-person meet-up for those in Brisbane
+
+Let's meet in person and celebrate this awesome community of GIS enthusiasts! Friday August 18th in Southbank at the River Quay Green from 4pm. BYO food and drinks. Hope to see you there!
+
 ### Previous workshop
 
-Last month Martin Peikert from Queensland University Technology gave a great introduction to Google Earth Engine and machine learning landcover classification. Check out the blog post to find out more. 
+Last month Martin Peikert from Queensland University Technology gave a great introduction to Google Earth Engine and machine learning landcover classification. Check out the blog post to find out more.
 
 ## Geospatial Community Updates
 
