@@ -1,43 +1,24 @@
-<!-- To create a newsletter blog post on the site do either of the following set of steps: -->
-
-\
-<!-- A. Simple -->\
-<!-- 1. Copy this text to a raw text editor -->\
-<!-- 2. Replace or remove all of the < > sections where appropriate -->\
-<!-- 3. Delete these instructions -->\
-<!-- 4. Send a copy of this to another member who can upload it -->
-
-<!-- B. Complete -->
-
-\
-<!-- 1. Create a new folder in the posts folder with the format YYYY-MM-DD-newsletter-very-brief-description -->\
-<!-- 2. Copy this newsletter.qmd file into the folder you created and rename it to index.qmd-->\
-<!-- 3. Replace or remove all of the < > sections where appropriate -->\
-<!-- 4. Delete these instructions -->\
-<!-- 5. Click Render and push to GitHub -->
-
 ---
-title: "<Month> Newsletter | <3-4 word summary of next workshop>"
+title: "August Newsletter | Spatial & High Performance Computing>"
 editor: visual
-author: '<your name here>'
-date: "<YYYY-MM-DD>"
-image: <thumbnail image for post, delete if no image>
-slug: newsletter-<Mmmyyyy>
+author: 'Christina'
+date: "2023-08-01>"
+slug: newsletter-<Aug2023>
 categories:
   - newsletter
 tags: []
 DisableComments: no
 ---
 
-## Geospatial Community <MONTH> Newsletter
+## Geospatial Community August Newsletter
 
-### Next workshop -- <DATE>, <TIME>
+### Next workshop -- Spatial & High Performance Computing (HPC) August XX, 2023; XX-XXpm AEST
 
-\<Paragraph outlining the contents of the next workshop. Who, what, when, where\>
+This month Nena Bulovic will demonstrate how to run your code on a High Performance Computer (HPC) and provides tips and best practices.
 
 ### Previous workshop
 
-\<Short paragraph thanking previous presenter. Short summary of what was covered. Add a link to the content\>
+Last month Martin Peikert from Queensland University Technology gave a great introduction to Google Earth Engine and machine learning landcover classification. Check out the blog post to find out more. 
 
 ## Geospatial Community Updates
 
