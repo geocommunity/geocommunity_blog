@@ -1,5 +1,5 @@
 ---
-title: "August Newsletter | Spatial High Performance Computing>"
+title: "August Newsletter | Upcoming workshop: Spatial High Performance Computing | In-person catch-up | Geospatial conferences"
 editor: visual
 author: 'Christina'
 date: "2023-08-01"
@@ -23,7 +23,7 @@ Let us know if you want to meet with the group this month and get some help - fi
 
 ### In-person meet-up for those in Brisbane
 
-Let's meet in person and celebrate this awesome community of GIS enthusiasts! Friday August 18th in Southbank at the River Quay Green from 4pm. BYO food and drinks. Hope to see you there! Apologies to those not based in Brisbane.
+Let's meet in person and celebrate this awesome community of GIS enthusiasts! **Friday August 18th in Southbank at the River Quay Green from 4pm**. BYO food and drinks. Hope to see you there! Apologies to those not based in Brisbane.
 
 ### Previous workshop
 

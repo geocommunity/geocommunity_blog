@@ -80,11 +80,11 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 
 ## Upcoming Workshop {style="padding-top: 5px;"}
 
-### Learn machine-learning in Google Earth Engine!
+### Spatial High Performance Computing!
 
-#### July 25th, 3-5pm AEST on Teams
+#### August 24th, 2-4pm AEST on Teams
 
-We have an exciting workshop coming up this month; Martin Peikert from Queensland University of Technology will provide an introduction to **Google Earth Engine**, how it works, how to set it up and get started, where to get data, and finally he'll take us through a case study in machine learning land-cover classification.
+We have an exciting workshop coming up this month; Dr Nevenka (a.k.a. Nena) Bulovic will demonstrate how to run your code on a **High Performance Computer (HPC)** and provides tips and best practices. She is a [research fellow](https://smi.uq.edu.au/profile/787/nena-bulovic) at the Sustainable Minerals Institute, University of Queensland.
 
 ## Last Post
 
