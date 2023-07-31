@@ -15,7 +15,7 @@ DisableComments: no
 
 ### Next workshop -- Spatial High Performance Computing (HPC) August 24th, 2023; 2-4pm AEST
 
-This month Nevenka (a.k.a. Nena) Bulovic will demonstrate how to run your code on a **High Performance Computer (HPC)** and provides tips and best practices. She is a research fellow at the Sustainable Minerals Institute, University of Queensland. She is currently exploring potential climate change impacts on mine closure efforts around Australia, and determining future strategies for incorporating climate change into mine closure plans. Prior to this role as a part of her PhD, she investigated the utility of remote sensing data for rain and snow estimation across mountainous terrain. Both projects incorporate her major research interests: application and analysis of large spatial datasets to improve our understanding of hydroclimate and management of water resources
+This month Dr Nevenka (a.k.a. Nena) Bulovic will demonstrate how to run your code on a **High Performance Computer (HPC)** and provides tips and best practices. She is a [research fellow](https://smi.uq.edu.au/profile/787/nena-bulovic) at the Sustainable Minerals Institute, University of Queensland. She is currently exploring potential climate change impacts on mine closure efforts around Australia, and determining future strategies for incorporating climate change into mine closure plans. Prior to this role as a part of her PhD, she investigated the utility of remote sensing data for rain and snow estimation across mountainous terrain. Both projects incorporate her major research interests: application and analysis of large spatial datasets to improve our understanding of hydroclimate and management of water resources
 
 ### Drop-in help sessions
 
@@ -33,5 +33,6 @@ Last month Martin Peikert from Queensland University Technology gave a great int
 
 Upcoming 2023 Pacific Geospatial Conference in Suva, Fiji from November 27 - December 1, 2023, link [here](https://pgrsc.org/pacific-gis-rs-users-confrence/).
 
-For more than 20 years, the Pacific Islands GIS and Remote Sensing User Conference has provided a platform for: (i) GIS and Remote Sensing (RS) users from nearly all Pacific Island Countries, (ii) satellite data, software, hardware and consulting enterprises and (iii) scientists from universities and research institutions.  This year’s conference theme is “Improving Resilience in the Pacific Islands through GIS and Remote Sensing”. 
+For more than 20 years, the Pacific Islands GIS and Remote Sensing User Conference has provided a platform for: (i) GIS and Remote Sensing (RS) users from nearly all Pacific Island Countries, (ii) satellite data, software, hardware and consulting enterprises and (iii) scientists from universities and research institutions. This year's conference theme is "Improving Resilience in the Pacific Islands through GIS and Remote Sensing".
 
+![](2023_PGRSC_Flyer.png)
