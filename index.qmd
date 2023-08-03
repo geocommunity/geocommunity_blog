@@ -60,7 +60,7 @@ div.quarto-post {
 ## Events Calendar
 
 ```{=html}
-<iframe width="380px" height="800px" src="/calendar/calendar.html" title="Events Calendar"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23ffffff&ctz=Australia%2FBrisbane&mode=AGENDA&showDate=0&showTitle=0&showPrint=0&showCalendars=0&showTz=0&hl=en_GB&src=dXFnZW8uY29tbXVuaXR5QGdtYWlsLmNvbQ&color=%23039BE5" style="border-width:0" width="400" height="400" frameborder="0" scrolling="no"></iframe>
 ```
 :::
 
