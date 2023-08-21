@@ -25,3 +25,116 @@ This usually occurs on the last Thursday of each month.
 And check out our [blog](/index.qmd) for previous sessions.
 
 If you want to get involved, just email us at uqgeo.community \@ gmail dot com
+
+<br>
+
+# Organisers
+
+::: columns
+::: {.column width="17%"}
+**Mitch Rudge**
+:::
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="80%"}
+Mitch created the GeoSpatial Community, completed his PhD at UQ, and now works as a Natural Capital Data Scientist at Bush Heritage Australia.
+:::
+:::
+
+::: columns
+::: {.column width="17%"}
+**Christina Buelow**
+:::
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="80%"}
+Christina is a Research Fellow at the Australian Rivers Institute at Griffith University
+:::
+:::
+
+::: columns
+::: {.column width="17%"}
+**Catherine Kim**
+:::
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="80%"}
+Cat is a marine scientist working on the Reef Restoration and Adaptation Program at QUT.
+:::
+:::
+
+::: columns
+::: {.column width="17%"}
+**Nicholas Wiggins**
+:::
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="80%"}
+Nick is a Technology Trainer at UQ Library and runs the [UQ R User Group](https://uqrug.netlify.app/)
+:::
+:::
+
+::: columns
+::: {.column width="17%"}
+**Annie (Ngoc) Nguyen**
+:::
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="80%"}
+Annie is a PhD student in the School of Natural Science at UTAS.
+:::
+:::
+
+::: columns
+::: {.column width="17%"}
+**Kai Ching Cheong**
+:::
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="80%"}
+Kai Ching is a researcher at Griffith University researching the impact of mangrove habitat losses and its ecosystem services
+degradation in aspect of biodiversity conservation in Central Indo-Pacific.
+:::
+:::
+
+::: columns
+::: {.column width="17%"}
+**Jason Dail**
+:::
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="80%"}
+Jason is a PhD Candidate at UQ focusing on natural resource management, ecosystem services, ecosystem based adaptation, geomorphology, GIS, Remote Sensing and Physical Geography.
+:::
+:::
+
+::: columns
+::: {.column width="17%"}
+**Xiang Zhao**
+:::
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="80%"}
+Zhao is a research student working on optimal biodiversity surveying and monitoring design problem in terrestrial Antarctica.
+:::
+:::
+
+::: columns
+::: {.column width="17%"}
+**Tanya Dodgen**
+:::
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+::: {.column width="80%"}
+Tanya is a PhD student at QUT investigating coral reef rubble with a focus on its geographical distribution and how it plays into reef recovery.
+:::
+:::

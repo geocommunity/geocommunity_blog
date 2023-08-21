@@ -65,7 +65,7 @@ library(toastui)
 #| error: false
 
 
-calendar(cal_data, navigation = TRUE, defaultDate = Sys.Date(), height = "600") %>% 
+calendar(cal_data, navigation = TRUE, defaultDate = Sys.Date(), height = "600", view = "month") %>% 
   cal_month_options(
     startDayOfWeek  = 1, 
     workweek = TRUE
