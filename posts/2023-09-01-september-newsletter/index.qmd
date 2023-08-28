@@ -26,7 +26,7 @@ Last month Dr. Nena Bulovic from The University of Queensland gave us tips and t
 
 Although the cut-off for submissions has happened, you can contact myself as the Program Chair (program\@foss4g-oceania.org) if you wish to still submit a talk. This conference will be a great opportunity to meet the Open Source Geospatial Community in Oceania.
 
-![](foss.png){width=60%, height=60%}
+![](foss.png){width=30%, height=60%}
 
 ##### New platform to unlock the [power of geospatial and AI](https://www.orbica.com/)
 
@@ -34,4 +34,4 @@ Although the cut-off for submissions has happened, you can contact myself as the
 
 **R courses** at the University of Queensland in February 2023, with a whole day on mapping and spatial analysis, register [here](https://smp.uq.edu.au/event/session/15723)
 
-![](r.png){width=100%, height=100%}
+![](r.png){width=40%, height=200%}
