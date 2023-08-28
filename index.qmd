@@ -80,7 +80,7 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 
 ## Upcoming Workshop {style="padding-top: 5px;"}
 
-### Spatial Autcorrelation!
+### Spatial Autocorrelation!
 
 #### September 21st, 2-4pm AEST on Teams
 
