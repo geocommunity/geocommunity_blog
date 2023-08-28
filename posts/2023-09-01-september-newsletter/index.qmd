@@ -1,0 +1,37 @@
+---
+title: "September Newsletter | Spatial Autocorrelation | Drop-in help session | Upcoming training"
+editor: visual
+author: 'Christina'
+date: "2023-09-01"
+slug: newsletter-sept-2023
+categories:
+  - newsletter
+tags: []
+DisableComments: no
+---
+
+## Geospatial Community September Newsletter
+
+### Next workshop - Spatial autocorrelation -- September 21st, 2-4pm AEST
+
+Xiang Zhao from [Queensland University of Technology](https://www.qut.edu.au/) will lead a discussion on spatial autocorrelation, a challenging but important topic.
+
+### Previous workshop
+
+Last month Dr. Nena Bulovic from The University of Queensland gave us tips and tricks for getting started processing spatial data on the High Performance Computer (HPC). Video recording and notes are available.
+
+## Geospatial News
+
+##### [FOSS4G SoTM Oceania Conference](https://2023.foss4g-oceania.org/) is in October.
+
+Although the cut-off for submissions has happened, you can contact myself as the Program Chair (program\@foss4g-oceania.org) if you wish to still submit a talk. This conference will be a great opportunity to meet the Open Source Geospatial Community in Oceania.
+
+![](foss.png)
+
+##### New platform to unlock the [power of geospatial and AI](https://www.orbica.com/)
+
+## Training
+
+**R courses** at the University of Queensland in February 2023, with a whole day on mapping and spatial analysis, register [here](https://smp.uq.edu.au/event/session/15723)
+
+![](r.png)
