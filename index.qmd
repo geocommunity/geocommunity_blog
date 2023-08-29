@@ -82,7 +82,7 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 
 ### Spatial Autocorrelation!
 
-#### September 21st, 2-4pm AEST on Teams
+#### September 28th, 2-4pm AEST on Teams
 
 Xiang Zhao from [Queensland University of Technology](https://www.qut.edu.au/) will lead a discussion on spatial autocorrelation, a challenging but important topic.
 
