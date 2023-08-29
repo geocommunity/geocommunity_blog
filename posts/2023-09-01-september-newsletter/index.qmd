@@ -12,7 +12,13 @@ DisableComments: no
 
 ## Geospatial Community September Newsletter
 
-### Next workshop - Spatial autocorrelation -- September 21st, 2-4pm AEST
+### Drop-in help session -- September 6th, 2:30-4:30pm AEST
+
+Join us for a drop-in help session - Dr Jackson Stockbridge will give us a quick tutorial on inset mapping with {tmap} in R, and then we'll discuss discuss creating time series from netcdf files. 
+
+Fill out the [form](https://docs.google.com/forms/d/1Kwc3T2l2UcM-EnHWsz8kuakGVZ704ZVnmdXglgb2rhk/edit) if you want to discuss other topics.
+
+### Next workshop - Spatial autocorrelation -- September 28th, 2-4pm AEST
 
 Xiang Zhao from [Queensland University of Technology](https://www.qut.edu.au/) will lead a discussion on spatial autocorrelation, a challenging but important topic.
 
@@ -26,12 +32,18 @@ Last month Dr. Nena Bulovic from The University of Queensland gave us tips and t
 
 Although the cut-off for submissions has happened, you can contact myself as the Program Chair (program\@foss4g-oceania.org) if you wish to still submit a talk. This conference will be a great opportunity to meet the Open Source Geospatial Community in Oceania.
 
-![](foss.png){width=30%, height=60%}
+![](foss.png){width="30%," height="60%"}
 
 ##### New platform to unlock the [power of geospatial and AI](https://www.orbica.com/)
 
+## Jobs
+
+**Associate Research Fellow**, [Marine Habitat Mapping](https://www.seek.com.au/job/69244937?type=standout#sol=9784a6e1b3ab1d2b40c3809fa54698ecdae66579)
+
+**Senior Technical Officer**, [Marine](https://www.seek.com.au/job/69240985?type=standout#sol=99a8181651105ec8e691ff716a1a408d42ba79ea)
+
 ## Training
 
-**R courses** at the University of Queensland in February 2023, with a whole day on mapping and spatial analysis, register [here](https://smp.uq.edu.au/event/session/15723)
+**R courses** at the University of Queensland in February 2024, with a whole day on mapping and spatial analysis, register [here](https://smp.uq.edu.au/event/session/15723)
 
-![](r.png){width=40%, height=200%}
+![](r.png){width="40%," height="200%"}

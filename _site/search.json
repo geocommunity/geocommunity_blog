@@ -1166,14 +1166,14 @@
     "href": "posts/2023-09-01-september-newsletter/index.html",
     "title": "September Newsletter | Spatial Autocorrelation | Drop-in help session | Upcoming training",
     "section": "",
-    "text": "Xiang Zhao from Queensland University of Technology will lead a discussion on spatial autocorrelation, a challenging but important topic.\n\n\n\nLast month Dr. Nena Bulovic from The University of Queensland gave us tips and tricks for getting started processing spatial data on the High Performance Computer (HPC). Video recording and notes are available."
+    "text": "Join us for a drop-in help session - Dr Jackson Stockbridge will give us a quick tutorial on inset mapping with {tmap} in R, and then we’ll discuss discuss creating time series from netcdf files.\nFill out the form if you want to discuss other topics.\n\n\n\nXiang Zhao from Queensland University of Technology will lead a discussion on spatial autocorrelation, a challenging but important topic.\n\n\n\nLast month Dr. Nena Bulovic from The University of Queensland gave us tips and tricks for getting started processing spatial data on the High Performance Computer (HPC). Video recording and notes are available."
   },
   {
     "objectID": "posts/2023-09-01-september-newsletter/index.html#geospatial-community-september-newsletter",
     "href": "posts/2023-09-01-september-newsletter/index.html#geospatial-community-september-newsletter",
     "title": "September Newsletter | Spatial Autocorrelation | Drop-in help session | Upcoming training",
     "section": "",
-    "text": "Xiang Zhao from Queensland University of Technology will lead a discussion on spatial autocorrelation, a challenging but important topic.\n\n\n\nLast month Dr. Nena Bulovic from The University of Queensland gave us tips and tricks for getting started processing spatial data on the High Performance Computer (HPC). Video recording and notes are available."
+    "text": "Join us for a drop-in help session - Dr Jackson Stockbridge will give us a quick tutorial on inset mapping with {tmap} in R, and then we’ll discuss discuss creating time series from netcdf files.\nFill out the form if you want to discuss other topics.\n\n\n\nXiang Zhao from Queensland University of Technology will lead a discussion on spatial autocorrelation, a challenging but important topic.\n\n\n\nLast month Dr. Nena Bulovic from The University of Queensland gave us tips and tricks for getting started processing spatial data on the High Performance Computer (HPC). Video recording and notes are available."
   },
   {
     "objectID": "posts/2023-09-01-september-newsletter/index.html#geospatial-news",
@@ -1187,6 +1187,13 @@
     "href": "posts/2023-09-01-september-newsletter/index.html#training",
     "title": "September Newsletter | Spatial Autocorrelation | Drop-in help session | Upcoming training",
     "section": "Training",
-    "text": "Training\nR courses at the University of Queensland in February 2023, with a whole day on mapping and spatial analysis, register here"
+    "text": "Training\nR courses at the University of Queensland in February 2024, with a whole day on mapping and spatial analysis, register here"
+  },
+  {
+    "objectID": "posts/2023-09-01-september-newsletter/index.html#jobs",
+    "href": "posts/2023-09-01-september-newsletter/index.html#jobs",
+    "title": "September Newsletter | Spatial Autocorrelation | Drop-in help session | Upcoming training",
+    "section": "Jobs",
+    "text": "Jobs\nAssociate Research Fellow, Marine Habitat Mapping\nSenior Technical Officer, Marine"
   }
 ]
