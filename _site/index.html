@@ -74,7 +74,8 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
       searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
     };
 
@@ -243,11 +244,12 @@ Want to <strong>join</strong> our Geospatial Community workshops?
 </div>
 <section id="upcoming-workshop" class="level2" style="padding-top: 5px;">
 <h2 style="padding-top: 5px;" class="anchored" data-anchor-id="upcoming-workshop">Upcoming Workshop</h2>
-<section id="spatial-autocorrelation" class="level3">
-<h3 class="anchored" data-anchor-id="spatial-autocorrelation">Spatial Autocorrelation!</h3>
-<section id="september-28th-2-4pm-aest-on-teams" class="level4">
-<h4 class="anchored" data-anchor-id="september-28th-2-4pm-aest-on-teams">September 28th, 2-4pm AEST on Teams</h4>
-<p>Xiang Zhao from <a href="https://www.qut.edu.au/">Queensland University of Technology</a> will lead a discussion on spatial autocorrelation, a challenging but important topic.</p>
+<section id="large-spatial-data-manipulation-in-r" class="level3">
+<h3 class="anchored" data-anchor-id="large-spatial-data-manipulation-in-r">Large Spatial Data Manipulation in R!</h3>
+<section id="october-26th-2-4pm-aest-on-teams" class="level4">
+<h4 class="anchored" data-anchor-id="october-26th-2-4pm-aest-on-teams">October 26th, 2-4pm AEST on Teams</h4>
+<p><a href="https://experts.griffith.edu.au/37253-caitie-kuempel">Dr Caitie Kuempel</a> from <a href="https://www.griffith.edu.au/">Griffith University</a> will lead a workshop on large spatial data manipulation in R with {gdalUtils}. Read more from Caitie about the workshop below:</p>
+<p>Do you work with large spatial data sets? Have you spent hours waiting for data to reproject using packages like raster and terra? There may be a faster solution using the gdalUtils package. This package provides R wrappers for the Geospatial Data Abstraction (GDAL) Utilities, which is a translator library for raster and vector geospatial data formats. It uses command line syntax, making it a bit of a black box compared to other R packages, but can save you heaps of processing time. I don’t claim to be an expert – but I’ll introduce a function that I have found to be particularly useful: gdalwarp. I’ll walk through the syntax and how to use the gdalwarp function for reprojecting and transforming large data more efficiently. We will also have a group discussion on potentially useful packages and workflows for large spatial data manipulation.</p>
 </section>
 </section>
 </section>
@@ -255,27 +257,27 @@ Want to <strong>join</strong> our Geospatial Community workshops?
 <h2 class="anchored" data-anchor-id="last-post">Last Post</h2>
 <div id="listing-latest" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="newsletter" data-listing-date-sort="1693490400000" data-listing-file-modified-sort="1693290817173" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="quarto-post image-right" data-index="0" data-categories="newsletter" data-listing-date-sort="1696082400000" data-listing-file-modified-sort="1696144845614" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <div class="thumbnail">
-<p><a href="./posts/2023-09-01-september-newsletter/index.html"> <p class="card-img-top"><img src="posts/2023-09-01-september-newsletter/foss.png"  class="thumbnail-image card-img"/></p> </a></p>
+<p><a href="./posts/2023-09-01-october-newsletter/index.html"> <img src="./posts/2023-09-01-october-newsletter/image.png" class="thumbnail-image"> </a></p>
 </div>
 <div class="body">
-<a href="./posts/2023-09-01-september-newsletter/index.html">
+<a href="./posts/2023-09-01-october-newsletter/index.html">
 <h3 class="no-anchor listing-title">
-September Newsletter | Spatial Autocorrelation | Drop-in help session | Upcoming training
+October Newsletter | Drop-in help virtual help session | Workshop: Large raster manipulation
 </h3>
 <div class="listing-subtitle">
 
 </div>
 <div class="listing-description">
-Join us for a…
+Let us know ahead of time if you have any questions you’d like us to focus on in help-session by filling out this form.
 </div>
 </a>
 </div>
 <div class="metadata">
-<a href="./posts/2023-09-01-september-newsletter/index.html">
+<a href="./posts/2023-09-01-october-newsletter/index.html">
 <div class="listing-date">
-Sep 1, 2023
+Oct 1, 2023
 </div>
 <div class="listing-author">
 Christina
@@ -287,6 +289,9 @@ Christina
 <div class="listing-no-matching d-none">
 No matching items
 </div>
+<nav id="latest-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 </section>
 <section id="all-posts" class="level2">
@@ -329,7 +334,18 @@ No matching items
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="newsletter" data-listing-date-sort="1693490400000" data-listing-file-modified-sort="1693290817173" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="September Newsletter | Spatial Autocorrelation | Drop-in help session | Upcoming training" data-listing-filename-sort="index.qmd">
+<tr data-index="0" data-categories="newsletter" data-listing-date-sort="1696082400000" data-listing-file-modified-sort="1696144845614" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="October Newsletter | Drop-in help virtual help session | Workshop: Large raster manipulation" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-image"><img src="./posts/2023-09-01-october-newsletter/image.png" style="height: 60px;"></span>
+</td>
+<td>
+<span class="listing-date">Oct 1, 2023</span>
+</td>
+<td>
+<a href="./posts/2023-09-01-october-newsletter/index.html" class="title listing-title">October Newsletter | Drop-in help virtual help session | Workshop: Large raster manipulation</a>
+</td>
+</tr>
+<tr data-index="1" data-categories="newsletter" data-listing-date-sort="1693490400000" data-listing-file-modified-sort="1693290817173" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="September Newsletter | Spatial Autocorrelation | Drop-in help session | Upcoming training" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><p class="card-img-top"><img src="posts/2023-09-01-september-newsletter/foss.png" style="height: 60px;"  class="thumbnail-image card-img"/></p></span>
 </td>
@@ -340,7 +356,7 @@ No matching items
 <a href="./posts/2023-09-01-september-newsletter/index.html" class="title listing-title">September Newsletter | Spatial Autocorrelation | Drop-in help session | Upcoming training</a>
 </td>
 </tr>
-<tr data-index="1" data-categories="newsletter" data-listing-date-sort="1690812000000" data-listing-file-modified-sort="1690765344716" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="August Newsletter | Upcoming workshop: Spatial High Performance Computing | In-person catch-up | Geospatial conferences" data-listing-filename-sort="index.qmd">
+<tr data-index="2" data-categories="newsletter" data-listing-date-sort="1690812000000" data-listing-file-modified-sort="1690765344716" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="August Newsletter | Upcoming workshop: Spatial High Performance Computing | In-person catch-up | Geospatial conferences" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2023-08-01-august-newsletter/thumb.png" style="height: 60px;"></span>
 </td>
@@ -351,7 +367,7 @@ No matching items
 <a href="./posts/2023-08-01-august-newsletter/index.html" class="title listing-title">August Newsletter | Upcoming workshop: Spatial High Performance Computing | In-person catch-up | Geospatial conferences</a>
 </td>
 </tr>
-<tr data-index="2" data-categories="newsletter" data-listing-date-sort="1688392800000" data-listing-file-modified-sort="1688437383781" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="July Newsletter | Learn Google Earth Engine this month" data-listing-filename-sort="index.qmd">
+<tr data-index="3" data-categories="newsletter" data-listing-date-sort="1688392800000" data-listing-file-modified-sort="1688437383781" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="July Newsletter | Learn Google Earth Engine this month" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2023-07-04-july-newsletter/thumb.png" style="height: 60px;"></span>
 </td>
@@ -362,7 +378,7 @@ No matching items
 <a href="./posts/2023-07-04-july-newsletter/index.html" class="title listing-title">July Newsletter | Learn Google Earth Engine this month</a>
 </td>
 </tr>
-<tr data-index="3" data-categories="blog,tutorial,R" data-listing-date-sort="1685714400000" data-listing-file-modified-sort="1685748368735" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-title-sort="Extracting spatial data from web map servers in R" data-listing-filename-sort="index.qmd">
+<tr data-index="4" data-categories="blog,tutorial,R" data-listing-date-sort="1685714400000" data-listing-file-modified-sort="1685748368735" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-title-sort="Extracting spatial data from web map servers in R" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2023-06-04-wms-data-R/thumb.png" style="height: 60px;"></span>
 </td>
@@ -373,7 +389,18 @@ No matching items
 <a href="./posts/2023-06-04-wms-data-R/index.html" class="title listing-title">Extracting spatial data from web map servers in R</a>
 </td>
 </tr>
-<tr data-index="4" data-categories="newsletter" data-listing-date-sort="1685541600000" data-listing-file-modified-sort="1685746542292" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="June Newsletter | Drop-in sessions | More Python this month" data-listing-filename-sort="index.qmd">
+<tr data-index="5" data-categories="blog,tutorial,R" data-listing-date-sort="1685714400000" data-listing-file-modified-sort="1696128978103" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-title-sort="Creating inset maps using 'tmap'" data-listing-filename-sort="Inset_maps_tmap.qmd">
+<td>
+<span class="listing-image"><img src="./posts/2023-09-30-inset-mapping-tmap/thumb.png" style="height: 60px;"></span>
+</td>
+<td>
+<span class="listing-date">Jun 3, 2023</span>
+</td>
+<td>
+<a href="./posts/2023-09-30-inset-mapping-tmap/Inset_maps_tmap.html" class="title listing-title">Creating inset maps using ‘tmap’</a>
+</td>
+</tr>
+<tr data-index="6" data-categories="newsletter" data-listing-date-sort="1685541600000" data-listing-file-modified-sort="1685746542292" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="June Newsletter | Drop-in sessions | More Python this month" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2023-06-01-june-newsletter/thumb.jpg" style="height: 60px;"></span>
 </td>
@@ -384,7 +411,7 @@ No matching items
 <a href="./posts/2023-06-01-june-newsletter/index.html" class="title listing-title">June Newsletter | Drop-in sessions | More Python this month</a>
 </td>
 </tr>
-<tr data-index="5" data-categories="newsletter" data-listing-date-sort="1684159200000" data-listing-file-modified-sort="1685746542291" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-title-sort="Newsletter | Python + Folium | Help Sessions are Back!" data-listing-filename-sort="index.qmd">
+<tr data-index="7" data-categories="newsletter" data-listing-date-sort="1684159200000" data-listing-file-modified-sort="1685746542291" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-title-sort="Newsletter | Python + Folium | Help Sessions are Back!" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2023-05-04-May-Newsletter/folium-map.png" style="height: 60px;"></span>
 </td>
@@ -395,7 +422,7 @@ No matching items
 <a href="./posts/2023-05-04-May-Newsletter/index.html" class="title listing-title">Newsletter | Python + Folium | Help Sessions are Back!</a>
 </td>
 </tr>
-<tr data-index="6" data-categories="newsletter" data-listing-date-sort="1681221600000" data-listing-file-modified-sort="1685331503739" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Newsletter | April Workshop Rasters and Random Forests" data-listing-filename-sort="index.qmd">
+<tr data-index="8" data-categories="newsletter" data-listing-date-sort="1681221600000" data-listing-file-modified-sort="1685331503739" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Newsletter | April Workshop Rasters and Random Forests" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2023-04-07-April-Newsletter/thumb.jpg" style="height: 60px;"></span>
 </td>
@@ -406,7 +433,7 @@ No matching items
 <a href="./posts/2023-04-07-April-Newsletter/index.html" class="title listing-title">Newsletter | April Workshop Rasters and Random Forests</a>
 </td>
 </tr>
-<tr data-index="7" data-categories="Workshop" data-listing-date-sort="1679493600000" data-listing-file-modified-sort="1685331503738" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="R Spatial Basics" data-listing-filename-sort="index.qmd">
+<tr data-index="9" data-categories="Workshop" data-listing-date-sort="1679493600000" data-listing-file-modified-sort="1685331503738" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="R Spatial Basics" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2023-03-23-r-spatial-basics/thumb.png" style="height: 60px;"></span>
 </td>
@@ -417,7 +444,7 @@ No matching items
 <a href="./posts/2023-03-23-r-spatial-basics/index.html" class="title listing-title">R Spatial Basics</a>
 </td>
 </tr>
-<tr data-index="8" data-categories="testimonial" data-listing-date-sort="1679407200000" data-listing-file-modified-sort="1685331503738" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-title-sort="Community groups for Continuing Professional Development" data-listing-filename-sort="index.qmd">
+<tr data-index="10" data-categories="testimonial" data-listing-date-sort="1679407200000" data-listing-file-modified-sort="1685331503738" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-title-sort="Community groups for Continuing Professional Development" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2023-03-22-testimonial-chris-mancini/ChrisMancini-profile.jpg" style="height: 60px;"></span>
 </td>
@@ -428,7 +455,7 @@ No matching items
 <a href="./posts/2023-03-22-testimonial-chris-mancini/index.html" class="title listing-title">Community groups for Continuing Professional Development</a>
 </td>
 </tr>
-<tr data-index="9" data-categories="newsletter" data-listing-date-sort="1678370400000" data-listing-file-modified-sort="1685331503736" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-title-sort="Newsletter | R spatial basics | How to measure area | Survey results" data-listing-filename-sort="index.qmd">
+<tr data-index="11" data-categories="newsletter" data-listing-date-sort="1678370400000" data-listing-file-modified-sort="1685331503736" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-title-sort="Newsletter | R spatial basics | How to measure area | Survey results" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2023-03-10-newletter/survey-who-we-are.png" style="height: 60px;"></span>
 </td>
@@ -439,7 +466,7 @@ No matching items
 <a href="./posts/2023-03-10-newletter/index.html" class="title listing-title">Newsletter | R spatial basics | How to measure area | Survey results</a>
 </td>
 </tr>
-<tr data-index="10" data-categories="" data-listing-date-sort="1675519200000" data-listing-file-modified-sort="1685331503736" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-title-sort="Calculating areas with vector and raster data in R" data-listing-filename-sort="index.qmd">
+<tr data-index="12" data-categories="" data-listing-date-sort="1675519200000" data-listing-file-modified-sort="1685331503736" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-title-sort="Calculating areas with vector and raster data in R" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><p class="card-img-top"><img src="posts/2023-02-05-calculating-areas-with-vector-and-raster-data-in-r/images/Fig2.png" alt="Figure 1. Note This image is borrowed from here" style="height: 60px;"  class="thumbnail-image card-img"/></p></span>
 </td>
@@ -450,7 +477,7 @@ No matching items
 <a href="./posts/2023-02-05-calculating-areas-with-vector-and-raster-data-in-r/index.html" class="title listing-title">Calculating areas with vector and raster data in R</a>
 </td>
 </tr>
-<tr data-index="11" data-categories="newsletter" data-listing-date-sort="1674309600000" data-listing-file-modified-sort="1685331503733" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Newsletter | Happy New Year! | February meet-up | R Training" data-listing-filename-sort="index.qmd">
+<tr data-index="13" data-categories="newsletter" data-listing-date-sort="1674309600000" data-listing-file-modified-sort="1685331503733" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Newsletter | Happy New Year! | February meet-up | R Training" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2023-01-22-newsletter-happy-new-year-february-meet-up-r-training/explore.jpg" style="height: 60px;" alt="A red, google style location pin with a bush turkey inside. The logo of the Geospatial Community."></span>
 </td>
@@ -461,7 +488,7 @@ No matching items
 <a href="./posts/2023-01-22-newsletter-happy-new-year-february-meet-up-r-training/index.html" class="title listing-title">Newsletter | Happy New Year! | February meet-up | R Training</a>
 </td>
 </tr>
-<tr data-index="12" data-categories="website" data-listing-date-sort="1667397600000" data-listing-file-modified-sort="1685331503730" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-title-sort="Build a blog with Quarto, Git, and RStudio" data-listing-filename-sort="index.qmd">
+<tr data-index="14" data-categories="website" data-listing-date-sort="1667397600000" data-listing-file-modified-sort="1685331503730" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-title-sort="Build a blog with Quarto, Git, and RStudio" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><p class="card-img-top"><img src="posts/2022-11-03-build-blog-w-quarto/images/quarto.png" style="height: 60px;"  class="thumbnail-image card-img"/></p></span>
 </td>
@@ -472,7 +499,7 @@ No matching items
 <a href="./posts/2022-11-03-build-blog-w-quarto/index.html" class="title listing-title">Build a blog with Quarto, Git, and RStudio</a>
 </td>
 </tr>
-<tr data-index="13" data-categories="newsletter" data-listing-date-sort="1662645600000" data-listing-file-modified-sort="1685331503662" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Newsletter | Climate data blog post + problem solving session + conference in Fiji + more" data-listing-filename-sort="index.qmd">
+<tr data-index="15" data-categories="newsletter" data-listing-date-sort="1662645600000" data-listing-file-modified-sort="1685331503662" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Newsletter | Climate data blog post + problem solving session + conference in Fiji + more" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2022-09-09-newsletter/newsletter.jpg" style="height: 60px;"></span>
 </td>
@@ -483,7 +510,7 @@ No matching items
 <a href="./posts/2022-09-09-newsletter/index.html" class="title listing-title">Newsletter | Climate data blog post + problem solving session + conference in Fiji + more</a>
 </td>
 </tr>
-<tr data-index="14" data-categories="R,climate,raster" data-listing-date-sort="1661954400000" data-listing-file-modified-sort="1685331503662" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-title-sort="Analysing Climate data with R" data-listing-filename-sort="index.qmd">
+<tr data-index="16" data-categories="R,climate,raster" data-listing-date-sort="1661954400000" data-listing-file-modified-sort="1685331503662" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-title-sort="Analysing Climate data with R" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><p class="card-img-top"><img src="posts/2022-09-01-analysing-climate-data-with-r/index_files/figure-html/unnamed-chunk-6-1.png" style="height: 60px;"  class="thumbnail-image card-img"/></p></span>
 </td>
@@ -494,7 +521,7 @@ No matching items
 <a href="./posts/2022-09-01-analysing-climate-data-with-r/index.html" class="title listing-title">Analysing Climate data with R</a>
 </td>
 </tr>
-<tr data-index="15" data-categories="newsletter" data-listing-date-sort="1660572000000" data-listing-file-modified-sort="1685331503660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Newsletter | Analysing climate data with R +  Interactive Maps  + AEO Forum + more." data-listing-filename-sort="index.qmd">
+<tr data-index="17" data-categories="newsletter" data-listing-date-sort="1660572000000" data-listing-file-modified-sort="1685331503660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Newsletter | Analysing climate data with R +  Interactive Maps  + AEO Forum + more." data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2022-08-16-newsletter/computer.jpg" style="height: 60px;"></span>
 </td>
@@ -505,7 +532,7 @@ No matching items
 <a href="./posts/2022-08-16-newsletter/index.html" class="title listing-title">Newsletter | Analysing climate data with R + Interactive Maps + AEO Forum + more.</a>
 </td>
 </tr>
-<tr data-index="16" data-categories="tutorial,spatial,visualisation" data-listing-date-sort="1658239200000" data-listing-file-modified-sort="1685331503658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-title-sort="Interactive mapping with RShiny" data-listing-filename-sort="index.qmd">
+<tr data-index="18" data-categories="tutorial,spatial,visualisation" data-listing-date-sort="1658239200000" data-listing-file-modified-sort="1685331503658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-title-sort="Interactive mapping with RShiny" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2022-07-20-intro-interactive-mapping-rshiny/shiny.png" style="height: 60px;"></span>
 </td>
@@ -516,7 +543,7 @@ No matching items
 <a href="./posts/2022-07-20-intro-interactive-mapping-rshiny/index.html" class="title listing-title">Interactive mapping with RShiny</a>
 </td>
 </tr>
-<tr data-index="17" data-categories="newsletter" data-listing-date-sort="1657720800000" data-listing-file-modified-sort="1685331503658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Newsletter | Mapping interactively +  R for ecologists  + Data wrangling + more." data-listing-filename-sort="index.qmd">
+<tr data-index="19" data-categories="newsletter" data-listing-date-sort="1657720800000" data-listing-file-modified-sort="1685331503658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Newsletter | Mapping interactively +  R for ecologists  + Data wrangling + more." data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/progress.jpg" style="height: 60px;"></span>
 </td>
@@ -527,7 +554,7 @@ No matching items
 <a href="./posts/2022-07-14-newsletter-mapping-interactively-r-for-ecologists-data-wrangling-more/index.html" class="title listing-title">Newsletter | Mapping interactively + R for ecologists + Data wrangling + more.</a>
 </td>
 </tr>
-<tr data-index="18" data-categories="" data-listing-date-sort="1657116000000" data-listing-file-modified-sort="1685331503658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-title-sort="Problem Solving Session II" data-listing-filename-sort="index.qmd">
+<tr data-index="20" data-categories="" data-listing-date-sort="1657116000000" data-listing-file-modified-sort="1685331503658" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-title-sort="Problem Solving Session II" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><p class="card-img-top"><img src="https://m.media-amazon.com/images/I/81nKJATxK2L._AC_SX679_.jpg" style="height: 60px;"  class="thumbnail-image card-img"/></p></span>
 </td>
@@ -538,7 +565,7 @@ No matching items
 <a href="./posts/2022-07-07-problem-solving-session-ii/index.html" class="title listing-title">Problem Solving Session II</a>
 </td>
 </tr>
-<tr data-index="19" data-categories="" data-listing-date-sort="1653487200000" data-listing-file-modified-sort="1685331503657" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-title-sort="Problem Solving Session I" data-listing-filename-sort="index.qmd">
+<tr data-index="21" data-categories="" data-listing-date-sort="1653487200000" data-listing-file-modified-sort="1685331503657" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-title-sort="Problem Solving Session I" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2022-05-26-problem-solving-session/images/katharina.PNG" style="height: 60px;"></span>
 </td>
@@ -549,7 +576,7 @@ No matching items
 <a href="./posts/2022-05-26-problem-solving-session/index.html" class="title listing-title">Problem Solving Session I</a>
 </td>
 </tr>
-<tr data-index="20" data-categories="" data-listing-date-sort="1650808800000" data-listing-file-modified-sort="1685331503656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Cloud computing with Open Data Cube and Python" data-listing-filename-sort="index.qmd">
+<tr data-index="22" data-categories="" data-listing-date-sort="1650808800000" data-listing-file-modified-sort="1685331503656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Cloud computing with Open Data Cube and Python" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><p class="card-img-top"><img src="https://static.wixstatic.com/media/8959d6_98a1d74703d946ecab030b32f53db883~mv2.png/v1/fill/w_268,h_68,al_c,usm_0.66_1.00_0.01,enc_auto/f9d4ea_7a2d1d0c69ad4da0a2f48b69bc481612_.png" style="height: 60px;"  class="thumbnail-image card-img"/></p></span>
 </td>
@@ -560,7 +587,7 @@ No matching items
 <a href="./posts/2022-04-28-cloud-computing-with-open-data-cube-and-python/index.html" class="title listing-title">Cloud computing with Open Data Cube and Python</a>
 </td>
 </tr>
-<tr data-index="21" data-categories="spatial,R,tutorial" data-listing-date-sort="1648648800000" data-listing-file-modified-sort="1685331503643" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-title-sort="Introduction to tidy spatial networks" data-listing-filename-sort="index.qmd">
+<tr data-index="23" data-categories="spatial,R,tutorial" data-listing-date-sort="1648648800000" data-listing-file-modified-sort="1685331503643" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-title-sort="Introduction to tidy spatial networks" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2022-03-31-spatial-networks/images/paste-8141125C.png" style="height: 60px;"></span>
 </td>
@@ -571,7 +598,7 @@ No matching items
 <a href="./posts/2022-03-31-spatial-networks/index.html" class="title listing-title">Introduction to tidy spatial networks</a>
 </td>
 </tr>
-<tr data-index="22" data-categories="spatial,R,terra" data-listing-date-sort="1645624800000" data-listing-file-modified-sort="1685331503640" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-title-sort="Basic Raster Analysis with R" data-listing-filename-sort="index.qmd">
+<tr data-index="24" data-categories="spatial,R,terra" data-listing-date-sort="1645624800000" data-listing-file-modified-sort="1685331503640" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-title-sort="Basic Raster Analysis with R" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2022-02-23-raster-analysis/images/layer_output.PNG" style="height: 60px;"></span>
 </td>
@@ -582,7 +609,7 @@ No matching items
 <a href="./posts/2022-02-23-raster-analysis/index.html" class="title listing-title">Basic Raster Analysis with R</a>
 </td>
 </tr>
-<tr data-index="23" data-categories="website,tutorial" data-listing-date-sort="1637589600000" data-listing-file-modified-sort="1685331503630" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21" data-listing-title-sort="How to contribute a post (using blogdown on our old site)" data-listing-filename-sort="index.qmd">
+<tr data-index="25" data-categories="website,tutorial" data-listing-date-sort="1637589600000" data-listing-file-modified-sort="1685331503630" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="21" data-listing-title-sort="How to contribute a post (using blogdown on our old site)" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><img src="./posts/2021-11-23-creating-a-post/logo.png" style="height: 60px;"></span>
 </td>
@@ -593,7 +620,7 @@ No matching items
 <a href="./posts/2021-11-23-creating-a-post/index.html" class="title listing-title">How to contribute a post (using blogdown on our old site)</a>
 </td>
 </tr>
-<tr data-index="24" data-categories="tutorial,spatial,visualisation" data-listing-date-sort="1635343200000" data-listing-file-modified-sort="1685331503597" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-title-sort="Creating a geospatial blog with blogdown (on our old site)" data-listing-filename-sort="index.qmd">
+<tr data-index="26" data-categories="tutorial,spatial,visualisation" data-listing-date-sort="1635343200000" data-listing-file-modified-sort="1685331503597" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-title-sort="Creating a geospatial blog with blogdown (on our old site)" data-listing-filename-sort="index.qmd">
 <td>
 <span class="listing-image"><p class="card-img-top"><img src="posts/2021-10-28-creating-a-geospatial-blog-with-blogdown/index_files/figure-html/unnamed-chunk-6-1.png" style="height: 60px;"  class="thumbnail-image card-img"/></p></span>
 </td>
