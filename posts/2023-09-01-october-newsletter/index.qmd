@@ -29,7 +29,7 @@ Zhao Xiang from Queensland University of Technology gave a stimulating presentat
 
 ### New blog post on inset mapping with {tmap} by Dr Jackson Stockbridge
 
-Dr Jackson Stockbridge led an overview of inset mapping with {tmap} at our September drop-in help session, check-out the blog [here]
+Dr Jackson Stockbridge led an overview of inset mapping with {tmap} at our September drop-in help session, check-out the blog [here](https://brisbane-geocommunity.netlify.app/posts/2023-09-30-inset-mapping-tmap/)
 
 ## Training
 
