@@ -2,7 +2,7 @@
 title: "Creating inset maps using 'tmap'"
 editor: visual
 author: 'Dr Jackson Stockbridge'
-date: "<2023-06-03>"
+date: "<2023-09-30>"
 toc: true
 toc-depth: 4
 image: thumb.png
