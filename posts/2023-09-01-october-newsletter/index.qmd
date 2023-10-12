@@ -17,7 +17,7 @@ DisableComments: no
 
 Let us know ahead of time if you have any questions you'd like us to focus on in help-session by filling out this [form](https://docs.google.com/forms/d/1Kwc3T2l2UcM-EnHWsz8kuakGVZ704ZVnmdXglgb2rhk/edit).
 
-### Next workshop, Large raster manipulation with Dr Caitie Kuempel -- October 26th, 2-4pm AEST
+### Next workshop, Large raster manipulation with Dr Caitie Kuempel -- October 31th, 2-4pm AEST
 
 [Dr Caitie Kuempel](https://experts.griffith.edu.au/37253-caitie-kuempel) from [Griffith University](https://www.griffith.edu.au/) will lead a workshop on large spatial data manipulation in R with {gdalUtils}. Read more from Caitie about the workshop below:
 
