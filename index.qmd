@@ -80,11 +80,7 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 
 ## Upcoming Workshop {style="padding-top: 5px;"}
 
-### Research Bazaar!
-
-#### November 21st-23rd, in person event
-
-If you're based in or near Brisbane, join us in person at the [Research Bazaar Queensland](https://resbaz.github.io/resbaz2023qld/). Check-out the schedule and register [here](https://resbaz.github.io/resbaz2023qld/schedule/) - there are workshops on a wide diversity of topics in several programming languages. The Geospatial Community will be running a short **intro to R Spatial** on November 23rd. Hope to see you there!
+### Happy Holidays! See you in 2024!
 
 ## Last Post
 

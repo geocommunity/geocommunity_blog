@@ -1,0 +1,31 @@
+---
+title: "December Newsletter | End of Year re-cap"
+editor: visual
+author: 'Mitch'
+date: "2023-12-23"
+slug: newsletter-dec-2023
+categories:
+  - newsletter
+tags: []
+DisableComments: no
+---
+
+## End of Year re-cap from Geospatial Community's President, Mitch Rudge
+
+Hi everyone,
+
+It's been a huge year for our geospatial community (now Geospatial Share -- see below). We hosted so many interesting and informative workshops. In **February and March**, Christina Buelow from Griffith Uni showed us how to calculate areas accurately in R using both vector and raster data, and ran through some R Spatial Basics. In **April**, Jacinta Holloway-Brown taught us how to implement spatial random forests. In **May**, Tony Howes from the UQ showed us how to create Interactive Maps with Python and Folium. In **June**, César Herrara Acosta from Griffith University walked us through some of his work with computer vision in Python. In **July**, Martin Peikert from Queensland University of Technology will provide an introduction to Google Earth Engine. In **August**, Nena Bulovic demonstrated the application of High Performance Computing (HPC) for spatial analysis. In **September**, Xiang Zhao from the Queensland University of Technology Led an interesting discussion about spatial autocorrelation. In **October**, Caitie Kuempel walked us through her use of gdalUtils for large raster manipulation.
+
+On top of our monthly workshops, we also hosted a number of other events including, several drop-in help sessions; some ad-hoc short form sessions + blogs including Creating inset maps with tmap with Jackson Stockbridge and a presentation about Community groups for Continuing Professional Development with Chris Mancini; an in-person catchup; and a workshop at the 2023 Research Bazaar!
+
+A huge thanks to everyone who presented and attended workshops, maintained and updated the website, organised workshops, wrote blog posts and newsletters, and coordinated and attended in-person events. This is all voluntary, and shows a real commitment to sharing knowledge and helping others 😊
+
+Looking ahead to 2024, we have some very exciting opportunities. At long last, we have become a registered charity. After some conversations within the organising committee, we settled on "Geospatial Share", which we thought gets to the heart of what the group is all about. The registration opens a number of opportunities, including eligibility for small grants, a new .org website domain, and a proper youtube channel. As an Incorporated association, we will also hold an AGM and elect members to the Management committee. For now, the official management committee consists of Myself as President, Christina Buelow as Secretary and Nicholas Wiggins as Treasurer (not to be confused with the organising committee). Next year, we will also look to grow our collaborations, starting with some planned joint workshops and activities with the Royal Geographic Society of QLD (RGSQ).
+
+If you have speakers you would like to hear from, subjects you are interested in, ideas for collaborations or events, or want to get more involved in running the community, please get in touch.
+
+Very much looking forward to next year, but for now, I hope everyone takes a well-earned break over Christmas. Oh, and it wouldn't be 2023 without some GenAI -- so here we go:
+
+![](ai-img.png)
+
+*Make an image representing a community of likeminded people who are all committed to sharing geospatial knowledge -- called Geospatial Share. And make the background Brisbane, Australia.*
