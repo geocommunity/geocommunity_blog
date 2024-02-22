@@ -16,7 +16,7 @@ Fortunately, there a wealth of freely available tools can help to complete these
 
 Unfortunately, a steep learning curve is often required to apply these tools, particularly when we don't all have a strong background in coding, GIS or remote sensing.
 
-The Geospatial Community tries to make this process a bit less painful, by sharing our experiences, skills and tricks in a friendly and inclusive environment.
+GeoSpatial Share tries to make this process a bit less painful, by sharing our experiences, skills and tricks in a friendly and inclusive environment.
 
 👩‍💻 We are based in Brisbane, Australia run monthly, online, skill-sharing tutorial sessions where a member of the community teaches us something they have learned along the way.
 
@@ -33,22 +33,28 @@ If you want to get involved, just email us at uqgeo.community \@ gmail dot com
 ::: columns
 ::: {.column width="17%"}
 **Mitch Rudge**
+President
 :::
+
 ::: {.column width="3%"}
 <!-- empty column to create gap -->
 :::
+
 ::: {.column width="80%"}
-Mitch created the GeoSpatial Community, completed his PhD at UQ, and now works as a Natural Capital Data Scientist at Bush Heritage Australia.
+Mitch created the original GeoSpatial Community, completed his PhD at UQ, and now works as a Natural Capital Data Scientist at Bush Heritage Australia.
 :::
 :::
 
 ::: columns
 ::: {.column width="17%"}
 **Christina Buelow**
+Secretary
 :::
+
 ::: {.column width="3%"}
 <!-- empty column to create gap -->
 :::
+
 ::: {.column width="80%"}
 Christina is a Research Fellow at the Australian Rivers Institute at Griffith University
 :::
@@ -56,23 +62,14 @@ Christina is a Research Fellow at the Australian Rivers Institute at Griffith Un
 
 ::: columns
 ::: {.column width="17%"}
-**Catherine Kim**
-:::
-::: {.column width="3%"}
-<!-- empty column to create gap -->
-:::
-::: {.column width="80%"}
-Cat is a marine scientist working on the Reef Restoration and Adaptation Program at QUT.
-:::
+**Nicholas Wiggins**
+Treasurer
 :::
 
-::: columns
-::: {.column width="17%"}
-**Nicholas Wiggins**
-:::
 ::: {.column width="3%"}
 <!-- empty column to create gap -->
 :::
+
 ::: {.column width="80%"}
 Nick is a Technology Trainer at UQ Library and runs the [UQ R User Group](https://uqrug.netlify.app/)
 :::
@@ -80,11 +77,27 @@ Nick is a Technology Trainer at UQ Library and runs the [UQ R User Group](https:
 
 ::: columns
 ::: {.column width="17%"}
-**Annie (Ngoc) Nguyen**
+**Catherine Kim**
 :::
+
 ::: {.column width="3%"}
 <!-- empty column to create gap -->
 :::
+
+::: {.column width="80%"}
+Cat is a marine scientist working on the Reef Restoration and Adaptation Program at QUT.
+:::
+:::
+
+::: columns
+::: {.column width="17%"}
+**Annie (Ngoc) Nguyen**
+:::
+
+::: {.column width="3%"}
+<!-- empty column to create gap -->
+:::
+
 ::: {.column width="80%"}
 Annie is a PhD student in the School of Natural Science at UTAS.
 :::
@@ -94,12 +107,13 @@ Annie is a PhD student in the School of Natural Science at UTAS.
 ::: {.column width="17%"}
 **Kai Ching Cheong**
 :::
+
 ::: {.column width="3%"}
 <!-- empty column to create gap -->
 :::
+
 ::: {.column width="80%"}
-Kai Ching is a researcher at Griffith University researching the impact of mangrove habitat losses and its ecosystem services
-degradation in aspect of biodiversity conservation in Central Indo-Pacific.
+Kai Ching is a researcher at Griffith University researching the impact of mangrove habitat losses and its ecosystem services degradation in aspect of biodiversity conservation in Central Indo-Pacific.
 :::
 :::
 
@@ -107,9 +121,11 @@ degradation in aspect of biodiversity conservation in Central Indo-Pacific.
 ::: {.column width="17%"}
 **Jason Dail**
 :::
+
 ::: {.column width="3%"}
 <!-- empty column to create gap -->
 :::
+
 ::: {.column width="80%"}
 Jason is a PhD Candidate at UQ focusing on natural resource management, ecosystem services, ecosystem based adaptation, geomorphology, GIS, Remote Sensing and Physical Geography.
 :::
@@ -119,9 +135,11 @@ Jason is a PhD Candidate at UQ focusing on natural resource management, ecosyste
 ::: {.column width="17%"}
 **Xiang Zhao**
 :::
+
 ::: {.column width="3%"}
 <!-- empty column to create gap -->
 :::
+
 ::: {.column width="80%"}
 Zhao is a research student working on optimal biodiversity surveying and monitoring design problem in terrestrial Antarctica.
 :::
@@ -131,9 +149,11 @@ Zhao is a research student working on optimal biodiversity surveying and monitor
 ::: {.column width="17%"}
 **Tanya Dodgen**
 :::
+
 ::: {.column width="3%"}
 <!-- empty column to create gap -->
 :::
+
 ::: {.column width="80%"}
 Tanya is a PhD student at QUT investigating coral reef rubble with a focus on its geographical distribution and how it plays into reef recovery.
 :::

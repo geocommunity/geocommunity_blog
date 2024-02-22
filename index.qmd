@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the Geospatial Community"
+title: "Welcome to GeoSpatial Share"
 image: turkeypin.svg
 
 listing:
@@ -52,7 +52,7 @@ div.quarto-post {
   </div>
 
   <div style="display: inline-block;width: 70%;">
-    <h1 class="title">Geospatial Community</h1>
+    <h1 class="title">GeoSpatial Share</h1>
   </div>
 </div>
 ```
@@ -67,7 +67,7 @@ div.quarto-post {
 Our mission is to build a **supportive** and **inclusive** community where students, researchers, and professionals can **grow their geospatial skills together**. 🌱
 
 ::: {.callout-note icon="false" collapse="true"}
-# Want to **join** our Geospatial Community workshops?
+# Want to **join** our GeoSpatial Share workshops?
 
 <br> We run **monthly skill sharing tutorial sessions** where a member of our community teaches us something they have learned along the way.
 
