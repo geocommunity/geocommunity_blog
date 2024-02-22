@@ -1,5 +1,5 @@
-# geocommunity_blog
-This repository is used to create the [Geospatial Community website and blog](https://brisbane-geocommunity.netlify.app/).
+# GeoSpatial Share Blog
+This repository is used to create the [GeoSpatial Share website and blog](https://brisbane-geocommunity.netlify.app/).
 
 To make our events enjoyable, safe and welcoming, we have a [Code of Conduct](https://github.com/geocommunity/geocommunity_blog/blob/main/Code_of_Conduct.md)
 
