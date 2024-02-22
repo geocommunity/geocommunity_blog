@@ -1,0 +1,31 @@
+---
+title: "February Newsletter | Drop-in session soon! Tell us what you need help with"
+editor: visual
+author: 'Christina'
+date: "2024-02-22"
+slug: newsletter-feb-2024
+categories:
+  - newsletter
+tags: []
+DisableComments: no
+---
+
+## Kick-starting another great year of Geospatial workshops
+
+Hi everyone, happy 2024! (Yes, I am aware it's almost March already 😬).
+
+We've had a slow start getting organised with workshops this year, but we're going to kick things off with **drop-in session in two weeks time (Thursday, March 7th, 2-4pm AEST)**. We'll send a calendar invite with teams link by email.
+
+Fill out [this form](https://docs.google.com/forms/d/1Kwc3T2l2UcM-EnHWsz8kuakGVZ704ZVnmdXglgb2rhk/edit) to let us know if there is anything specific you could use help on, and we'll try to find someone with expertise to join the session.
+
+## Upcoming workshops
+
+We're lining up speakers for April and May on some exciting topics, more details to be announced soon.
+
+Be sure to let us know if you have any **'hero's'** in the field that you would like to have give a workshop or seminar to the group, and we'll do our best to line it up.
+
+We'll also be reaching out to individuals who mentioned they would like to speak to the group when they joined they joined the listserv, but feel free to **reach out to us directly if you'd like to share some of your expertise**. Workshops that come from within the community are always great!
+
+See you soon at the next event!
+
+![](map-image.png)
