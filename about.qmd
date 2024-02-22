@@ -32,8 +32,7 @@ If you want to get involved, just email us at uqgeo.community \@ gmail dot com
 
 ::: columns
 ::: {.column width="17%"}
-**Mitch Rudge**
-President
+**Mitch Rudge** President
 :::
 
 ::: {.column width="3%"}
@@ -47,8 +46,7 @@ Mitch created the original GeoSpatial Community, completed his PhD at UQ, and no
 
 ::: columns
 ::: {.column width="17%"}
-**Christina Buelow**
-Secretary
+**Christina Buelow** Secretary
 :::
 
 ::: {.column width="3%"}
@@ -56,14 +54,13 @@ Secretary
 :::
 
 ::: {.column width="80%"}
-Christina is a Research Fellow at the Australian Rivers Institute at Griffith University
+Christina is a Research Fellow at the Australian Rivers Institute at Griffith University, you can find out more about her research [here](https://cabuelow.github.io/personal-website/)
 :::
 :::
 
 ::: columns
 ::: {.column width="17%"}
-**Nicholas Wiggins**
-Treasurer
+**Nicholas Wiggins** Treasurer
 :::
 
 ::: {.column width="3%"}
