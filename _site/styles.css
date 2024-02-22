@@ -13,7 +13,8 @@ height: 100% !important;
 .card-img{
   width: 100px;
 }
-img {
+
+.listing-image img {
     width: 100px;
     height: 100% !important;
     max-height: 100px !important;
