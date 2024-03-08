@@ -1,0 +1,14 @@
+{
+  "hash": "bac012e3df23d25760c7d5a4e5cbb062",
+  "result": {
+    "markdown": "---\ntitle: \"Mapping with python and folium\"\nauthor: \"Catherine Kim\"\neditor: source\n---\n\n::: {.cell}\n\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
