@@ -2,7 +2,7 @@
 title: "May Newsletter | Upcoming workshop: Animal tracking with Scott Forrest"
 editor: visual
 author: 'Christina'
-date: "2024-02-22"
+date: "2024-05-13"
 slug: newsletter-may-2024
 categories:
   - newsletter
