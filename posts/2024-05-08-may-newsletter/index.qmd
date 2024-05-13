@@ -1,0 +1,41 @@
+---
+title: "May Newsletter | Upcoming workshop: Animal tracking with Scott Forrest"
+editor: visual
+author: 'Christina'
+date: "2024-02-22"
+slug: newsletter-may-2024
+categories:
+  - newsletter
+tags: []
+DisableComments: no
+---
+
+## Workshop Thursday May 23rd (2-4pm) AEST: Animal tracking with Scott Forrest
+
+**What**: Working with Animal Tracking Data
+**Who**: Scott Forrest, PhD Candidate, QUT
+**When**: May 23rd, 2-4pm
+**Where**: Hybrid on Teams (see calendar invitation) and QUT Gardens Point R310, see map, 3rd floor left at the top of the stairs
+ 
+Animal GPS tracking data is a rich source of information to understand animal species, and has provided countless behavioural and ecological insights. Animal-mounted GPS devices are also becoming cheaper and more technologically advanced, leading to more animal-tracking studies collecting a higher quantity of data. Movebank, an open-access repository of animal GPS tracking data, currently has over 6 billion animal locations of 200,000 animals from 1,383 species, and over 11 million locations are being added every day. Processing animal movement data can also be challenging - animal movement data is spatially and temporally autocorrelated, locations can be irregular and often fail to be recorded, and there can be known or unknown biases which should be considered. Due to, and in spite of these complexities, numerous approaches have been developed that fall under the umbrella of 'movement ecology', which can be divided into broad categories such as space use, resource selection, and behavioural classification. In this workshop I'll provide an overview of popular methods in the 'movement ecologist toolbox', and we will work through practical examples using R and open-access data. No previous experience with animal GPS tracking data is necessary.
+
+**Software Requirements**
+
+If you would like to follow along please download the R programming language and RStudio before the session. We will be using the amt, lubridate, raster, terra, beepr, tictoc, jtools, and patchwork R packages if you would like to install these packages beforehand.
+
+## Upcoming workshops
+
+Next workshop, **Intro to Terra in R with Jason Flower**.
+
+What: Intro to Terra in R
+Who: Jason Flower, University of California: https://github.com/jflowernet
+When: May 13th, 2-4pm
+Where: Hybrid - Teams and in person at QUT (room TBD)
+
+Rasters are commonly used to represent spatial data such as elevation and temperature. This workshop will give a gentle introduction to using the R package terra to manipulate and plot raster data. No prior knowledge of spatial data is needed, but basic familiarity with R is assumed. For those migrating from terra 's predecessor package raster, I will describe some of the changes to functions.
+
+## Training
+
+[Open Science Training](https://nasa.github.io/Transform-to-Open-Science/take-os101/)
+
+![](image.png)
