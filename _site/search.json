@@ -1327,7 +1327,7 @@
     "href": "posts/2024-05-08-may-newsletter/index.html#upcoming-workshops",
     "title": "May Newsletter | Upcoming workshop: Animal tracking with Scott Forrest",
     "section": "Upcoming workshops",
-    "text": "Upcoming workshops\nNext workshop, Intro to Terra in R with Jason Flower.\nWhat: Intro to Terra in R Who: Jason Flower, University of California: https://github.com/jflowernet When: May 13th, 2-4pm Where: Hybrid - Teams and in person at QUT (room TBD)\nRasters are commonly used to represent spatial data such as elevation and temperature. This workshop will give a gentle introduction to using the R package terra to manipulate and plot raster data. No prior knowledge of spatial data is needed, but basic familiarity with R is assumed. For those migrating from terra ’s predecessor package raster, I will describe some of the changes to functions."
+    "text": "Upcoming workshops\nNext workshop, Intro to Terra in R with Jason Flower.\nWhat: Intro to Terra in R\nWho: Jason Flower, University of California\nWhen: May 13th, 2-4pm\nWhere: Hybrid - Teams and in person at QUT (room TBD)\nRasters are commonly used to represent spatial data such as elevation and temperature. This workshop will give a gentle introduction to using the R package terra to manipulate and plot raster data. No prior knowledge of spatial data is needed, but basic familiarity with R is assumed. For those migrating from terra ’s predecessor package raster, I will describe some of the changes to functions."
   },
   {
     "objectID": "posts/2024-05-08-may-newsletter/index.html#training",

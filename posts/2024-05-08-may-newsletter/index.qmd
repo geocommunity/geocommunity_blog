@@ -30,10 +30,13 @@ If you would like to follow along please download the R programming language and
 
 Next workshop, **Intro to Terra in R with Jason Flower**.
 
-What: Intro to Terra in R
-Who: Jason Flower, University of California: https://github.com/jflowernet
-When: May 13th, 2-4pm
-Where: Hybrid - Teams and in person at QUT (room TBD)
+**What:** Intro to Terra in R
+
+**Who:** [Jason Flower](https://github.com/jflowernet), University of California
+
+**When:** May 13th, 2-4pm
+
+**Where:** Hybrid - Teams and in person at QUT (room TBD)
 
 Rasters are commonly used to represent spatial data such as elevation and temperature. This workshop will give a gentle introduction to using the R package terra to manipulate and plot raster data. No prior knowledge of spatial data is needed, but basic familiarity with R is assumed. For those migrating from terra 's predecessor package raster, I will describe some of the changes to functions.
 
