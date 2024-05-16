@@ -1,0 +1,506 @@
+---
+title: "Working with Animal Tracking Data"
+editor: visual
+author: 'Scott Forrest'
+date: "2024-05-16"
+draft: true
+toc: true
+toc-depth: 4
+slug: may-2024
+categories:
+  - blog
+  - tutorial
+  - R
+tags: []
+execute:
+  warning: false
+---
+
+# Case Study: Kākā
+
+PICTURE
+
+## Kākā data preparation for step selection functions
+
+Here we are preparing GPS data of kākā at Orokonui Ecosanctuary for use in individual-level and population-level step selection functions (SSFs). We will be using the `amt` package to prepare the data for fitting the step selection functions [@Signer2019-fi].
+
+### Load packages and import data
+
+```{r}
+#| warning: false
+
+library(tidyverse)
+packages <- c("amt", "lubridate", "raster", "terra", "Rfast", "beepr", "tictoc")
+walk(packages, require, character.only = T)
+
+```
+
+We also remove a couple obvious errors. The majority of erroneous locations were removed with the Shimada et al 2012 speed filter, but we've hard-coded a couple of additional errors to remove.
+
+```{r}
+#| echo: true
+#| output: false
+#| warning: false
+
+T05 <- read_csv("data/CSV input data - dd_speed_6/T45505_dd_speed_6.csv") %>% filter(...1 != 1448)
+T06 <- read_csv("data/CSV input data - dd_speed_6/T45506_dd_speed_6.csv") %>% mutate(id = 45506)
+T07 <- read_csv("data/CSV input data - dd_speed_6/T45507_dd_speed_6.csv") %>% mutate(id = 45507)
+T08 <- read_csv("data/CSV input data - dd_speed_6/T45508_dd_speed_6.csv") %>% mutate(id = 45508)
+T09 <- read_csv("data/CSV input data - dd_speed_6/T45509_dd_speed_6.csv") %>% mutate(id = 45509)
+T10 <- read_csv("data/CSV input data - dd_speed_6/T45510_dd_speed_6.csv") %>% mutate(id = 45510)
+T11 <- read_csv("data/CSV input data - dd_speed_6/T45511_dd_speed_6.csv") %>% mutate(id = 45511)
+T12 <- read_csv("data/CSV input data - dd_speed_6/T45512_dd_speed_6.csv") %>% mutate(id = 45512) %>% filter(...1 != 186)
+T13 <- read_csv("data/CSV input data - dd_speed_6/T45513_dd_speed_6.csv") %>% mutate(id = 45513)
+T14 <- read_csv("data/CSV input data - dd_speed_6/T45514_dd_speed_6.csv") %>% mutate(id = 45514)
+
+```
+
+### Prepare data for step selection functions
+
+The GPS device T05 had a sampling interval of mostly 2 hours, rather than 3 for the other tags, so we will create a track object with T05 first and them combine with the other data after.
+
+There were also 15-minute locations for all tags, although for step selection functions it is best to have regularly sampled data, so we will remove those for these analyses.
+
+We will be using the `amt` package to prepare the data for fitting the step selection functions [@Signer2019-fi].
+
+The `steps` function will suggest that we create a `steps_by_burst` object. A `steps_by_burst` object keeps only the 'bursts' when there are more than 3 regular locations in a row, and calculates the step lengths and turning angles for these bursts. This will be more important we are particularly interesting in the movement dynamics (and have regular data), but in our case we want to keep as much data as possible for the habitat selection parameters, so we'll keep all of the data by using a simpler `steps` object. This will mean that we will be calculating step lengths and turning angles for when our time intervals between GPS fixes are longer than 2 (for tag T05) or 3 hours (for the other tags).
+
+```{r}
+# make an amt track object and project to NZTM
+T05t <- T05 %>% make_track(lon, lat, DateTime, crs = 4326) %>% 
+  transform_coords(crs_to = 2193)
+
+# quick check that the data looks ok
+plot(T05t$x_, T05t$y_)
+
+# get a summary of the GPS sampling intervals
+summarize_sampling_rate(T05t)
+
+# regularise the track to 2 hour intervals and create a steps object
+# a steps object has step lengths (sl_) and turning angles (ta_)
+T05_steps <- T05t %>% 
+  track_resample(rate = hours(2), tolerance = minutes(10)) %>% 
+  steps()
+
+# have a look at the data
+head(T05_steps)
+```
+
+Now we follow the same process for the other 9 GPS devices.
+
+```{r}
+# combine the data frames
+T_all <- rbind(T06, T07, T08, T09, T10, T11, T12, T13, T14)
+```
+
+We then nest the data by ID, which makes it straightforward to run the same function over all the IDs.
+
+```{r}
+# nest by id
+dat_all <- T_all %>% nest(data = -id)
+
+# add a variable for the sex of the kākā
+dat_all$sex <- c("m", "m", "f", "f", "f", "f", "m", "m", "f")
+
+# now we have a list-column where each row contains a dataset
+head(dat_all)
+```
+
+Now that we have nested data, we can 'map' a function over each dataset.
+
+First we create `track` objects.
+
+```{r}
+# create a new list-column that contains `track` objects
+dat_all <- dat_all %>% 
+  mutate(trk = map(data, function(d) {
+    make_track(d, lon, lat, DateTime, crs = 4326) %>% transform_coords(crs_to = 2193)
+  }))
+
+head(dat_all)
+```
+
+And then we regularise the track to 3-hour intervals, which we use to create `steps` objects.
+
+```{r}
+# create new list-columns that contains cleaned data objects (`dat_clean`) and `steps` objects
+dat_all <- dat_all %>% 
+  mutate(dat_clean = map(trk,
+                         ~ {.x %>% track_resample(rate = hours(3), tolerance = minutes(10))}), 
+         stps = map(dat_clean, ~ .x %>% steps()))
+
+head(dat_all)
+```
+
+We can now `unnest` the `steps` objects into a data frame it the T05 steps.
+
+```{r}
+# we name it knowing that we haven't added T05 yet
+steps_no05 <- dat_all %>%
+  dplyr::select(id, stps) %>% unnest(cols = c(id, stps))
+```
+
+Combine all the data together.
+
+```{r}
+# we also add an ID column to the T05 steps
+steps_all <- rbind(tibble(id = 45505, T05_steps), steps_no05)
+```
+
+### Import the spatial covariates
+
+We are only using a single covariate, which is a categorical layer of habitat in the Dunedin area.
+
+The section in the Methods of the paper regarding the environmental covariate reads:
+
+We used land cover categories from the broad classification of a vegetation map of the wider Dunedin area created by the Dunedin City Council, and functionally similar land cover types were combined. Thus, the podocarp/broadleaf forest category, and the broadleaf category were combined into a single native forest category, and mānuka (*Leptospermum scoparium*) was integrated with kānuka (*Kunzea ericoides*). Small patches of discrete land cover that did not fit into the above categories, such as wetland, beaches, gorse, broom, tussock and exposed rocky surfaces, classified into a single category named 'other', as they were not considered relevant resources for kākā, and comprised a small proportion of the landscape. Water bodies were considered non-habitat. Thus, the resulting land cover categories used the analyses were native forest (predominately podocarp and broadleaf), kānuka/mānuka (hereafter denoted kānuka), exotic conifers, exotic hardwoods, agriculture, suburban and other.
+
+Import the layer
+
+```{r}
+DCChab <- raster("mapping/DCC BCNadj and LCDB.tif")
+plot(DCChab, col = terrain.colors(n = 31, rev = T))
+```
+
+Reclassify the layer to match the simplified categories in the paper.
+
+We need to specify what values of the original raster will be reclassified to what values in the new raster. This is done by creating a matrix with two columns, the first column is the original values, and the second column is the new values.
+
+```{r}
+rcl <- cbind(c(
+  # becomes kanuka catoegory
+  15,16,18, 
+  # becomes native forest category
+  22,2,3,24, 
+  # becomes exotic conifers category
+  7,
+  # becomes exotic hardwoods category
+  5,6,20, 
+  # becomes agriculture category
+  14,
+  # becomes suburban category
+  1,31, 
+  # becomes other category
+  4,8,9,10,11,13,17,19,23,25,26,27,28,29,30,12, 
+  # becomes water category
+  0,21),
+  
+  # these will be the new values of the above categories
+  c(1,1,1, 
+    2,2,2,2, 
+    3, 
+    4,4,4, 
+    5, 
+    6,6, 
+    7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,
+    8,8))
+
+rcl
+```
+
+Reclassify the raster.
+
+```{r}
+DCC <- reclassify(DCChab, rcl, right = NA)
+plot(-DCC)
+names(DCC) <- "habs"
+```
+
+### Creating dummy variables
+
+When fitting the population model with `INLA`, we require 'dummy variables', where each habitat category is its own raster with 1s and 0s, rather than a single raster for all habitat categories with e.g. 1-8, like we have above.
+
+#### Kānuka (which also contains mānuka)
+
+Here we call kānuka and mānuka dominant forest 'scrub' to combine them, although both of these trees can form a variety of bush and forest types.
+
+```{r}
+scrub <- DCC == 1
+names(scrub) <- "scrub"
+plot(scrub, main = "Scrub (predominately kānuka and mānuka)")
+# calculate the area covered by the category (with 25x25m cells)
+paste0("Area of scrub for this extent is ", 
+       round((cellStats(scrub, stat = sum) * 25 * 25) / 1e6, 2),
+       " km^2")
+writeRaster(scrub, "mapping/scrub.tif", overwrite = TRUE)
+```
+
+#### Native forest
+
+```{r}
+native_forest <- DCC == 2
+names(native_forest) <- "native_forest"
+plot(native_forest, main = "Native forest")
+# calculate the area covered by the category (with 25x25m cells)
+paste0("Area of native forest for this extent is ", 
+       round((cellStats(native_forest, stat = sum) * 25 * 25) / 1e6, 2),
+       " km^2")
+writeRaster(native_forest, "mapping/native_forest.tif", overwrite = TRUE)
+```
+
+#### Exotic conifers
+
+```{r}
+exotic_conifers <- DCC == 3
+names(exotic_conifers) <- "exotic_conifers"
+plot(exotic_conifers, main = "Exotic conifers")
+# calculate the area covered by the category (with 25x25m cells)
+paste0("Area of native forest for this extent is ", 
+       round((cellStats(exotic_conifers, stat = sum) * 25 * 25) / 1e6, 2),
+       " km^2")
+writeRaster(exotic_conifers, "mapping/exotic_conifers.tif", overwrite = TRUE)
+```
+
+#### Exotic hardwoods
+
+```{r}
+exotic_hardwoods <- DCC == 4
+names(exotic_hardwoods) <- "exotic_hardwoods"
+plot(exotic_hardwoods, main = "Exotic hardwoods")
+# calculate the area covered by the category (with 25x25m cells)
+paste0("Area of native forest for this extent is ", 
+       round((cellStats(exotic_hardwoods, stat = sum) * 25 * 25) / 1e6, 2),
+       " km^2")
+writeRaster(exotic_hardwoods, "mapping/exotic_hardwoods.tif", overwrite = TRUE)
+```
+
+#### Agriculture
+
+```{r}
+agriculture <- DCC == 5
+names(agriculture) <- "agriculture"
+plot(agriculture, main = "Agriculture")
+# calculate the area covered by the category (with 25x25m cells)
+paste0("Area of native forest for this extent is ", 
+       round((cellStats(agriculture, stat = sum) * 25 * 25) / 1e6, 2),
+       " km^2")
+writeRaster(agriculture, "mapping/agriculture.tif", overwrite = TRUE)
+```
+
+#### Suburban
+
+```{r}
+suburban <- DCC == 6
+names(suburban) <- "suburban"
+plot(suburban, main = "Suburban")
+# calculate the area covered by the category (with 25x25m cells)
+paste0("Area of native forest for this extent is ", 
+       round((cellStats(suburban, stat = sum) * 25 * 25) / 1e6, 2),
+       " km^2")
+writeRaster(suburban, "mapping/suburban.tif", overwrite = TRUE)
+```
+
+#### Other
+
+```{r}
+other <- DCC == 7
+names(other) <- "other"
+plot(other, main = "Other")
+# calculate the area covered by the category (with 25x25m cells)
+paste0("Area of native forest for this extent is ", 
+       round((cellStats(other, stat = sum) * 25 * 25) / 1e6, 2),
+       " km^2")
+writeRaster(other, "mapping/other.tif", overwrite = TRUE)
+```
+
+#### Water
+
+The areas in the sea are `NA`.
+
+```{r}
+water <- DCC == 8
+names(water) <- "water"
+plot(water, main = "Water")
+# calculate the area covered by the category (with 25x25m cells)
+paste0("Area of native forest for this extent is ", 
+       round((cellStats(water, stat = sum) * 25 * 25) / 1e6, 2),
+       " km^2")
+writeRaster(water, "mapping/water.tif", overwrite = TRUE)
+```
+
+Create a stack of all the rasters so we can sample from them
+
+```{r}
+all_rasters <- raster::stack(DCC, 
+                             scrub, 
+                             native_forest, 
+                             exotic_conifers, 
+                             exotic_hardwoods, 
+                             agriculture, 
+                             suburban, 
+                             other, 
+                             water)
+```
+
+## Random step sampling
+
+To fit step selection functions we need randomly sampled steps to compare against (which serves to numerically approximate the integral in the step selection function, see @Michelot2024-jm for more information).
+
+Firstly we want to fit a Gamma distribution to the step lengths, which we can then use to sample random steps. We also want to store the parameters of the 'tentative' Gamma distribution to 'update' the movement parameters for the predictions after model fitting.
+
+As we will be fitting a population-level model and updating the movement parameters at the population-level, we want to fit the Gamma distribution to all the steps.
+
+```{r}
+tentative_gamma_all <- fit_distr(steps_all$sl_, "gamma")
+tentative_gamma_all
+
+# store the parameters of the tentative Gamma distribution
+tentative_gamma_shape <- tentative_gamma_all$params$shape
+tentative_gamma_scale <- tentative_gamma_all$params$scale
+```
+
+When we combined the steps dataframe of T05 with the rest of the individuals, we changed the class of the object to a tibble, so we can assign it back to a `steps_xyt` object to sample the random steps.
+
+We only do this because we know it is already in the format of a `steps_xyt` object.
+
+```{r}
+# check the class of the steps objects before we combined the data
+class(T05_steps)
+# check the class of all the data combined
+class(steps_all)
+
+# assign the class back to steps_xyt
+class(steps_all) <- class(T05_steps)
+```
+
+We want to estimate the random steps for each individual, so we nest the data frame by `id` and then use `map` to estimate the random steps for each individual, and extract the covariates.
+
+An important point is that we are using the population-level parameters of the Gamma distribution, and uniform turning angles.
+
+```{r}
+ssf_data_all <- steps_all %>% nest(stps = -id) %>%
+  mutate(steps_covs = 
+           map(stps, ~ .x %>%
+                 
+                 # sample the random steps from the population-level parameters
+                 random_steps(n = 30,
+                              rand_sl = 
+                                random_numbers(tentative_gamma_all, 
+                                               n = 1e+05),
+                              rand_ta = 
+                                random_numbers(make_unif_distr(), 
+                                               n = 1e+05)) %>%
+                 
+                 # extract values from the rasters
+                 extract_covariates(all_rasters))) %>%
+  
+  # unnest the data frame
+  dplyr::select(id, steps_covs) %>% unnest(c(id, steps_covs)) %>%
+  
+  # take the log of the step lengths and cosine of the turning angle, which will be used in the model fitting
+  mutate(
+    y = as.numeric(case_),
+    cos_ta_ = cos(ta_),
+    log_sl_ = log(sl_))
+```
+
+As water is considered non-habitat, we want to filter out the steps that are in the water, and then ensure that each step is paired with an equal number of random steps, which we will set to 10.
+
+```{r}
+# filter out the steps in the water, which includes when the DCC layer in NA, which is the sea
+ssf_data_all <- ssf_data_all %>% filter(water != 1 & !is.na(habs))
+
+# grouping works best when it's a tibble object
+ssf_data_all_tbl <- as_tibble(ssf_data_all)
+
+# count the number of steps for each individual and step
+# we can see that many steps have less than 31 (1 used step + 30 random steps)
+ssf_data_all_tbl %>% dplyr::group_by(id, step_id_) %>% dplyr::summarise(n=n())
+
+# only keep 10 random points per used point
+ssf_data_all <- ssf_data_all_tbl %>% dplyr::group_by(id, step_id_) %>% dplyr::slice_head(n = 11) 
+```
+
+Plot to check if the water filtering worked.
+
+There is one location out in the sea, but that shouldn't effect the analyses.
+
+```{r}
+plot(DCC, col = terrain.colors(n = 8))
+points(ssf_data_all$x2_, ssf_data_all$y2_)
+points(ssf_data_all$x1_, ssf_data_all$y1_, col = "red")
+```
+
+### Check the used and random step length and turning angle distributions
+
+```{r}
+ssf_data_all$idf <- as.factor(ssf_data_all$id)
+
+ggplot() +
+  geom_density(data = ssf_data_all %>% filter(y == 1), 
+               aes(x = sl_, fill = idf), 
+               alpha = 0.1, show.legend = F) +
+  # plot a red line for each individual - which should all be similar as they were sampling from the same distribution
+  geom_density(data = ssf_data_all %>% filter(y == 0), 
+               aes(x = sl_, group = idf), 
+               colour = "red", alpha = 0.1, show.legend = F) +
+  scale_x_continuous(limits = c(0,3000), name = "Step Length (m)") +
+  scale_y_continuous(name = "Density") +
+  theme_classic()
+
+# to save the plot
+# ggsave("StepLengthDsitribution-available.png", width=150, height=90, units="mm", dpi = 300)
+```
+
+We see that the kākā take many return steps. This is likely due to the fix interval of 2 or 3 hours, in which time they can easily cross their home ranges and return, and appear to go back and forth regularly.
+
+```{r}
+ggplot() +
+  geom_density(data = ssf_data_all %>% filter(y == 1), 
+               aes(x = ta_, fill = idf), 
+               alpha = 0.1, show.legend = F) +
+  # plot a red line for each individual - which should all be similar as they were sampling from the same distribution
+  geom_density(data = ssf_data_all %>% filter(y == 0), 
+               aes(x = ta_, group = idf), 
+               colour = "red", alpha = 0.1, show.legend = F) +
+  scale_x_continuous(name = "Turning Angle (radians)") +
+  scale_y_continuous(name = "Density") +
+  theme_classic()
+
+# to save the plot
+# ggsave("TurningAngleDsitribution-used.png", width=150, height=90, units="mm", dpi = 300)
+```
+
+### Prepare data to save to file
+
+```{r}
+# check for NAs in the turning angles
+sum(is.na(ssf_data_all$ta_))
+# removes rows with NAs
+ssf_data_all <- ssf_data_all %>% filter(!is.na(cos_ta_))
+```
+
+INLA requires that we have a different ID column for each covariate, so we will create some here (we can always create more later).
+
+```{r}
+ssf_data_all <- ssf_data_all %>% 
+  mutate(id_num = as.numeric(factor(id)),
+         step_id = paste(id, step_id_, sep = "-"))
+
+ssf_data_all$id1 <- ssf_data_all$id_num
+ssf_data_all$id2 <- ssf_data_all$id_num
+ssf_data_all$id3 <- ssf_data_all$id_num
+ssf_data_all$id4 <- ssf_data_all$id_num
+ssf_data_all$id5 <- ssf_data_all$id_num
+ssf_data_all$id6 <- ssf_data_all$id_num
+ssf_data_all$id7 <- ssf_data_all$id_num
+ssf_data_all$id8 <- ssf_data_all$id_num
+ssf_data_all$id9 <- ssf_data_all$id_num
+```
+
+## Save the data
+
+We can save this dataset and use it for both the individual-level and population-level SSFs.
+
+```{r}
+write_csv(ssf_data_all, paste0("outputs/data_SSF_ready_", Sys.Date(), ".csv"))
+```
+
+## References
+
+::: {#refs}
+:::
+
+```{r}
+sessionInfo()
+```
