@@ -52,7 +52,7 @@ div.quarto-post {
   </div>
 
   <div style="display: inline-block;width: 70%;">
-    <h1 class="title">GeoSpatial Share</h1>
+    <h1 class="title">Geospatial Share</h1>
   </div>
 </div>
 ```
