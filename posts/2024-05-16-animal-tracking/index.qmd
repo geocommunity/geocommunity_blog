@@ -21,6 +21,7 @@ resources:
 
 # Case Study: Kākā movement
 
+![](/posts/2024-05-16-animal-tracking/kaka.jpg)
 # Data Preparation
 
 ```{=html}
