@@ -3,6 +3,7 @@ title: "Working with Animal Tracking Data"
 editor: visual
 author: 'Scott Forrest'
 date: "2024-05-16"
+image: "kaka.jpg"
 toc: true
 toc-depth: 4
 slug: may-2024
@@ -23,7 +24,7 @@ resources:
 # Data Preparation
 
 ```{=html}
-<iframe src="/posts/2024-05-16-animal-tracking/data_prep.html" width=900 height=900></iframe\>
+<iframe src="/posts/2024-05-16-animal-tracking/data_prep.html" width="100%" height=900></iframe\>
 ```
 
 # Step Selection Function (SSF) Analysis
