@@ -9,7 +9,7 @@
 <meta name="author" content="Scott Forrest">
 <meta name="dcterms.date" content="2024-05-16">
 
-<title>GeoSpatial Share - Workgin with Animal Tracking Data</title>
+<title>GeoSpatial Share – Working with Animal Tracking Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -110,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Workgin with Animal Tracking Data</h1>
+      <h1 class="title">Working with Animal Tracking Data</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">blog</div>
                 <div class="quarto-category">tutorial</div>
@@ -147,9 +147,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#workshop-thursday-may-23rd-2-4pm-aest-animal-tracking-with-scott-forrest" id="toc-workshop-thursday-may-23rd-2-4pm-aest-animal-tracking-with-scott-forrest" class="nav-link active" data-scroll-target="#workshop-thursday-may-23rd-2-4pm-aest-animal-tracking-with-scott-forrest">Workshop Thursday May 23rd (2-4pm) AEST: Animal tracking with Scott Forrest</a></li>
-  <li><a href="#upcoming-workshops" id="toc-upcoming-workshops" class="nav-link" data-scroll-target="#upcoming-workshops">Upcoming workshops</a></li>
-  <li><a href="#training" id="toc-training" class="nav-link" data-scroll-target="#training">Training</a></li>
+  <li><a href="#case-study-kākā" id="toc-case-study-kākā" class="nav-link active" data-scroll-target="#case-study-kākā">Case Study: Kākā</a></li>
+  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">Data Preparation</a></li>
+  <li><a href="#step-selection-function-ssf-analysis" id="toc-step-selection-function-ssf-analysis" class="nav-link" data-scroll-target="#step-selection-function-ssf-analysis">Step Selection Function (SSF) Analysis</a></li>
   </ul>
 </nav>
 </nav>
@@ -163,35 +163,26 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="workshop-thursday-may-23rd-2-4pm-aest-animal-tracking-with-scott-forrest" class="level2">
-<h2 class="anchored" data-anchor-id="workshop-thursday-may-23rd-2-4pm-aest-animal-tracking-with-scott-forrest">Workshop Thursday May 23rd (2-4pm) AEST: Animal tracking with Scott Forrest</h2>
-<p><strong>What</strong>: Working with Animal Tracking Data</p>
-<p><strong>Who</strong>: Scott Forrest, PhD Candidate, QUT</p>
-<p><strong>When</strong>: May 23rd, 2-4pm</p>
-<p><strong>Where</strong>: Hybrid on Teams (see calendar invitation) and QUT Gardens Point R310, see map, 3rd floor left at the top of the stairs</p>
-<p>Animal GPS tracking data is a rich source of information to understand animal species, and has provided countless behavioural and ecological insights. Animal-mounted GPS devices are also becoming cheaper and more technologically advanced, leading to more animal-tracking studies collecting a higher quantity of data. Movebank, an open-access repository of animal GPS tracking data, currently has over 6 billion animal locations of 200,000 animals from 1,383 species, and over 11 million locations are being added every day. Processing animal movement data can also be challenging - animal movement data is spatially and temporally autocorrelated, locations can be irregular and often fail to be recorded, and there can be known or unknown biases which should be considered. Due to, and in spite of these complexities, numerous approaches have been developed that fall under the umbrella of ‘movement ecology’, which can be divided into broad categories such as space use, resource selection, and behavioural classification. In this workshop I’ll provide an overview of popular methods in the ‘movement ecologist toolbox’, and we will work through practical examples using R and open-access data. No previous experience with animal GPS tracking data is necessary.</p>
-<p><strong>Software Requirements</strong></p>
-<p>If you would like to follow along please download the R programming language and RStudio before the session. We will be using the amt, lubridate, raster, terra, beepr, tictoc, jtools, and patchwork R packages if you would like to install these packages beforehand.</p>
+<section id="case-study-kākā" class="level1">
+<h1>Case Study: Kākā</h1>
 </section>
-<section id="upcoming-workshops" class="level2">
-<h2 class="anchored" data-anchor-id="upcoming-workshops">Upcoming workshops</h2>
-<p>Next workshop, <strong>Intro to Terra in R with Jason Flower</strong>.</p>
-<p><strong>What:</strong> Intro to Terra in R</p>
-<p><strong>Who:</strong> <a href="https://github.com/jflowernet">Jason Flower</a>, University of California</p>
-<p><strong>When:</strong> May 13th, 2-4pm</p>
-<p><strong>Where:</strong> Hybrid - Teams and in person at QUT (room TBD)</p>
-<p>Rasters are commonly used to represent spatial data such as elevation and temperature. This workshop will give a gentle introduction to using the R package terra to manipulate and plot raster data. No prior knowledge of spatial data is needed, but basic familiarity with R is assumed. For those migrating from terra ’s predecessor package raster, I will describe some of the changes to functions.</p>
+<section id="data-preparation" class="level1">
+<h1>Data Preparation</h1>
+<iframe src="../../posts/2024-05-16-animal-tracking/data_prep.html" width="900" height="900"></iframe\>
 </section>
-<section id="training" class="level2">
-<h2 class="anchored" data-anchor-id="training">Training</h2>
-<p><a href="https://nasa.github.io/Transform-to-Open-Science/take-os101/">Open Science Training</a></p>
-<p><img src="image.png" class="img-fluid"></p>
-
-
+<section id="step-selection-function-ssf-analysis" class="level1">
+<h1>Step Selection Function (SSF) Analysis</h1>
+<iframe src="/posts/2024-05-16-animal-tracking/ssf_individual.html" width=900 height=900></iframe\>
+<div id="quarto-navigation-envelope" class="hidden">
+<p><span class="hidden" data-render-id="quarto-int-sidebar-title">GeoSpatial Share</span> <span class="hidden" data-render-id="quarto-int-navbar-title">GeoSpatial Share</span> <span class="hidden" data-render-id="quarto-int-navbar:About">About</span> <span class="hidden" data-render-id="quarto-int-navbar:/about.html">/about.html</span> <span class="hidden" data-render-id="quarto-int-navbar:Workshops">Workshops</span> <span class="hidden" data-render-id="quarto-int-navbar:/workshops.html">/workshops.html</span> <span class="hidden" data-render-id="quarto-int-navbar:https://github.com/geocommunity/geocommunity_blog">https://github.com/geocommunity/geocommunity_blog</span></p>
+</div>
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden" data-render-id="quarto-metatitle">GeoSpatial Share - Working with Animal Tracking Data</span> <span class="hidden" data-render-id="quarto-twittercardtitle">GeoSpatial Share - Working with Animal Tracking Data</span> <span class="hidden" data-render-id="quarto-ogcardtitle">GeoSpatial Share - Working with Animal Tracking Data</span> <span class="hidden" data-render-id="quarto-metasitename">GeoSpatial Share</span> <span class="hidden" data-render-id="quarto-twittercarddesc"></span> <span class="hidden" data-render-id="quarto-ogcardddesc"></span></p>
+</div>
 </section>
 
 </main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
+<script id = "quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
@@ -541,6 +532,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 </div> <!-- /content -->
 
+</body>
 
-
-</body></html>
+</html></iframe></section></main></div></body></html>

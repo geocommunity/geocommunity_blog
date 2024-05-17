@@ -15,12 +15,20 @@ tags: []
 execute:
   warning: false
 resources:
-  - data_prep.html
-  - ssf_individual.html
+  - "data_prep.html"
+  - "ssf_individual.html"
 ---
 
-# Case Study: Kākā
+# Case Study: Kākā movement
 
-PICTURE
+# Data Preparation
 
-## 
+```{=html}
+<iframe src="/posts/2024-05-16-animal-tracking/data_prep.html" width=900 height=900></iframe\>
+```
+
+# Step Selection Function (SSF) Analysis
+
+```{=html}
+<iframe src="/posts/2024-05-16-animal-tracking/ssf_individual.html" width=900 height=900></iframe\>
+```
