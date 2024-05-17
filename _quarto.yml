@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "GeoSpatial Share"
+  title: "Geospatial Share"
   navbar:
     right:
       - about.qmd
