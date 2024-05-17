@@ -3,7 +3,7 @@ title: "Working with Animal Tracking Data"
 editor: visual
 author: 'Scott Forrest'
 date: "2024-05-16"
-draft: true
+draft: false
 toc: true
 toc-depth: 4
 slug: may-2024
