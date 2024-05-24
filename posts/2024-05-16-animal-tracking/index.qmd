@@ -14,23 +14,28 @@ categories:
 tags: []
 execute:
   warning: false
+format: 
+  html:
+    embed-resources: true
 resources:
   - "data_prep.html"
   - "ssf_individual.html"
+  - "Geospatial_share_animal_movement_workshop_May2024.pdf"
 ---
 
 # Case Study: Kākā movement
 
-![](/posts/2024-05-16-animal-tracking/kaka.jpg)
+![](/posts/2024-05-16-animal-tracking/kaka.jpg){width="900"}
+
+### [Introduction to animal movement slides](https://github.com/swforrest/geospatial_share_animal_movement/blob/main/Geospatial_share_animal_movement_workshop_May2024.pdf)
 
 ## Data Preparation
+
+Find the data for this code in Scott's [GitHub repo](https://github.com/swforrest/geospatial_share_animal_movement) for the project.
 
 ```{=html}
 <iframe src="/posts/2024-05-16-animal-tracking/data_prep.html" width="100%" height=900></iframe>
 ```
-
-
-
 ## Step Selection Function (SSF) Analysis
 
 ```{=html}
