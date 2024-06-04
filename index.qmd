@@ -88,7 +88,7 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 
 **When**: June 13th, 2-4pm
 
-**Where**: Hybrid on Teams (see calendar invitation) and QUT Gardens Point R301, see map, 3rd floor left at the top of the stairs
+**Where**: Hybrid on Teams (link to join [here](https://teams.microsoft.com/l/meetup-join/19%3ameeting_OThkNDQwZTQtMmQ2Mi00ZTQ1LWE0ZTItMTVhNzI2NjVhMmJj%40thread.v2/0?context=%7b%22Tid%22%3a%225a7cc8ab-a4dc-4f9b-bf60-66714049ad62%22%2c%22Oid%22%3a%22408eea62-4930-4adb-b5a1-d8f1bba01715%22%7d)) and QUT Gardens Point R301, see map, 3rd floor left at the top of the stairs
 
 **Description**: Rasters are commonly used to represent spatial data such as elevation and temperature. This workshop will give a gentle introduction to using the R package {terra} to manipulate and plot raster data. No prior knowledge of spatial data is needed, but basic familiarity with R is assumed. For those migrating from {terra}'s predecessor package {raster}, I will describe some of the changes to functions.
 
