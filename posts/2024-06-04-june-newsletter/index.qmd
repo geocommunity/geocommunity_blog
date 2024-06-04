@@ -1,0 +1,44 @@
+---
+title: "June Newsletter | Upcoming workshop: Intro to {terra} in R with Jason Flower"
+editor: visual
+author: 'Christina'
+date: "2024-06-04"
+slug: newsletter-june-2024
+categories:
+  - newsletter
+tags: []
+DisableComments: no
+---
+
+## Workshop Thursday June 13th (2-4pm) AEST: Intro to {terra} in R with Jason Flower
+
+**What**: Intro to {terra} - working with raster data in R
+
+**Who**: [Jason Flower](https://github.com/jflowernet), Project Researcher at the Environmental Market Solutions Lab (emLab) at the University of California, Santa Barbara
+
+**When**: June 13th, 2-4pm
+
+**Where**: Hybrid on Teams (link to join [here](https://teams.microsoft.com/l/meetup-join/19%3ameeting_OThkNDQwZTQtMmQ2Mi00ZTQ1LWE0ZTItMTVhNzI2NjVhMmJj%40thread.v2/0?context=%7b%22Tid%22%3a%225a7cc8ab-a4dc-4f9b-bf60-66714049ad62%22%2c%22Oid%22%3a%22408eea62-4930-4adb-b5a1-d8f1bba01715%22%7d)) and QUT Gardens Point R301, see map, 3rd floor left at the top of the stairs
+
+**Description**: Rasters are commonly used to represent spatial data such as elevation and temperature. This workshop will give a gentle introduction to using the R package {terra} to manipulate and plot raster data. No prior knowledge of spatial data is needed, but basic familiarity with R is assumed. For those migrating from {terra}'s predecessor package {raster}, I will describe some of the changes to functions.
+
+**Software Requirements**
+
+If you would like to follow along please download the R programming language and RStudio before the session. We will be using {terra}, so please install these packages beforehand
+
+![](image.png)
+
+## Upcoming workshops
+
+To be announced soon....
+
+## Upcoming Geospatial events
+
+This year's FOSS4G SotM Oceania Conference will be held in Hobart from November 5-8th. [Call for papers](https://2024.foss4g-oceania.org/#/call-for-papers) is open and there will be a [Travel Grant Program](https://docs.google.com/forms/d/1NNPSqYvYDGnbr7u6Fz8bDGfQ8m5m49gbCzBPAs9kORI/viewform?edit_requested=true). Sign up for their [newsletters](https://2024.foss4g-oceania.org/#/mailing-list) to keep up to date.
+
+## Get involved in more geospatial communities
+
+Sign up to [QGIS AU group](https://qgis-australia.org/) and check out their [weekly newsletters](https://qgis-australia.org/posts/)
+
+
+

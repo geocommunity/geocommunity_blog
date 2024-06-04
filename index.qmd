@@ -80,21 +80,21 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 
 ## Upcoming Workshop {style="padding-top: 5px;"}
 
-### Working with Animal Tracking Data - Thursday, May 23rd (2-4pm AEST)
+### Intro to {terra} in R with Jason Flower - Thursday, June 13th (2-4pm AEST)
 
-**What**: Working with Animal Tracking Data
+**What**: Intro to {terra} - working with raster data in R
 
-**Who**: Scott Forrest, PhD Candidate, QUT
+**Who**: [Jason Flower](https://github.com/jflowernet), Project Researcher at the Environmental Market Solutions Lab (emLab) at the University of California, Santa Barbara
 
-**When**: May 23rd, 2-4pm
+**When**: June 13th, 2-4pm
 
-**Where**: Hybrid on Teams (see calendar invitation) and QUT Gardens Point R310, see map, 3rd floor left at the top of the stairs
+**Where**: Hybrid on Teams (see calendar invitation) and QUT Gardens Point R301, see map, 3rd floor left at the top of the stairs
 
-Animal GPS tracking data is a rich source of information to understand animal species, and has provided countless behavioural and ecological insights. Animal-mounted GPS devices are also becoming cheaper and more technologically advanced, leading to more animal-tracking studies collecting a higher quantity of data. Movebank, an open-access repository of animal GPS tracking data, currently has over 6 billion animal locations of 200,000 animals from 1,383 species, and over 11 million locations are being added every day. Processing animal movement data can also be challenging - animal movement data is spatially and temporally autocorrelated, locations can be irregular and often fail to be recorded, and there can be known or unknown biases which should be considered. Due to, and in spite of these complexities, numerous approaches have been developed that fall under the umbrella of 'movement ecology', which can be divided into broad categories such as space use, resource selection, and behavioural classification. In this workshop I'll provide an overview of popular methods in the 'movement ecologist toolbox', and we will work through practical examples using R and open-access data. No previous experience with animal GPS tracking data is necessary.
+**Description**: Rasters are commonly used to represent spatial data such as elevation and temperature. This workshop will give a gentle introduction to using the R package {terra} to manipulate and plot raster data. No prior knowledge of spatial data is needed, but basic familiarity with R is assumed. For those migrating from {terra}'s predecessor package {raster}, I will describe some of the changes to functions.
 
 **Software Requirements**
 
-If you would like to follow along please download the R programming language and RStudio before the session. We will be using the amt, lubridate, raster, terra, beepr, tictoc, jtools, and patchwork R packages if you would like to install these packages beforehand.
+If you would like to follow along please download the R programming language and RStudio before the session. We will be using {terra}, so please install these packages beforehand.
 
 ## Last Post
 
