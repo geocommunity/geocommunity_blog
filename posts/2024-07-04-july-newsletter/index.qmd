@@ -1,0 +1,49 @@
+---
+title: "July Newsletter | Upcoming workshop: Switching over to QGIS with Emma Hain"
+editor: visual
+author: 'Christina'
+date: "2024-07-04"
+slug: newsletter-july-2024
+categories:
+  - newsletter
+tags: []
+DisableComments: no
+---
+
+## Workshop Thursday July 25th (1-3pm) AEST: Switching over to QGIS with Emma Hain
+
+**What**: Switching over to QGIS
+
+**Who**: Emma Hain, Product Manager and Senior GIS Specialist, North Road
+
+**When**: 1-3 pm, Thursday, 25th July
+
+**Where**: Online only (link to join [here](https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_OThkNDQwZTQtMmQ2Mi00ZTQ1LWE0ZTItMTVhNzI2NjVhMmJj%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%25225a7cc8ab-a4dc-4f9b-bf60-66714049ad62%2522%252c%2522Oid%2522%253a%2522408eea62-4930-4adb-b5a1-d8f1bba01715%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=fe357eff-b1f0-4935-b6c2-83f99d0c9875&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true))
+
+**Description**: Emma will use her in-depth knowledge of QGIS to take provide everything that is needed to switch to QGIS. She will cover the basics of what QGIS is, the difference between QGIS and ArcGISPRO – and why you are going to love QGIS! Then, Emma will go through the setup requirements, some translation that’s required to move from ArcGIS, the costs involved, and other related products.
+
+If you have ever considered the switch to QGIS – or even if you are using it but want a better foundation – you wont want to miss this one.
+
+**Prerequisites**
+
+
+![](image.jpeg)
+
+## Upcoming workshops
+
+To be announced soon....
+
+## Upcoming Geospatial events
+
+This year's FOSS4G SotM Oceania Conference will be held in Hobart from November 5-8th. [Call for papers](https://2024.foss4g-oceania.org/#/call-for-papers) is open and there will be a [Travel Grant Program](https://docs.google.com/forms/d/1NNPSqYvYDGnbr7u6Fz8bDGfQ8m5m49gbCzBPAs9kORI/viewform?edit_requested=true). Sign up for their [newsletters](https://2024.foss4g-oceania.org/#/mailing-list) to keep up to date.
+
+## Get involved in more geospatial communities
+
+Sign up to [QGIS AU group](https://qgis-australia.org/) and check out their [weekly newsletters](https://qgis-australia.org/posts/)
+
+## Training opportunities
+
+Hydrographic Surveyors Program and Marine Geospatial Program Training
+This Program commences Sep 24 and comprises 13 weeks of theoretical training delivered over a 23-week period, then a 9-week practical period where students and instructors co-locate for hands-on-training and assessment.
+This delivery provides the maximum flexibility for students and employers by minimising the duration that students are away from their home or workplace. 
+More information [here](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://mcusercontent.com/26c3400f39a2a193da8d06aae/files/a94cc15e-1820-b9cd-dbe2-045f00a9ee7a/IIC_Academy_S_8B_Information_Flyer.pdf?mc_cid=99beeae696&mc_eid=cf6d478115) 
