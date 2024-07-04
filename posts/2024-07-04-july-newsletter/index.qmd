@@ -24,9 +24,6 @@ DisableComments: no
 
 If you have ever considered the switch to QGIS – or even if you are using it but want a better foundation – you wont want to miss this one.
 
-**Prerequisites**
-
-
 ![](image.jpeg)
 
 ## Upcoming workshops
