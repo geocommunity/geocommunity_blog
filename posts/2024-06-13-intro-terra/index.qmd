@@ -1,0 +1,28 @@
+---
+title: "Introduction to Terra"
+editor: visual
+author: 'Catherine Kim'
+date: "2024-06-13"
+image: /posts/2024-06-13-intro-terra/terra-logo.png
+slug: june-2024
+categories:
+  - blog
+  - tutorial
+  - R
+tags: [terra]
+execute:
+  warning: false
+---
+
+# Intro to the Terra package of R: visualising and manipulating raster data with Jason Flower
+
+We are very lucky to have **[Jason Flower](https://emlab.ucsb.edu/about/our-team/jason-flower)** taking us through working with rasters using the {terra} package for our June workshop. He also does a good job at explaining some of the differences (functions, etc.) between {terra} and the previous {raster} R package, the precursor.
+
+Access the data and code in the [GitHub repository](https://emlab.ucsb.edu/about/our-team/jason-flower) to follow along with the below materials.
+
+The original post on Jason's website is [here](https://jflowernet.github.io/intro-terra/).
+
+```{=html}
+<iframe src="https://jflowernet.github.io/intro-terra/" width="100%" height=900></iframe>
+```
+
