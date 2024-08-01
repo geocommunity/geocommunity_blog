@@ -18,7 +18,7 @@ execute:
 
 We are very lucky to have [**Jason Flower**](https://emlab.ucsb.edu/about/our-team/jason-flower) taking us through working with rasters using the {terra} package for our June workshop. He also does a good job at explaining some of the differences (functions, etc.) between {terra} and the previous {raster} R package, the precursor.
 
-Access the data and code in the [GitHub repository](https://emlab.ucsb.edu/about/our-team/jason-flower) to follow along with the below materials.
+Access the data and code in the [GitHub repository](https://github.com/jflowernet/intro-terra) to follow along with the below materials.
 
 The original post on Jason's website is [here](https://jflowernet.github.io/intro-terra/).
 
