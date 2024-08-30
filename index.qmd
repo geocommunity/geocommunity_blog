@@ -80,19 +80,19 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 
 ## Upcoming Workshop {style="padding-top: 5px;"}
 
-### Thursday July 25th (1-3pm) AEST: Switching over to QGIS with Emma Hain
+### Working with Sentinel 1 satellite data with Craig O'Neill
 
 **What**: Switching over to QGIS
 
-**Who**: Emma Hain, Product Manager and Senior GIS Specialist, North Road
+**Who**: Associate Professor Craig O'Neill, QUT
 
-**When**: 1-3 pm, Thursday, 25th July
+**When**: Tuesday Sept 3, 3-5pm hybrid
 
-**Where**: Online only (link to join [here](https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_OThkNDQwZTQtMmQ2Mi00ZTQ1LWE0ZTItMTVhNzI2NjVhMmJj%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%25225a7cc8ab-a4dc-4f9b-bf60-66714049ad62%2522%252c%2522Oid%2522%253a%2522408eea62-4930-4adb-b5a1-d8f1bba01715%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=fe357eff-b1f0-4935-b6c2-83f99d0c9875&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true))
+**Where**: QUT Gardens Point Campus R block room 301 OR on TEAMS (see attached outlook invitation)
 
-**Description**: Emma will use her in-depth knowledge of QGIS to take provide everything that is needed to switch to QGIS. She will cover the basics of what QGIS is, the difference between QGIS and ArcGISPRO – and why you are going to love QGIS! Then, Emma will go through the setup requirements, some translation that’s required to move from ArcGIS, the costs involved, and other related products.
+**Description**:
 
-If you have ever considered the switch to QGIS – or even if you are using it but want a better foundation – you wont want to miss this one.
+We are lucky to have QUT Associate Professor [Craig O’Neill](https://www.qut.edu.au/about/our-people/academic-profiles/craig.oneill) show us how to obtain, process, and plot corrected Sentinel 1 satellite data using the European Space Agency’s [SNAP](https://earth.esa.int/eogateway/tools/snap) toolbox.
 
 ## Last Post
 

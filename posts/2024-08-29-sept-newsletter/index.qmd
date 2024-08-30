@@ -1,0 +1,49 @@
+---
+title: "Sept Newsletter | Upcoming workshop: Working with Sentinel 1 data with Craig O'Neill"
+editor: visual
+author: 'Catherine'
+date: "2024-08-29"
+slug: newsletter-july-2024
+categories:
+  - newsletter
+tags: [Sentinel1, QGIS]
+DisableComments: no
+---
+
+## Upcoming workshop
+
+### Working with Sentinel 1 satellite data with Craig O'Neill
+
+**What**: Switching over to QGIS
+
+**Who**: Associate Professor Craig O'Neill, QUT
+
+**When**: Tuesday Sept 3, 3-5pm hybrid
+
+**Where**: QUT Gardens Point Campus R block room 301 OR on TEAMS (see attached outlook invitation)
+
+**Description**:
+
+We are lucky to have QUT Associate Professor [Craig O’Neill](https://www.qut.edu.au/about/our-people/academic-profiles/craig.oneill) show us how to obtain, process, and plot corrected Sentinel 1 satellite data using the European Space Agency’s [SNAP](https://earth.esa.int/eogateway/tools/snap) toolbox.
+
+**Requirements:**
+
+Download SNAP – see instructions [here](https://step.esa.int/main/download/snap-download/).
+
+A recent version of [QGIS](https://qgis.org/download/), recommend the long term release.
+
+![](image.jpeg)
+
+## Upcoming Geospatial events
+
+# **Google Earth Engine Workshop - Brisbane**
+
+QUT Gardens Point Campus, 2 George Street, Brisbane City, 4000
+
+[[Google Developer Group for Science]{.underline}](https://gdg.community.dev/google-developer-group-for-science/)
+
+Hands-on introduction to Google Earth Engine workshop hosted by Noel Gorelick, one of the founders Earth Engine. Suitable for beginner and intermediate users at Australian research institutions or users in Government or the NFP sector.
+
+Register [here](https://gdg.community.dev/events/details/google-google-developer-group-for-science-presents-google-earth-engine-workshop-brisbane/).
+
+## 
