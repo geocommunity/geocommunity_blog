@@ -14,8 +14,6 @@ DisableComments: no
 
 ### Working with Sentinel 1 satellite data with Craig O'Neill
 
-**What**: Switching over to QGIS
-
 **Who**: Associate Professor Craig O'Neill, QUT
 
 **When**: Tuesday Sept 3, 3-5pm hybrid
@@ -24,11 +22,11 @@ DisableComments: no
 
 **Description**:
 
-We are lucky to have QUT Associate Professor [Craig O’Neill](https://www.qut.edu.au/about/our-people/academic-profiles/craig.oneill) show us how to obtain, process, and plot corrected Sentinel 1 satellite data using the European Space Agency’s [SNAP](https://earth.esa.int/eogateway/tools/snap) toolbox.
+We are lucky to have QUT Associate Professor [Craig O'Neill](https://www.qut.edu.au/about/our-people/academic-profiles/craig.oneill) show us how to obtain, process, and plot corrected Sentinel 1 satellite data using the European Space Agency's [SNAP](https://earth.esa.int/eogateway/tools/snap) toolbox.
 
 **Requirements:**
 
-Download SNAP – see instructions [here](https://step.esa.int/main/download/snap-download/).
+Download SNAP -- see instructions [here](https://step.esa.int/main/download/snap-download/).
 
 A recent version of [QGIS](https://qgis.org/download/), recommend the long term release.
 
