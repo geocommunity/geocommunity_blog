@@ -80,19 +80,19 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 
 ## Upcoming Workshop {style="padding-top: 5px;"}
 
-### Working with Sentinel 1 satellite data with Craig O'Neill
+### Introduction to EcoCommons by the EcoCommons Team
 
-**What**: Switching over to QGIS
+**Who**: EcoCommons team - Xiang Zhao
 
-**Who**: Associate Professor Craig O'Neill, QUT
+**When**: Wednesday March 26, 10-11:30 am Online
 
-**When**: Tuesday Sept 3, 3-5pm hybrid
-
-**Where**: QUT Gardens Point Campus R block room 301 OR on TEAMS
+**Where**: Online via Teams, [join our mailing list](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform) to get emailed the link
 
 **Description**:
 
-We are lucky to have QUT Associate Professor [Craig O’Neill](https://www.qut.edu.au/about/our-people/academic-profiles/craig.oneill) show us how to obtain, process, and plot corrected Sentinel 1 satellite data using the European Space Agency’s [SNAP](https://earth.esa.int/eogateway/tools/snap) toolbox.
+We are excited to have the **EcoCommons team** to introduce their platform to our community. Discover how EcoCommons is transforming ecological and environmental analysis and modelling with powerful tools, datasets, and expert-led insights. 
+
+Find out more and join the workshop [here](posts/2025-03-11-mar-newsletter/).
 
 ## Last Post
 
