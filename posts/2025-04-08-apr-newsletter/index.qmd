@@ -1,0 +1,39 @@
+---
+title: "April Newsletter |  Modelling SEQ koala distribution under climate scenarios"
+editor: visual
+author: 'Nick'
+date: "2025-04-08"
+slug: newsletter-apr-2025
+categories:
+  - newsletter
+tags: [EcoCommons, Data]
+DisableComments: no
+---
+
+## Upcoming workshop
+
+### **Modelling the SEQ koala distribution under current and future climate scenarios**
+
+**Who**: Charlotte Patterson (QUT), Scott Forrest (QUT, CSIRO)
+
+**When**: Wed April 16, 2:30-4:40 pm AEST
+
+**Where**: Hybrid - QUT Gardens Point campus R310 OR Teams ([join our mailing list](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform) for the link)
+
+**Description**:
+
+In preparation for a workshop at ICCB in June, we are offering the Geospatial Share group a sneak peek of a session **modelling** **the current and future distribution** of the iconic arboreal diprotodont, the koala (*Phascolarctos cinereus*). This workshop will cover a general **introduction to species distribution models (SDMs)**, how to access freely available species records and environmental layers (current and future), and how to fit, validate and make predictions from SDMs using a coded example. We will also cover considerations when fitting SDMs, such as presence-only and biased records and how to deal with them, and a quick overview of the pros and cons of different SDM algorithms. 
+
+**Requirements:**
+
+We will be downloading koala presence records from the Atlas of Living Australia (ALA) via the 'galah' package and downloading spatial layers from the EcoCommons platform.
+
+It will be helpful to check that you have access to **ALA and EcoCommons** prior to the session by signing up. If you are affiliated with one of the listed Australia institutions in the Australia Access Federation this will be the most straightforward way (see [AAF list here](https://aaf.edu.au/subscribers/ "https://aaf.edu.au/subscribers/")). Or submit a [user request form](https://www.ecocommons.org.au/user-registration-form/ "https://www.ecocommons.org.au/user-registration-form/") for EcoCommons if you do not have access. We will provide a rendered script so you don't need to run any code, but if you want to run the code during the workshop it will be helpful to **have the** **galah, terra, sf, predicts, corrplot, pROC and dismo R packages installed.**
+
+::: {style="text-align: center;"}
+![](koala.jpg)
+:::
+
+------------------------------------------------------------------------
+
+## 
