@@ -56,6 +56,7 @@ div.quarto-post {
   </div>
 </div>
 ```
+
 ::: column-margin
 ## Events Calendar
 
@@ -80,19 +81,19 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 
 ## Upcoming Workshop {style="padding-top: 5px;"}
 
-### Introduction to EcoCommons by the EcoCommons Team
+### Modelling Koala Distribution Under Different Climate Scenarios
 
-**Who**: EcoCommons team - Xiang Zhao
+**Who**: Charlotte Patterson (QUT), Scott Forrest (QUT, CSIRO)
 
-**When**: Wednesday March 26, 10-11:30 am Online
+**When**: Wed April 16, 2:30-4:40 pm AEST
 
-**Where**: Online via Teams, [join our mailing list](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform) to get emailed the link
+**Where**: Hybrid - QUT Gardens Point campus R310 OR Teams ([join our mailing list](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform) for the link)
 
 **Description**:
 
-We are excited to have the **EcoCommons team** to introduce their platform to our community. Discover how EcoCommons is transforming ecological and environmental analysis and modelling with powerful tools, datasets, and expert-led insights. 
+Ahead of the ICCB workshop, GeoSpatial Share group are getting a sneak peak of a session on modeling koala distribution using species distribution models (SDMs), covering SDM basics, data access, and model validation. The session will also address challenges like presence-only records and SDM algorithm comparisons.
 
-Find out more and join the workshop [here](posts/2025-03-11-mar-newsletter/).
+Find out more and join the workshop [here](posts/2025-04-08-apr-newsletter/).
 
 ## Last Post
 
