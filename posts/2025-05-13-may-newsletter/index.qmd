@@ -1,0 +1,33 @@
+---
+title: "April Newsletter |  Modelling SEQ koala distribution under climate scenarios"
+editor: visual
+author: 'Catherine'
+date: "2025-05-13"
+slug: newsletter-may-2025
+categories:
+  - newsletter
+tags: [Workshop, Data]
+DisableComments: no
+---
+
+## Upcoming workshop
+
+### **Working with downscaled climate projections in R**
+
+**Who**: Dr Ralph Trancoso, Dr Sarah Chapman, Dr Rohan Eccles (DESI)
+
+**When**: Wed May 21, 10a - 12p AEST
+
+**Where**: Teams ([join our mailing list](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform) for the link)
+
+**Description**:
+
+In this workshop, we will cover the use of downscaled climate projections in R. This will include working with NetCDF files, plotting, and subsetting data to a target area. This session will also cover basic calculations, such as deriving bioclimatic indices and other relevant inputs which can be used for things like species distribution modelling.
+
+**Requirements:**
+
+R, RStudio, terra, dismo, dplyr, ggplot2
+
+------------------------------------------------------------------------
+
+## 
