@@ -30,7 +30,6 @@ R, RStudio, terra, dismo, dplyr, ggplot2
 
 [![](climate_impacts_downscaling_research_1.png)](https://www.gfdl.noaa.gov/climate-model-downscaling/)
 
-
 ## Other Events
 
 ### Registration for the Winter R Workshops \@ UQ are NOW OPEN.
