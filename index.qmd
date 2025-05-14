@@ -56,7 +56,6 @@ div.quarto-post {
   </div>
 </div>
 ```
-
 ::: column-margin
 ## Events Calendar
 
@@ -81,19 +80,19 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 
 ## Upcoming Workshop {style="padding-top: 5px;"}
 
-### Modelling Koala Distribution Under Different Climate Scenarios
+### **Working with downscaled climate projections in R**
 
-**Who**: Charlotte Patterson (QUT), Scott Forrest (QUT, CSIRO)
+**Who**: Dr Ralph Trancoso, Dr Sarah Chapman, Dr Rohan Eccles (DETSI)
 
-**When**: Wed April 16, 2:30-4:40 pm AEST
+**When**: Wed May 21, 10a - 12p AEST
 
-**Where**: Hybrid - QUT Gardens Point campus R310 OR Teams ([join our mailing list](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform) for the link)
+**Where**: Teams ([join our mailing list](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform) for the link)
 
 **Description**:
 
-Ahead of the ICCB workshop, GeoSpatial Share group are getting a sneak peak of a session on modeling koala distribution using species distribution models (SDMs), covering SDM basics, data access, and model validation. The session will also address challenges like presence-only records and SDM algorithm comparisons.
+In this workshop, we will cover the use of downscaled climate projections in R. This will include working with NetCDF files, plotting, and subsetting data to a target area. This session will also cover basic calculations, such as deriving bioclimatic indices and other relevant inputs which can be used for things like species distribution modelling.
 
-Find out more and join the workshop [here](posts/2025-04-08-apr-newsletter/).
+Find out more and join the workshop [here](posts/2025-05-13-may-newsletter/).
 
 ## Last Post
 

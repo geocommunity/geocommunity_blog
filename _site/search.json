@@ -914,7 +914,7 @@
     "href": "index.html#upcoming-workshop",
     "title": "Welcome to Geospatial Share",
     "section": "Upcoming Workshop",
-    "text": "Upcoming Workshop\n\nModelling Koala Distribution Under Different Climate Scenarios\nWho: Charlotte Patterson (QUT), Scott Forrest (QUT, CSIRO)\nWhen: Wed April 16, 2:30-4:40 pm AEST\nWhere: Hybrid - QUT Gardens Point campus R310 OR Teams (join our mailing list for the link)\nDescription:\nAhead of the ICCB workshop, GeoSpatial Share group are getting a sneak peak of a session on modeling koala distribution using species distribution models (SDMs), covering SDM basics, data access, and model validation. The session will also address challenges like presence-only records and SDM algorithm comparisons.\nFind out more and join the workshop here."
+    "text": "Upcoming Workshop\n\nWorking with downscaled climate projections in R\nWho: Dr Ralph Trancoso, Dr Sarah Chapman, Dr Rohan Eccles (DESI)\nWhen: Wed May 21, 10a - 12p AEST\nWhere: Teams (join our mailing list for the link)\nDescription:\nIn this workshop, we will cover the use of downscaled climate projections in R. This will include working with NetCDF files, plotting, and subsetting data to a target area. This session will also cover basic calculations, such as deriving bioclimatic indices and other relevant inputs which can be used for things like species distribution modelling.\nFind out more and join the workshop here."
   },
   {
     "objectID": "index.html#last-workshop",
