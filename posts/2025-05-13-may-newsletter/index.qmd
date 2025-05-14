@@ -14,7 +14,7 @@ DisableComments: no
 
 ### **Working with downscaled climate projections in R**
 
-**Who**: Dr Ralph Trancoso, Dr Sarah Chapman, Dr Rohan Eccles (DESI)
+**Who**: Dr Ralph Trancoso, Dr Sarah Chapman, Dr Rohan Eccles (DETSI)
 
 **When**: Wed May 21, 10a - 12p AEST
 

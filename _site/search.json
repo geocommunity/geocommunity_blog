@@ -914,7 +914,7 @@
     "href": "index.html#upcoming-workshop",
     "title": "Welcome to Geospatial Share",
     "section": "Upcoming Workshop",
-    "text": "Upcoming Workshop\n\nWorking with downscaled climate projections in R\nWho: Dr Ralph Trancoso, Dr Sarah Chapman, Dr Rohan Eccles (DESI)\nWhen: Wed May 21, 10a - 12p AEST\nWhere: Teams (join our mailing list for the link)\nDescription:\nIn this workshop, we will cover the use of downscaled climate projections in R. This will include working with NetCDF files, plotting, and subsetting data to a target area. This session will also cover basic calculations, such as deriving bioclimatic indices and other relevant inputs which can be used for things like species distribution modelling.\nFind out more and join the workshop here."
+    "text": "Upcoming Workshop\n\nWorking with downscaled climate projections in R\nWho: Dr Ralph Trancoso, Dr Sarah Chapman, Dr Rohan Eccles (DETSI)\nWhen: Wed May 21, 10a - 12p AEST\nWhere: Teams (join our mailing list for the link)\nDescription:\nIn this workshop, we will cover the use of downscaled climate projections in R. This will include working with NetCDF files, plotting, and subsetting data to a target area. This session will also cover basic calculations, such as deriving bioclimatic indices and other relevant inputs which can be used for things like species distribution modelling.\nFind out more and join the workshop here."
   },
   {
     "objectID": "index.html#last-workshop",
@@ -1516,14 +1516,14 @@
     "href": "posts/2025-05-13-may-newsletter/index.html",
     "title": "May Newsletter | Working with downscaled climate projections in R",
     "section": "",
-    "text": "Who: Dr Ralph Trancoso, Dr Sarah Chapman, Dr Rohan Eccles (DESI)\nWhen: Wed May 21, 10a - 12p AEST\nWhere: Teams (join our mailing list for the link)\nDescription:\nIn this workshop, we will cover the use of downscaled climate projections in R. This will include working with NetCDF files, plotting, and subsetting data to a target area. This session will also cover basic calculations, such as deriving bioclimatic indices and other relevant inputs which can be used for things like species distribution modelling.\nRequirements:\nR, RStudio, terra, dismo, dplyr, ggplot2"
+    "text": "Who: Dr Ralph Trancoso, Dr Sarah Chapman, Dr Rohan Eccles (DETSI)\nWhen: Wed May 21, 10a - 12p AEST\nWhere: Teams (join our mailing list for the link)\nDescription:\nIn this workshop, we will cover the use of downscaled climate projections in R. This will include working with NetCDF files, plotting, and subsetting data to a target area. This session will also cover basic calculations, such as deriving bioclimatic indices and other relevant inputs which can be used for things like species distribution modelling.\nRequirements:\nR, RStudio, terra, dismo, dplyr, ggplot2"
   },
   {
     "objectID": "posts/2025-05-13-may-newsletter/index.html#upcoming-workshop",
     "href": "posts/2025-05-13-may-newsletter/index.html#upcoming-workshop",
     "title": "May Newsletter | Working with downscaled climate projections in R",
     "section": "",
-    "text": "Who: Dr Ralph Trancoso, Dr Sarah Chapman, Dr Rohan Eccles (DESI)\nWhen: Wed May 21, 10a - 12p AEST\nWhere: Teams (join our mailing list for the link)\nDescription:\nIn this workshop, we will cover the use of downscaled climate projections in R. This will include working with NetCDF files, plotting, and subsetting data to a target area. This session will also cover basic calculations, such as deriving bioclimatic indices and other relevant inputs which can be used for things like species distribution modelling.\nRequirements:\nR, RStudio, terra, dismo, dplyr, ggplot2"
+    "text": "Who: Dr Ralph Trancoso, Dr Sarah Chapman, Dr Rohan Eccles (DETSI)\nWhen: Wed May 21, 10a - 12p AEST\nWhere: Teams (join our mailing list for the link)\nDescription:\nIn this workshop, we will cover the use of downscaled climate projections in R. This will include working with NetCDF files, plotting, and subsetting data to a target area. This session will also cover basic calculations, such as deriving bioclimatic indices and other relevant inputs which can be used for things like species distribution modelling.\nRequirements:\nR, RStudio, terra, dismo, dplyr, ggplot2"
   },
   {
     "objectID": "posts/2025-05-13-may-newsletter/index.html#other-events",
