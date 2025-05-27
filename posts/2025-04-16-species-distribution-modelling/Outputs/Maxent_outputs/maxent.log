@@ -1,0 +1,40 @@
+Tue Apr 15 14:20:16 AEST 2025
+MaxEnt version 3.4.3
+Reading file absence
+readGrid: max memory 477626368, total allocated 425721856, free 175054472, used 250667384, increment 68811984
+Reading samples from presence
+Read samples: max memory 477626368, total allocated 425721856, free 150041104, used 275680752, increment 25013368
+Adding samples to background in feature space
+Command line used:  autorun -e Outputs/Maxent_outputs/absence -o Outputs/Maxent_outputs -s Outputs/Maxent_outputs/presence -z nothreshold
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=Outputs/Maxent_outputs samplesfile=Outputs/Maxent_outputs/presence environmentallayers=Outputs/Maxent_outputs/absence autorun novisible
+Species: species
+Layers: bioclim_01 bioclim_02 bioclim_03 bioclim_04 bioclim_05 bioclim_06 bioclim_07 bioclim_08 bioclim_09 bioclim_10 bioclim_11 bioclim_12 bioclim_13 bioclim_14 bioclim_15 bioclim_16 bioclim_17 bioclim_18 bioclim_19
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous
+outputdirectory: Outputs/Maxent_outputs
+samplesfile: Outputs/Maxent_outputs/presence
+environmentallayers: Outputs/Maxent_outputs/absence
+autorun: true
+visible: false
+
+getSamples: max memory 477626368, total allocated 437780480, free 144380832, used 293399648, increment 17718896
+Time since start: 1.054
+Making features
+makeFeatures: max memory 477626368, total allocated 437780480, free 131462352, used 306318128, increment 12918480
+species: 
+Regularization values: linear/quadratic/product: 0.050, categorical: 0.250, threshold: 1.000, hinge: 0.500
+Time since start: 8.682
+72496 samples
+Time since start: 14.766
+Density: max memory 477626368, total allocated 410517504, free 240892072, used 169625432, increment -136692696
+linearPredictor: max memory 477626368, total allocated 410517504, free 240892072, used 169625432, increment 0
+FeaturedSpace: max memory 477626368, total allocated 410517504, free 240892072, used 169625432, increment 0
+Sequential: max memory 477626368, total allocated 410517504, free 240892072, used 169625432, increment 0
+Initial loss: 7.051855622955894
+Time since start: 21.687
+500: time = 6.916000 loss = 4.845801
+Resulting gain: 2.2060543124878658
+Time since start: 27.501
+Projecting...
+Writing file Outputs\Maxent_outputs\species.csv
+Time since start: 43.549
+Ending
