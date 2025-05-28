@@ -80,19 +80,23 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 
 ## Upcoming Workshop {style="padding-top: 5px;"}
 
-### **Working with downscaled climate projections in R**
+### International Congress for Conservation Biology (ICCB) Workshop
 
-**Who**: Dr Ralph Trancoso, Dr Sarah Chapman, Dr Rohan Eccles (DETSI)
+Geospatial Share is going international with a pre-workshop for [ICCB](https://conbio.org/mini-sites/iccb-2025/) held in Meanjin/Brisbane on **June 15-16th, 2025**. The 2-day workshop is free for attendees of the conference - see registration details on the conference website.
 
-**When**: Wed May 21, 10a - 12p AEST
+This workshop is designed to build practical skills in the use of open source geospatial tools to
+address real world conservation challenges. Using koala populations in south east Queensland as a case study, we have assembled a team of experts to cover:
 
-**Where**: Teams ([join our mailing list](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9IrDPK07e5N1y2xxYNQlBe_xutTDu-ajBw/viewform) for the link)
+-   Getting started with geospatial tools in R - [Jason Flower](https://emlab.ucsb.edu/about/our-team/jason-flower) (University of
+    California, Santa Barbara), [Mitchel Rudge](https://www.linkedin.com/in/mitchel-rudge-phd-7a955025a/) (Bush Heritage Australia), [Catherine Kim](https://www.linkedin.com/in/seacatkim/) (QUT)
 
-**Description**:
+-   Working with climate projection models - [Ralph Trancoso](https://www.linkedin.com/in/ralph-trancoso-21546929/), [Sarah Chapman](https://www.linkedin.com/in/sarah-chapman-78338a6b/), [Rohan Eccles](https://www.linkedin.com/in/rohan-eccles-410737135/) (Queensland Future Climate Science Program)
 
-In this workshop, we will cover the use of downscaled climate projections in R. This will include working with NetCDF files, plotting, and subsetting data to a target area. This session will also cover basic calculations, such as deriving bioclimatic indices and other relevant inputs which can be used for things like species distribution modelling.
+-   Modelling the future distribution of koalas - [Scott Forrest](https://www.linkedin.com/in/swforrest/) and [Charlotte Patterson](https://www.linkedin.com/in/charlotterubyp/) (QUT)
 
-Find out more and join the workshop [here](posts/2025-05-13-may-newsletter/).
+-   Putting it all together with conservation spatial planning - [Caitie Kuempel](https://www.linkedin.com/in/caitie-kuempel-b86905110/) (Griffith University) and [Brooke Williams](https://www.linkedin.com/in/brooke-williams-141772114/) (The University of Newcastle)
+
+-   Integrating R with QGIS to create beautiful maps - [Emma Hain](https://www.linkedin.com/in/emma-hain-9a47b12a/) (North Road and QGIS Australia), Nyall Dawson (North Road and QGIS Australia), Jason Flower.
 
 ## Last Post
 
