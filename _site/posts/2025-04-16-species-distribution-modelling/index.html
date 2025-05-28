@@ -248,7 +248,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Workshop given in preparation for the International Congress for Conservation Biology held mid-June in Brisbane 2025.</p>
-<p><img src="koala.jpg" class="img-fluid"></p>
 <section id="workshop-slides" class="level1">
 <h1><strong>Workshop slides</strong></h1>
 <p><object data="ICCB_koala_sdm_slides.pdf" type="application/pdf" width="100%" height="400"><a href="ICCB_koala_sdm_slides.pdf" download="">Download PDF file.</a></object></p>
@@ -1661,20 +1660,20 @@ glm(formula = Presence ~ BIO5_Max_Temp_Warmest_Month + BIO6_Min_Temp_Coldest_Mon
     data = train_PB_covs_thinned)
 
 Coefficients:
-                             Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)                 -6.185831   1.572559  -3.934 8.37e-05 ***
-BIO5_Max_Temp_Warmest_Month -0.623471   0.052411 -11.896  &lt; 2e-16 ***
-BIO6_Min_Temp_Coldest_Month  0.865516   0.028332  30.549  &lt; 2e-16 ***
-BIO12_Annual_Precipitation  -0.002887   0.000276 -10.459  &lt; 2e-16 ***
-BIO15_Precip_Seasonality     0.251535   0.010927  23.019  &lt; 2e-16 ***
+                              Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)                 -4.8956819  1.5630088  -3.132  0.00173 ** 
+BIO5_Max_Temp_Warmest_Month -0.6341523  0.0514780 -12.319  &lt; 2e-16 ***
+BIO6_Min_Temp_Coldest_Month  0.8653363  0.0284251  30.443  &lt; 2e-16 ***
+BIO12_Annual_Precipitation  -0.0030684  0.0002791 -10.992  &lt; 2e-16 ***
+BIO15_Precip_Seasonality     0.2437024  0.0106358  22.913  &lt; 2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 (Dispersion parameter for binomial family taken to be 1)
 
     Null deviance: 8758.5  on 11463  degrees of freedom
-Residual deviance: 5703.1  on 11459  degrees of freedom
-AIC: 5713.1
+Residual deviance: 5758.2  on 11459  degrees of freedom
+AIC: 5768.2
 
 Number of Fisher Scoring iterations: 6</code></pre>
 </div>
@@ -1714,23 +1713,23 @@ glm(formula = Presence ~ BIO5_Max_Temp_Warmest_Month + I(BIO5_Max_Temp_Warmest_M
 
 Coefficients:
                                    Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)                      -7.987e+01  1.846e+01  -4.326 1.52e-05 ***
-BIO5_Max_Temp_Warmest_Month      -1.171e+00  1.200e+00  -0.975   0.3295    
-I(BIO5_Max_Temp_Warmest_Month^2)  1.040e-02  1.944e-02   0.535   0.5927    
-BIO6_Min_Temp_Coldest_Month      -1.015e+00  1.904e-01  -5.334 9.63e-08 ***
-I(BIO6_Min_Temp_Coldest_Month^2)  1.356e-01  1.280e-02  10.590  &lt; 2e-16 ***
-BIO12_Annual_Precipitation        2.161e-03  1.915e-03   1.129   0.2590    
-I(BIO12_Annual_Precipitation^2)  -1.734e-06  6.800e-07  -2.550   0.0108 *  
-BIO15_Precip_Seasonality          1.931e+00  2.392e-01   8.074 6.79e-16 ***
-I(BIO15_Precip_Seasonality^2)    -8.443e-03  1.277e-03  -6.613 3.77e-11 ***
+(Intercept)                      -9.304e+01  1.887e+01  -4.930 8.22e-07 ***
+BIO5_Max_Temp_Warmest_Month      -6.996e-01  1.229e+00  -0.569 0.569266    
+I(BIO5_Max_Temp_Warmest_Month^2)  3.164e-03  1.989e-02   0.159 0.873623    
+BIO6_Min_Temp_Coldest_Month      -1.309e+00  1.884e-01  -6.951 3.63e-12 ***
+I(BIO6_Min_Temp_Coldest_Month^2)  1.557e-01  1.272e-02  12.244  &lt; 2e-16 ***
+BIO12_Annual_Precipitation        4.063e-03  1.942e-03   2.092 0.036403 *  
+I(BIO12_Annual_Precipitation^2)  -2.504e-06  6.972e-07  -3.592 0.000329 ***
+BIO15_Precip_Seasonality          2.044e+00  2.360e-01   8.660  &lt; 2e-16 ***
+I(BIO15_Precip_Seasonality^2)    -9.028e-03  1.261e-03  -7.160 8.08e-13 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 (Dispersion parameter for binomial family taken to be 1)
 
     Null deviance: 8758.5  on 11463  degrees of freedom
-Residual deviance: 5563.7  on 11455  degrees of freedom
-AIC: 5581.7
+Residual deviance: 5578.7  on 11455  degrees of freedom
+AIC: 5596.7
 
 Number of Fisher Scoring iterations: 6</code></pre>
 </div>
@@ -2161,17 +2160,17 @@ Call:
                      Number of trees: 1000
 No. of variables tried at each split: 1
 
-          Mean of squared residuals: 0.0840617
-                    % Var explained: 24.54</code></pre>
+          Mean of squared residuals: 0.08564252
+                    % Var explained: 23.12</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Variable importance:</span></span>
 <span id="cb112-2"><a href="#cb112-2" aria-hidden="true" tabindex="-1"></a><span class="fu">importance</span>(rf_1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                              %IncMSE IncNodePurity
-BIO5_Max_Temp_Warmest_Month  91.99666      69.31761
-BIO6_Min_Temp_Coldest_Month 114.95800     104.81650
-BIO12_Annual_Precipitation   79.60144      81.70675
-BIO15_Precip_Seasonality     74.97117      47.93798</code></pre>
+BIO5_Max_Temp_Warmest_Month  91.55258      70.67321
+BIO6_Min_Temp_Coldest_Month 113.37257     101.99034
+BIO12_Annual_Precipitation   79.51614      82.59679
+BIO15_Precip_Seasonality     78.85705      47.42284</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb114"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb114-1"><a href="#cb114-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot variable importance</span></span>
 <span id="cb114-2"><a href="#cb114-2" aria-hidden="true" tabindex="-1"></a><span class="fu">varImpPlot</span>(rf_1, <span class="at">type =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -2186,19 +2185,19 @@ BIO15_Precip_Seasonality     74.97117      47.93798</code></pre>
 <span id="cb115-2"><a href="#cb115-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(<span class="fu">getTree</span>(rf_1,<span class="dv">1</span>,T))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  left daughter right daughter                   split var split point status
-1             2              3 BIO6_Min_Temp_Coldest_Month    8.373790     -3
-2             4              5 BIO6_Min_Temp_Coldest_Month    4.145653     -3
-3             6              7 BIO5_Max_Temp_Warmest_Month   29.238021     -3
-4             8              9 BIO5_Max_Temp_Warmest_Month   32.049179     -3
-5            10             11    BIO15_Precip_Seasonality   94.667690     -3
-6            12             13 BIO6_Min_Temp_Coldest_Month   10.865656     -3
+1             2              3 BIO5_Max_Temp_Warmest_Month   30.558750     -3
+2             4              5 BIO6_Min_Temp_Coldest_Month    7.933356     -3
+3             6              7 BIO5_Max_Temp_Warmest_Month   33.011837     -3
+4             8              9    BIO15_Precip_Seasonality   94.776566     -3
+5            10             11 BIO5_Max_Temp_Warmest_Month   29.037033     -3
+6            12             13  BIO12_Annual_Precipitation  789.708954     -3
   prediction
-1 0.50273224
-2 0.20767196
-3 0.81779661
-4 0.03333333
-5 0.30452675
-6 0.29166667</code></pre>
+1  0.5116120
+2  0.7076923
+3  0.2439418
+4  0.0781250
+5  0.8200837
+6  0.2903846</code></pre>
 </div>
 </div>
 </section>
@@ -2511,11 +2510,11 @@ BIO15_Precip_Seasonality     74.97117      47.93798</code></pre>
   |                                                                            
   |======================================================================| 100%
   train_0 train_1 test_0 test_1
-1    1194    5133    270   4867
-2    1205    9167    259    833
-3    1124    8307    340   1693
-4    1204    9324    260    676
-5    1129    8069    335   1931</code></pre>
+1    1163    5134    301   4866
+2    1169    9148    295    852
+3    1175    9479    289    521
+4    1148    8014    316   1986
+5    1201    8225    263   1775</code></pre>
 </div>
 <div class="cell-output-display">
 <div>
@@ -2543,20 +2542,20 @@ BIO15_Precip_Seasonality     74.97117      47.93798</code></pre>
 <div class="cell-output cell-output-stdout">
 <pre><code>List of 5
  $ :List of 2
-  ..$ : int [1:6327] 10754 10912 10753 11021 10755 10913 10914 10860 11073 11020 ...
-  ..$ : int [1:5137] 10761 10869 10977 10816 10814 10870 10715 10664 10817 10663 ...
+  ..$ : int [1:6297] 10859 11019 10911 10912 10657 10856 10803 10860 10753 10806 ...
+  ..$ : int [1:5167] 10329 10576 10444 10364 10534 10404 10571 10365 10621 10401 ...
  $ :List of 2
-  ..$ : int [1:10372] 10754 10912 10753 11021 10755 10913 10914 10860 11073 11020 ...
-  ..$ : int [1:1092] 11239 11234 11143 11240 11145 11238 11147 11144 11149 11146 ...
+  ..$ : int [1:10317] 10859 11019 10911 10912 10657 10856 10803 10860 10753 10806 ...
+  ..$ : int [1:1147] 10479 10437 10660 10613 10662 8631 10661 10612 10480 10614 ...
  $ :List of 2
-  ..$ : int [1:9431] 336 11126 11180 11266 11128 11263 11179 11174 11074 11127 ...
-  ..$ : int [1:2033] 10754 10912 10753 11021 10755 10913 10914 10860 11073 11020 ...
+  ..$ : int [1:10654] 10479 10437 10660 10613 10662 8631 10661 10612 10480 10614 ...
+  ..$ : int [1:810] 10859 11019 10911 10912 10657 10856 10803 10860 10753 10806 ...
  $ :List of 2
-  ..$ : int [1:10528] 10754 10912 10753 11021 10755 10913 10914 10860 11073 11020 ...
-  ..$ : int [1:936] 336 11126 11180 11266 11128 11263 11179 11174 11074 11127 ...
+  ..$ : int [1:9162] 10859 11019 10911 10912 10657 10856 10803 10860 10753 10806 ...
+  ..$ : int [1:2302] 11271 11083 11228 11181 11085 11231 11185 11270 11138 11232 ...
  $ :List of 2
-  ..$ : int [1:9198] 10754 10912 10753 11021 10755 10913 10914 10860 11073 11020 ...
-  ..$ : int [1:2266] 4833 5721 4058 3738 1633 5641 5800 5313 10735 5762 ...</code></pre>
+  ..$ : int [1:9426] 10859 11019 10911 10912 10657 10856 10803 10860 10753 10806 ...
+  ..$ : int [1:2038] 10495 10498 3540 2917 10496 10500 10337 1630 9411 10633 ...</code></pre>
 </div>
 </div>
 <section id="run-the-model-for-every-fold-and-evaluate" class="level3">
@@ -2620,7 +2619,7 @@ BIO15_Precip_Seasonality     74.97117      47.93798</code></pre>
 <span id="cb126-6"><a href="#cb126-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">sd_boyce =</span> <span class="fu">sd</span>(boyce))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   mean_AUC mean_boyce     sd_AUC  sd_boyce
-1 0.8361505      0.779 0.08581434 0.1759148</code></pre>
+1 0.8581919     0.6092 0.07396525 0.4851667</code></pre>
 </div>
 </div>
 </section>
@@ -2691,7 +2690,7 @@ BIO15_Precip_Seasonality     74.97117      47.93798</code></pre>
 <span id="cb129-6"><a href="#cb129-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">sd_boyce =</span> <span class="fu">sd</span>(boyce))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   mean_AUC mean_boyce    sd_AUC  sd_boyce
-1 0.8196863      0.665 0.1065469 0.2517648</code></pre>
+1 0.7988609     0.6852 0.1004777 0.2349228</code></pre>
 </div>
 </div>
 </section>
@@ -3096,11 +3095,11 @@ max values  :  22.4384842,  14.8543510,   51.254021,   544.83429,   35.546104,  
 <span id="cb150-5"><a href="#cb150-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(coef_se)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>                (Intercept) BIO5_Max_Temp_Warmest_Month 
-               1.8660705382                0.0612928029 
+               1.9611565762                0.0618157348 
 BIO6_Min_Temp_Coldest_Month  BIO12_Annual_Precipitation 
-               0.0359391113                0.0003917703 
+               0.0334897580                0.0003411282 
    BIO15_Precip_Seasonality 
-               0.0118223031 </code></pre>
+               0.0127273370 </code></pre>
 </div>
 </div>
 <div class="cell">
