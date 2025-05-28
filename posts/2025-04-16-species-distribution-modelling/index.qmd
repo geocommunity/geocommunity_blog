@@ -13,13 +13,17 @@ categories:
   - tutorial
   - R
 tags: [sdm, R]
+execute: 
+  warning: false
 DisableComments: no
 ---
 
 Workshop given in preparation for the International Congress for Conservation Biology held mid-June in Brisbane 2025.
 
+![](koala.jpg)
+
 # **Workshop slides**
-       
+
 {{< pdf ICCB_koala_sdm_slides.pdf width=100% height=400 >}}
 
 # **Species Data**
@@ -31,7 +35,6 @@ Workshop given in preparation for the International Congress for Conservation Bi
 # install.packages("galah")
 
 ```
-
 
 ```{r}
 
@@ -54,8 +57,7 @@ citation(package = "galah")
 
 ## Load South East Queensland (SEQ) boundary
 
-We made this boundary in the 'ICCB_Environmental_data.qmd' script. 
-Also load local government area polygons (LGAs) just for plotting.
+We made this boundary in the 'ICCB_Environmental_data.qmd' script. Also load local government area polygons (LGAs) just for plotting.
 
 ```{r}
 
@@ -94,8 +96,6 @@ LGA_SEQ <- LGA %>%
 
 ```
 
-
-
 ## Atlas of Living Australia using "galah" package
 
 To access records from the ALA, you will need to be registered.
@@ -104,7 +104,7 @@ There are two registration options:
 
 1.  If you are affiliated with an Australian institution, you should be able to register for ALA through your institution. Find your institution in the list of institutions when you select 'Login' [on the ALA website](https://www.ala.org.au/). Follow the prompts to enter your institution email and password. If your institution is not listed, you will need to register for an ALA account.
 
-2. If you are not affiliated with an Australian institution, you will need to register for an ALA account. You can do this by selecting 'Register' [on the ALA website](https://www.ala.org.au/). Follow the prompts to enter your email and password.
+2.  If you are not affiliated with an Australian institution, you will need to register for an ALA account. You can do this by selecting 'Register' [on the ALA website](https://www.ala.org.au/). Follow the prompts to enter your email and password.
 
 ```{r}
 
@@ -118,7 +118,7 @@ galah_config(atlas = "ALA",
 
 ## Download koala data from ALA
 
-Usually you would check that the CRS for the occurrences is the same as the shapefile. However, we know that the `galah' package operates in WGS84.
+Usually you would check that the CRS for the occurrences is the same as the shapefile. However, we know that the \`galah' package operates in WGS84.
 
 ```{r}
 
@@ -131,6 +131,7 @@ koala_occurrences <- galah_call() %>%
   atlas_occurrences()
 
 ```
+
 ## Clean koala data
 
 ```{r}
@@ -183,7 +184,7 @@ ggplot() +
 
 ## Sample background points
 
-We need to load the environmental covariate grid to use as our template grid for creating background points. We generated the environmental covariates in the 'ICCB_Environmental_data.qmd' script. 
+We need to load the environmental covariate grid to use as our template grid for creating background points. We generated the environmental covariates in the 'ICCB_Environmental_data.qmd' script.
 
 ```{r}
 
@@ -229,8 +230,9 @@ ggplot() +
 
 ```
 
-## Save koala presences and background points 
-This ensures quick upload in the future and that these records can be used among models. 
+## Save koala presences and background points
+
+This ensures quick upload in the future and that these records can be used among models.
 
 ```{r}
 
@@ -300,6 +302,7 @@ ggplot() +
   labs(title = "Local Government Areas South East Queensland (SEQ)")
 
 ```
+
 ## Merge into a single polygon
 
 ```{r}
@@ -315,6 +318,7 @@ ggplot() +
   theme_bw() 
 
 ```
+
 ## Save SEQ extent for other scripts
 
 ```{r}
@@ -330,8 +334,7 @@ writeVector(SEQ_extent.vect, "Data/Environmental_variables/SEQ_extent.shp", over
 
 Layers were made available to us by the EcoCommons team and were created by Toombs and Ma (2025):
 
-Toombs, N., and Ma S., 2025, A High-Resolution Dataset of 19 Bioclimatic Indices over Australia, Climate Projections and Services – Queensland Treasury, Brisbane, Queensland. [https://longpaddock.qld.gov.au/qld-future-climate/data-info/tern/]
-
+Toombs, N., and Ma S., 2025, A High-Resolution Dataset of 19 Bioclimatic Indices over Australia, Climate Projections and Services -- Queensland Treasury, Brisbane, Queensland. \[https://longpaddock.qld.gov.au/qld-future-climate/data-info/tern/\]
 
 ```{r}
 
@@ -360,6 +363,7 @@ current_bioclim <- terra::project(current_bioclim, "EPSG:3112")
 current_bioclim
 
 ```
+
 ## Mask to SEQ extent
 
 ```{r}
@@ -379,6 +383,7 @@ writeRaster(current_bioclim,
             overwrite = T)
 
 ```
+
 ## Load future environmental data
 
 Here we load outputs from a moderate-high emissions shared socio-economic path scenario (SSP 3.70) for the year 2090 (2080 - 2099).
@@ -410,6 +415,7 @@ future_bioclim <- terra::project(future_bioclim, "EPSG:3112")
 future_bioclim
 
 ```
+
 ## Mask to SEQ extent
 
 ```{r}
@@ -463,6 +469,7 @@ future_bioclim <- terra::project(future_bioclim, "EPSG:3112")
 future_bioclim
 
 ```
+
 ## Mask to SEQ extent
 
 ```{r}
@@ -548,7 +555,6 @@ head(background_df)
 pr_bg <- rbind(koala_occ_df, background_df)
 
 ```
-
 
 ## Load environmental covariates
 
@@ -1014,7 +1020,6 @@ plot(
 
 ```
 
-
 ## Random forest
 
 ```{r}
@@ -1032,10 +1037,13 @@ dir.create("Outputs/RF_outputs", showWarnings = F)
 <!-- ```{r} -->
 
 <!-- # Scale the covariates -->
+
 <!-- train_PB_covs_thinned_scaled <- scale(train_PB_covs_thinned[, layer_names], center = T, scale = T)  -->
 
 <!-- # Combine with the rest of the dataframe -->
+
 <!-- train_PB_covs_scaled <- data.frame(train_PB_covs_thinned[, c("x", "y", "Presence")], -->
+
 <!--                                    train_PB_covs_thinned_scaled) -->
 
 <!-- head(train_PB_covs_scaled) -->
@@ -1155,7 +1163,6 @@ plot(
 
 ```
 
-
 ## Model evaluation with spatial block cross-validation
 
 ```{r}
@@ -1263,7 +1270,6 @@ eval_df %>%
 ## Model evaluation for Random Forest with spatial block cross-validation
 
 We're going to use the same spatial folds as before.
-
 
 ### Run the RF model for every fold and evaluate
 
@@ -1404,7 +1410,6 @@ plot(novel_fut,
 
 ```
 
-
 ## GLM future predictions
 
 ### Model 1
@@ -1459,10 +1464,9 @@ plot(
 
 ### Presenting predictions with uncertainty
 
-There are many sources of model uncertainty that should be explored and ideally, presented alongside model predictions. 
+There are many sources of model uncertainty that should be explored and ideally, presented alongside model predictions.
 
 One that we'll focus on here is climate scenario uncertainty. We do so by fitting a second model to future climate data from a lower emission shared socioeconomic path scenario (SSP 1.26).
-
 
 ### Load future environmental data (SSP 1.26)
 
@@ -1515,7 +1519,6 @@ plot(
 ### Model uncertainty
 
 Another element of uncertainty that can be represented is model uncertainty, or the standard error around the coefficient estimates.
-
 
 ```{r}
 
