@@ -6,7 +6,7 @@ date: "<2025-04-16>"
 toc: true
 toc-depth: 2
 toc-expand: true
-image: dummy.png
+image: koala.jpg
 slug: workshop-sdm
 categories:
   - blog
@@ -19,8 +19,6 @@ DisableComments: no
 ---
 
 Workshop given in preparation for the International Congress for Conservation Biology held mid-June in Brisbane 2025.
-
-![](koala.jpg)
 
 # **Workshop slides**
 
