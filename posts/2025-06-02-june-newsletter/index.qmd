@@ -1,0 +1,57 @@
+---
+title: "Newsletter | ICCB workshop | Jobs"
+editor: visual
+author: 'Catherine Kim'
+date: "2023-04-12"
+image: thumb.jpg
+slug: newsletter-April2023
+categories:
+  - newsletter
+tags: [training, conference]
+DisableComments: no
+---
+
+# Geospatial Share June Newsletter
+
+## Next workshop -- ICCB June 14-15th
+
+### International Congress for Conservation Biology (ICCB) Workshop
+
+Geospatial Share is going international with a pre-conference workshop for [ICCB](https://conbio.org/mini-sites/iccb-2025/) held in Meanjin/Brisbane on **June 14-15th, 2025**. The 2-day workshop is free for attendees of the conference - see registration details on the conference website.
+
+::: {style="text-align: center;"}
+![](ICCB_banner.jpg)
+:::
+
+This workshop is designed to build practical skills in the use of open source geospatial tools to address real world conservation challenges. Using koala populations in south east Queensland as a case study, we have assembled a team of experts to cover:
+
+-   **Getting started with geospatial tools in R** - [Jason Flower](https://emlab.ucsb.edu/about/our-team/jason-flower) (University of California, Santa Barbara), [Mitchel Rudge](https://www.linkedin.com/in/mitchel-rudge-phd-7a955025a/) (Bush Heritage Australia), [Catherine Kim](https://www.linkedin.com/in/seacatkim/) (QUT)
+
+-   **Working with climate projection models** - [Ralph Trancoso](https://www.linkedin.com/in/ralph-trancoso-21546929/), [Sarah Chapman](https://www.linkedin.com/in/sarah-chapman-78338a6b/), [Rohan Eccles](https://www.linkedin.com/in/rohan-eccles-410737135/) (Queensland Future Climate Science Program)
+
+-   **Modelling the future distribution of koalas** - [Scott Forrest](https://www.linkedin.com/in/swforrest/) and [Charlotte Patterson](https://www.linkedin.com/in/charlotterubyp/) (QUT)
+
+-   **Putting it all together with conservation spatial planning** - [Caitie Kuempel](https://www.linkedin.com/in/caitie-kuempel-b86905110/) (Griffith University) and [Brooke Williams](https://www.linkedin.com/in/brooke-williams-141772114/) (The University of Newcastle)
+
+-   **Integrating R with QGIS to create beautiful maps** - [Emma Hain](https://www.linkedin.com/in/emma-hain-9a47b12a/) (North Road and QGIS Australia), Nyall Dawson (North Road and QGIS Australia), Jason Flower.
+
+## Previous workshop
+
+Last month, Dr Ralph Trancoso, Dr Sarah Chapman, and Dr Rohan Eccles (DETSI) ran a practice session of the working with downscaled climate projections in R. It covered basic calculations, such as deriving bioclimatic indices and other relevant inputs which can be used for things like species distribution modelling. Many thanks to them for sharing their expertise.
+
+We also aim to post the content on the [Geospatial Share website](https://brisbane-geocommunity.netlify.app/). See the [species distribution modelling](https://brisbane-geocommunity.netlify.app/posts/2025-04-16-species-distribution-modelling/) content from Charlotte Patterson & Scott Patterson online now.
+
+## PhD opportunity
+
+Justine Shaw and Jonathan Rhodes have a PhD scholarship available to work with us on an exciting project exploring how to do better conservation planning in Antarctica\'s unique environment and conservation governance arrangements. The scholarship is available to domestic or international students and would suit someone interested in tackling interesting and useful applied conservation problems using quantitative tools. Details of the scholarship and how to apply can be found [here](https://www.qut.edu.au/study/fees-and-scholarships/scholarships/planning-to-conserve-biodiversity-in-the-planets-most-southern-extremities-phd-scholarship.). Contact Justine or Jonathan for more information.
+
+## Jobs
+
+### Senior Geospatial Analyst
+
+Edith Cowan University School of Medical and Health Sciences 1 year fixed year contract, full or part time PR or Australian Citizens only\
+Full job [description](https://ecu.nga.net.au/cp/index.cfm?event=jobs.checkJobDetailsNewApplication&returnToEvent=jobs.listJobs&jobid=674FD332-A4CC-469F-9E05-B2E6012DC464&CurATC=EXT&CurBID=422C3E0D%2D4E21%2D4DD9%2DABB8%2D9DB40135CA83&JobListID=52d30031%2Dd147%2D1b48%2D1974%2D6d5424ffc295&jobsListKey=298a63f0%2Dd78e%2D4e7f%2D9930%2D945dcfc6b5c0&persistVariables=CurATC,CurBID,JobListID,jobsListKey,JobID&lid=52403100132&rmuh=4F53186A0E03240FA207A0F9B57A2E1753A521D4)
+
+### Senior Consultant/Managing Consultant - GIS
+
+ERM is looking for a **Senior Consultant/Managing Consultant - GIS** to be based in Australia. See more on [LinkedIn](https://www.linkedin.com/jobs/view/4223838830/?refId=J8UwxQS8HM9Bc7aTbxXdvw%3D%3D&trackingId=J8UwxQS8HM9Bc7aTbxXdvw%3D%3D).
