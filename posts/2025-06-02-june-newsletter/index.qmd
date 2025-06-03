@@ -1,8 +1,8 @@
 ---
-title: "Newsletter | ICCB workshop | Jobs"
+title: "June Newsletter | ICCB workshop | Jobs"
 editor: visual
 author: 'Catherine Kim'
-date: "2023-04-12"
+date: "2025-06-03"
 image: thumb.jpg
 slug: newsletter-April2023
 categories:
