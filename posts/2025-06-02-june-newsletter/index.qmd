@@ -17,6 +17,8 @@ DisableComments: no
 
 ### International Congress for Conservation Biology (ICCB) Workshop
 
+**Open Source Geospatial Tools for Conservation under Climate Change - a Koala Case Study**
+
 Geospatial Share is going international with a pre-conference workshop for [ICCB](https://conbio.org/mini-sites/iccb-2025/) held in Meanjin/Brisbane on **June 14-15th, 2025**. The 2-day workshop is free for attendees of the conference - see registration details on the conference website.
 
 ::: {style="text-align: center;"}
@@ -43,7 +45,7 @@ We also aim to post the content on the [Geospatial Share website](https://brisba
 
 ## PhD opportunity
 
-Justine Shaw and Jonathan Rhodes have a PhD scholarship available to work with us on an exciting project exploring how to do better conservation planning in Antarctica\'s unique environment and conservation governance arrangements. The scholarship is available to domestic or international students and would suit someone interested in tackling interesting and useful applied conservation problems using quantitative tools. Details of the scholarship and how to apply can be found [here](https://www.qut.edu.au/study/fees-and-scholarships/scholarships/planning-to-conserve-biodiversity-in-the-planets-most-southern-extremities-phd-scholarship.). Contact Justine or Jonathan for more information.
+Justine Shaw and Jonathan Rhodes have a PhD scholarship available to work with us on an exciting project exploring how to do better conservation planning in Antarctica's unique environment and conservation governance arrangements. The scholarship is available to domestic or international students and would suit someone interested in tackling interesting and useful applied conservation problems using quantitative tools. Details of the scholarship and how to apply can be found [here](https://www.qut.edu.au/study/fees-and-scholarships/scholarships/planning-to-conserve-biodiversity-in-the-planets-most-southern-extremities-phd-scholarship.). Contact Justine or Jonathan for more information.
 
 ## Jobs
 

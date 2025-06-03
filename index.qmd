@@ -82,6 +82,8 @@ Fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeXfv6EPzm6ur5e9Ir
 
 ### International Congress for Conservation Biology (ICCB) Workshop
 
+**Open Source Geospatial Tools for Conservation under Climate Change - a Koala Case Study**
+
 Geospatial Share is going international with a pre-workshop for [ICCB](https://conbio.org/mini-sites/iccb-2025/) held in Meanjin/Brisbane on **June 14-15th, 2025**. The 2-day workshop is free for attendees of the conference - see registration details on the conference website.
 
 ::: {style="text-align: center;"}
