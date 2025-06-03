@@ -4,7 +4,7 @@ editor: visual
 author: 'Catherine Kim'
 date: "2025-06-03"
 image: ICCB.jpg
-slug: newsletter-June2025
+slug: newsletter-june-2025
 categories:
   - newsletter
 tags: [training, conference, jobs, events]
