@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/2025-06-02-june-newsletter/index.html",
       "/posts/2025-05-13-may-newsletter/index.html",
       "/posts/2025-04-16-species-distribution-modelling/index.html",
       "/posts/2025-04-08-apr-newsletter/index.html",
@@ -23,7 +24,6 @@
       "/posts/2023-06-01-june-newsletter/index.html",
       "/posts/2023-05-04-May-Newsletter/index.html",
       "/posts/2023-04-07-April-Newsletter/index.html",
-      "/posts/2025-06-02-june-newsletter/index.html",
       "/posts/2023-03-23-r-spatial-basics/index.html",
       "/posts/2023-03-22-testimonial-chris-mancini/index.html",
       "/posts/2023-03-10-newletter/index.html",
@@ -47,6 +47,7 @@
   {
     "listing": "/workshops.html",
     "items": [
+      "/posts/2025-06-02-june-newsletter/index.html",
       "/posts/2025-05-13-may-newsletter/index.html",
       "/posts/2025-04-16-species-distribution-modelling/index.html",
       "/posts/2025-04-08-apr-newsletter/index.html",
@@ -68,7 +69,6 @@
       "/posts/2023-06-01-june-newsletter/index.html",
       "/posts/2023-05-04-May-Newsletter/index.html",
       "/posts/2023-04-07-April-Newsletter/index.html",
-      "/posts/2025-06-02-june-newsletter/index.html",
       "/posts/2023-03-23-r-spatial-basics/index.html",
       "/posts/2023-03-22-testimonial-chris-mancini/index.html",
       "/posts/2023-03-10-newletter/index.html",

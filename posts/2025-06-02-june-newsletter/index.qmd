@@ -1,13 +1,13 @@
 ---
-title: "June Newsletter | ICCB workshop | Jobs"
+title: "June Newsletter | ICCB workshop"
 editor: visual
 author: 'Catherine Kim'
 date: "2025-06-03"
-image: thumb.jpg
-slug: newsletter-April2023
+image: ICCB.jpg
+slug: newsletter-June2025
 categories:
   - newsletter
-tags: [training, conference]
+tags: [training, conference, jobs, events]
 DisableComments: no
 ---
 
